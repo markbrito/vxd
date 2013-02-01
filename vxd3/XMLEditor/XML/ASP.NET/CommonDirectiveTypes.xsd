@@ -1,0 +1,69 @@
+﻿<xsd:schema 
+	xmlns:xsd='http://www.w3.org/2001/XMLSchema' 
+	xmlns:vs='http://schemas.microsoft.com/Visual-Studio-Intellisense'>
+
+<xsd:complexType name="AssemblyDef">
+  <xsd:attribute name="Name" type="xsd:string" vs:nonfilterable="true" />
+  <xsd:attribute name="Src" type="xsd:anyURI" vs:serverlanguageextensions="true" vs:nonfilterable="true" />
+</xsd:complexType>
+
+<xsd:complexType name="ImplementsDef">
+  <xsd:attribute name="Interface" type="xsd:string" vs:nonfilterable="true" />
+</xsd:complexType>
+
+<xsd:complexType name="ImportDef">
+  <xsd:attribute name="Namespace" type="xsd:string" vs:nonfilterable="true" />
+</xsd:complexType>
+
+<xsd:complexType name="MasterTypeDef">
+  <xsd:attribute name="TypeName" type="xsd:string" vs:nonfilterable="true" />
+  <xsd:attribute name="VirtualPath" type="xsd:anyURI" vs:preferredextensions=".master" vs:nonfilterable="true" />
+</xsd:complexType>
+
+<xsd:complexType name="RegisterDef">
+  <xsd:attribute name="Assembly" type="xsd:string" vs:nonfilterable="true" />
+  <xsd:attribute name="Namespace" type="xsd:string" vs:nonfilterable="true" />
+  <xsd:attribute name="Src" type="xsd:anyURI" vs:preferredextensions=".ascx" vs:nonfilterable="true" />
+  <xsd:attribute name="TagName" type="xsd:string" vs:nonfilterable="true" />
+  <xsd:attribute name="TagPrefix" type="xsd:string" vs:nonfilterable="true" />
+</xsd:complexType>
+
+<xsd:simpleType name="CompilationModeDef">
+  <xsd:restriction base="xsd:string">
+    <xsd:enumeration value="Always" />
+    <xsd:enumeration value="Auto" />
+    <xsd:enumeration value="Never" />
+  </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="LocationDef">
+  <xsd:restriction base="xsd:string">
+    <xsd:enumeration value="Any" />
+    <xsd:enumeration value="Client" />
+    <xsd:enumeration value="Downstream" />
+    <xsd:enumeration value="Server" />
+    <xsd:enumeration value="ServerAndClient" />
+    <xsd:enumeration value="None" />
+  </xsd:restriction>
+</xsd:simpleType>
+
+<!-- Definitions for >= 2nd level elements -->
+<xsd:simpleType name="ServerLanguagesDef" vs:serverlanguages="true" />
+
+<xsd:simpleType name="WarningLevelDef">
+  <xsd:restriction base="xsd:string">
+    <xsd:enumeration value="0" />
+    <xsd:enumeration value="1" />
+    <xsd:enumeration value="2" />
+    <xsd:enumeration value="3" />
+    <xsd:enumeration value="4" />
+  </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:complexType name="ReferenceDef">
+  <xsd:attribute name="Page" type="xsd:anyURI" vs:preferredextensions=".aspx" vs:nonfilterable="true" />
+  <xsd:attribute name="Control" type="xsd:anyURI" vs:preferredextensions=".ascx" vs:nonfilterable="true" />
+  <xsd:attribute name="VirtualPath" type="xsd:anyURI" vs:preferredextensions=".aspx;.ascx" vs:nonfilterable="true" />
+</xsd:complexType>
+
+</xsd:schema> 	

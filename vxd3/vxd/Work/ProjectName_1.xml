@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<VisualAltaBPM Order="0" Language="VisualAltaBPM" Name="VisualAltaBPM" Translator="VisualAltaBPM" TextNote="" Package="BugTracking" YPos="-1" Port="80" Title="BugTracking" Value="" Build="Debug" ID="0" Visible="TRUE" URI="/b" XPos="-1" Platform="Linux XSP Mono">
+  <Workflow ID="1" Name="Workflow" Value="" YPos="5" Visible="TRUE" Order="0" XPos="10">
+    <Database ID="2" Name="Data" Value="" YPos="145" Visible="TRUE" Order="0" XPos="33">
+      <DataGrid ID="3" Name="Bugs" Value="" YPos="245" Visible="TRUE" Order="0" XPos="35">
+        <TextBox ID="4" Name="Title" Value="" YPos="360" Visible="TRUE" Order="0" XPos="92" />
+        <Image ID="5" Name="Attachment" Value="" YPos="360" Visible="TRUE" Order="0" XPos="163" />
+        <DropDownList ID="6" Name="Status" Value="" YPos="435" Visible="TRUE" Order="0" XPos="98" />
+        <Actor ID="7" Name="Developer" Value="" YPos="356" Visible="TRUE" Order="0" XPos="32" />
+        <Product ID="8" Name="Tester" Value="" YPos="439" Visible="TRUE" Order="0" XPos="161" />
+        <BusinessUnit ID="24" Name="Manager" Value="" YPos="444" Visible="TRUE" Order="0" XPos="230" />
+        <DataList ID="26" Name="Log" Value="" YPos="433" Visible="TRUE" Order="0" XPos="34" />
+      </DataGrid>
+    </Database>
+    <FlowOnPage ID="9" Name="Bug" Value="" YPos="20" Visible="TRUE" Order="0" XPos="162">
+      <FlowProcess ID="12" Name="Open" Value="" YPos="35" Visible="TRUE" Order="0" XPos="271">
+        <WebService ID="13" Name="WSNotify" Value="" YPos="143" Visible="TRUE" Order="0" XPos="273">
+          <Mail ID="14" Name="Mail" Value="" YPos="234" Visible="TRUE" Order="0" XPos="275" />
+          <Timer ID="15" Name="Timer" Value="" YPos="311" Visible="TRUE" Order="0" XPos="274" />
+        </WebService>
+        <FlowDecision ID="16" Name="Fixed" Value="" YPos="35" Visible="TRUE" Order="0" XPos="377">
+          <Xml ID="17" Name="WSFixed" Value="" YPos="144" Visible="TRUE" Order="0" XPos="380">
+            <Mail ID="18" Name="Mail" Value="" YPos="236" Visible="TRUE" Order="0" XPos="382" />
+            <Timer ID="19" Name="Timer" Value="" YPos="316" Visible="TRUE" Order="0" XPos="381" />
+          </Xml>
+          <FlowMultiDecision ID="20" Name="Confirm" Value="" YPos="35" Visible="TRUE" Order="0" XPos="476">
+            <FlowTerminator ID="21" Name="Close" Value="" YPos="35" Visible="TRUE" Order="0" XPos="610">
+              <Xml ID="42" Name="WSClose" Value="" YPos="155" Visible="TRUE" Order="0" XPos="617">
+                <Mail ID="43" Name="Mail" Value="" YPos="241" Visible="TRUE" Order="0" XPos="604">
+                  <Report ID="44" Name="Report" Value="" YPos="354" Visible="TRUE" Order="0" XPos="585" />
+                </Mail>
+              </Xml>
+            </FlowTerminator>
+            <WebService ID="25" Name="WSConfirm" Value="" YPos="146" Visible="TRUE" Order="0" XPos="487">
+              <Mail ID="28" Name="Mail" Value="" YPos="239" Visible="TRUE" Order="0" XPos="492" />
+            </WebService>
+          </FlowMultiDecision>
+        </FlowDecision>
+      </FlowProcess>
+    </FlowOnPage>
+    <Timer ID="29" Name="Timer" Value="" YPos="71" Visible="TRUE" Order="0" XPos="80">
+      <Mail ID="31" Name="Mail" Value="" YPos="104" Visible="TRUE" Order="0" XPos="161">
+        <Dashboard ID="37" Name="Dashboard" Value="" YPos="183" Visible="TRUE" Order="0" XPos="164">
+          <Chart ID="38" Name="Chart" Value="" YPos="277" Visible="TRUE" Order="0" XPos="201" />
+          <Report ID="40" Name="Report" Value="" YPos="275" Visible="TRUE" Order="0" XPos="128" />
+        </Dashboard>
+      </Mail>
+    </Timer>
+  </Workflow>
+</VisualAltaBPM>
+

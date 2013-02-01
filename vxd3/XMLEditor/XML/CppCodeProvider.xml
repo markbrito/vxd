@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>CppCodeProvider</name>
+	</assembly>
+	<members>
+		<member name="T:Microsoft.VisualC.CodeDomTypeInfo">
+			<summary>Encapsulates descriptions of a type.</summary>
+		</member>
+		<member name="M:Microsoft.VisualC.CodeDomTypeInfo.#ctor(Microsoft.VisualC.CodeDomTypeInfo)">
+			<summary>Creates a container for type information based on the specified <see cref="T:Microsoft.VisualC.CodeDomTypeInfo"></see>.</summary>
+			<param name="type">An instance of a <see cref="T:Microsoft.VisualC.CodeDomTypeInfo"></see> object used to model type information.</param>
+		</member>
+		<member name="M:Microsoft.VisualC.CodeDomTypeInfo.#ctor(System.CodeDom.CodeTypeDeclaration)">
+			<summary>Creates a container for type information based on the specified <see cref="T:System.CodeDom.CodeTypeDeclaration"></see>.</summary>
+			<param name="declaredType">A <see cref="T:System.CodeDom.CodeTypeDeclaration"></see> used to model type information.</param>
+		</member>
+		<member name="M:Microsoft.VisualC.CodeDomTypeInfo.#ctor(System.Type)">
+			<summary>Creates a container for type information based on the specified <see cref="T:System.Type"></see>.</summary>
+			<param name="runtimeType">A <see cref="T:System.Type"></see> used to model type information.</param>
+		</member>
+		<member name="M:Microsoft.VisualC.CodeDomTypeInfo.#ctor(Microsoft.VisualC.CodeDomTypeInfo,System.Int32)">
+			<summary>Creates a container for information about a given array based on the specified <see cref="T:Microsoft.VisualC.CodeDomTypeInfo"></see> and <see cref="T:System.Int32"></see>.</summary>
+			<param name="type">An instance of a <see cref="T:Microsoft.VisualC.CodeDomTypeInfo"></see> object used to model type information.</param>
+			<param name="rank">An <see cref="T:System.Int32"></see> that represents the number of dimensions of the array.</param>
+		</member>
+		<member name="M:Microsoft.VisualC.CodeDomTypeInfo.GetTypeRelationship(Microsoft.VisualC.CodeDomTypeInfo)">
+			<summary>Discovers the relationship between two types.</summary>
+			<returns>A <see cref="T:Microsoft.VisualC.TypeRelationship"></see> that indicates how the current type relates to the specified type.</returns>
+			<param name="type"><see cref="T:Microsoft.VisualC.CodeDomTypeInfo"></see></param>
+		</member>
+		<member name="M:Microsoft.VisualC.CodeDomTypeInfo.ToString">
+			<summary>Generates a string representation of the type information.</summary>
+			<returns>A <see cref="T:System.String"></see> that describes the type.</returns>
+		</member>
+		<member name="P:Microsoft.VisualC.CodeDomTypeInfo.DeclaredType">
+			<summary>Gets the type declaration.</summary>
+			<returns>A <see cref="T:System.CodeDom.CodeTypeDeclaration"></see>, which represents a type declaration for a class, structure, interface or enumeration.</returns>
+		</member>
+		<member name="P:Microsoft.VisualC.CodeDomTypeInfo.FullName">
+			<summary>Gets the fully qualified name of the type.</summary>
+			<returns>A <see cref="T:System.String"></see> that indicates the fully qualified name of the type.</returns>
+		</member>
+		<member name="P:Microsoft.VisualC.CodeDomTypeInfo.IsArray">
+			<summary>Gets a value that indicates whether the type description defines an array.</summary>
+			<returns>true if the type description defines is an array; otherwise, false.</returns>
+		</member>
+		<member name="P:Microsoft.VisualC.CodeDomTypeInfo.IsInterface">
+			<summary>Gets a value that indicates whether the type description defines an interface.</summary>
+			<returns>true if the type description defines an interface; otherwise, false.</returns>
+		</member>
+		<member name="P:Microsoft.VisualC.CodeDomTypeInfo.IsValueType">
+			<summary>Gets a value that indicates whether the type description defines is a value type.</summary>
+			<returns>true if the type description defines a value type; otherwise, false.</returns>
+		</member>
+		<member name="P:Microsoft.VisualC.CodeDomTypeInfo.Name">
+			<summary>Gets the name of the type.</summary>
+			<returns>A <see cref="T:System.String"></see> that indicates the name of the type.</returns>
+		</member>
+		<member name="P:Microsoft.VisualC.CodeDomTypeInfo.Rank">
+			<summary>Gets and sets the value that indicates the rank (number of dimensions) of an array type.</summary>
+			<returns>An <see cref="T:System.Int32"></see> that indicates the rank (number of dimensions) of an array type.</returns>
+		</member>
+		<member name="T:Microsoft.VisualC.CppCodeGenerator">
+			<summary>Provides an example implementation of the <see cref="T:System.CodeDom.Compiler.ICodeGenerator"></see> interface and <see cref="T:System.CodeDom.Compiler.ICodeCompiler"></see> interface.</summary>
+		</member>
+		<member name="M:Microsoft.VisualC.CppCodeGenerator.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.VisualC.CppCodeGenerator"></see> class.</summary>
+		</member>
+		<member name="T:Microsoft.VisualC.CppCodeGenerator7">
+			<summary>Provides an example implementation of the <see cref="T:System.CodeDom.Compiler.ICodeGenerator"></see> interface.</summary>
+		</member>
+		<member name="M:Microsoft.VisualC.CppCodeGenerator7.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.VisualC.CppCodeGenerator7"></see> class.</summary>
+		</member>
+		<member name="T:Microsoft.VisualC.CppCodeProvider">
+			<summary>Provides a base class for a C/C++ implementation of <see cref="T:System.CodeDom.Compiler.CodeDomProvider"></see>.</summary>
+		</member>
+		<member name="M:Microsoft.VisualC.CppCodeProvider.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.VisualC.CppCodeProvider"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.VisualC.CppCodeProvider.CreateCompiler">
+			<summary>Creates an instance of the C++ code compiler.</summary>
+			<returns>An <see cref="T:System.CodeDom.Compiler.ICodeCompiler"></see> that can be used for compilation of <see cref="N:System.CodeDom"></see> based, C++ source code representations.</returns>
+		</member>
+		<member name="M:Microsoft.VisualC.CppCodeProvider.CreateGenerator">
+			<summary>Creates an instance of a C++ code generator.</summary>
+			<returns>An <see cref="T:System.CodeDom.Compiler.ICodeGenerator"></see> that can be used to generate <see cref="N:System.CodeDom"></see> based, C++ source code representations.</returns>
+		</member>
+		<member name="P:Microsoft.VisualC.CppCodeProvider.CompileUnit">
+			<summary>Gets and sets a C++ program graph.</summary>
+			<returns>A <see cref="T:System.CodeDom.CodeCompileUnit"></see> that represents a C++ program graph.</returns>
+		</member>
+		<member name="P:Microsoft.VisualC.CppCodeProvider.FileExtension">
+			<summary>Gets the file name extension for C++ source code files.</summary>
+			<returns>A <see cref="T:System.String"></see> that represents the file name extension for C++ source code files.</returns>
+		</member>
+		<member name="T:Microsoft.VisualC.SymbolTableStack">
+			<summary>Represents a simple last-in-first-out (LIFO) non-generic collection of C++ code document object model (CodeDOM) objects.</summary>
+		</member>
+		<member name="M:Microsoft.VisualC.SymbolTableStack.#ctor(System.CodeDom.CodeObject)">
+			<param name="tree"><see cref="T:System.CodeDom.CodeObject"></see></param>
+		</member>
+		<member name="M:Microsoft.VisualC.SymbolTableStack.Add(System.CodeDom.CodeParameterDeclarationExpressionCollection)">
+			<param name="arguments"><see cref="T:System.CodeDom.CodeParameterDeclarationExpressionCollection"></see></param>
+		</member>
+		<member name="M:Microsoft.VisualC.SymbolTableStack.Add(System.CodeDom.CodeStatementCollection)">
+			<param name="statements"><see cref="T:System.CodeDom.CodeStatementCollection"></see></param>
+		</member>
+		<member name="M:Microsoft.VisualC.SymbolTableStack.Add(System.String,Microsoft.VisualC.CodeDomTypeInfo)">
+			<param name="type">CodeDomTypeInfo</param>
+			<param name="ID"><see cref="T:System.String"></see></param>
+		</member>
+		<member name="M:Microsoft.VisualC.SymbolTableStack.EvaluateIndexer(System.CodeDom.CodeIndexerExpression)">
+			<param name="e"><see cref="T:System.CodeDom.CodeIndexerExpression"></see></param>
+		</member>
+		<member name="M:Microsoft.VisualC.SymbolTableStack.EvaluateMethod(System.CodeDom.CodeMethodInvokeExpression)">
+			<param name="e"><see cref="T:System.CodeDom.CodeMethodInvokeExpression"></see></param>
+		</member>
+		<member name="M:Microsoft.VisualC.SymbolTableStack.EvaluateMethod(Microsoft.VisualC.CodeDomTypeInfo,System.String)">
+			<param name="methodName"><see cref="T:System.String"></see></param>
+			<param name="targetInfo">CodeDomTypeInfo</param>
+		</member>
+		<member name="M:Microsoft.VisualC.SymbolTableStack.EvaluateMethod(Microsoft.VisualC.CodeDomTypeInfo,System.String,System.Int32)">
+			<param name="nParamCount"><see cref="T:System.Int32"></see></param>
+			<param name="methodName"><see cref="T:System.String"></see></param>
+			<param name="targetInfo">CodeDomTypeInfo</param>
+		</member>
+		<member name="M:Microsoft.VisualC.SymbolTableStack.EvaluateProperty(System.CodeDom.CodePropertyReferenceExpression)">
+			<param name="e"><see cref="T:System.CodeDom.CodePropertyReferenceExpression"></see></param>
+		</member>
+		<member name="M:Microsoft.VisualC.SymbolTableStack.EvaluateType(System.CodeDom.CodeExpression)">
+			<param name="e"><see cref="T:System.CodeDom.CodeExpression"></see></param>
+		</member>
+		<member name="M:Microsoft.VisualC.SymbolTableStack.EvaluateType(System.CodeDom.CodeTypeReference)">
+			<param name="e"><see cref="T:System.CodeDom.CodeTypeReference"></see></param>
+		</member>
+		<member name="M:Microsoft.VisualC.SymbolTableStack.SetCurrentType(System.CodeDom.CodeNamespace)">
+			<param name="ns"><see cref="T:System.CodeDom.CodeNamespace"></see></param>
+		</member>
+		<member name="M:Microsoft.VisualC.SymbolTableStack.SetCurrentType(System.CodeDom.CodeTypeDeclaration)">
+			<param name="type"><see cref="T:System.CodeDom.CodeTypeDeclaration"></see></param>
+		</member>
+	</members>
+</doc>

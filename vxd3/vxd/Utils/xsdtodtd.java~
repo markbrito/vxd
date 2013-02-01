@@ -1,0 +1,155 @@
+package vxd.Utils;
+
+import javax.xml.transform.*;
+import javax.xml.transform.stream.*;
+import javax.xml.transform.dom.*;
+import java.util.*;
+import org.w3c.dom.*;
+import org.xml.sax.*;
+import org.xml.sax.helpers.*;
+import java.io.*;
+import javax.xml.*;
+import javax.xml.parsers.*;
+import org.apache.crimson.tree.*;
+
+public class xsdtodtd
+{
+    public static void main(String[] args)
+    {
+	try
+	    {
+		if(args.length!=1)
+		    {
+			System.out.println("java xsdtodtd in.xsd");
+			System.exit(0);
+		    }
+		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+		factory.setValidating(false);
+		DocumentBuilder builder = factory.newDocumentBuilder();
+		XmlDocument xdoc=(XmlDocument)builder.parse(new File(args[0]));
+		builder.setErrorHandler(new DefaultHandler(){
+			public void error(SAXParseException exception)throws SAXParseException{throw exception;}
+			public void fatalError(SAXParseException exception)throws SAXParseException{throw exception;}
+			public void warning(SAXParseException exception)throws SAXParseException{throw exception;}
+		    });
+		Element root=xdoc.getDocumentElement();
+		NodeList els=root.getElementsByTagName("xsd:element");
+		for(int i=0;i<els.getLength();i++)
+		    {
+			boolean simpletype=false;
+			Element el=(Element)els.item(i);
+			String name=el.getAttribute("name");
+			String eltname=el.getAttribute("type");
+			String children="";
+			Element curtype=null;
+			NodeList types=root.getElementsByTagName("xsd:simpleType");
+			for(int j=0;j<types.getLength();++j)
+			    {
+				Element tel=(Element)types.item(j);
+				String tname=tel.getAttribute("name");
+				if(tname.equals(eltname))
+				    {
+					children="#PCDATA";
+					simpletype=true;
+				    }
+			    }
+			if(!simpletype)
+			    {
+				types=root.getElementsByTagName("xsd:complexType");
+				for(int j=0;j<types.getLength();++j)
+				    {
+					Element tel=(Element)types.item(j);
+					String tname=tel.getAttribute("name");
+					if(tname.equals(eltname))
+					    {
+						children="#PCDATA";
+						simpletype=false;
+						NodeList choices=tel.getElementsByTagName("xsd:choice");
+						if(choices.getLength()>0)
+						    children="";
+						for(int r=0;r<choices.getLength();++r)
+						    {
+							Element achoice=(Element)choices.item(r);
+							NodeList choiceels=achoice.getElementsByTagName("xsd:element");
+							for(int s=0;s<choiceels.getLength();++s)
+							    {
+								Element choiceel=(Element)choiceels.item(s);
+								String choiceelname=choiceel.getAttribute("name");
+								children+=choiceelname;
+								if((r+1<choices.getLength()) || 
+								   (r+1>=choices.getLength() &&
+								    s+1<choiceels.getLength()))
+								    children+=" | ";
+							    }
+						    }
+						curtype=tel;
+					    }
+				    }
+			    }
+			
+			System.out.println("<!ELEMENT "+name+" ("+
+					   children+")*>");
+			if(!simpletype && curtype!=null)
+			    {
+				boolean attrheaderdisplayed=false;
+				NodeList attrs=curtype.getElementsByTagName("xsd:attribute");
+				if(attrs.getLength()>0)
+				    {
+					System.out.println("<!ATTLIST "+name+"\n");
+					attrheaderdisplayed=true;
+					for(int k=0;k<attrs.getLength();++k)
+					    {
+						Element attr=(Element)attrs.item(k);
+						String attrname=attr.getAttribute("name");
+						System.out.println(" "+attrname+
+								   " CDATA #IMPLIED\n");
+					    }
+				    }
+				NodeList attrgrps=curtype.getElementsByTagName("xsd:attributeGroup");
+				if(attrgrps.getLength()>0)
+				    {
+					for(int p=0;p<attrgrps.getLength();++p)
+					    {
+						Element grpdef=null;
+						Element attrgrp=(Element)attrgrps.item(p);
+						String attrgrpname=attrgrp.getAttribute("ref");
+						NodeList grpdefs=root.getElementsByTagName("xsd:attributeGroup");
+						for(int q=0;q<grpdefs.getLength();++q)
+						    {
+							grpdef=(Element)grpdefs.item(q);
+							String grpdefname=grpdef.getAttribute("name");
+							if(grpdefname.equals(attrgrpname))
+							    {
+								break;
+							    }
+						    }
+						if(grpdef!=null)
+						    {
+							NodeList gattrs=grpdef.getElementsByTagName("xsd:attribute");
+							if(gattrs.getLength()>0)
+							    {
+								if(!attrheaderdisplayed)
+								    {
+									System.out.println("<!ATTLIST "+name+"\n");
+									attrheaderdisplayed=true;
+								    }
+								for(int k=0;k<gattrs.getLength();++k)
+								    {
+									Element gattr=(Element)gattrs.item(k);
+									String gattrname=gattr.getAttribute("name");
+									System.out.println(" "+gattrname+
+											   " CDATA #IMPLIED\n");
+								    }
+							    }
+						    }
+					    }
+				    }
+				if(attrheaderdisplayed)
+				    System.out.println(">\n");
+			    }
+		    }
+	    }
+	catch(Exception e){e.printStackTrace();}
+	
+    }
+}

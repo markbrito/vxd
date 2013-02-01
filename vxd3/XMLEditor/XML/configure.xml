@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabDefinition>
+	<Tab ID="vs_configure_template">
+		<Application Title="Configure" ID="vs_configure_template_app">
+			<Pane ID="MainPane" Title="Configure Content">
+				<Title>Configure Content</Title>
+				<TextSpan>This view allows you to configure the content of the current tab.</TextSpan>
+				<HRule/>
+				<TextSpan>Content Provider:</TextSpan>
+			</Pane>
+		</Application>
+	</Tab>
+</TabDefinition>

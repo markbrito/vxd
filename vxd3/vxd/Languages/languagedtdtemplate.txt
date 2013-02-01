@@ -1,0 +1,2 @@
+<!ELEMENT [NAME] (Workflow)*>
+<!ATTLIST [NAME] Title CDATA #REQUIRED 		    Package CDATA #REQUIRED 		    URI CDATA #REQUIRED 		    Port CDATA "80" 		    Language CDATA #FIXED "[NAME]" 		    Translator CDATA #FIXED "[NAME]" 		    Platform CDATA #FIXED "Linux XSP Mono"                     TextNote CDATA #IMPLIED                     Build (Debug|Release|Optimized) "Debug" Name CDATA "[NAME]" ID CDATA #IMPLIED  XPos CDATA #IMPLIED YPos CDATA #IMPLIED        Order CDATA "0"        Visible (TRUE|FALSE) "TRUE"                    	Value CDATA #IMPLIED >

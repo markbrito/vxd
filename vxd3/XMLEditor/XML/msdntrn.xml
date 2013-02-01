@@ -1,0 +1,6 @@
+﻿<?xml version='1.0' encoding="utf-8" ?>
+<DynamicHelp>
+  <LINKGROUP ID="training" Title="Training" Priority="1000">
+    <GLYPH Collapsed="7" Expanded="8" />
+  </LINKGROUP>
+</DynamicHelp>

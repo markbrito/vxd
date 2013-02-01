@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Language  Name="VisualLanguage" StructureDTD="VisualLanguage.dtd">
+ <Icons>
+<Icon Name="Language" Image="Images/newlang.jpg"/>
+<Icon Name="Icons" Image="Images/images.gif"/>
+<Icon Name="Icon" Image="Images/image.gif"/>
+<Icon Name="Connectors" Image="Images/connections.gif"/>
+<Icon Name="Connector" Image="Images/connection.gif"/>
+<Icon Name="Editors" Image="Images/news.gif"/>
+<Icon Name="Editor" Image="Images/new.gif"/>
+ </Icons>
+ <Connectors>
+	 <Connector Name="Connection" Image="Languages/VisualWeb/Images/connection.gif" Type="CONNECTION"/>
+
+ </Connectors>
+ <Editors>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="Language" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="Icons" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="Icon" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="Connectors" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="Connector" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="Editors" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="Editor" AttributeName="Variable" Type="PANEL"/> </Editors>
+</Language>

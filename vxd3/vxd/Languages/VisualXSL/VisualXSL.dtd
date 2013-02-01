@@ -1,0 +1,463 @@
+
+<!ELEMENT VisualXSL (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST VisualXSL  Name CDATA "VisualXSL"
+		    Path CDATA "Path"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+  
+<!ELEMENT apply-imports (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST apply-imports Name CDATA "apply-imports"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT apply-templates (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST apply-templates Name CDATA "apply-templates"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT char-instructions (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST char-instructions Name CDATA "char-instructions"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT instructions (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST instructions Name CDATA "instructions"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT top-level (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST top-level Name CDATA "top-level"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT top-level-attrs (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST top-level-attrs Name CDATA "top-level-attrs"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT attribute (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST attribute Name CDATA "attribute"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT attribute-set (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST attribute-set Name CDATA "attribute-set"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT call-template (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST call-template Name CDATA "call-template"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT choose (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST choose Name CDATA "choose"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT comment (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST comment Name CDATA "comment"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT copy (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST copy Name CDATA "copy"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT copy-of (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST copy-of Name CDATA "copy-of"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT decimal-format (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST decimal-format Name CDATA "decimal-format"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT element (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST element Name CDATA "element"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT fallback (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST fallback Name CDATA "fallback"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT for-each (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST for-each Name CDATA "for-each"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT if (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST if Name CDATA "if"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT import (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST import Name CDATA "import"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT include (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST include Name CDATA "include"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT key (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST key Name CDATA "key"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT message (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST message Name CDATA "message"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT namespace-alias (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST namespace-alias Name CDATA "namespace-alias"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT number (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST number Name CDATA "number"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT otherwise (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST otherwise Name CDATA "otherwise"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT output (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST output Name CDATA "output"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT param (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST param Name CDATA "param"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT preserve-space (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST preserve-space Name CDATA "preserve-space"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT processing-instruction (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST processing-instruction Name CDATA "processing-instruction"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT sort (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST sort Name CDATA "sort"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT strip-space (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST strip-space Name CDATA "strip-space"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT stylesheet (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST stylesheet Name CDATA "stylesheet"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT template (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST template Name CDATA "template"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT text (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST text Name CDATA "text"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT transform (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST transform Name CDATA "transform"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT value-of (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST value-of Name CDATA "value-of"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT variable (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST variable Name CDATA "variable"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT when (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST when Name CDATA "when"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT with-param (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST with-param Name CDATA "with-param"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT encoding (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST encoding Name CDATA "encoding"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+  
+<!ELEMENT exclude-result-prefixes (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST exclude-result-prefixes Name CDATA "exclude-result-prefixes"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT extension-element-prefixes (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST extension-element-prefixes Name CDATA "extension-element-prefixes"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT use-attribute-sets (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST use-attribute-sets Name CDATA "use-attribute-sets"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+  
+<!ELEMENT version (apply-imports|apply-templates|char-instructions|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|exclude-result-prefixes|extension-element-prefixes|use-attribute-sets|version|Connection)*>
+<!ATTLIST version Name CDATA "version"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+
+		<!ELEMENT Connection  (#PCDATA)>
+		<!ATTLIST Connection Name CDATA "Connection"
+                     ID CDATA #IMPLIED
+                     Order CDATA "0"
+                     SourceID CDATA #IMPLIED
+                     DestID CDATA #IMPLIED
+                     DestType (apply-imports|
+						 apply-templates|
+						 char-instructions|
+						 instructions|
+						 top-level|
+						 top-level-attrs|
+						 attribute|
+						 attribute-set|
+						 call-template|
+						 choose|
+						 comment|
+						 copy|
+						 copy-of|
+						 decimal-format|
+						 element|
+						 fallback|
+						 for-each|
+						 if|
+						 import|
+						 include|
+						 key|
+						 message|
+						 namespace-alias|
+						 number|
+						 otherwise|
+						 output|
+						 param|
+						 preserve-space|
+						 processing-instruction|
+						 sort|
+						 strip-space|
+						 stylesheet|
+						 template|
+						 text|
+						 transform|
+						 value-of|
+						 variable|
+						 when|
+						 with-param|
+						 encoding|
+						 exclude-result-prefixes|
+						 extension-element-prefixes|
+						 use-attribute-sets|
+						 version|
+						 Connection) "Connection"
+					 Operation (XPATH|Expression|WebService|Map) "XPATH"
+					OperationArguments CDATA #IMPLIED
+>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>System.DeploymentFramework</name>
+	</assembly>
+	<members>
+		<member name="N:System.DeploymentFramework">
+			<summary>The System.DeploymentFramework namespace contains the classes for managing the configuration, deployment, and update of a ClickOnce-enabled application.</summary>
+		</member>
+	</members>
+</doc>

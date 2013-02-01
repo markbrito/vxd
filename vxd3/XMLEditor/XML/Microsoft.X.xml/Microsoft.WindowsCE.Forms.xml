@@ -1,0 +1,673 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>Microsoft.WindowsCE.Forms</name>
+	</assembly>
+	<members>
+		<member name="N:Microsoft.WindowsCE.Forms">
+			<summary>The <see cref="N:Microsoft.WindowsCE.Forms"></see> namespace contains classes for programming device applications using the.NET Compact Framework.</summary>
+		</member>
+		<member name="T:Microsoft.WindowsCE.Forms.BalloonChangedEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.WindowsCE.Forms.Notification.BalloonChanged"></see> event.</summary>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.BalloonChangedEventArgs.#ctor(System.Boolean)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.WindowsCE.Forms.BalloonChangedEventArgs"></see> class.</summary>
+			<param name="visible">true to indicate the notification is visible; otherwise, false. </param>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.BalloonChangedEventArgs.Visible">
+			<summary>Gets or sets a value indicating whether the message balloon was changed to visible.</summary>
+			<returns>true if the <see cref="P:Microsoft.WindowsCE.Forms.Notification.Visible"></see> property on the <see cref="T:Microsoft.WindowsCE.Forms.Notification"></see> is true; otherwise, false. </returns>
+		</member>
+		<member name="T:Microsoft.WindowsCE.Forms.BalloonChangedEventHandler">
+			<summary>Represents the method that will handle the <see cref="E:Microsoft.WindowsCE.Forms.Notification.BalloonChanged"></see> event of a <see cref="T:Microsoft.WindowsCE.Forms.Notification"></see>.</summary>
+		</member>
+		<member name="T:Microsoft.WindowsCE.Forms.DocumentList">
+			<summary>Represents a Pocket PC control for displaying and managing documents in a consistent way.</summary>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.DocumentList.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.WindowsCE.Forms.DocumentList"></see> class. </summary>
+			<exception cref="T:System.NotSupportedException">The platform is not a Pocket PC.</exception>
+		</member>
+		<member name="E:Microsoft.WindowsCE.Forms.DocumentList.DeletingDocument">
+			<summary>Occurs when a file is deleted in a <see cref="T:Microsoft.WindowsCE.Forms.DocumentList"></see> control.</summary>
+		</member>
+		<member name="E:Microsoft.WindowsCE.Forms.DocumentList.DocumentActivated">
+			<summary>Occurs when a file is selected in a <see cref="T:Microsoft.WindowsCE.Forms.DocumentList"></see> control.</summary>
+		</member>
+		<member name="E:Microsoft.WindowsCE.Forms.DocumentList.SelectedDirectoryChanged">
+			<summary>Occurs when a folder is selected in a <see cref="T:Microsoft.WindowsCE.Forms.DocumentList"></see> control.</summary>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.DocumentList.OnDeletingDocument(Microsoft.WindowsCE.Forms.DocumentListEventArgs)">
+			<summary>Raises the <see cref="E:Microsoft.WindowsCE.Forms.DocumentList.DeletingDocument"></see> event. </summary>
+			<param name="e">A <see cref="T:Microsoft.WindowsCE.Forms.DocumentListEventArgs"></see> that contains the event data. </param>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.DocumentList.OnDocumentActivated(Microsoft.WindowsCE.Forms.DocumentListEventArgs)">
+			<summary>Raises the <see cref="E:Microsoft.WindowsCE.Forms.DocumentList.DocumentActivated"></see> event. </summary>
+			<param name="e">A <see cref="T:Microsoft.WindowsCE.Forms.DocumentListEventArgs"></see> that contains the event data.</param>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.DocumentList.OnSelectedDirectoryChanged(System.EventArgs)">
+			<summary>Raises the <see cref="E:Microsoft.WindowsCE.Forms.DocumentList.SelectedDirectoryChanged"></see> event. </summary>
+			<param name="e">A <see cref="T:Microsoft.WindowsCE.Forms.DocumentListEventArgs"></see> that contains the event data.</param>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.DocumentList.Filter">
+			<summary>Gets or sets a file filtering specification.</summary>
+			<returns>The currently specified file filters.</returns>
+			<exception cref="T:System.ArgumentException">The filtering specification is invalid.</exception>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.DocumentList.FilterIndex">
+			<summary>Gets or sets the current filter index. </summary>
+			<returns>The current filter index. The default is zero.</returns>
+			<exception cref="T:System.ArgumentException">The specified index value is not represented in the filter string. </exception>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.DocumentList.SelectedDirectory">
+			<summary>Gets or sets the folder to display.</summary>
+			<returns>The name of the displayed folder. The default is an empty string ("").</returns>
+		</member>
+		<member name="T:Microsoft.WindowsCE.Forms.DocumentListEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.WindowsCE.Forms.DocumentList.DeletingDocument"></see> and <see cref="E:Microsoft.WindowsCE.Forms.DocumentList.DocumentActivated"></see> events. </summary>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.DocumentListEventArgs.#ctor(System.String)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.WindowsCE.Forms.DocumentListEventArgs"></see> class. </summary>
+			<param name="path">The path to the file being deleted or selected.</param>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.DocumentListEventArgs.Path">
+			<summary>Gets or sets the path to the file being deleted or selected in a <see cref="T:Microsoft.WindowsCE.Forms.DocumentList"></see> control.</summary>
+			<returns>The path to the file. The default is an empty string ("").</returns>
+		</member>
+		<member name="T:Microsoft.WindowsCE.Forms.DocumentListEventHandler">
+			<summary>Represents the method that will handle the <see cref="E:Microsoft.WindowsCE.Forms.DocumentList.DocumentActivated"></see> event, <see cref="E:Microsoft.WindowsCE.Forms.DocumentList.DeletingDocument"></see> event, or <see cref="E:Microsoft.WindowsCE.Forms.DocumentList.SelectedDirectoryChanged"></see> event of a <see cref="T:Microsoft.WindowsCE.Forms.DocumentList"></see>. </summary>
+		</member>
+		<member name="T:Microsoft.WindowsCE.Forms.HardwareButton">
+			<summary>Allows overriding the functionality of Pocket PC hardware buttons.</summary>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.HardwareButton.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.WindowsCE.Forms.HardwareButton"></see> class. </summary>
+			<exception cref="T:System.NotSupportedException">This class is not supported on the Smartphone and other Windows CE devices that are not Pocket PCs.-or-The associated control is not a <see cref="T:System.Windows.Forms.Form"></see>, <see cref="T:System.Windows.Forms.Panel"></see>, <see cref="T:System.Windows.Forms.UserControl"></see>, or <see cref="T:System.Windows.Forms.Control"></see>.</exception>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.HardwareButton.AssociatedControl">
+			<summary>Gets or sets a Form, Panel or custom control associated with a <see cref="T:Microsoft.WindowsCE.Forms.HardwareButton"></see> on a Pocket PC.</summary>
+			<returns>The control associated with a <see cref="T:Microsoft.WindowsCE.Forms.HardwareButton"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.HardwareButton.HardwareKey">
+			<summary>Gets or sets one of the <see cref="T:Microsoft.WindowsCE.Forms.HardwareKeys"></see> values to be associated with a <see cref="T:Microsoft.WindowsCE.Forms.HardwareButton"></see> on a Pocket PC.</summary>
+			<returns>A <see cref="T:Microsoft.WindowsCE.Forms.HardwareKeys"></see> value.</returns>
+		</member>
+		<member name="T:Microsoft.WindowsCE.Forms.HardwareKeys">
+			<summary>Specifies the hardware buttons on a Pocket PC that can be accessed by the <see cref="T:Microsoft.WindowsCE.Forms.HardwareButton"></see> class.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.HardwareKeys.ApplicationKey1">
+			<summary>Specifies the hardware button that corresponds to application 1.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.HardwareKeys.ApplicationKey2">
+			<summary>Specifies the hardware button that corresponds to application 2.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.HardwareKeys.ApplicationKey3">
+			<summary>Specifies the hardware button that corresponds to application 3.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.HardwareKeys.ApplicationKey4">
+			<summary>Specifies the hardware button that corresponds to application 4.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.HardwareKeys.ApplicationKey5">
+			<summary>Specifies the hardware button that corresponds to application 5.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.HardwareKeys.ApplicationKey6">
+			<summary>Specifies the hardware button that corresponds to application 6.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.HardwareKeys.None">
+			<summary>Specifies that no actual hardware buttons are associated with this <see cref="T:Microsoft.WindowsCE.Forms.HardwareButton"></see> instance.</summary>
+		</member>
+		<member name="T:Microsoft.WindowsCE.Forms.InputMethod">
+			<summary>Provides the name and class ID for a member of the <see cref="T:Microsoft.WindowsCE.Forms.InputPanel.InputMethodCollection"></see> class for a Pocket PC. This class cannot be inherited.</summary>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.InputMethod.Clsid">
+			<summary>Gets a value that identifies a specific input method.</summary>
+			<returns>A <see cref="T:System.Guid"></see> structure that contains a GUID that identifies a specific input method.</returns>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.InputMethod.Name">
+			<summary>Gets the name of an input method.</summary>
+			<returns>The name of the input method.</returns>
+		</member>
+		<member name="T:Microsoft.WindowsCE.Forms.InputMode">
+			<summary>Specifies the input modes that can be set on the Smartphone using an <see cref="T:Microsoft.WindowsCE.Forms.InputModeEditor"></see>.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.InputMode.AlphaABC">
+			<summary>This is the conventional method for entering text, called multi-tap, which requires up to four key presses depending on the letter being entered. </summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.InputMode.AlphaCurrent">
+			<summary>Maintains the current T9 or ABC selection for entering alpha characters as set by the user by holding down the star key (*) on a Smartphone. This mode is shared across the system so that any text box set with this mode, including text box controls in native Windows CE applications, will adhere to the last T9 or ABC choice as set by the user. This ability to match user preferences makes this the preferred input mode for text boxes that accept alpha characters.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.InputMode.AlphaT9">
+			<summary>This input mode is the T9 predictive text input feature on the Smartphone.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.InputMode.Numeric">
+			<summary>This input mode accepts only numeric characters and symbols.</summary>
+		</member>
+		<member name="T:Microsoft.WindowsCE.Forms.InputModeEditor">
+			<summary>Provides access to Smartphone input methods for entering text.</summary>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.InputModeEditor.SetInputMode(System.Windows.Forms.Control,Microsoft.WindowsCE.Forms.InputMode)">
+			<summary>Specifies the input mode on a Smartphone.</summary>
+			<param name="mode">One of the <see cref="T:Microsoft.WindowsCE.Forms.InputMode"></see> values. </param>
+			<param name="control">A <see cref="T:System.Windows.Forms.TextBox"></see> control.</param>
+		</member>
+		<member name="T:Microsoft.WindowsCE.Forms.InputPanel">
+			<summary>Controls the soft input panel (SIP) for entering data on Pocket PCs and other Windows CE.NET devices. </summary>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.InputPanel.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.WindowsCE.Forms.InputPanel"></see> class for enabling and disabling the soft input panel (SIP). </summary>
+		</member>
+		<member name="E:Microsoft.WindowsCE.Forms.InputPanel.EnabledChanged">
+			<summary>Occurs when the soft input panel (SIP) is enabled or disabled. </summary>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.InputPanel.Dispose(System.Boolean)">
+			<summary>Releases the unmanaged resources used by the <see cref="T:Microsoft.WindowsCE.Forms.InputPanel"></see> and optionally releases the managed resources. </summary>
+			<param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources. </param>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.InputPanel.Bounds">
+			<summary>Gets a <see cref="T:System.Drawing.Rectangle"></see> that represents the size and location of the soft input panel (SIP). </summary>
+			<returns>A <see cref="T:System.Drawing.Rectangle"></see> to use. </returns>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.InputPanel.CurrentInputMethod">
+			<summary>Gets or sets the input method for the Pocket PC.</summary>
+			<returns>An <see cref="T:Microsoft.WindowsCE.Forms.InputMethod"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.InputPanel.Enabled">
+			<summary>Gets or sets a value indicating whether the soft input panel (SIP) is enabled or disabled. </summary>
+			<returns>true if the SIP is enabled; otherwise, false. </returns>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.InputPanel.InputMethods">
+			<summary>Gets a collection of the input methods available on a Pocket PC.</summary>
+			<returns>An <see cref="T:Microsoft.WindowsCE.Forms.InputPanel.InputMethodCollection"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.InputPanel.VisibleDesktop">
+			<summary>Gets a <see cref="T:System.Drawing.Rectangle"></see> representing the area not obscured by the soft input panel (SIP). </summary>
+			<returns>A <see cref="T:System.Drawing.Rectangle"></see> to use. </returns>
+		</member>
+		<member name="T:Microsoft.WindowsCE.Forms.InputPanel.InputMethodCollection">
+			<summary>Provides access to all input method software installed on a Pocket PC. This class cannot be inherited.</summary>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.InputPanel.InputMethodCollection.Contains(Microsoft.WindowsCE.Forms.InputMethod)">
+			<summary>Determines whether the <see cref="T:Microsoft.WindowsCE.Forms.InputPanel.InputMethodCollection"></see> class contains a specified value.</summary>
+			<returns>true if the collection contains the specified method; otherwise, false. </returns>
+			<param name="inputmethod">An <see cref="T:Microsoft.WindowsCE.Forms.InputMethod"></see> to locate in the collection.</param>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.InputPanel.InputMethodCollection.CopyTo(Microsoft.WindowsCE.Forms.InputMethod[],System.Int32)">
+			<summary>Copies the input methods to an existing one-dimensional array, starting at the specified array index.</summary>
+			<param name="dest">The one-dimensional <see cref="T:System.Array"></see> that is the destination of the elements copied from <see cref="T:Microsoft.WindowsCE.Forms.InputPanel.InputMethodCollection"></see>. The <see cref="T:System.Array"></see> must have zero-based indexing. </param>
+			<param name="index">The zero-based index in <see cref="T:System.Array"></see> at which copying begins. </param>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.InputPanel.InputMethodCollection.GetEnumerator">
+			<summary>Returns an enumerator that can iterate through the <see cref="T:Microsoft.WindowsCE.Forms.InputPanel.InputMethodCollection"></see> class.</summary>
+			<returns>An <see cref="T:System.Collections.IEnumerator"></see>.</returns>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.InputPanel.InputMethodCollection.IndexOf(Microsoft.WindowsCE.Forms.InputMethod)">
+			<summary>Determines the index of a specific item in the <see cref="T:Microsoft.WindowsCE.Forms.InputPanel.InputMethodCollection"></see> class.</summary>
+			<returns>The index value of the input method in the collection.</returns>
+			<param name="inputmethod">The input method to locate in the collection.</param>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.InputPanel.InputMethodCollection.RemoveAt(System.Int32)">
+			<summary>Removes the <see cref="T:Microsoft.WindowsCE.Forms.InputMethod"></see> at the specified index.</summary>
+			<param name="index">The zero-based index of the input method to remove.</param>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.InputPanel.InputMethodCollection.System.Collections.ICollection.CopyTo(System.Array,System.Int32)">
+			<summary>For a description of this member, see <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)"></see>.</summary>
+			<param name="dest">The one-dimensional <see cref="T:System.Array"></see> that is the destination of the elements copied from <see cref="T:System.Collections.ICollection"></see>. The <see cref="T:System.Array"></see> must have zero-based indexing. </param>
+			<param name="index">The zero-based index in <see cref="T:System.Array"></see> at which copying begins. </param>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.InputPanel.InputMethodCollection.System.Collections.IList.Add(System.Object)">
+			<summary>For a description of this member, see <see cref="M:System.Collections.IList.Add(System.Object)"></see>.</summary>
+			<returns>The position into which the new element was inserted.</returns>
+			<param name="control">The <see cref="T:Microsoft.WindowsCE.Forms.InputMethod"></see>to add.</param>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.InputPanel.InputMethodCollection.System.Collections.IList.Clear">
+			<summary>For a description of this member, see <see cref="M:System.Collections.IList.Clear"></see>.</summary>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.InputPanel.InputMethodCollection.System.Collections.IList.Contains(System.Object)">
+			<summary>For a description of this member, see <see cref="M:System.Collections.IList.Contains(System.Object)"></see>.</summary>
+			<returns>true if the object is found in the <see cref="T:System.Collections.IList"></see>; otherwise, false.</returns>
+			<param name="inputMethod">The input method to locate in the collection.</param>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.InputPanel.InputMethodCollection.System.Collections.IList.IndexOf(System.Object)">
+			<summary>For a description of this member, see <see cref="M:System.Collections.IList.IndexOf(System.Object)"></see>.</summary>
+			<returns>The index of value if found in the <see cref="T:System.Collections.IList"></see>; otherwise, -1.</returns>
+			<param name="inputMethod">The input method to locate in the collection.</param>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.InputPanel.InputMethodCollection.System.Collections.IList.Insert(System.Int32,System.Object)">
+			<summary>For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)"></see>.</summary>
+			<param name="value">The object to be inserted in the IList.</param>
+			<param name="index">The zero-based index at which value should be inserted</param>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.InputPanel.InputMethodCollection.System.Collections.IList.Remove(System.Object)">
+			<summary>For a description of this member, see <see cref="M:System.Collections.ArrayList.Remove(System.Object)"></see>.</summary>
+			<param name="control">The object to remove from the IList.</param>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.InputPanel.InputMethodCollection.Count">
+			<summary>Gets the number of elements in the <see cref="T:Microsoft.WindowsCE.Forms.InputPanel.InputMethodCollection"></see> class.</summary>
+			<returns>The number of elements in the collection.</returns>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.InputPanel.InputMethodCollection.IsReadOnly">
+			<summary>Gets a value that indicates whether the collection is read-only.</summary>
+			<returns>true in all cases.</returns>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.InputPanel.InputMethodCollection.Item(System.Int32)">
+			<summary>Gets the item at the specified index.</summary>
+			<returns>The element at the specified index.</returns>
+			<param name="x">The input method at the specified index.</param>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.InputPanel.InputMethodCollection.System.Collections.ICollection.IsSynchronized">
+			<summary>For a description of this member, see <see cref="P:System.Collections.ICollection.IsSynchronized"></see>.</summary>
+			<returns>true if access to the <see cref="T:System.Collections.ICollection"></see> is synchronized (thread safe); otherwise, false.</returns>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.InputPanel.InputMethodCollection.System.Collections.ICollection.SyncRoot">
+			<summary>For a description of this member, see <see cref="P:System.Collections.ICollection.SyncRoot"></see>.</summary>
+			<returns>An object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.InputPanel.InputMethodCollection.System.Collections.IList.IsFixedSize">
+			<summary>For a description of this member, see <see cref="P:System.Collections.IList.IsFixedSize"></see>.</summary>
+			<returns>true if the <see cref="T:System.Collections.IList"></see> has a fixed size; otherwise, false.</returns>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.InputPanel.InputMethodCollection.System.Collections.IList.Item(System.Int32)">
+			<summary>For a description of this member, see <see cref="P:System.Collections.IList.Item(System.Int32)"></see>.</summary>
+			<returns>The element at the specified index.</returns>
+			<param name="index">The element at the specified index.</param>
+		</member>
+		<member name="T:Microsoft.WindowsCE.Forms.LogFont">
+			<summary>Defines the characteristics of a font for creating rotated text effects.</summary>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.LogFont.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.WindowsCE.Forms.LogFont"></see> class. </summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFont.CharSet">
+			<summary>Specifies the character set.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFont.ClipPrecision">
+			<summary>Specifies the clipping precision.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFont.Escapement">
+			<summary>Specifies the angle, in tenths of degrees, between the escapement vector and the x-axis of the device.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFont.FaceName">
+			<summary>A null-terminated string that specifies the typeface name of the font.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFont.Height">
+			<summary>Specifies the height of the character cell or character of a font.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFont.Italic">
+			<summary>Specifies an italic font style, if set to true.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFont.Orientation">
+			<summary>Specifies the angle, in tenths of degrees, between each character's base line and the x-axis of the device.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFont.OutPrecision">
+			<summary>Specifies the output precision.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFont.PitchAndFamily">
+			<summary>Specifies a font family.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFont.Quality">
+			<summary>Specifies the output quality.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFont.StrikeOut">
+			<summary>Specifies a strikethrough font style, if set to true.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFont.Underline">
+			<summary>Specifies an underline font style, if set to true.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFont.Weight">
+			<summary>Specifies the weight of the font.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFont.Width">
+			<summary>Specifies the average width of characters in the font.</summary>
+		</member>
+		<member name="T:Microsoft.WindowsCE.Forms.LogFontCharSet">
+			<summary>Specifies the character set of a font.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontCharSet.ANSI">
+			<summary>Specifies the ANSI character set.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontCharSet.Arabic">
+			<summary>Specifies the Arabic character set.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontCharSet.Baltic">
+			<summary>Specifies the Baltic character set.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontCharSet.ChineseBig5">
+			<summary>Specifies the ChineseBig5 character set.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontCharSet.Default">
+			<summary>Specifies a default character set.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontCharSet.EastEurope">
+			<summary>Specifies the EastEurope character set.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontCharSet.GB2312">
+			<summary>Specifies the GB2312 character set.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontCharSet.Greek">
+			<summary>Specifies the Greek character set.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontCharSet.Hangeul">
+			<summary>Specifies the Hangeul character set.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontCharSet.Hebrew">
+			<summary>Specifies the Hebrew character set.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontCharSet.Johab">
+			<summary>Specifies the Johab character set.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontCharSet.Mac">
+			<summary>Specifies the Macintosh character set.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontCharSet.OEM">
+			<summary>Specifies the OEM character set.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontCharSet.Russian">
+			<summary>Specifies the Russian character set.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontCharSet.ShiftJIS">
+			<summary>Specifies the ShiftJIS character set.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontCharSet.Symbol">
+			<summary>Specifies the Symbol character set.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontCharSet.Thai">
+			<summary>Specifies the Thai character set.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontCharSet.Turkish">
+			<summary>Specifies the Turkish character set.</summary>
+		</member>
+		<member name="T:Microsoft.WindowsCE.Forms.LogFontClipPrecision">
+			<summary>Specifies the precision for clipping characters.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontClipPrecision.Character">
+			<summary>Specifies a clipping behavior.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontClipPrecision.Default">
+			<summary>Specifies the default clipping behavior.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontClipPrecision.Stroke">
+			<summary>Specifies a clipping behavior.</summary>
+		</member>
+		<member name="T:Microsoft.WindowsCE.Forms.LogFontPitchAndFamily">
+			<summary>Specifies categories of fonts.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontPitchAndFamily.Decorative">
+			<summary>Specifies novelty fonts. Old English is an example.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontPitchAndFamily.Default">
+			<summary>Specifies a default font.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontPitchAndFamily.DontCare">
+			<summary>Specifies that the font family is not important.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontPitchAndFamily.Fixed">
+			<summary>Specifies a monospaced font family.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontPitchAndFamily.Modern">
+			<summary>Specifies monofaced fonts with or without serifs. Pica, Elite, and Courier NewTM are examples of monospace fonts.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontPitchAndFamily.Roman">
+			<summary>Specifies proportional fonts with serifs. MS Serif is an example.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontPitchAndFamily.Script">
+			<summary>Specifies fonts designed to look like handwriting. Script and Cursive are examples.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontPitchAndFamily.Swiss">
+			<summary>Specifies proportional fonts without serifs. MS Sans Serif is an example.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontPitchAndFamily.Variable">
+			<summary>Specifies that the font family can vary.</summary>
+		</member>
+		<member name="T:Microsoft.WindowsCE.Forms.LogFontPrecision">
+			<summary>Specifies the output precision.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontPrecision.Default">
+			<summary>Specifies the default mapping behavior.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontPrecision.Raster">
+			<summary>Specifies a raster font when the system contains multiple fonts with the same name.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontPrecision.String">
+			<summary>Specifies raster font enumeration data.</summary>
+		</member>
+		<member name="T:Microsoft.WindowsCE.Forms.LogFontQuality">
+			<summary>Specifies the quality of a font.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontQuality.AntiAliased">
+			<summary>Specifies that font edges are blended to increase the smoothness of the stroke.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontQuality.ClearType">
+			<summary>Specifies that text is rendered using the ClearType® antialiasing method.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontQuality.ClearTypeCompat">
+			<summary>Specifies that the text is ClearType compatible.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontQuality.Default">
+			<summary>Specifies that appearance of the font does not matter.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontQuality.Draft">
+			<summary>Specifies that quality is less important than faster rendering.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontQuality.NonAntiAliased">
+			<summary>Specifies that font edges are not blended to increase the smoothness of the stroke.</summary>
+		</member>
+		<member name="T:Microsoft.WindowsCE.Forms.LogFontWeight">
+			<summary>Specifies the weight of a font.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontWeight.Black">
+			<summary>A weight of 900.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontWeight.Bold">
+			<summary>A weight of 700.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontWeight.DemiBold">
+			<summary>A weight of 600.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontWeight.DontCare">
+			<summary>A weight of 0.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontWeight.ExtraBold">
+			<summary>A weight of 800.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontWeight.ExtraLight">
+			<summary>A weight of 200.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontWeight.Heavy">
+			<summary>A weight of 900.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontWeight.Light">
+			<summary>A weight of 300.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontWeight.Medium">
+			<summary>A weight of 500.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontWeight.Normal">
+			<summary>A weight of 400.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontWeight.Regular">
+			<summary>A weight of 400.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontWeight.SemiBold">
+			<summary>A weight of 600.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontWeight.Thin">
+			<summary>A weight of 100.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontWeight.UltraBold">
+			<summary>A weight of 800.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.LogFontWeight.UltraLight">
+			<summary>A weight of 200.</summary>
+		</member>
+		<member name="T:Microsoft.WindowsCE.Forms.Message">
+			<summary>Implements a Windows-based message. </summary>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.Message.Create(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)">
+			<summary>Creates a new <see cref="T:Microsoft.WindowsCE.Forms.Message"></see> structure. </summary>
+			<returns>A <see cref="T:Microsoft.WindowsCE.Forms.Message"></see> structure that represents the message that was created. </returns>
+			<param name="lparam">The message LParam field. </param>
+			<param name="wparam">The message WParam field. </param>
+			<param name="hwnd">The window handle that the message is for. </param>
+			<param name="msg">The message ID. </param>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.Message.Equals(System.Object)">
+			<summary>This member overrides <see cref="M:System.ValueType.Equals(System.Object)"></see>. </summary>
+			<param name="o">Another object to compare to. </param>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.Message.GetHashCode">
+			<summary>This member overrides <see cref="M:System.ValueType.GetHashCode"></see>. </summary>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.Message.op_Equality(Microsoft.WindowsCE.Forms.Message,Microsoft.WindowsCE.Forms.Message)">
+			<summary>Compares two <see cref="T:Microsoft.WindowsCE.Forms.Message"></see> structures to determine whether they are equal. </summary>
+			<returns>true if both <see cref="T:Microsoft.WindowsCE.Forms.Message"></see> structures are equal; otherwise, false. </returns>
+			<param name="right">The <see cref="T:Microsoft.WindowsCE.Forms.Message"></see> on the right side of the operator. </param>
+			<param name="left">The <see cref="T:Microsoft.WindowsCE.Forms.Message"></see> on the left side of the operator. </param>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.Message.op_Inequality(Microsoft.WindowsCE.Forms.Message,Microsoft.WindowsCE.Forms.Message)">
+			<summary>Compares two <see cref="T:Microsoft.WindowsCE.Forms.Message"></see> structures to determine whether they are not equal. </summary>
+			<returns>true if the <see cref="T:Microsoft.WindowsCE.Forms.Message"></see> structures are equal; otherwise, false. </returns>
+			<param name="right">The <see cref="T:Microsoft.WindowsCE.Forms.Message"></see> on the right side of the operator. </param>
+			<param name="left">The <see cref="T:Microsoft.WindowsCE.Forms.Message"></see> on the left side of the operator. </param>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.Message.HWnd">
+			<summary>Gets or sets the window handle of the message. </summary>
+			<returns>The window handle of the message. </returns>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.Message.LParam">
+			<summary>Gets or sets the LParam field of the message. </summary>
+			<returns>The LParam field of the message. </returns>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.Message.Msg">
+			<summary>Gets or sets the ID number for the message. </summary>
+			<returns>The ID number of the message. </returns>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.Message.Result">
+			<summary>Specifies the value that is returned to Windows in response to handling the message. </summary>
+			<returns>The return value of the message. </returns>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.Message.WParam">
+			<summary>Gets or sets the WParam field of the Message. </summary>
+			<returns>The WParam field of the message. </returns>
+		</member>
+		<member name="T:Microsoft.WindowsCE.Forms.MessageWindow">
+			<summary>Provides the ability to send and receive Windows-based messages. </summary>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.MessageWindow.#ctor">
+			<summary>Creates a new instance of the <see cref="T:Microsoft.WindowsCE.Forms.MessageWindow"></see> class. </summary>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.MessageWindow.Dispose">
+			<summary>Releases all resources used by the <see cref="T:Microsoft.WindowsCE.Forms.MessageWindow"></see>. </summary>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.MessageWindow.PostMessage(Microsoft.WindowsCE.Forms.Message@)">
+			<summary>Sends a message to the message window and returns immediately. </summary>
+			<param name="m">A Windows-based message. </param>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.MessageWindow.SendMessage(Microsoft.WindowsCE.Forms.Message@)">
+			<summary>Sends a message to the message window and waits until the <see cref="M:Microsoft.WindowsCE.Forms.MessageWindow.WndProc(Microsoft.WindowsCE.Forms.Message@)"></see> method has processed the message. </summary>
+			<param name="m">A Windows-based message. </param>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.MessageWindow.WndProc(Microsoft.WindowsCE.Forms.Message@)">
+			<summary>Process Windows-based messages. </summary>
+			<param name="m">A Windows-based message. </param>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.MessageWindow.Hwnd">
+			<summary>Gets the handle of the message window. </summary>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.MessageWindow.Text">
+			<summary>Gets or sets the text for a <see cref="T:Microsoft.WindowsCE.Forms.MessageWindow"></see>.</summary>
+			<returns>The title bar text of a <see cref="T:Microsoft.WindowsCE.Forms.MessageWindow"></see>. </returns>
+			<exception cref="T:System.ObjectDisposedException">The <see cref="T:Microsoft.WindowsCE.Forms.MessageWindow"></see> has been disposed.</exception>
+		</member>
+		<member name="T:Microsoft.WindowsCE.Forms.MobileDevice">
+			<summary>A class for a containing events for mobile devices.</summary>
+		</member>
+		<member name="E:Microsoft.WindowsCE.Forms.MobileDevice.Hibernate">
+			<summary>Provides access to the WM_HIBERNATE message in Windows CE.</summary>
+		</member>
+		<member name="T:Microsoft.WindowsCE.Forms.Notification">
+			<summary>Implements Windows CE functionality for displaying and responding to user notifications.</summary>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.Notification.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.WindowsCE.Forms.Notification"></see> class.</summary>
+		</member>
+		<member name="E:Microsoft.WindowsCE.Forms.Notification.BalloonChanged">
+			<summary>Occurs when a message balloon is displayed or hidden.</summary>
+		</member>
+		<member name="E:Microsoft.WindowsCE.Forms.Notification.ResponseSubmitted">
+			<summary>Occurs when the user clicks a button or link in the message balloon.</summary>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.Notification.Dispose(System.Boolean)">
+			<summary>Releases the unmanaged resources used by the <see cref="T:Microsoft.WindowsCE.Forms.Notification"></see> and optionally releases the managed resources.</summary>
+			<param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.Notification.OnBalloonChanged(Microsoft.WindowsCE.Forms.BalloonChangedEventArgs)">
+			<summary>Raises the <see cref="E:Microsoft.WindowsCE.Forms.Notification.BalloonChanged"></see> event.</summary>
+			<param name="balevent">A <see cref="T:Microsoft.WindowsCE.Forms.BalloonChangedEventArgs"></see> that contains the event data.</param>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.Notification.OnResponseSubmitted(Microsoft.WindowsCE.Forms.ResponseSubmittedEventArgs)">
+			<summary>Raises the <see cref="E:Microsoft.WindowsCE.Forms.Notification.ResponseSubmitted"></see> event.</summary>
+			<param name="resevent">A <see cref="T:Microsoft.WindowsCE.Forms.ResponseSubmittedEventArgs"></see> that contains the event data.</param>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.Notification.Caption">
+			<summary>Gets or sets a string specifying the title text for the message balloon.</summary>
+			<returns>A string that specifies the caption text. The default value is an empty string ("").</returns>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.Notification.Critical">
+			<summary>Gets or sets a value indicating whether the notification is of urgent importance.</summary>
+			<returns>true if the notification is critical; otherwise, false. The default is false.</returns>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.Notification.Icon">
+			<summary>Gets or sets the current icon for the message balloon on the title bar.</summary>
+			<returns>An <see cref="T:System.Drawing.Icon"></see>. There is no default value.</returns>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.Notification.InitialDuration">
+			<summary>Gets or sets the number of seconds the message balloon remains visible after initially shown.</summary>
+			<returns>The amount of time the balloon is visible, in seconds. The default is 10.</returns>
+			<exception cref="T:System.ArgumentException">Occurs if this property is set to a negative value.</exception>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.Notification.Text">
+			<summary>Gets or sets the text for the message balloon.</summary>
+			<returns>A string containing the HTML or plain text. The default is an empty string ("").</returns>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.Notification.Visible">
+			<summary>Gets or sets a value indicating whether the message balloon is visible.</summary>
+			<returns>true if the message balloon is visible; otherwise, false. The default is false.</returns>
+		</member>
+		<member name="T:Microsoft.WindowsCE.Forms.ResponseSubmittedEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.WindowsCE.Forms.Notification.ResponseSubmitted"></see> event.</summary>
+		</member>
+		<member name="M:Microsoft.WindowsCE.Forms.ResponseSubmittedEventArgs.#ctor(System.String)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.WindowsCE.Forms.ResponseSubmittedEventArgs"></see> class.</summary>
+			<param name="response">Contains the identifier of a button or link in the message balloon, or the response from an HTML form in the message balloon. </param>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.ResponseSubmittedEventArgs.Response">
+			<summary>Gets or sets a string containing the name of a selected link or button or the results of a form embedded in the text of the message balloon.</summary>
+			<returns>A string value.</returns>
+		</member>
+		<member name="T:Microsoft.WindowsCE.Forms.ResponseSubmittedEventHandler">
+			<summary>Represents the method that will handle the <see cref="E:Microsoft.WindowsCE.Forms.Notification.ResponseSubmitted"></see> event of a <see cref="T:Microsoft.WindowsCE.Forms.Notification"></see>.</summary>
+		</member>
+		<member name="T:Microsoft.WindowsCE.Forms.ScreenOrientation">
+			<summary>Specifies the angle of the orientation of the device screen that can be accessed by the <see cref="P:Microsoft.WindowsCE.Forms.SystemSettings.ScreenOrientation"></see> property.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.ScreenOrientation.Angle0">
+			<summary>Specifies a portrait orientation at 0 degrees.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.ScreenOrientation.Angle180">
+			<summary>Specifies a landscape orientation at 180 degrees.</summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.ScreenOrientation.Angle270">
+			<summary>Specifies an orientation at 270 degrees. </summary>
+		</member>
+		<member name="F:Microsoft.WindowsCE.Forms.ScreenOrientation.Angle90">
+			<summary>Specifies an orientation at 90 degrees.</summary>
+		</member>
+		<member name="T:Microsoft.WindowsCE.Forms.SystemSettings">
+			<summary>Provides access to user interface and native Windows CE operating system settings on a device.</summary>
+		</member>
+		<member name="P:Microsoft.WindowsCE.Forms.SystemSettings.ScreenOrientation">
+			<summary>Gets or sets the current screen orientation of a device. </summary>
+			<returns>One of the <see cref="T:Microsoft.WindowsCE.Forms.ScreenOrientation"></see> values, which are 0, 90, 180, and 270. The default is 0. </returns>
+		</member>
+	</members>
+</doc>

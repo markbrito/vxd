@@ -1,0 +1,19 @@
+<!ELEMENT Language (Icons,Connectors,Editors?)>
+<!ATTLIST Language Name CDATA #IMPLIED
+                   StructureDTD CDATA #IMPLIED>
+<!ELEMENT Icons (Icon)*>
+<!ELEMENT Icon (#PCDATA)>
+<!ATTLIST Icon Name CDATA #IMPLIED
+               Image CDATA #IMPLIED>
+<!ELEMENT Connectors (Connector)*>
+<!ELEMENT Connector (#PCDATA)>
+<!ATTLIST Connector Name CDATA #IMPLIED
+                    Image CDATA #IMPLIED
+                    Type (AGGREGATION|CONNECTION) "CONNECTION">
+<!ELEMENT Editors (Editor)*>
+<!ELEMENT Editor (#PCDATA)>
+<!ATTLIST Editor Name CDATA #REQUIRED
+                 Class CDATA #REQUIRED
+		 ElementName CDATA #REQUIRED
+		 AttributeName CDATA #REQUIRED
+		 Type (DIALOG|PANEL) "DIALOG">

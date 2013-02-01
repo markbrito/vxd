@@ -1,0 +1,5 @@
+Visual DTD allows you to visually define dtds
+DTD.xml defines the image based visual language.
+DTD.dtd defines the structure of the language.
+Images/ is the directory with the images for this language.
+Editors/ is the directory with the code for custom editors in this language.

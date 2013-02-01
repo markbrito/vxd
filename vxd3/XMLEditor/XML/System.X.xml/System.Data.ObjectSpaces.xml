@@ -1,0 +1,1408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>System.Data.ObjectSpaces</name>
+	</assembly>
+	<members>
+		<member name="N:System.Data.ObjectSpaces" />
+		<member name="T:System.Data.ObjectSpaces.AutoIncrementKeyGenerator">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.AutoIncrementKeyGenerator.#ctor">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.AutoIncrementKeyGenerator.Initialize(System.Type,System.String)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.AutoIncrementKeyGenerator.NextKey">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.AutoIncrementKeyGenerator.KeyType">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.AutoIncrementKeyGenerator.OwnerType">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.AutoIncrementKeyGenerator.UserParameter">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.CompiledQuery">
+			<summary>A pre-compiled query that can be used by the M:System.Data.ObjectSpaces.ObjectEngine.GetObjectReader(System.Data.ObjectSpaces.ObjectSources,System.Data.ObjectSpaces.ObjectContext,System.Data.ObjectSpaces.CompiledQuery,System.Object[]) method to return an T:System.Data.ObjectSpaces.ObjectReader.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.CompiledQuery.CreateParameterTable">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.CompiledQuery.TypeOfQuery">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.DataReaderParcel" />
+		<member name="M:System.Data.ObjectSpaces.DataReaderParcel.GetObjectAnchor(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.DataReaderParcel.GetObjectDataReader(System.Data.ObjectSpaces.ObjectSchema,System.Object,System.Data.ObjectSpaces.Engine.MaterializationManager)" />
+		<member name="P:System.Data.ObjectSpaces.DataReaderParcel.Count" />
+		<member name="P:System.Data.ObjectSpaces.DataReaderParcel.TypeList" />
+		<member name="T:System.Data.ObjectSpaces.Depth">
+			<summary>Determines if only the object specified is updated, or if related object data is also updated when M:System.Data.ObjectSpaces.ObjectSpace.PersistChanges(System.Object) or M:System.Data.ObjectSpaces.ObjectEngine.PersistChanges(System.Data.Mapping.MappingSchema,System.Data.ObjectSpaces.ObjectSources,System.Data.ObjectSpaces.ObjectContext,System.Collections.ICollection,System.Data.ObjectSpaces.PersistenceOptions) is called.</summary>
+		</member>
+		<member name="F:System.Data.ObjectSpaces.Depth.CompositionTree">
+			<summary>Determines if only the object specified is updated, or if related object data is also updated when M:System.Data.ObjectSpaces.ObjectSpace.PersistChanges(System.Object) or M:System.Data.ObjectSpaces.ObjectEngine.PersistChanges(System.Data.Mapping.MappingSchema,System.Data.ObjectSpaces.ObjectSources,System.Data.ObjectSpaces.ObjectContext,System.Collections.ICollection,System.Data.ObjectSpaces.PersistenceOptions) is called.</summary>
+		</member>
+		<member name="F:System.Data.ObjectSpaces.Depth.NoTraversal">
+			<summary>Determines if only the object specified is updated, or if related object data is also updated when M:System.Data.ObjectSpaces.ObjectSpace.PersistChanges(System.Object) or M:System.Data.ObjectSpaces.ObjectEngine.PersistChanges(System.Data.Mapping.MappingSchema,System.Data.ObjectSpaces.ObjectSources,System.Data.ObjectSpaces.ObjectContext,System.Collections.ICollection,System.Data.ObjectSpaces.PersistenceOptions) is called.</summary>
+		</member>
+		<member name="F:System.Data.ObjectSpaces.Depth.ObjectGraph">
+			<summary>F:System.Data.ObjectSpaces.Depth.ObjectGraph indicates that related child objects should be persisted as well as the object passed to the M:System.Data.ObjectSpaces.ObjectSpace.PersistChanges(System.Object) or M:System.Data.ObjectSpaces.ObjectEngine.PersistChanges(System.Data.Mapping.MappingSchema,System.Data.ObjectSpaces.ObjectSources,System.Data.ObjectSpaces.ObjectContext,System.Collections.ICollection,System.Data.ObjectSpaces.PersistenceOptions) method should be updated.</summary>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.ErrorCondition" />
+		<member name="F:System.Data.ObjectSpaces.ErrorCondition.CardinalityError" />
+		<member name="F:System.Data.ObjectSpaces.ErrorCondition.ObjectSpecificError" />
+		<member name="F:System.Data.ObjectSpaces.ErrorCondition.OtherObjectError" />
+		<member name="F:System.Data.ObjectSpaces.ErrorCondition.UnknownError" />
+		<member name="T:System.Data.ObjectSpaces.ExpressionException">
+			<summary>[To be supplied.] </summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ExpressionException.#ctor">
+			<summary>[To be supplied.] </summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ExpressionException.#ctor(System.String)">
+			<summary>[To be supplied.] </summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ExpressionException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+			<summary>[To be supplied.] </summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ExpressionException.#ctor(System.String,System.Exception)">
+			<summary>[To be supplied.] </summary>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.GuidKeyGenerator">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.GuidKeyGenerator.#ctor">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.GuidKeyGenerator.Initialize(System.Type,System.String)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.GuidKeyGenerator.NextKey">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.GuidKeyGenerator.KeyType">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.GuidKeyGenerator.OwnerType">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.GuidKeyGenerator.UserParameter">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.ILoadOnDemand">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.ILoadOnDemand.InnerObject">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.ILoadOnDemand.IsLoaded">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.IModifiable" />
+		<member name="P:System.Data.ObjectSpaces.IModifiable.IsDirty" />
+		<member name="T:System.Data.ObjectSpaces.IObjectHelper">
+			<summary>Enables implementers to improve the performance when the ObjectSpaces architecture gets and sets property values for a persistent class.</summary>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.IObjectHelper.Item(System.String)">
+			<summary>[To be supplied.] </summary>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.IObjectKey">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.IObjectKey.IsAvailable">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.IObjectKey.ObjectType">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.IObjectKey.Path">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.IObjectNotification">
+			<summary>Notifies an object of events in the object's persistence lifetime.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.IObjectNotification.OnCreated">
+			<summary>Triggers an event after an object is created at the data source.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.IObjectNotification.OnCreating">
+			<summary>Triggers an event before an object is created at the data source.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.IObjectNotification.OnDeleted">
+			<summary>Triggers an event after an object is deleted at the data source.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.IObjectNotification.OnDeleting">
+			<summary>Triggers an event before an object is deleted at the data source.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.IObjectNotification.OnMaterialized">
+			<summary>Triggers an event when an object is materialized by the M:System.Data.ObjectSpaces.ObjectSpace.GetObjectReader(System.Data.ObjectSpaces.ObjectQuery,System.Object[]) or the M:System.Data.ObjectSpaces.ObjectEngine.GetObjectReader(System.Data.ObjectSpaces.ObjectSources,System.Data.ObjectSpaces.ObjectContext,System.Data.ObjectSpaces.CompiledQuery,System.Object[]) method.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.IObjectNotification.OnPersistError(System.Data.ObjectSpaces.ErrorCondition)">
+			<summary>Triggers an event when an object is materialized by the M:System.Data.ObjectSpaces.ObjectSpace.GetObjectReader(System.Data.ObjectSpaces.ObjectQuery,System.Object[]) or the M:System.Data.ObjectSpaces.ObjectEngine.GetObjectReader(System.Data.ObjectSpaces.ObjectSources,System.Data.ObjectSpaces.ObjectContext,System.Data.ObjectSpaces.CompiledQuery,System.Object[]) method.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.IObjectNotification.OnUpdated">
+			<summary>Triggers an event after an object is updated at the data source.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.IObjectNotification.OnUpdating">
+			<summary>Triggers an event before an object is updated at the data source.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.IObjectNotification.Validate">
+			<summary>Triggers an event before an object is updated at the data source.</summary>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.IObjectTracking">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.IObjectTracking.Contains(System.Object)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.IObjectTracking.EndTracking(System.Object)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.IObjectTracking.GetObjectState(System.Object)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.IObjectTracking.MarkForDeletion(System.Object)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.IObjectTracking.StartTracking(System.Object)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.IObjectTracking.StartTracking(System.Object,System.Data.ObjectSpaces.ObjectState)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.IObjectTracking.StartTracking(System.Object,System.String)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.IObjectTracking.StartTracking(System.Object,System.Data.ObjectSpaces.ObjectState,System.String)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.IPagedReader" />
+		<member name="M:System.Data.ObjectSpaces.IPagedReader.GetCount" />
+		<member name="M:System.Data.ObjectSpaces.IPagedReader.MoveToNextPage" />
+		<member name="M:System.Data.ObjectSpaces.IPagedReader.MoveToPreviousPage" />
+		<member name="M:System.Data.ObjectSpaces.IPagedReader.ReadAtPercent(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.IPagedReader.ReadAtPosition(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.IPagedReader.Reset" />
+		<member name="P:System.Data.ObjectSpaces.IPagedReader.CurrentPosition" />
+		<member name="P:System.Data.ObjectSpaces.IPagedReader.PageSize" />
+		<member name="P:System.Data.ObjectSpaces.IPagedReader.ReadForcesPageFetch" />
+		<member name="T:System.Data.ObjectSpaces.ITypeLoader">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ITypeLoader.LoadType(System.String)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.IXmlHolder" />
+		<member name="M:System.Data.ObjectSpaces.IXmlHolder.CreateNavigator" />
+		<member name="M:System.Data.ObjectSpaces.IXmlHolder.CreateReader" />
+		<member name="M:System.Data.ObjectSpaces.IXmlHolder.Load(System.Xml.XmlReader)" />
+		<member name="T:System.Data.ObjectSpaces.KeyGenerator" />
+		<member name="M:System.Data.ObjectSpaces.KeyGenerator.#ctor" />
+		<member name="M:System.Data.ObjectSpaces.KeyGenerator.Initialize(System.Type,System.String)" />
+		<member name="M:System.Data.ObjectSpaces.KeyGenerator.NextKey" />
+		<member name="P:System.Data.ObjectSpaces.KeyGenerator.KeyType" />
+		<member name="P:System.Data.ObjectSpaces.KeyGenerator.OwnerType" />
+		<member name="P:System.Data.ObjectSpaces.KeyGenerator.UserParameter" />
+		<member name="T:System.Data.ObjectSpaces.ManySideRelationshipEnd" />
+		<member name="M:System.Data.ObjectSpaces.ManySideRelationshipEnd.Equals(System.Object)" />
+		<member name="M:System.Data.ObjectSpaces.ManySideRelationshipEnd.GetHashCode" />
+		<member name="P:System.Data.ObjectSpaces.ManySideRelationshipEnd.ForeignKeys" />
+		<member name="T:System.Data.ObjectSpaces.MappingException">
+			<summary>The exception that is thrown when an invalid mapping is supplied.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.MappingException.#ctor">
+			<summary>[To be supplied.] </summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.MappingException.#ctor(System.String)">
+			<summary>[To be supplied.] </summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.MappingException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+			<summary>[To be supplied.] </summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.MappingException.#ctor(System.String,System.Exception)">
+			<summary>[To be supplied.] </summary>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.ObjectAnchor" />
+		<member name="T:System.Data.ObjectSpaces.ObjectDataQuery" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataQuery.#ctor(System.Type,System.Data.ObjectSpaces.Query.SelectList,System.Data.ObjectSpaces.OPathExpression)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataQuery.#ctor(System.Type,System.Data.ObjectSpaces.Query.SelectList,System.String)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataQuery.#ctor(System.Data.ObjectSpaces.Query.QueryAliasList,System.Data.ObjectSpaces.Query.Join,System.Data.ObjectSpaces.Query.SelectList,System.Data.ObjectSpaces.OPathExpression)" />
+		<member name="P:System.Data.ObjectSpaces.ObjectDataQuery.QuerySelectList" />
+		<member name="P:System.Data.ObjectSpaces.ObjectDataQuery.ReturnKeys" />
+		<member name="T:System.Data.ObjectSpaces.ObjectDataReader" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.Close" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.CreateObjRef(System.Type)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.Dispose" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetBoolean(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetByte(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetChar(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetDataTypeName(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetDateTime(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetDecimal(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetDouble(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetEnumerator" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetFieldProviderSpecificType(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetFieldType(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetFloat(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetGuid(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetInt16(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetInt32(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetInt64(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetName(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetObjectKey(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetObjectKey(System.String)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetObjectType(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetObjectType(System.String)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetOrdinal(System.String)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetProviderSpecificValue(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetProviderSpecificValues(System.Object[])" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetSchemaTable" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetString(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetValue(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.GetValues(System.Object[])" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.IsDBNull(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.NextResult" />
+		<member name="M:System.Data.ObjectSpaces.ObjectDataReader.Read" />
+		<member name="P:System.Data.ObjectSpaces.ObjectDataReader.Depth" />
+		<member name="P:System.Data.ObjectSpaces.ObjectDataReader.FieldCount" />
+		<member name="P:System.Data.ObjectSpaces.ObjectDataReader.HasRows" />
+		<member name="P:System.Data.ObjectSpaces.ObjectDataReader.IsClosed" />
+		<member name="P:System.Data.ObjectSpaces.ObjectDataReader.Item(System.Int32)" />
+		<member name="P:System.Data.ObjectSpaces.ObjectDataReader.Item(System.String)" />
+		<member name="P:System.Data.ObjectSpaces.ObjectDataReader.RecordsAffected" />
+		<member name="P:System.Data.ObjectSpaces.ObjectDataReader.VisibleFieldCount" />
+		<member name="T:System.Data.ObjectSpaces.ObjectException">
+			<summary>The base exception thrown in the ObjectSpaces architecture's exception class hierarchy.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectException.#ctor">
+			<summary>Initializes a new instance of the T:System.Data.ObjectSpaces.ObjectException class.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectException.#ctor(System.String)">
+			<summary>Initializes a new instance of the T:System.Data.ObjectSpaces.ObjectException class.</summary>
+			<param name="s">The string to display when the exception is thrown. </param>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+			<summary>Initializes a new instance of the T:System.Data.ObjectSpaces.ObjectException class with serialized data.</summary>
+			<param name="context">Description of the source and destination of the specified serialized stream. </param>
+			<param name="info">The data necessary to serialize or deserialize an object. </param>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectException.#ctor(System.String,System.Exception)">
+			<summary>Initializes a new instance of the T:System.Data.ObjectSpaces.ObjectException class.</summary>
+			<param name="s">The string to display when the exception is thrown. </param>
+			<param name="innerException">A reference to an inner exception. </param>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.ObjectHolder!1" />
+		<member name="M:System.Data.ObjectSpaces.ObjectHolder!1.#ctor" />
+		<member name="M:System.Data.ObjectSpaces.ObjectHolder!1.System.Data.ObjectSpaces.ILazyLoad.get_IsParametersSet" />
+		<member name="M:System.Data.ObjectSpaces.ObjectHolder!1.System.Data.ObjectSpaces.ILazyLoad.get_Key" />
+		<member name="M:System.Data.ObjectSpaces.ObjectHolder!1.System.Data.ObjectSpaces.ILazyLoad.set_Manager(System.Data.ObjectSpaces.ObjectManager)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectHolder!1.System.Data.ObjectSpaces.ILazyLoad.SetInternalParameters(System.Data.ObjectSpaces.Engine.ObjectEngine,System.Data.ObjectSpaces.ObjectSourceCollection,System.Data.ObjectSpaces.ObjectManager,System.Object,System.Data.ObjectSpaces.Schema.SchemaMember,System.Object)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectHolder!1.System.Data.ObjectSpaces.ILoadOnDemand.get_InnerObject" />
+		<member name="M:System.Data.ObjectSpaces.ObjectHolder!1.System.Data.ObjectSpaces.ILoadOnDemand.get_IsLoaded" />
+		<member name="M:System.Data.ObjectSpaces.ObjectHolder!1.System.Data.ObjectSpaces.ILoadOnDemand.set_InnerObject(System.Object)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectHolder!1.System.Data.ObjectSpaces.ILoadOnDemand.set_IsLoaded(System.Boolean)" />
+		<member name="P:System.Data.ObjectSpaces.ObjectHolder!1.InnerObject" />
+		<member name="T:System.Data.ObjectSpaces.ObjectKey">
+			<summary>Enables implementers of a customer T:System.Data.ObjectSpaces.PersistenceService to identify the unique identity of an object.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectKey.#ctor(System.Type,System.String,System.Object[])">
+			<summary>Enables implementers of a customer T:System.Data.ObjectSpaces.PersistenceService to identify the unique identity of an object.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectKey.Equals(System.Object)">
+			<summary>[To be supplied.] </summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectKey.GetHashCode">
+			<summary>[To be supplied.] </summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectKey.GetKeyValues">
+			<summary>[To be supplied.] </summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectKey.ToString">
+			<summary>[To be supplied.] </summary>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.ObjectKey.IsAvailable">
+			<summary>[To be supplied.] </summary>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.ObjectKey.ObjectType">
+			<summary>[To be supplied.] </summary>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.ObjectKey.Path">
+			<summary>[To be supplied.] </summary>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.ObjectList!1" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.#ctor" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.#ctor(System.Type,System.Object[])" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.Add(.T)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.Clear" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.Contains(.T)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.CopyTo(System.Array,System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.CopyTo(.T[],System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.GetEnumerator" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.IndexOf(.T)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.Insert(System.Int32,.T)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.Remove(.T)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.RemoveAt(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.System.Collections.ICollection.get_IsSynchronized" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.System.Collections.ICollection.get_SyncRoot" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.System.Collections.IEnumerable.GetEnumerator" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.System.Collections.IList.Add(System.Object)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.System.Collections.IList.Contains(System.Object)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.System.Collections.IList.get_Item(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.System.Collections.IList.IndexOf(System.Object)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.System.Collections.IList.Insert(System.Int32,System.Object)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.System.Collections.IList.Remove(System.Object)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.System.Collections.IList.set_Item(System.Int32,System.Object)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.System.Data.ObjectSpaces.ILazyLoad.get_IsParametersSet" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.System.Data.ObjectSpaces.ILazyLoad.get_Key" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.System.Data.ObjectSpaces.ILazyLoad.set_Manager(System.Data.ObjectSpaces.ObjectManager)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.System.Data.ObjectSpaces.ILazyLoad.SetInternalParameters(System.Data.ObjectSpaces.Engine.ObjectEngine,System.Data.ObjectSpaces.ObjectSourceCollection,System.Data.ObjectSpaces.ObjectManager,System.Object,System.Data.ObjectSpaces.Schema.SchemaMember,System.Object)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.System.Data.ObjectSpaces.ILoadOnDemand.get_InnerObject" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.System.Data.ObjectSpaces.ILoadOnDemand.get_IsLoaded" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.System.Data.ObjectSpaces.ILoadOnDemand.set_InnerObject(System.Object)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectList!1.System.Data.ObjectSpaces.ILoadOnDemand.set_IsLoaded(System.Boolean)" />
+		<member name="P:System.Data.ObjectSpaces.ObjectList!1.Count" />
+		<member name="P:System.Data.ObjectSpaces.ObjectList!1.InnerList" />
+		<member name="P:System.Data.ObjectSpaces.ObjectList!1.IsFixedSize" />
+		<member name="P:System.Data.ObjectSpaces.ObjectList!1.IsReadOnly" />
+		<member name="P:System.Data.ObjectSpaces.ObjectList!1.IsSynchronized" />
+		<member name="P:System.Data.ObjectSpaces.ObjectList!1.Item(System.Int32)" />
+		<member name="P:System.Data.ObjectSpaces.ObjectList!1.SyncRoot" />
+		<member name="T:System.Data.ObjectSpaces.ObjectManager">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectManager.#ctor(System.Data.ObjectSpaces.ObjectSchema)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="E:System.Data.ObjectSpaces.ObjectManager.MergingValueRecord">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectManager.AcceptPersistedChanges">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectManager.Clear">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectManager.Contains(System.Object)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectManager.EndTracking(System.Object)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectManager.GetCurrentValueRecord(System.Object)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectManager.GetObjectKey(System.Object)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectManager.GetObjectState(System.Object)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectManager.GetOriginalValueRecord(System.Object)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectManager.MarkForDeletion(System.Object)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectManager.RejectPersistedChanges">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectManager.StartTracking(System.Object)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectManager.StartTracking(System.Object,System.Data.ObjectSpaces.ObjectState)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectManager.StartTracking(System.Object,System.String)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectManager.StartTracking(System.Object,System.Data.ObjectSpaces.ObjectState,System.String)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.ObjectManagerException">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectManagerException.#ctor">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectManagerException.#ctor(System.String)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectManagerException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectManagerException.#ctor(System.String,System.Exception)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.ObjectMapping">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectMapping.#ctor(System.Data.ObjectSpaces.Engine.IMapResolver)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectMapping.#ctor(System.String)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectMapping.#ctor(System.Xml.XmlReader)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectMapping.#ctor(System.Data.ObjectSpaces.Engine.IMapResolver,System.Data.ObjectSpaces.ITypeLoader)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectMapping.#ctor(System.String,System.Data.ObjectSpaces.ITypeLoader)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectMapping.#ctor(System.Xml.XmlReader,System.Data.ObjectSpaces.ITypeLoader)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectMapping.GetObjectSchema">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.ObjectMapping.MapResolver">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.ObjectMapping.TypeLoader">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.ObjectParcel" />
+		<member name="M:System.Data.ObjectSpaces.ObjectParcel.GetObjectAnchor(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectParcel.GetObjectDataReader(System.Data.ObjectSpaces.ObjectSchema,System.Object,System.Data.ObjectSpaces.Engine.MaterializationManager)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectParcel.GetObjectReader(System.Data.ObjectSpaces.ObjectSchema,System.Object,System.Data.ObjectSpaces.Engine.MaterializationManager)" />
+		<member name="P:System.Data.ObjectSpaces.ObjectParcel.Count" />
+		<member name="P:System.Data.ObjectSpaces.ObjectParcel.TypeList" />
+		<member name="T:System.Data.ObjectSpaces.ObjectQuery!1" />
+		<member name="M:System.Data.ObjectSpaces.ObjectQuery!1.#ctor(System.Data.ObjectSpaces.OPathExpression)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectQuery!1.#ctor(System.String)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectQuery!1.#ctor(System.Data.ObjectSpaces.OPathExpression,System.String)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectQuery!1.#ctor(System.String,System.String)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectQuery!1.#ctor(System.Data.ObjectSpaces.Query.QueryAlias,System.Data.ObjectSpaces.OPathExpression,System.String)" />
+		<member name="T:System.Data.ObjectSpaces.ObjectReader!1" />
+		<member name="M:System.Data.ObjectSpaces.ObjectReader!1.Close" />
+		<member name="M:System.Data.ObjectSpaces.ObjectReader!1.Finalize" />
+		<member name="M:System.Data.ObjectSpaces.ObjectReader!1.GetEnumerator" />
+		<member name="M:System.Data.ObjectSpaces.ObjectReader!1.Read" />
+		<member name="M:System.Data.ObjectSpaces.ObjectReader!1.System.Collections.IEnumerable.GetEnumerator" />
+		<member name="M:System.Data.ObjectSpaces.ObjectReader!1.System.IDisposable.Dispose" />
+		<member name="P:System.Data.ObjectSpaces.ObjectReader!1.Current" />
+		<member name="P:System.Data.ObjectSpaces.ObjectReader!1.HasObjects" />
+		<member name="P:System.Data.ObjectSpaces.ObjectReader!1.IsClosed" />
+		<member name="P:System.Data.ObjectSpaces.ObjectReader!1.Path" />
+		<member name="T:System.Data.ObjectSpaces.ObjectReaderParcel" />
+		<member name="M:System.Data.ObjectSpaces.ObjectReaderParcel.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectReaderParcel.GetObjectAnchor(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectReaderParcel.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectReaderParcel.GetObjectReader(System.Data.ObjectSpaces.ObjectSchema,System.Object,System.Data.ObjectSpaces.Engine.MaterializationManager)" />
+		<member name="P:System.Data.ObjectSpaces.ObjectReaderParcel.Count" />
+		<member name="P:System.Data.ObjectSpaces.ObjectReaderParcel.TypeList" />
+		<member name="T:System.Data.ObjectSpaces.ObjectSchema">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchema.#ctor(System.String)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchema.#ctor(System.Xml.XmlReader)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchema.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchema.#ctor(System.String,System.Data.ObjectSpaces.ITypeLoader)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchema.#ctor(System.Xml.XmlReader,System.Data.ObjectSpaces.ITypeLoader)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchema.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchema.MS.Internal.Data.Mapping.IDomainSchema.get_DefaultNullHandling">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchema.MS.Internal.Data.Mapping.IDomainSchema.get_DomainType">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchema.MS.Internal.Data.Mapping.IDomainSchema.get_ExtensionNamespace">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchema.MS.Internal.Data.Mapping.IDomainSchema.GetDomainConstraint(System.String[],System.String,System.Xml.IXmlNamespaceResolver)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchema.MS.Internal.Data.Mapping.IDomainSchema.GetDomainStructure(System.String[],System.String,System.Xml.IXmlNamespaceResolver)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchema.MS.Internal.Data.Mapping.IDomainSchema.ParseDefaultPath(System.String,System.String,System.Xml.IXmlLineInfo)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchema.MS.Internal.Data.Mapping.IDomainSchema.Read(System.String)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchema.MS.Internal.Data.Mapping.IDomainSchema.Read(System.Xml.XmlReader)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchema.MS.Internal.Data.Mapping.IDomainSchema.Read(System.String,System.Xml.Schema.ValidationEventHandler)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchema.MS.Internal.Data.Mapping.IDomainSchema.Read(System.Xml.XmlReader,System.Xml.Schema.ValidationEventHandler)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchema.MS.Internal.Data.Mapping.IDomainSchema.ReadExtensions(System.Xml.XmlReader)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchema.MS.Internal.Data.Mapping.IDomainSchema.ReadExtensions(System.Xml.XmlReader,System.Xml.Schema.ValidationEventHandler)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchema.MS.Internal.Data.Mapping.IDomainSchema.Write(System.IO.Stream)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchema.MS.Internal.Data.Mapping.IDomainSchema.Write(System.String)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchema.MS.Internal.Data.Mapping.IDomainSchema.Write(System.IO.TextWriter)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchema.MS.Internal.Data.Mapping.IDomainSchema.Write(System.Xml.XmlWriter)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchema.MS.Internal.Data.Mapping.IDomainSchema.Write(System.IO.Stream,System.Xml.IXmlNamespaceResolver)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchema.MS.Internal.Data.Mapping.IDomainSchema.Write(System.String,System.Xml.IXmlNamespaceResolver)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchema.MS.Internal.Data.Mapping.IDomainSchema.Write(System.IO.TextWriter,System.Xml.IXmlNamespaceResolver)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchema.MS.Internal.Data.Mapping.IDomainSchema.Write(System.Xml.XmlWriter,System.Xml.IXmlNamespaceResolver)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchema.MS.Internal.Data.Mapping.IDomainSchema.WriteExtensions(System.Xml.XmlWriter)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchema.MS.Internal.Data.Mapping.IDomainSchema.WriteExtensions(System.Xml.XmlWriter,System.Xml.IXmlNamespaceResolver)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.ObjectSchemaException">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchemaException.#ctor">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchemaException.#ctor(System.String)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchemaException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchemaException.#ctor(System.String,System.Exception)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSchemaException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.ObjectSchemaException.LineNumber">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.ObjectSchemaException.LinePosition">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.ObjectSchemaException.Message">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.ObjectSchemaException.SourceObjectSchema">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.ObjectSchemaException.SourceUri">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.ObjectSet!1" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.#ctor(System.Data.ObjectSpaces.ObjectSchema)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.#ctor(System.String,System.Data.ObjectSpaces.ObjectSchema)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.#ctor(System.String,System.Data.ObjectSpaces.ObjectSchema,System.Data.ObjectSpaces.IObjectTracking)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.Add(.T)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.Add(.T,System.Data.ObjectSpaces.ObjectState)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.Add(.T,System.Data.ObjectSpaces.ObjectState,System.Data.ObjectSpaces.Depth)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.Clear" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.Contains(.T)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.CopyTo(.T[],System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.GetEnumerator" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.IndexOf(.T)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.Insert(System.Int32,.T)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.Load(.ObjectReader!1&lt;T&gt;)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.Load(.ObjectReader!1&lt;T&gt;,System.Data.ObjectSpaces.ObjectState)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.OnInsertComplete(System.Int32,System.Object)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.OnRemoveComplete(System.Int32,System.Object)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.OnSetComplete(System.Int32,System.Object,System.Object)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.Remove(.T)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.RemoveAt(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.System.Collections.ICollection.get_IsSynchronized" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.System.Collections.ICollection.get_SyncRoot" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.System.Collections.IEnumerable.GetEnumerator" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.System.Collections.IList.Add(System.Object)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.System.Collections.IList.Clear" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.System.Collections.IList.Contains(System.Object)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.System.Collections.IList.get_Item(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.System.Collections.IList.IndexOf(System.Object)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.System.Collections.IList.Insert(System.Int32,System.Object)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.System.Collections.IList.Remove(System.Object)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.System.Collections.IList.RemoveAt(System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.System.Collections.IList.set_Item(System.Int32,System.Object)" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.System.ComponentModel.IListSource.get_ContainsListCollection" />
+		<member name="M:System.Data.ObjectSpaces.ObjectSet!1.System.ComponentModel.IListSource.GetList" />
+		<member name="P:System.Data.ObjectSpaces.ObjectSet!1.Count" />
+		<member name="P:System.Data.ObjectSpaces.ObjectSet!1.IsAttached" />
+		<member name="P:System.Data.ObjectSpaces.ObjectSet!1.IsFixedSize" />
+		<member name="P:System.Data.ObjectSpaces.ObjectSet!1.IsReadOnly" />
+		<member name="P:System.Data.ObjectSpaces.ObjectSet!1.Item(System.Int32)" />
+		<member name="P:System.Data.ObjectSpaces.ObjectSet!1.Manager" />
+		<member name="P:System.Data.ObjectSpaces.ObjectSet!1.ObjectSchema" />
+		<member name="P:System.Data.ObjectSpaces.ObjectSet!1.QueryPath" />
+		<member name="T:System.Data.ObjectSpaces.ObjectSpace">
+			<summary>Handles communication with the data source.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.#ctor(System.Data.ObjectSpaces.ObjectMapping,System.Data.IDbConnection)">
+			<summary>Initializes a new instance of the T:System.Data.ObjectSpaces.ObjectSpace class using the T:System.Data.ObjectSpaces.ObjectMapping and T:System.Data.IDbConnection objects specified.</summary>
+			<param name="map">An T:System.Data.ObjectSpaces.ObjectMapping object that identifies how objects are stored at the data source.</param>
+			<param name="connection">An T:System.Data.IDbConnection connection to a data source.</param>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.#ctor(System.Data.ObjectSpaces.ObjectMapping,System.Data.ObjectSpaces.ObjectSourceCollection)">
+			<summary>Initializes a new instance of the T:System.Data.ObjectSpaces.ObjectSpace class using the T:System.Data.ObjectSpaces.ObjectMapping and T:System.Data.ObjectSpaces.ObjectSourceCollection object specified.</summary>
+			<param name="map">An T:System.Data.ObjectSpaces.ObjectMapping object that identifies how objects are stored at the data source.</param>
+			<param name="sourceCollection">An T:System.Data.ObjectSpaces.ObjectSourceCollection object which contains T:System.Data.IDbConnection connections to a data source.</param>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.#ctor(System.String,System.Data.IDbConnection)">
+			<summary>Initializes a new instance of the T:System.Data.ObjectSpaces.ObjectSpace class using the mapping file and T:System.Data.IDbConnection object specified.</summary>
+			<param name="connection">An T:System.Data.IDbConnection connection to a data source.</param>
+			<param name="mappingFile">An XML mapping file that identifies how objects are stored at the data source.</param>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.#ctor(System.String,System.Data.ObjectSpaces.ObjectSourceCollection)">
+			<summary>Initializes a new instance of the T:System.Data.ObjectSpaces.ObjectSpace class using the mapping file and T:System.Data.ObjectSpaces.ObjectSourceCollection object specified.</summary>
+			<param name="mappingFile">An XML mapping file that identifies how objects are stored at the data source.</param>
+			<param name="sourceCollection">An T:System.Data.ObjectSpaces.ObjectSourceCollection object which contains T:System.Data.IDbConnection connections to a data source.</param>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.BeginTransaction">
+			<summary>Begins a transaction at the data source with an T:System.Data.IsolationLevel of ReadCommitted.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.BeginTransaction(System.Data.IsolationLevel)">
+			<summary>Begins a transaction at the data source using the T:System.Data.IsolationLevel specified.</summary>
+			<param name="isolationLevel">An T:System.Data.IsolationLevel that specifies the transaction locking behavior for the connection. </param>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.Commit">
+			<summary>Commits the current transaction.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.Compile(System.Data.ObjectSpaces.Query.BaseQuery)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.Compile(System.Data.ObjectSpaces.Query.BaseQuery,System.Int32)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.Contains(System.Object)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.EndTracking(System.Object)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.FetchRelatedObjects(System.Object,System.String)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.GetObject(System.Data.ObjectSpaces.CompiledQuery)">
+			<summary>Returns a single object from the data source based on the T:System.Data.ObjectSpaces.CompiledQuery specified.</summary>
+			<returns>A single typed T:System.Object.</returns>
+			<param name="compiledQuery">Represents the OPath query.</param>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.GetObject(.ObjectQuery!1&lt;M&gt;)">
+			<summary>Returns a single object from the data source based on the T:System.Data.ObjectSpaces.CompiledQuery specified.</summary>
+			<returns>A single typed T:System.Object.</returns>
+			<param name="compiledQuery">Represents the OPath query.</param>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.GetObject(System.String)">
+			<summary>Returns a single object from the data source based on the T:System.Data.ObjectSpaces.CompiledQuery specified.</summary>
+			<returns>A single typed T:System.Object.</returns>
+			<param name="compiledQuery">Represents the OPath query.</param>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.GetObject(System.Data.ObjectSpaces.CompiledQuery,System.Data.ObjectSpaces.Query.OPathParameterTable)">
+			<summary>Returns a single object from the data source based on the T:System.Data.ObjectSpaces.CompiledQuery specified.</summary>
+			<returns>A single typed T:System.Object.</returns>
+			<param name="compiledQuery">Represents the OPath query.</param>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.GetObject(System.String,System.String)">
+			<summary>Returns a single object from the data source based on the T:System.Data.ObjectSpaces.CompiledQuery specified.</summary>
+			<returns>A single typed T:System.Object.</returns>
+			<param name="compiledQuery">Represents the OPath query.</param>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.GetObjectReader(System.Data.ObjectSpaces.CompiledQuery)">
+			<summary>Returns a stream of objects and their related objects from the data source based on the T:System.Data.ObjectSpaces.CompiledQuery specified.</summary>
+			<returns>A stream of typed objects.</returns>
+			<param name="compiledQuery">A T:System.Data.ObjectSpaces.CompiledQuery that represents an OPath query.</param>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.GetObjectReader(.ObjectQuery!1&lt;M&gt;)">
+			<summary>Returns a stream of objects and their related objects from the data source based on the T:System.Data.ObjectSpaces.CompiledQuery specified.</summary>
+			<returns>A stream of typed objects.</returns>
+			<param name="compiledQuery">A T:System.Data.ObjectSpaces.CompiledQuery that represents an OPath query.</param>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.GetObjectReader(System.String)">
+			<summary>Returns a stream of objects and their related objects from the data source based on the T:System.Data.ObjectSpaces.CompiledQuery specified.</summary>
+			<returns>A stream of typed objects.</returns>
+			<param name="compiledQuery">A T:System.Data.ObjectSpaces.CompiledQuery that represents an OPath query.</param>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.GetObjectReader(System.Data.ObjectSpaces.CompiledQuery,System.Data.ObjectSpaces.Query.OPathParameterTable)">
+			<summary>Returns a stream of objects and their related objects from the data source based on the T:System.Data.ObjectSpaces.CompiledQuery specified.</summary>
+			<returns>A stream of typed objects.</returns>
+			<param name="compiledQuery">A T:System.Data.ObjectSpaces.CompiledQuery that represents an OPath query.</param>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.GetObjectReader(System.String,System.String)">
+			<summary>Returns a stream of objects and their related objects from the data source based on the T:System.Data.ObjectSpaces.CompiledQuery specified.</summary>
+			<returns>A stream of typed objects.</returns>
+			<param name="compiledQuery">A T:System.Data.ObjectSpaces.CompiledQuery that represents an OPath query.</param>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.GetObjectSet(System.Data.ObjectSpaces.CompiledQuery)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.GetObjectSet(.ObjectQuery!1&lt;M&gt;)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.GetObjectSet(System.String)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.GetObjectSet(System.Data.ObjectSpaces.CompiledQuery,System.Data.ObjectSpaces.Query.OPathParameterTable)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.GetObjectSet(System.String,System.String)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.GetObjectState(System.Object)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.GetPagedObjectReader(System.Data.ObjectSpaces.CompiledQuery)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.GetPagedObjectReader(System.Data.ObjectSpaces.CompiledQuery,System.Data.ObjectSpaces.Query.OPathParameterTable)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.GetPagedObjectReader(.ObjectQuery!1&lt;M&gt;,System.Int32)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.MarkForDeletion(System.Object)">
+			<summary>Identifies an object to be deleted from the data source.</summary>
+			<param name="item">T:System.Object to mark for deletion.</param>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.PersistAllChanges(System.Data.ObjectSpaces.PersistenceOptions)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.PersistChanges(System.Collections.IEnumerable)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.PersistChanges(System.Object)">
+			<summary>Propagates inserts, updates, and deletes for the specified T:System.Object to the data source.</summary>
+			<param name="modifiedObject">T:System.Object to propagate to the data source.</param>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.PersistChanges(System.Collections.IEnumerable,System.Data.ObjectSpaces.PersistenceOptions)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.PersistChanges(System.Object,System.Data.ObjectSpaces.PersistenceOptions)">
+			<summary>Propagates inserts, updates, and deletes for the specified T:System.Object to the data source with the specified T:System.Data.ObjectSpaces.PersistenceOptions.</summary>
+			<param name="modifiedObject">T:System.Object to propagate to the data source.</param>
+			<param name="options">Specifies whether or not child objects in a relationship should also be propagated to the data source.</param>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.PersistChanges(.ObjectSet!1&lt;M&gt;)">
+			<summary>Propagates inserts, updates, and deletes for the specified T:System.Object to the data source with the specified T:System.Data.ObjectSpaces.PersistenceOptions.</summary>
+			<param name="modifiedObject">T:System.Object to propagate to the data source.</param>
+			<param name="options">Specifies whether or not child objects in a relationship should also be propagated to the data source.</param>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.PersistChanges(.ObjectSet!1&lt;M&gt;,System.Data.ObjectSpaces.PersistenceOptions)">
+			<summary>Propagates inserts, updates, and deletes for the specified T:System.Object to the data source with the specified T:System.Data.ObjectSpaces.PersistenceOptions.</summary>
+			<param name="modifiedObject">T:System.Object to propagate to the data source.</param>
+			<param name="options">Specifies whether or not child objects in a relationship should also be propagated to the data source.</param>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.Resync(System.Collections.IEnumerable,System.Data.ObjectSpaces.ResyncOptions)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.Resync(System.Object,System.Data.ObjectSpaces.ResyncOptions)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.Resync(.ObjectSet!1&lt;M&gt;,System.Data.ObjectSpaces.ResyncOptions)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.ResyncAll(System.Data.ObjectSpaces.ResyncOptions)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.Rollback">
+			<summary>Rolls back the current transaction.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.StartTracking(System.Object)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.StartTracking(System.Object,System.Data.ObjectSpaces.ObjectState)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.StartTracking(System.Object,System.String)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ObjectSpace.StartTracking(System.Object,System.Data.ObjectSpaces.ObjectState,System.String)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.ObjectSpace.Manager">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.ObjectState">
+			<summary>Describes the state of a persistent object.</summary>
+		</member>
+		<member name="F:System.Data.ObjectSpaces.ObjectState.Deleted">
+			<summary>This object is marked as deleted.</summary>
+		</member>
+		<member name="F:System.Data.ObjectSpaces.ObjectState.Inserted">
+			<summary>This object is marked to be inserted into the data source.</summary>
+		</member>
+		<member name="F:System.Data.ObjectSpaces.ObjectState.Modified">
+			<summary>This object is marked to be inserted into the data source.</summary>
+		</member>
+		<member name="F:System.Data.ObjectSpaces.ObjectState.Removed">
+			<summary>This object is marked to be inserted into the data source.</summary>
+		</member>
+		<member name="F:System.Data.ObjectSpaces.ObjectState.Unchanged">
+			<summary>This object was retrieved from the data source without any further changes made.</summary>
+		</member>
+		<member name="F:System.Data.ObjectSpaces.ObjectState.Unknown">
+			<summary>The T:System.Data.ObjectSpaces.ObjectContext does not contain information for this object.</summary>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.OneSideRelationshipEnd" />
+		<member name="M:System.Data.ObjectSpaces.OneSideRelationshipEnd.Equals(System.Object)" />
+		<member name="M:System.Data.ObjectSpaces.OneSideRelationshipEnd.GetHashCode" />
+		<member name="P:System.Data.ObjectSpaces.OneSideRelationshipEnd.ForeignKey" />
+		<member name="T:System.Data.ObjectSpaces.OPathExpression">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.OPathExpression.#ctor(System.String)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.OPathExpression.Add(System.Data.ObjectSpaces.OPathExpression)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.OPathExpression.Add(System.String,System.Data.ObjectSpaces.OPathExpression)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.OPathExpression.ToString">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.PersistenceError">
+			<summary>Contains information about an error that occurred while persisting object data.</summary>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.PersistenceError.ErrorObject">
+			<summary>Retrieves the object that generated the T:System.Data.ObjectSpaces.PersistenceException.</summary>
+			<returns>An T:System.Object.</returns>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.PersistenceError.ErrorType">
+			<summary>Retrieves the type of error that occurred while persisting object data.</summary>
+			<returns>A T:System.Data.ObjectSpaces.PersistenceErrorType object.</returns>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.PersistenceError.InnerException">
+			<summary>Retrieves the exceptions that have been generated for the object.</summary>
+			<returns>An T:System.Exception object.</returns>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.PersistenceErrorBehavior">
+			<summary>Describes the action to take when an error is encountered during a call to M:System.Data.ObjectSpaces.ObjectSpace.PersistChanges(System.Object) or M:System.Data.ObjectSpaces.ObjectEngine.PersistChanges(System.Data.Mapping.MappingSchema,System.Data.ObjectSpaces.ObjectSources,System.Data.ObjectSpaces.ObjectContext,System.Collections.ICollection,System.Data.ObjectSpaces.PersistenceOptions).</summary>
+		</member>
+		<member name="F:System.Data.ObjectSpaces.PersistenceErrorBehavior.ThrowAfterCompletion">
+			<summary>Instructs the M:System.Data.ObjectSpaces.ObjectSpace.PersistChanges(System.Object) or M:System.Data.ObjectSpaces.ObjectEngine.PersistChanges(System.Data.Mapping.MappingSchema,System.Data.ObjectSpaces.ObjectSources,System.Data.ObjectSpaces.ObjectContext,System.Collections.ICollection,System.Data.ObjectSpaces.PersistenceOptions) method to throw an exception after completing all the operations at the data source if there has been one or more errors.</summary>
+		</member>
+		<member name="F:System.Data.ObjectSpaces.PersistenceErrorBehavior.ThrowAtFirstError">
+			<summary>Instructs the M:System.Data.ObjectSpaces.ObjectSpace.PersistChanges(System.Object) or M:System.Data.ObjectSpaces.ObjectEngine.PersistChanges(System.Data.Mapping.MappingSchema,System.Data.ObjectSpaces.ObjectSources,System.Data.ObjectSpaces.ObjectContext,System.Collections.ICollection,System.Data.ObjectSpaces.PersistenceOptions) method to throw an exception as soon as the interaction with the data source fails.</summary>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.PersistenceErrorType">
+			<summary>Indicates the type of error that occurred while persisting object data.</summary>
+		</member>
+		<member name="F:System.Data.ObjectSpaces.PersistenceErrorType.Deleting">
+			<summary>The error occurred while deleting object data from the data source.</summary>
+		</member>
+		<member name="F:System.Data.ObjectSpaces.PersistenceErrorType.Inserting">
+			<summary>The error occurred while inserting object data to the data source.</summary>
+		</member>
+		<member name="F:System.Data.ObjectSpaces.PersistenceErrorType.Unknown">
+			<summary>The operation at the data source that caused the error is unknown.</summary>
+		</member>
+		<member name="F:System.Data.ObjectSpaces.PersistenceErrorType.Updating">
+			<summary>The error occurred while updating object data to the data source.</summary>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.PersistenceException">
+			<summary>The persistence exception in the ObjectSpaces architecture's exception class hierarchy.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.PersistenceException.#ctor">
+			<summary>Initializes a new instance of the T:System.Data.ObjectSpaces.PersistenceException class.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.PersistenceException.#ctor(System.String)">
+			<summary>Initializes a new instance of the T:System.Data.ObjectSpaces.PersistenceException class.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.PersistenceException.#ctor(System.Data.ObjectSpaces.PersistenceError[],System.String)">
+			<summary>Initializes a new instance of the T:System.Data.ObjectSpaces.PersistenceException class.</summary>
+			<param name="s">The string to display when the exception is thrown. </param>
+			<param name="errors">One or more T:System.Data.ObjectSpaces.PersistenceError objects. </param>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.PersistenceException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+			<summary>Initializes a new instance of the T:System.Data.ObjectSpaces.PersistenceException class with serialized data.</summary>
+			<param name="context">Description of the source and destination of the specified serialized stream. </param>
+			<param name="info">The data necessary to serialize or deserialize an object. </param>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.PersistenceException.#ctor(System.String,System.Exception)">
+			<summary>Initializes a new instance of the T:System.Data.ObjectSpaces.PersistenceException class with serialized data.</summary>
+			<param name="context">Description of the source and destination of the specified serialized stream. </param>
+			<param name="info">The data necessary to serialize or deserialize an object. </param>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.PersistenceException.#ctor(System.Data.ObjectSpaces.PersistenceError[],System.String,System.Exception)">
+			<summary>Initializes a new instance of the T:System.Data.ObjectSpaces.PersistenceException class.</summary>
+			<param name="s">The string to display when the exception is thrown. </param>
+			<param name="errors">One or more T:System.Data.ObjectSpaces.PersistenceError objects. </param>
+			<param name="innerException">A reference to an inner exception. </param>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.PersistenceException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+			<summary>Sets the T:System.Runtime.Serialization.SerializationInfo with information about the exception.</summary>
+			<param name="context">Description of the source and destination of the specified serialized stream. </param>
+			<param name="info">The data necessary to serialize or deserialize an object. </param>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.PersistenceException.Errors">
+			<summary>Returns the optimistic concurrency errors in the T:System.Data.ObjectSpaces.PersistenceException exception.</summary>
+			<returns>An !:System.Collection.ArrayList object.</returns>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.PersistenceOptions">
+			<summary>Identifies the T:System.Data.ObjectSpaces.Depth and T:System.Data.ObjectSpaces.PersistenceErrorBehavior during a call to M:System.Data.ObjectSpaces.ObjectSpace.PersistChanges(System.Object) or M:System.Data.ObjectSpaces.ObjectEngine.PersistChanges(System.Data.Mapping.MappingSchema,System.Data.ObjectSpaces.ObjectSources,System.Data.ObjectSpaces.ObjectContext,System.Collections.ICollection,System.Data.ObjectSpaces.PersistenceOptions).</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.PersistenceOptions.#ctor">
+			<summary>Initializes a new instance of the T:System.Data.ObjectSpaces.PersistenceOptions class with a T:System.Data.ObjectSpaces.PersistenceErrorBehavior of ThrowAtFirstError and a T:System.Data.ObjectSpaces.Depth of ObjectGraph.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.PersistenceOptions.#ctor(System.Data.ObjectSpaces.Depth)">
+			<summary>Initializes a new instance of the T:System.Data.ObjectSpaces.PersistenceOptions class with the T:System.Data.ObjectSpaces.Depth specified.</summary>
+			<param name="depth">The T:System.Data.ObjectSpaces.Depth of the graph to traverse. </param>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.PersistenceOptions.#ctor(System.Data.ObjectSpaces.PersistenceErrorBehavior)">
+			<summary>Initializes a new instance of the T:System.Data.ObjectSpaces.PersistenceOptions class with the T:System.Data.ObjectSpaces.PersistenceErrorBehavior specified.</summary>
+			<param name="errorBehavior">The specified T:System.Data.ObjectSpaces.PersistenceErrorBehavior. </param>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.PersistenceOptions.#ctor(System.Data.ObjectSpaces.Depth,System.Data.ObjectSpaces.PersistenceErrorBehavior)">
+			<summary>Initializes a new instance of the T:System.Data.ObjectSpaces.PersistenceOptions class with the T:System.Data.ObjectSpaces.PersistenceErrorBehavior and T:System.Data.ObjectSpaces.Depth specified.</summary>
+			<param name="errorBehavior">The specified T:System.Data.ObjectSpaces.PersistenceErrorBehavior. </param>
+			<param name="depth">The T:System.Data.ObjectSpaces.Depth of the graph to traverse. </param>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.PersistenceOptions.Default">
+			<summary>Retrieves a T:System.Data.ObjectSpaces.PersistenceOptions object with the default settings.</summary>
+			<returns>A T:System.Data.ObjectSpaces.PersistenceOptions object.</returns>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.PersistenceOptions.Depth">
+			<summary>Retrieves the T:System.Data.ObjectSpaces.Depth of the graph to traverse.</summary>
+			<returns>A T:System.Data.ObjectSpaces.Depth object.</returns>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.PersistenceOptions.ErrorBehavior">
+			<summary>Retrieves the error behavior specified.</summary>
+			<returns>A T:System.Data.ObjectSpaces.PersistenceErrorBehavior object.</returns>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.QueryException">
+			<summary>The exception that is thrown when invalid query information is encountered.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.QueryException.#ctor">
+			<summary>[To be supplied.] </summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.QueryException.#ctor(System.String)">
+			<summary>[To be supplied.] </summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.QueryException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+			<summary>[To be supplied.] </summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.QueryException.#ctor(System.String,System.Exception)">
+			<summary>[To be supplied.] </summary>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.RelationshipEnd" />
+		<member name="M:System.Data.ObjectSpaces.RelationshipEnd.#ctor" />
+		<member name="F:System.Data.ObjectSpaces.RelationshipEnd.hasRelated" />
+		<member name="P:System.Data.ObjectSpaces.RelationshipEnd.ForeignKey" />
+		<member name="P:System.Data.ObjectSpaces.RelationshipEnd.ForeignKeys" />
+		<member name="T:System.Data.ObjectSpaces.ResyncBehavior">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="F:System.Data.ObjectSpaces.ResyncBehavior.Eventing">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="F:System.Data.ObjectSpaces.ResyncBehavior.OverrideChanges">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="F:System.Data.ObjectSpaces.ResyncBehavior.PreserveChanges">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.ResyncOptions">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ResyncOptions.#ctor">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ResyncOptions.#ctor(System.Data.ObjectSpaces.Depth)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ResyncOptions.#ctor(System.Data.ObjectSpaces.ResyncBehavior)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ResyncOptions.#ctor(System.Data.ObjectSpaces.Depth,System.Data.ObjectSpaces.ResyncBehavior)">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.ResyncOptions.Default">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.ResyncOptions.Depth">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.ResyncOptions.ResyncBehavior">
+			<summary>Summary information goes here. The summary should be a single paragraph only.</summary>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.ValueRecord">
+			<summary>Represents values of object fields.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ValueRecord.Equals(System.Object)" />
+		<member name="M:System.Data.ObjectSpaces.ValueRecord.GetEnumerator" />
+		<member name="M:System.Data.ObjectSpaces.ValueRecord.GetHashCode" />
+		<member name="M:System.Data.ObjectSpaces.ValueRecord.SetObjectSchema(System.Data.ObjectSpaces.ObjectSchema)" />
+		<member name="P:System.Data.ObjectSpaces.ValueRecord.Item(System.String)">
+			<summary>An index of the objects in the T:System.Data.ObjectSpaces.ValueRecord.</summary>
+			<returns>An T:System.Object.</returns>
+			<param name="propertyName">The index of the object in the T:System.Data.ObjectSpaces.ValueRecord. </param>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.ValueRecord.ObjectType">
+			<summary>Returns the type of object in the T:System.Data.ObjectSpaces.ValueRecord.</summary>
+			<returns>A T:System.Type object.</returns>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.ValueRecord.Path">
+			<summary>Returns the type of object in the T:System.Data.ObjectSpaces.ValueRecord.</summary>
+			<returns>A T:System.Type object.</returns>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.ValueRecordMergeEventArgs">
+			<summary>Provides the current, original, and data source states of an object to the M:System.Data.ObjectSpaces.ObjectReader.OnValueMerging(System.Data.ObjectSpaces.ValueRecordMergeEventArgs) event.</summary>
+		</member>
+		<member name="M:System.Data.ObjectSpaces.ValueRecordMergeEventArgs.#ctor(System.Data.ObjectSpaces.ValueRecord,System.Data.ObjectSpaces.ValueRecord,System.Data.ObjectSpaces.ValueRecord)">
+			<summary>Initializes a new instance of the T:System.Data.ObjectSpaces.ValueRecordMergeEventArgs class with the current, original, and data source states of an object.</summary>
+			<param name="currentRecord">Represents current values of object fields. </param>
+			<param name="persistentRecord">Represents data source values of object fields. </param>
+			<param name="originalRecord">Represents original values of object fields. </param>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.ValueRecordMergeEventArgs.CurrentValueRecord">
+			<summary>Returns a T:System.Data.ObjectSpaces.ValueRecord with current object field values.</summary>
+			<returns>A T:System.Data.ObjectSpaces.ValueRecord object.</returns>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.ValueRecordMergeEventArgs.OriginalValueRecord">
+			<summary>Returns a T:System.Data.ObjectSpaces.ValueRecord with original object field values.</summary>
+			<returns>A T:System.Data.ObjectSpaces.ValueRecord object.</returns>
+		</member>
+		<member name="P:System.Data.ObjectSpaces.ValueRecordMergeEventArgs.PersistentValueRecord">
+			<summary>Returns a T:System.Data.ObjectSpaces.ValueRecord with data source object field values.</summary>
+			<returns>A T:System.Data.ObjectSpaces.ValueRecord object.</returns>
+		</member>
+		<member name="T:System.Data.ObjectSpaces.ValueRecordMergeEventHandler">
+			<summary>Represents the method that will handle the E:System.Data.ObjectSpaces.ObjectReader.ValueMerging event.</summary>
+		</member>
+		<member name="N:System.Data.ObjectSpaces.Engine" />
+		<member name="T:System.Data.ObjectSpaces.Engine.CompositionAlias" />
+		<member name="M:System.Data.ObjectSpaces.Engine.CompositionAlias.#ctor(System.String,System.Type)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.CompositionAlias.#ctor(System.String,System.Type,System.String)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.CompositionAlias.#ctor(System.String,System.Type,System.String,System.Data.ObjectSpaces.IObjectKey)" />
+		<member name="P:System.Data.ObjectSpaces.Engine.CompositionAlias.ParentKey" />
+		<member name="T:System.Data.ObjectSpaces.Engine.CompoundKeyMemberInfo" />
+		<member name="P:System.Data.ObjectSpaces.Engine.CompoundKeyMemberInfo.Item(System.Int32)" />
+		<member name="P:System.Data.ObjectSpaces.Engine.CompoundKeyMemberInfo.Item(System.String)" />
+		<member name="P:System.Data.ObjectSpaces.Engine.CompoundKeyMemberInfo.KeyLength" />
+		<member name="P:System.Data.ObjectSpaces.Engine.CompoundKeyMemberInfo.Path" />
+		<member name="T:System.Data.ObjectSpaces.Engine.DataLocation" />
+		<member name="M:System.Data.ObjectSpaces.Engine.DataLocation.#ctor(System.Data.ObjectSpaces.Query.QueryAlias,System.String,System.String)" />
+		<member name="P:System.Data.ObjectSpaces.Engine.DataLocation.DatabaseName" />
+		<member name="P:System.Data.ObjectSpaces.Engine.DataLocation.ServerName" />
+		<member name="P:System.Data.ObjectSpaces.Engine.DataLocation.TargetAlias" />
+		<member name="T:System.Data.ObjectSpaces.Engine.DataLocationCollection" />
+		<member name="M:System.Data.ObjectSpaces.Engine.DataLocationCollection.#ctor" />
+		<member name="M:System.Data.ObjectSpaces.Engine.DataLocationCollection.Add(System.Data.ObjectSpaces.Engine.DataLocation)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.DataLocationCollection.Contains(System.Data.ObjectSpaces.Engine.DataLocation)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.DataLocationCollection.CopyTo(System.Data.ObjectSpaces.Engine.DataLocation[],System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.DataLocationCollection.IndexOf(System.Data.ObjectSpaces.Engine.DataLocation)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.DataLocationCollection.Insert(System.Int32,System.Data.ObjectSpaces.Engine.DataLocation)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.DataLocationCollection.Remove(System.Data.ObjectSpaces.Engine.DataLocation)" />
+		<member name="P:System.Data.ObjectSpaces.Engine.DataLocationCollection.Item(System.Int32)" />
+		<member name="T:System.Data.ObjectSpaces.Engine.ExtendedObjectSource" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ExtendedObjectSource.#ctor(System.String,System.Data.IDbConnection)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ExtendedObjectSource.#ctor(System.String,System.Data.IDbTransaction)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ExtendedObjectSource.#ctor(System.String,System.Data.IDbConnection,System.Data.ObjectSpaces.Engine.DataLocationCollection)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ExtendedObjectSource.#ctor(System.String,System.Data.IDbTransaction,System.Data.ObjectSpaces.Engine.DataLocationCollection)" />
+		<member name="P:System.Data.ObjectSpaces.Engine.ExtendedObjectSource.DataLocations" />
+		<member name="T:System.Data.ObjectSpaces.Engine.IEntity" />
+		<member name="P:System.Data.ObjectSpaces.Engine.IEntity.EntityState" />
+		<member name="P:System.Data.ObjectSpaces.Engine.IEntity.OriginalValues" />
+		<member name="P:System.Data.ObjectSpaces.Engine.IEntity.Path" />
+		<member name="T:System.Data.ObjectSpaces.Engine.IEntityKey" />
+		<member name="P:System.Data.ObjectSpaces.Engine.IEntityKey.Parent" />
+		<member name="T:System.Data.ObjectSpaces.Engine.IMapResolver" />
+		<member name="M:System.Data.ObjectSpaces.Engine.IMapResolver.GetDomainSchemaUri(System.Uri,System.String,System.String)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.IMapResolver.GetMapUri(System.Type,System.String)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.IMapResolver.GetReader(System.Uri)" />
+		<member name="T:System.Data.ObjectSpaces.Engine.IObjectSourceResolver" />
+		<member name="M:System.Data.ObjectSpaces.Engine.IObjectSourceResolver.GetObjectSourceForPersist(System.String,System.Data.ObjectSpaces.IObjectKey)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.IObjectSourceResolver.GetObjectSourceForRead(System.String,System.Data.ObjectSpaces.Query.QueryAliasList,System.Object)" />
+		<member name="T:System.Data.ObjectSpaces.Engine.KeyMemberInfo" />
+		<member name="P:System.Data.ObjectSpaces.Engine.KeyMemberInfo.ClassType" />
+		<member name="P:System.Data.ObjectSpaces.Engine.KeyMemberInfo.KeyValue" />
+		<member name="P:System.Data.ObjectSpaces.Engine.KeyMemberInfo.MemberInfo" />
+		<member name="P:System.Data.ObjectSpaces.Engine.KeyMemberInfo.MemberPath" />
+		<member name="T:System.Data.ObjectSpaces.Engine.MaterializationManager" />
+		<member name="M:System.Data.ObjectSpaces.Engine.MaterializationManager.#ctor" />
+		<member name="M:System.Data.ObjectSpaces.Engine.MaterializationManager.CreateInlineObject(System.Type,System.Boolean,System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.MaterializationManager.CreateObject(System.Data.ObjectSpaces.IObjectKey)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.MaterializationManager.CreateRelationshipCollection(System.Object,System.Type,System.Type,System.String,System.Object)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.MaterializationManager.GetMaterializedKey(System.Data.ObjectSpaces.Query.QueryAlias,System.Data.ObjectSpaces.Engine.ObjectKeyInfo,System.Object)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.MaterializationManager.GetObject(System.Data.ObjectSpaces.IObjectKey)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.MaterializationManager.InitializeObject(System.Object,System.Data.ObjectSpaces.ValueRecord)" />
+		<member name="P:System.Data.ObjectSpaces.Engine.MaterializationManager.ControlObjectInitialization" />
+		<member name="P:System.Data.ObjectSpaces.Engine.MaterializationManager.Version" />
+		<member name="T:System.Data.ObjectSpaces.Engine.ObjectEngine" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectEngine.#ctor(System.Data.ObjectSpaces.ObjectMapping)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectEngine.#ctor(System.Data.ObjectSpaces.ObjectMapping,System.Data.ObjectSpaces.Engine.MaterializationManager)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectEngine.Compile(System.Data.ObjectSpaces.Query.BaseQuery)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectEngine.Compile(System.Data.ObjectSpaces.Query.BaseQuery,System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectEngine.FetchRelatedObjects(System.Object,System.Data.ObjectSpaces.Query.Span,System.Data.ObjectSpaces.ObjectManager,System.Data.ObjectSpaces.Engine.IObjectSourceResolver,System.Object)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectEngine.GetObject(System.Data.ObjectSpaces.IObjectKey,System.Data.ObjectSpaces.Query.Span,System.Data.ObjectSpaces.ObjectManager,System.Data.ObjectSpaces.Engine.IObjectSourceResolver,System.Object)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectEngine.GetObjectDataReader(System.Data.ObjectSpaces.CompiledQuery,System.Data.ObjectSpaces.Engine.IObjectSourceResolver,System.Object,System.Data.ObjectSpaces.Query.OPathParameterTable)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectEngine.GetObjectParcel(System.Data.ObjectSpaces.CompiledQuery,System.Data.ObjectSpaces.Engine.IObjectSourceResolver,System.Object,System.Data.ObjectSpaces.Query.OPathParameterTable)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectEngine.GetObjectParcelForNextPage(System.Data.ObjectSpaces.CompiledQuery,System.Data.ObjectSpaces.Engine.IObjectSourceResolver,System.Object,System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectEngine.GetObjectParcelForNextPage(System.Data.ObjectSpaces.CompiledQuery,System.Data.ObjectSpaces.Engine.IObjectSourceResolver,System.Object,System.Data.ObjectSpaces.ObjectAnchor)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectEngine.GetObjectParcelForPreviousPage(System.Data.ObjectSpaces.CompiledQuery,System.Data.ObjectSpaces.Engine.IObjectSourceResolver,System.Object,System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectEngine.GetObjectParcelForPreviousPage(System.Data.ObjectSpaces.CompiledQuery,System.Data.ObjectSpaces.Engine.IObjectSourceResolver,System.Object,System.Data.ObjectSpaces.ObjectAnchor)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectEngine.GetObjectReader(System.Data.ObjectSpaces.CompiledQuery,System.Data.ObjectSpaces.ObjectManager,System.Data.ObjectSpaces.Engine.IObjectSourceResolver,System.Object,System.Data.ObjectSpaces.Query.OPathParameterTable)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectEngine.GetObjectReaderAsIEnumerable(System.Data.ObjectSpaces.CompiledQuery,System.Data.ObjectSpaces.ObjectManager,System.Data.ObjectSpaces.Engine.IObjectSourceResolver,System.Object,System.Data.ObjectSpaces.Query.OPathParameterTable)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectEngine.GetObjectSchema(System.Data.ObjectSpaces.Query.QueryAliasList)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectEngine.GetPagedObjectReader(System.Data.ObjectSpaces.CompiledQuery,System.Data.ObjectSpaces.ObjectManager,System.Data.ObjectSpaces.Engine.IObjectSourceResolver,System.Object,System.Data.ObjectSpaces.Query.OPathParameterTable)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectEngine.GetPagedObjectReader(System.Data.ObjectSpaces.CompiledQuery,System.Data.ObjectSpaces.ObjectManager,System.Data.ObjectSpaces.Engine.IObjectSourceResolver,System.Object,System.Data.ObjectSpaces.Query.OPathParameterTable,System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectEngine.GetPersistentValueRecord(System.Object,System.Data.ObjectSpaces.Engine.IObjectSourceResolver)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectEngine.PersistChanges(System.Collections.IEnumerable,System.Data.ObjectSpaces.ObjectManager,System.Data.ObjectSpaces.Engine.IObjectSourceResolver,System.Data.ObjectSpaces.PersistenceOptions)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectEngine.Resync(System.Collections.IEnumerable,System.Data.ObjectSpaces.ObjectManager,System.Data.ObjectSpaces.Engine.IObjectSourceResolver,System.Data.ObjectSpaces.ResyncOptions)" />
+		<member name="P:System.Data.ObjectSpaces.Engine.ObjectEngine.Mapping" />
+		<member name="P:System.Data.ObjectSpaces.Engine.ObjectEngine.MaterializationManager" />
+		<member name="T:System.Data.ObjectSpaces.Engine.ObjectKeyInfo" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectKeyInfo.SetValue(System.Object,System.Data.ObjectSpaces.Engine.KeyMemberInfo,System.Object)" />
+		<member name="P:System.Data.ObjectSpaces.Engine.ObjectKeyInfo.Item(System.Int32)" />
+		<member name="P:System.Data.ObjectSpaces.Engine.ObjectKeyInfo.Item(System.String)" />
+		<member name="P:System.Data.ObjectSpaces.Engine.ObjectKeyInfo.KeyLength" />
+		<member name="P:System.Data.ObjectSpaces.Engine.ObjectKeyInfo.ObjectType" />
+		<member name="P:System.Data.ObjectSpaces.Engine.ObjectKeyInfo.Path" />
+		<member name="T:System.Data.ObjectSpaces.Engine.ObjectQuery" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectQuery.#ctor(System.Type,System.Data.ObjectSpaces.OPathExpression)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectQuery.#ctor(System.Type,System.String)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectQuery.#ctor(System.Data.ObjectSpaces.Query.QueryAlias,System.Data.ObjectSpaces.OPathExpression,System.String)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectQuery.#ctor(System.Type,System.Data.ObjectSpaces.OPathExpression,System.String)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectQuery.#ctor(System.Type,System.String,System.String)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectQuery.CreateObjectQuery(System.Data.ObjectSpaces.Engine.ObjectQuery)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectQuery.CreateSpan(System.String,System.Data.ObjectSpaces.Query.RetrieveOption)" />
+		<member name="P:System.Data.ObjectSpaces.Engine.ObjectQuery.ObjectType" />
+		<member name="P:System.Data.ObjectSpaces.Engine.ObjectQuery.QuerySpan" />
+		<member name="P:System.Data.ObjectSpaces.Engine.ObjectQuery.ResultAlias" />
+		<member name="T:System.Data.ObjectSpaces.Engine.ObjectSource" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectSource.#ctor(System.String,System.Data.IDbConnection)" />
+		<member name="M:System.Data.ObjectSpaces.Engine.ObjectSource.#ctor(System.String,System.Data.IDbTransaction)" />
+		<member name="P:System.Data.ObjectSpaces.Engine.ObjectSource.Connection" />
+		<member name="P:System.Data.ObjectSpaces.Engine.ObjectSource.DataSourceName" />
+		<member name="P:System.Data.ObjectSpaces.Engine.ObjectSource.Transaction" />
+		<member name="N:System.Data.ObjectSpaces.Query" />
+		<member name="T:System.Data.ObjectSpaces.Query.BaseQuery" />
+		<member name="M:System.Data.ObjectSpaces.Query.BaseQuery.CreateParameterTable" />
+		<member name="M:System.Data.ObjectSpaces.Query.BaseQuery.ToString" />
+		<member name="P:System.Data.ObjectSpaces.Query.BaseQuery.Aliases" />
+		<member name="P:System.Data.ObjectSpaces.Query.BaseQuery.AstParameters" />
+		<member name="P:System.Data.ObjectSpaces.Query.BaseQuery.BaseTypeOnly" />
+		<member name="P:System.Data.ObjectSpaces.Query.BaseQuery.CommandTimeout" />
+		<member name="P:System.Data.ObjectSpaces.Query.BaseQuery.IsolationLevel" />
+		<member name="P:System.Data.ObjectSpaces.Query.BaseQuery.Parameters" />
+		<member name="P:System.Data.ObjectSpaces.Query.BaseQuery.QueryJoin" />
+		<member name="P:System.Data.ObjectSpaces.Query.BaseQuery.QueryOrderBy" />
+		<member name="P:System.Data.ObjectSpaces.Query.BaseQuery.Sort" />
+		<member name="P:System.Data.ObjectSpaces.Query.BaseQuery.WhereExpression" />
+		<member name="T:System.Data.ObjectSpaces.Query.BinaryOperator" />
+		<member name="F:System.Data.ObjectSpaces.Query.BinaryOperator.Addition" />
+		<member name="F:System.Data.ObjectSpaces.Query.BinaryOperator.BitWiseAnd" />
+		<member name="F:System.Data.ObjectSpaces.Query.BinaryOperator.BitWiseOr" />
+		<member name="F:System.Data.ObjectSpaces.Query.BinaryOperator.BitWiseXOr" />
+		<member name="F:System.Data.ObjectSpaces.Query.BinaryOperator.Concatenation" />
+		<member name="F:System.Data.ObjectSpaces.Query.BinaryOperator.Division" />
+		<member name="F:System.Data.ObjectSpaces.Query.BinaryOperator.Equality" />
+		<member name="F:System.Data.ObjectSpaces.Query.BinaryOperator.GreaterEqual" />
+		<member name="F:System.Data.ObjectSpaces.Query.BinaryOperator.GreaterThan" />
+		<member name="F:System.Data.ObjectSpaces.Query.BinaryOperator.Inequality" />
+		<member name="F:System.Data.ObjectSpaces.Query.BinaryOperator.LessEqual" />
+		<member name="F:System.Data.ObjectSpaces.Query.BinaryOperator.LessThan" />
+		<member name="F:System.Data.ObjectSpaces.Query.BinaryOperator.LogicalAnd" />
+		<member name="F:System.Data.ObjectSpaces.Query.BinaryOperator.LogicalOr" />
+		<member name="F:System.Data.ObjectSpaces.Query.BinaryOperator.Modulus" />
+		<member name="F:System.Data.ObjectSpaces.Query.BinaryOperator.Multiplication" />
+		<member name="F:System.Data.ObjectSpaces.Query.BinaryOperator.Subtraction" />
+		<member name="T:System.Data.ObjectSpaces.Query.FunctionOperator" />
+		<member name="F:System.Data.ObjectSpaces.Query.FunctionOperator.Len" />
+		<member name="F:System.Data.ObjectSpaces.Query.FunctionOperator.Like" />
+		<member name="F:System.Data.ObjectSpaces.Query.FunctionOperator.Substring" />
+		<member name="F:System.Data.ObjectSpaces.Query.FunctionOperator.Trim" />
+		<member name="T:System.Data.ObjectSpaces.Query.Join" />
+		<member name="M:System.Data.ObjectSpaces.Query.Join.#ctor(System.Data.ObjectSpaces.Query.JoinType,System.Data.ObjectSpaces.Query.JoinElement,System.Data.ObjectSpaces.Query.JoinElement,System.Data.ObjectSpaces.OPathExpression)" />
+		<member name="P:System.Data.ObjectSpaces.Query.Join.JoinExpression" />
+		<member name="P:System.Data.ObjectSpaces.Query.Join.JoinType" />
+		<member name="P:System.Data.ObjectSpaces.Query.Join.LeftElement" />
+		<member name="P:System.Data.ObjectSpaces.Query.Join.RightElement" />
+		<member name="T:System.Data.ObjectSpaces.Query.JoinElement" />
+		<member name="M:System.Data.ObjectSpaces.Query.JoinElement.#ctor" />
+		<member name="T:System.Data.ObjectSpaces.Query.JoinType" />
+		<member name="F:System.Data.ObjectSpaces.Query.JoinType.InnerJoin" />
+		<member name="F:System.Data.ObjectSpaces.Query.JoinType.LeftJoin" />
+		<member name="F:System.Data.ObjectSpaces.Query.JoinType.RightJoin" />
+		<member name="T:System.Data.ObjectSpaces.Query.ObjectExpression" />
+		<member name="M:System.Data.ObjectSpaces.Query.ObjectExpression.Compile(System.Data.ObjectSpaces.ObjectMapping)" />
+		<member name="P:System.Data.ObjectSpaces.Query.ObjectExpression.ObjectSchema" />
+		<member name="P:System.Data.ObjectSpaces.Query.ObjectExpression.ObjectType" />
+		<member name="T:System.Data.ObjectSpaces.Query.OPathParameter" />
+		<member name="P:System.Data.ObjectSpaces.Query.OPathParameter.Name" />
+		<member name="P:System.Data.ObjectSpaces.Query.OPathParameter.ParameterType" />
+		<member name="P:System.Data.ObjectSpaces.Query.OPathParameter.Value" />
+		<member name="T:System.Data.ObjectSpaces.Query.OPathParameterCollection" />
+		<member name="M:System.Data.ObjectSpaces.Query.OPathParameterCollection.#ctor" />
+		<member name="M:System.Data.ObjectSpaces.Query.OPathParameterCollection.Add(System.String,System.Type)" />
+		<member name="M:System.Data.ObjectSpaces.Query.OPathParameterCollection.Add(System.String,System.Type,System.Object)" />
+		<member name="T:System.Data.ObjectSpaces.Query.OPathParameterTable" />
+		<member name="M:System.Data.ObjectSpaces.Query.OPathParameterTable.#ctor" />
+		<member name="M:System.Data.ObjectSpaces.Query.OPathParameterTable.CopyTo(System.Array,System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.Query.OPathParameterTable.CopyTo(System.Data.ObjectSpaces.Query.OPathParameter[],System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.Query.OPathParameterTable.GetEnumerator" />
+		<member name="P:System.Data.ObjectSpaces.Query.OPathParameterTable.Count" />
+		<member name="P:System.Data.ObjectSpaces.Query.OPathParameterTable.IsSynchronized" />
+		<member name="P:System.Data.ObjectSpaces.Query.OPathParameterTable.Item(System.Int32)" />
+		<member name="P:System.Data.ObjectSpaces.Query.OPathParameterTable.Item(System.String)" />
+		<member name="P:System.Data.ObjectSpaces.Query.OPathParameterTable.SyncRoot" />
+		<member name="T:System.Data.ObjectSpaces.Query.OrderBy" />
+		<member name="M:System.Data.ObjectSpaces.Query.OrderBy.#ctor(System.Data.ObjectSpaces.OPathExpression,System.Data.ObjectSpaces.Query.OrderByDirection)" />
+		<member name="M:System.Data.ObjectSpaces.Query.OrderBy.#ctor(System.String,System.Data.ObjectSpaces.Query.OrderByDirection)" />
+		<member name="P:System.Data.ObjectSpaces.Query.OrderBy.Direction" />
+		<member name="P:System.Data.ObjectSpaces.Query.OrderBy.OrderByExpression" />
+		<member name="T:System.Data.ObjectSpaces.Query.OrderByDirection" />
+		<member name="F:System.Data.ObjectSpaces.Query.OrderByDirection.Ascending" />
+		<member name="F:System.Data.ObjectSpaces.Query.OrderByDirection.Descending" />
+		<member name="T:System.Data.ObjectSpaces.Query.OrderByList" />
+		<member name="M:System.Data.ObjectSpaces.Query.OrderByList.Add(System.Data.ObjectSpaces.Query.OrderBy)" />
+		<member name="M:System.Data.ObjectSpaces.Query.OrderByList.Add(System.Data.ObjectSpaces.OPathExpression,System.Data.ObjectSpaces.Query.OrderByDirection)" />
+		<member name="M:System.Data.ObjectSpaces.Query.OrderByList.Add(System.String,System.Data.ObjectSpaces.Query.OrderByDirection)" />
+		<member name="M:System.Data.ObjectSpaces.Query.OrderByList.AddRange(System.Data.ObjectSpaces.Query.OrderBy[])" />
+		<member name="M:System.Data.ObjectSpaces.Query.OrderByList.Contains(System.Data.ObjectSpaces.Query.OrderBy)" />
+		<member name="M:System.Data.ObjectSpaces.Query.OrderByList.CopyTo(System.Data.ObjectSpaces.Query.OrderBy[],System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.Query.OrderByList.IndexOf(System.Data.ObjectSpaces.Query.OrderBy)" />
+		<member name="M:System.Data.ObjectSpaces.Query.OrderByList.IndexOf(System.Data.ObjectSpaces.Query.OrderBy,System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.Query.OrderByList.IndexOf(System.Data.ObjectSpaces.Query.OrderBy,System.Int32,System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.Query.OrderByList.Insert(System.Int32,System.Data.ObjectSpaces.Query.OrderBy)" />
+		<member name="M:System.Data.ObjectSpaces.Query.OrderByList.Remove(System.Data.ObjectSpaces.Query.OrderBy)" />
+		<member name="P:System.Data.ObjectSpaces.Query.OrderByList.Item(System.Int32)" />
+		<member name="P:System.Data.ObjectSpaces.Query.OrderByList.Item(System.String)" />
+		<member name="T:System.Data.ObjectSpaces.Query.PropertyList" />
+		<member name="M:System.Data.ObjectSpaces.Query.PropertyList.Add(System.String)" />
+		<member name="M:System.Data.ObjectSpaces.Query.PropertyList.AddRange(System.String[])" />
+		<member name="M:System.Data.ObjectSpaces.Query.PropertyList.Contains(System.String)" />
+		<member name="M:System.Data.ObjectSpaces.Query.PropertyList.CopyTo(System.String[],System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.Query.PropertyList.IndexOf(System.String)" />
+		<member name="M:System.Data.ObjectSpaces.Query.PropertyList.IndexOf(System.String,System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.Query.PropertyList.IndexOf(System.String,System.Int32,System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.Query.PropertyList.Insert(System.Int32,System.String)" />
+		<member name="M:System.Data.ObjectSpaces.Query.PropertyList.Remove(System.String)" />
+		<member name="P:System.Data.ObjectSpaces.Query.PropertyList.Item(System.Int32)" />
+		<member name="P:System.Data.ObjectSpaces.Query.PropertyList.Item(System.String)" />
+		<member name="T:System.Data.ObjectSpaces.Query.QueryAlias" />
+		<member name="M:System.Data.ObjectSpaces.Query.QueryAlias.#ctor(System.String,System.Type)" />
+		<member name="M:System.Data.ObjectSpaces.Query.QueryAlias.#ctor(System.String,System.Type,System.String)" />
+		<member name="P:System.Data.ObjectSpaces.Query.QueryAlias.AliasName" />
+		<member name="P:System.Data.ObjectSpaces.Query.QueryAlias.AliasType" />
+		<member name="P:System.Data.ObjectSpaces.Query.QueryAlias.ObjectPath" />
+		<member name="T:System.Data.ObjectSpaces.Query.QueryAliasList" />
+		<member name="M:System.Data.ObjectSpaces.Query.QueryAliasList.#ctor" />
+		<member name="M:System.Data.ObjectSpaces.Query.QueryAliasList.Add(System.Data.ObjectSpaces.Query.QueryAlias)" />
+		<member name="M:System.Data.ObjectSpaces.Query.QueryAliasList.Add(System.String,System.Type)" />
+		<member name="M:System.Data.ObjectSpaces.Query.QueryAliasList.Add(System.String,System.Type,System.String)" />
+		<member name="M:System.Data.ObjectSpaces.Query.QueryAliasList.AddRange(System.Data.ObjectSpaces.Query.QueryAlias[])" />
+		<member name="M:System.Data.ObjectSpaces.Query.QueryAliasList.Contains(System.Data.ObjectSpaces.Query.QueryAlias)" />
+		<member name="M:System.Data.ObjectSpaces.Query.QueryAliasList.Contains(System.String)" />
+		<member name="M:System.Data.ObjectSpaces.Query.QueryAliasList.CopyTo(System.Data.ObjectSpaces.Query.QueryAlias[],System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.Query.QueryAliasList.IndexOf(System.Data.ObjectSpaces.Query.QueryAlias)" />
+		<member name="M:System.Data.ObjectSpaces.Query.QueryAliasList.IndexOf(System.String)" />
+		<member name="M:System.Data.ObjectSpaces.Query.QueryAliasList.IndexOf(System.Data.ObjectSpaces.Query.QueryAlias,System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.Query.QueryAliasList.IndexOf(System.String,System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.Query.QueryAliasList.IndexOf(System.Data.ObjectSpaces.Query.QueryAlias,System.Int32,System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.Query.QueryAliasList.IndexOf(System.String,System.Int32,System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.Query.QueryAliasList.Insert(System.Int32,System.Data.ObjectSpaces.Query.QueryAlias)" />
+		<member name="M:System.Data.ObjectSpaces.Query.QueryAliasList.Remove(System.Data.ObjectSpaces.Query.QueryAlias)" />
+		<member name="M:System.Data.ObjectSpaces.Query.QueryAliasList.Remove(System.String)" />
+		<member name="P:System.Data.ObjectSpaces.Query.QueryAliasList.Item(System.Int32)" />
+		<member name="P:System.Data.ObjectSpaces.Query.QueryAliasList.Item(System.String)" />
+		<member name="T:System.Data.ObjectSpaces.Query.QueryHint" />
+		<member name="F:System.Data.ObjectSpaces.Query.QueryHint.NoLock" />
+		<member name="F:System.Data.ObjectSpaces.Query.QueryHint.None" />
+		<member name="F:System.Data.ObjectSpaces.Query.QueryHint.UpdateLock" />
+		<member name="T:System.Data.ObjectSpaces.Query.QueryType" />
+		<member name="F:System.Data.ObjectSpaces.Query.QueryType.ObjectDataQuery" />
+		<member name="F:System.Data.ObjectSpaces.Query.QueryType.ObjectQuery" />
+		<member name="T:System.Data.ObjectSpaces.Query.RetrieveOption" />
+		<member name="F:System.Data.ObjectSpaces.Query.RetrieveOption.DefaultSpan" />
+		<member name="F:System.Data.ObjectSpaces.Query.RetrieveOption.ImmediateLoad" />
+		<member name="F:System.Data.ObjectSpaces.Query.RetrieveOption.LoadOnDemand" />
+		<member name="T:System.Data.ObjectSpaces.Query.SelectItem" />
+		<member name="M:System.Data.ObjectSpaces.Query.SelectItem.#ctor(System.Data.ObjectSpaces.OPathExpression,System.String)" />
+		<member name="P:System.Data.ObjectSpaces.Query.SelectItem.SelectAlias" />
+		<member name="P:System.Data.ObjectSpaces.Query.SelectItem.SelectExpression" />
+		<member name="T:System.Data.ObjectSpaces.Query.SelectList" />
+		<member name="M:System.Data.ObjectSpaces.Query.SelectList.#ctor" />
+		<member name="M:System.Data.ObjectSpaces.Query.SelectList.Add(System.Data.ObjectSpaces.Query.SelectItem)" />
+		<member name="M:System.Data.ObjectSpaces.Query.SelectList.Add(System.Data.ObjectSpaces.OPathExpression,System.String)" />
+		<member name="M:System.Data.ObjectSpaces.Query.SelectList.AddRange(System.Data.ObjectSpaces.Query.SelectItem[])" />
+		<member name="M:System.Data.ObjectSpaces.Query.SelectList.Contains(System.Data.ObjectSpaces.Query.SelectItem)" />
+		<member name="M:System.Data.ObjectSpaces.Query.SelectList.CopyTo(System.Data.ObjectSpaces.Query.SelectItem[],System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.Query.SelectList.IndexOf(System.Data.ObjectSpaces.Query.SelectItem)" />
+		<member name="M:System.Data.ObjectSpaces.Query.SelectList.IndexOf(System.Data.ObjectSpaces.Query.SelectItem,System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.Query.SelectList.IndexOf(System.Data.ObjectSpaces.Query.SelectItem,System.Int32,System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.Query.SelectList.Insert(System.Int32,System.Data.ObjectSpaces.Query.SelectItem)" />
+		<member name="M:System.Data.ObjectSpaces.Query.SelectList.Remove(System.Data.ObjectSpaces.Query.SelectItem)" />
+		<member name="P:System.Data.ObjectSpaces.Query.SelectList.Item(System.Int32)" />
+		<member name="T:System.Data.ObjectSpaces.Query.Span" />
+		<member name="M:System.Data.ObjectSpaces.Query.Span.#ctor(System.Data.ObjectSpaces.Query.RetrieveOption)" />
+		<member name="M:System.Data.ObjectSpaces.Query.Span.#ctor(System.String)" />
+		<member name="M:System.Data.ObjectSpaces.Query.Span.#ctor(System.String,System.Boolean)" />
+		<member name="M:System.Data.ObjectSpaces.Query.Span.#ctor(System.String,System.Data.ObjectSpaces.Query.RetrieveOption)" />
+		<member name="M:System.Data.ObjectSpaces.Query.Span.#ctor(System.String,System.Data.ObjectSpaces.Query.RetrieveOption,System.Boolean)" />
+		<member name="P:System.Data.ObjectSpaces.Query.Span.Hint" />
+		<member name="P:System.Data.ObjectSpaces.Query.Span.IsolationLevel" />
+		<member name="P:System.Data.ObjectSpaces.Query.Span.Property" />
+		<member name="P:System.Data.ObjectSpaces.Query.Span.QueryRetrieveOption" />
+		<member name="P:System.Data.ObjectSpaces.Query.Span.Spans" />
+		<member name="T:System.Data.ObjectSpaces.Query.SpanCollection" />
+		<member name="M:System.Data.ObjectSpaces.Query.SpanCollection.Add(System.Data.ObjectSpaces.Query.Span)" />
+		<member name="M:System.Data.ObjectSpaces.Query.SpanCollection.Add(System.String)" />
+		<member name="M:System.Data.ObjectSpaces.Query.SpanCollection.CopyTo(System.Array,System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.Query.SpanCollection.CopyTo(System.Data.ObjectSpaces.Query.Span[],System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.Query.SpanCollection.GetEnumerator" />
+		<member name="P:System.Data.ObjectSpaces.Query.SpanCollection.Count" />
+		<member name="P:System.Data.ObjectSpaces.Query.SpanCollection.IsSynchronized" />
+		<member name="P:System.Data.ObjectSpaces.Query.SpanCollection.Item(System.String)" />
+		<member name="P:System.Data.ObjectSpaces.Query.SpanCollection.SyncRoot" />
+		<member name="T:System.Data.ObjectSpaces.Query.SpanProperty" />
+		<member name="M:System.Data.ObjectSpaces.Query.SpanProperty.#ctor(System.String)" />
+		<member name="M:System.Data.ObjectSpaces.Query.SpanProperty.#ctor(System.String,System.Data.ObjectSpaces.Query.SpanPropertyCollection)" />
+		<member name="M:System.Data.ObjectSpaces.Query.SpanProperty.ToXmlString" />
+		<member name="P:System.Data.ObjectSpaces.Query.SpanProperty.Name" />
+		<member name="P:System.Data.ObjectSpaces.Query.SpanProperty.SubSpan" />
+		<member name="T:System.Data.ObjectSpaces.Query.SpanPropertyCollection" />
+		<member name="M:System.Data.ObjectSpaces.Query.SpanPropertyCollection.#ctor" />
+		<member name="M:System.Data.ObjectSpaces.Query.SpanPropertyCollection.Add(System.Data.ObjectSpaces.Query.SpanProperty)" />
+		<member name="M:System.Data.ObjectSpaces.Query.SpanPropertyCollection.Contains(System.Data.ObjectSpaces.Query.SpanProperty)" />
+		<member name="M:System.Data.ObjectSpaces.Query.SpanPropertyCollection.CopyTo(System.Data.ObjectSpaces.Query.SpanPropertyCollection[],System.Int32)" />
+		<member name="M:System.Data.ObjectSpaces.Query.SpanPropertyCollection.IndexOf(System.Data.ObjectSpaces.Query.SpanProperty)" />
+		<member name="M:System.Data.ObjectSpaces.Query.SpanPropertyCollection.Insert(System.Int32,System.Data.ObjectSpaces.Query.SpanProperty)" />
+		<member name="M:System.Data.ObjectSpaces.Query.SpanPropertyCollection.Remove(System.Data.ObjectSpaces.Query.SpanProperty)" />
+		<member name="P:System.Data.ObjectSpaces.Query.SpanPropertyCollection.Item(System.Int32)" />
+		<member name="T:System.Data.ObjectSpaces.Query.UnaryOperator" />
+		<member name="F:System.Data.ObjectSpaces.Query.UnaryOperator.BitWiseNot" />
+		<member name="F:System.Data.ObjectSpaces.Query.UnaryOperator.Exists" />
+		<member name="F:System.Data.ObjectSpaces.Query.UnaryOperator.IsNull" />
+		<member name="F:System.Data.ObjectSpaces.Query.UnaryOperator.LogicalNot" />
+		<member name="F:System.Data.ObjectSpaces.Query.UnaryOperator.Negation" />
+	</members>
+</doc>

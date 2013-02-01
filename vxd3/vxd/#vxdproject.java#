@@ -1,0 +1,30 @@
+package	 vxd;
+
+IMPORT ORG.W3C.DOM.*;
+
+PUBLIC CLASS VXDPROJECT
+{
+    PUBLIC STRING 
+
+    public vxdproject
+
+    public void setProgramXSL(String d)
+    {
+	programXSL=d;
+    }
+
+    public void setProgramXSLT(String s)
+    {
+	programXSLT=s;
+    }
+
+    public void setLanguageDTD(String s)
+    {
+	languageDTD=s;
+    }
+
+    public void setLanguageElements(Document d)
+    {
+	languageElements=d;
+    }
+}

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>Microsoft.Build.Conversion</name>
+	</assembly>
+	<members>
+		<member name="N:Microsoft.Build.Conversion">
+			<summary>The <see cref="N:Microsoft.Build.Conversion"></see> namespace contains types that Visual Studio uses to convert project files.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Conversion.ProjectFileConverter">
+			<summary>Converts a Visual Studio .NET 2002 or 2003 project file to the Visual Studio 2005 project file format.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Conversion.ProjectFileConverter.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Conversion.ProjectFileConverter"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Conversion.ProjectFileConverter.Convert(System.String)">
+			<summary>Converts the project specified by the <see cref="P:Microsoft.Build.Conversion.ProjectFileConverter.OldProjectFile"></see> property and saves it in the file specified by the <see cref="P:Microsoft.Build.Conversion.ProjectFileConverter.NewProjectFile"></see> property.</summary>
+			<param name="msbuildBinPath">The fully qualified path to MSBuild.exe.</param>
+		</member>
+		<member name="M:Microsoft.Build.Conversion.ProjectFileConverter.ConvertInMemory(Microsoft.Build.BuildEngine.Engine)">
+			<summary>Creates a new project in memory from the <see cref="P:Microsoft.Build.Conversion.ProjectFileConverter.OldProjectFile"></see>.</summary>
+			<returns>The converted <see cref="T:Microsoft.Build.BuildEngine.Project"></see>.</returns>
+			<param name="engine">The <see cref="T:Microsoft.Build.BuildEngine.Engine"></see> in which to create the new project.</param>
+		</member>
+		<member name="P:Microsoft.Build.Conversion.ProjectFileConverter.ConversionSkippedBecauseProjectAlreadyConverted">
+			<summary>Gets a value indicating whether the last attempted conversion was skipped because the project file is already in the latest format.</summary>
+			<returns>true if the last attempted conversion was skipped because the project file is already in the latest format; otherwise, false.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Conversion.ProjectFileConverter.ConversionWarnings">
+			<summary>Gets a list of warnings generated during the conversion.</summary>
+			<returns>A list of warnings generated during the conversion.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Conversion.ProjectFileConverter.IsUserFile">
+			<summary>Gets or sets a value indicating whether the project file being converted is a .user file.</summary>
+			<returns>true if the project file being converted is a .user file; otherwise, false.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Conversion.ProjectFileConverter.NewProjectFile">
+			<summary>Gets or sets the new project file name.</summary>
+			<returns>The new project file name.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Conversion.ProjectFileConverter.OldProjectFile">
+			<summary>Gets or sets the old project file name.</summary>
+			<returns>The old project file name.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Conversion.ProjectFileConverter.SolutionFile">
+			<summary>Gets or sets the name of the solution file that contains the project being converted.</summary>
+			<returns>The name of the solution file that contains the project being converted.</returns>
+		</member>
+	</members>
+</doc>

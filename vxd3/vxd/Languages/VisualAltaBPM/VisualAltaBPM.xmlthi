@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Language xmlns="http://tempuri.org/VisualAltaBPM.xsd" Name="VisualAltaBPM" StructureDTD="VisualAltaBPM.dtd">
+ <Icons>
+<Icon Name="Workflow" Image="Languages/VisualAltaBPM/Images/vxdicon.jpg"/>
+<Icon Name="ASPNET" Image="Languages/VisualAltaBPM/Images/ASPNET.JPG"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.HTML.gif" Name="HTML"/>
+<Icon Name="DTD" Image="Languages/VisualAltaBPM/Images/DTD.gif"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.AdRotator.GIF" Name="AdRotator"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.Button.GIF" Name="Button"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.Calendar.GIF" Name="Calendar"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.CheckBox.GIF" Name="CheckBox"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.CheckBoxList.GIF" Name="CheckBoxList"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.CompareValidator.GIF" Name="CompareValidator"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.CustomValidator.GIF" Name="CustomValidator"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.DataGrid.GIF" Name="DataGrid"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.DataList.GIF" Name="DataList"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.DropDownList.GIF" Name="DropDownList"/>
+
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.HyperLink.GIF" Name="HyperLink"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.Image.GIF" Name="Image"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.ImageButton.GIF" Name="ImageButton"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.Label.GIF" Name="Label"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.LinkButton.GIF" Name="LinkButton"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.ListBox.GIF" Name="ListBox"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.Literal.GIF" Name="Literal"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.Panel.GIF" Name="Panel"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.PlaceHolder.GIF" Name="PlaceHolder"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.RadioButton.GIF" Name="RadioButton"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.RadioButtonList.GIF" Name="RadioButtonList"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.RangeValidator.GIF" Name="RangeValidator"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.RegularExpressionValidator.GIF" Name="RegularExpressionValidator"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.Repeater.GIF" Name="Repeater"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.RequiredFieldValidator.GIF" Name="RequiredFieldValidator"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.Table.GIF" Name="Table"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.TextBox.GIF" Name="TextBox"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.ValidationSummary.GIF" Name="ValidationSummary"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.Xml.GIF" Name="Xml"/>
+<Icon Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.XmlElement.GIF" Name="XmlElement"/>
+<Icon Name="database" Image="Languages/VisualAltaBPM/Images/database.gif"/>
+<Icon Name="Bookings" Image="Languages/VisualAltaBPM/Images/Bookings.JPG"/>
+<Icon Name="BusinessUnit" Image="Languages/VisualAltaBPM/Images/BusinessUnit.JPG"/>
+<Icon Name="Chart" Image="Languages/VisualAltaBPM/Images/Chart.JPG"/>
+<Icon Name="Commit" Image="Languages/VisualAltaBPM/Images/Commit.JPG"/>
+<Icon Name="Company" Image="Languages/VisualAltaBPM/Images/Company.JPG"/>
+<Icon Name="Dashboard" Image="Languages/VisualAltaBPM/Images/Dashboard.JPG"/>
+<Icon Name="De-bookings" Image="Languages/VisualAltaBPM/Images/De-bookings.JPG"/>
+<Icon Name="Deal" Image="Languages/VisualAltaBPM/Images/Deal.JPG"/>
+<Icon Name="DealProbability" Image="Languages/VisualAltaBPM/Images/DealProbability.JPG"/>
+<Icon Name="DealStatus" Image="Languages/VisualAltaBPM/Images/DealStatus.JPG"/>
+<Icon Name="DealValue" Image="Languages/VisualAltaBPM/Images/DealValue.JPG"/>
+<Icon Name="Distributor" Image="Languages/VisualAltaBPM/Images/Distributor.gif"/>
+<Icon Name="FiscalPeriod" Image="Languages/VisualAltaBPM/Images/FiscalPeriod.JPG"/>
+<Icon Name="Forecast" Image="Languages/VisualAltaBPM/Images/Forecast.JPG"/>
+<Icon Name="Group" Image="Languages/VisualAltaBPM/Images/Group.JPG"/>
+<Icon Name="Product" Image="Languages/VisualAltaBPM/Images/Product.JPG"/>
+<Icon Name="ProductFamily" Image="Languages/VisualAltaBPM/Images/ProductFamily.JPG"/>
+<Icon Name="ProductLine" Image="Languages/VisualAltaBPM/Images/ProductLine.JPG"/>
+<Icon Name="Projection" Image="Languages/VisualAltaBPM/Images/Projection.JPG"/>
+<Icon Name="Report" Image="Languages/VisualAltaBPM/Images/Report.JPG"/>
+<Icon Name="Run-Rate" Image="Languages/VisualAltaBPM/Images/Run-Rate.JPG"/>
+<Icon Name="new" Image="Languages/VisualAltaBPM/Images/new.gif"/>
+<Icon Name="exit" Image="Languages/VisualAltaBPM/Images/exit.gif"/>
+<Icon Name="if" Image="Languages/VisualAltaBPM/Images/if.gif"/>
+<Icon Name="endif" Image="Languages/VisualAltaBPM/Images/endif.gif"/>
+<Icon Name="queue" Image="Languages/VisualAltaBPM/Images/queue.gif"/>
+<Icon Name="sms" Image="Languages/VisualAltaBPM/Images/sms.jpg"/>
+<Icon Name="soap" Image="Languages/VisualAltaBPM/Images/soap.gif"/>
+<Icon Name="timer" Image="Languages/VisualAltaBPM/Images/timer.gif"/></Icons>
+ <Connectors>
+   <Connector Name="Connection" Image="Languages/VisualAltaBPM/Images/connection.gif" Type="CONNECTION"/>
+ </Connectors>
+ <Editors>
+
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="Icons" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="Workflow" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="ASPNET" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="ATT" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="ATTITEM" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="ATTLST" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="Bookings" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="BusinessUnit" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="CVS" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="Chart" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="Commit" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="Company" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="DTD" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="Dashboard" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="De-bookings" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="Deal" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="DealProbability" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="DealStatus" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="DealValue" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="Distributor" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="ELEMNT" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="ELEMNTGROUP" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="FiscalPeriod" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="Forecast" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="Group" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="Product" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="ProductFamily" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="ProductLine" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="Projection" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="Report" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="Run-Rate" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="AdRotator" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="Button" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="Calendar" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="CheckBox" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="CheckBoxList" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="CompareValidator" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="CustomValidator" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="DataGrid" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="DataList" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="DropDownList" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="HTML" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="HyperLink" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="Image" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="ImageButton" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="Label" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="LinkButton" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="ListBox" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="Literal" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="Panel" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="PlaceHolder" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="RadioButton" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="RadioButtonList" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="RangeValidator" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="RegularExpressionValidator" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="Repeater" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="RequiredFieldValidator" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="Table" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="TextBox" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="ValidationSummary" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="Xml" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="XmlElement" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="Theater" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="Thumbs" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="VXDIcon" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="XmlElement" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="button" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="cgi" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="checkbox" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="combobox" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="database" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="endif" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="exit" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="fileupload" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="form" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="help" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="hidden" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="href" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="html" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="http" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="if" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="image" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="imagebutton" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="images" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="listbox" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="new" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="newdtd" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="newlang" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="news" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="open" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="outconnection" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="password" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="queue" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="radiobutton" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="save" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="sms" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="soap" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="splash" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="submit" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="text" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="textarea" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="textbox" AttributeName="Variable" Type="PANEL"/>
+
+   <Editor Name="VariableSelector"           Class="vxd.Languages.VisualHTML.Editors.VariableSelector"    ElementName="timer" AttributeName="Variable" Type="PANEL"/>
+
+ </Editors>
+</Language>

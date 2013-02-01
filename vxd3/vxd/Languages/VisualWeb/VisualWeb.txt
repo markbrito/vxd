@@ -1,0 +1,6 @@
+VisualWeb allows you to create web based applications and sites easily by drawing the site.
+
+VisualWeb.xml defines the image based visual language.
+VisualWeb.dtd defines the structure of the language.
+Images/ is the directory with the images for the VisualWeb language.
+Editors/ is the directory with the code for custom editors in this language.

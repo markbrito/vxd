@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE Platform SYSTEM "../Platform.dtd">
+<Platform name="Tomcat403">
+ <toolbar>   
+    <toolbarbutton image="Platforms/Tomcat403/Images/deployandstart.gif" text="Deploy and Run Project" command="DEPLOY"/>
+    <toolbarbutton image="Platforms/Tomcat403/Images/stop.gif" text="Stop Running Project" command="STOP"/>
+ </toolbar>
+ <menu name="Deploy" letter="D">
+      <menuitem image="Platforms/Tomcat403/Images/deployandstart.gif" text="Deploy and Run Project" command="DEPLOY"/>
+      <menuitem image="Platforms/Tomcat403/Images/stop.gif" text="Stop Running Project" command="STOP"/>
+ </menu>
+<eventhandler class="vxd.Platforms.WindowsTomcat.PlatformDeployment.DeploymentActionEventHandler"/>
+</Platform>

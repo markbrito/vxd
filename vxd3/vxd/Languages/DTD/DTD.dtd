@@ -1,0 +1,114 @@
+<!ELEMENT DTD (ELEMNTGROUP)*>
+<!ATTLIST DTD Name CDATA "DTD"
+		    Path CDATA "DTD"
+		      ID CDATA #IMPLIED
+		       XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+		    >
+<!ELEMENT ELEMNTGROUP (ELEMNT|Connection)*>
+<!ATTLIST ELEMNTGROUP Name CDATA "ElementGroup"
+			   Required (TRUE|FALSE) "FALSE"
+			   LogicalAND (TRUE|FALSE) "FALSE"
+			   LogicalOR (TRUE|FALSE) "TRUE"
+			   ID CDATA #IMPLIED
+               XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+             >
+<!ELEMENT ELEMNT ((ATTLST)?,(ELEMNTGROUP)?,(Connection)*)?>
+<!ATTLIST ELEMNT Name CDATA "Element"
+				Required (TRUE|FALSE) "FALSE"
+				Multiplicity (EXACTLYONE|ZEROORMORE|ONEORMORE) "EXACTLYONE"
+				DefaultValue CDATA #IMPLIED
+				Value CDATA #IMPLIED
+				InnerText CDATA #IMPLIED
+               ID CDATA #IMPLIED
+               XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       		Order CDATA "0"
+	      		 Visible (TRUE|FALSE) "TRUE"
+             >
+<!ELEMENT ATTLST (ATT|Connection)*>
+<!ATTLIST ATTLST
+			   Name CDATA "AttributeList"
+               ID CDATA #IMPLIED
+               XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       Order CDATA "0"
+	       Visible (TRUE|FALSE) "TRUE"
+	      >
+<!ELEMENT ATT (ATTITEM|Connection)*>
+<!ATTLIST ATT 
+              ID CDATA #IMPLIED
+Name CDATA "ATT"
+               Type (CDATA|LIST) "CDATA"
+               DefaultValue CDATA #IMPLIED
+               Value CDATA #IMPLIED
+               Required (TRUE|FALSE) "FALSE"
+               XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       Order CDATA "0"
+	       Visible (TRUE|FALSE) "TRUE"
+>
+<!ELEMENT ATTITEM (Connection)*>
+<!ATTLIST ATTITEM Name CDATA "AttributeItem"
+              ID CDATA #IMPLIED
+               XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       Order CDATA "0"
+	       Visible (TRUE|FALSE) "TRUE"
+>
+	       
+<!ELEMENT MapAttribute (#PCDATA)>
+<!ATTLIST MapAttribute Name CDATA "MapAttribute"
+                     ID CDATA #IMPLIED
+                     Order CDATA "0"
+                     SourceID CDATA #IMPLIED
+                     DestType (ATT|ATTLST|ELEMNT) "ATT"
+                     Operation (XPATH|Expression|WebService|Map) "XPATH"
+                     DestID CDATA #IMPLIED
+                     DestType (ATT) "ATT"
+>
+<!ELEMENT MapElementGroup (#PCDATA)>
+<!ATTLIST MapElementGroup Name CDATA "MapElement"
+                     ID CDATA #IMPLIED
+                     Order CDATA "0"
+                     SourceID CDATA #IMPLIED
+                     DestType (ATT|ATTLST|ELEMNT) "ATT"
+                     Operation (XPATH|Expression|WebService|Map) "XPATH"
+                     DestID CDATA #IMPLIED
+                     DestType (ELEMNT) "ELEMNT"
+>
+<!ELEMENT MapElement (#PCDATA)>
+<!ATTLIST MapElement Name CDATA "MapElement"
+                     ID CDATA #IMPLIED
+                     Order CDATA "0"
+                     SourceID CDATA #IMPLIED
+                     DestType (ATT|ATTLST|ELEMNT) "ATT"
+                     Operation (XPATH|Expression|WebService|Map) "XPATH"
+                     DestID CDATA #IMPLIED
+                     DestType (ELEMNT) "ELEMNT"
+>
+<!ELEMENT MapAttributeList (#PCDATA)>
+<!ATTLIST MapAttributeList Name CDATA "MapAttributeList"
+                     ID CDATA #IMPLIED
+                     Order CDATA "0"
+                     SourceID CDATA #IMPLIED
+                     DestType (ATT|ATTLST|ELEMNT|ELEMNTGROUP) "ATT"
+                     Operation (XPATH|Expression|WebService|Map) "XPATH"
+                     DestID CDATA #IMPLIED
+                     DestType (ATTLST) "ATTLST"
+>
+<!ELEMENT Connection  (#PCDATA)>
+<!ATTLIST Connection Name CDATA "Connection"
+                     ID CDATA #IMPLIED
+                     Order CDATA "0"
+                     SourceID CDATA #IMPLIED
+                     DestID CDATA #IMPLIED
+                     DestType (ATT|ATTITEM|ATTLST|ELEMNT) "ATT"
+                     XSLElement (apply-imports|apply-templates|instructions|top-level|top-level-attrs|attribute|attribute-set|call-template|choose|comment|copy|copy-of|decimal-format|element|fallback|for-each|if|import|include|key|message|namespace-alias|number|otherwise|output|param|preserve-space|processing-instruction|sort|strip-space|stylesheet|template|text|transform|value-of|variable|when|with-param|encoding|version) "value-of"
+			XSLAttributeNVP CDATA #IMPLIED
+>

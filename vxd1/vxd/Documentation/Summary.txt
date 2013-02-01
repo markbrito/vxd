@@ -1,0 +1,49 @@
+Visual XML Designer Overview for Executives
+
+Executive Summary
+
+Visual XML Designer allows a user to easily develop products with
+ a mouse oriented drag and drop interface that is intuitive.  The
+idea is to draw a program with icons and connections to generate an XML document
+that represents the diagram. That document can then be instructions to the engine
+for that type of document.  Alternatively, the document can be converted to the
+destination language.
+
+What Visual XML Designer Provides
+
+Many sets of toolboxes will be provided for different types of development.  Thes toolboxes
+are simply different sets of pictures and connectors.  Second, several engines and converters
+will be provided.  The engines read the documents created and the converters convert the
+documents. 
+
+Examples of toolboxes
+
+Web / Database Development
+Database Development
+Client / Server Windows Development
+XML Document Process Development
+
+Examples of engines
+
+Web / Database Engine
+Database Engine
+
+Examples of converters
+
+Java Windows Program Generator
+Java Servlet Program Generator
+
+
+Use Case for Web Development
+
+First the user draws the pictures and connects the concepts. An XML
+Document is generated from this drawing.  Now the document can be
+fed into the Web Engine for running.  Alternatively you can use the
+Java Servlet Program Generator on the same document to
+generate java code for more customization.
+
+In Conclusion
+
+This Product defines several visual languages which are simply sets of pictures and connectors.
+This visual language is ultimately saved as xml.  Engines can run that xml language directly
+or Converters can change that language to another.

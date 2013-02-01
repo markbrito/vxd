@@ -1,0 +1,22 @@
+Actually create a huge tree structure that coordinates every step of 
+the project and enables builds to always hold the latest configuration.
+The released product can actually be released using vxd itself.
+
+Use Case:
+
+Developing and Deploying a Video Over IP solution using VXD.
+
+1. Executives Dream Up Idea and Draw a Picture of the Main Pieces of the solution.
+2. Business Analysts Define the Forms, Reports, Documents and other business details.
+3. Marketing Creates its Demo to define requirements.
+4. Artists handle the visual aspects of the user interface.
+5. System Analysts Architect the individual components and their technologies into a
+	complete system specification.
+6. Information Technology Professionals create a document that documents infrastructure 
+	requirements.
+7. Engineering creates each component in the architecture and converges the solution with
+	the infrastructure.
+8. Configuration Management documents the settings and methodology for deployment.
+9. Quality assurance defines use cases to define a test plan.
+10. Documentation guidelines are completed.
+

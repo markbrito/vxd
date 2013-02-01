@@ -1,0 +1,5 @@
+vxd.java is where the program starts
+
+Config/vxd.xml defines the structure and features of VXD.
+All the languages, deployments and translators added
+should be added in this file.

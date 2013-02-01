@@ -1,0 +1,726 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>Microsoft.Build.Framework</name>
+	</assembly>
+	<members>
+		<member name="N:Microsoft.Build.Framework">
+			<summary>The <see cref="N:Microsoft.Build.Framework"></see> namespace contains the types that define how tasks and loggers interact with the MSBuild engine.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Framework.AnyEventHandler">
+			<summary>Represents the method that will handle the <see cref="E:Microsoft.Build.Framework.IEventSource.AnyEventRaised"></see> event of a build.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Framework.BuildErrorEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.Build.Framework.IEventSource.ErrorRaised"></see> event.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.BuildErrorEventArgs.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildErrorEventArgs"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.BuildErrorEventArgs.#ctor(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildErrorEventArgs"></see> class with the specified <see cref="P:Microsoft.Build.Framework.BuildErrorEventArgs.SubCategory"></see>, <see cref="P:Microsoft.Build.Framework.BuildErrorEventArgs.Code"></see>, <see cref="P:Microsoft.Build.Framework.BuildErrorEventArgs.File"></see>, <see cref="P:Microsoft.Build.Framework.BuildErrorEventArgs.LineNumber"></see>, <see cref="P:Microsoft.Build.Framework.BuildErrorEventArgs.ColumnNumber"></see>, <see cref="P:Microsoft.Build.Framework.BuildErrorEventArgs.EndLineNumber"></see>, <see cref="P:Microsoft.Build.Framework.BuildErrorEventArgs.EndColumnNumber"></see>, <see cref="P:Microsoft.Build.Framework.BuildEventArgs.Message"></see>, <see cref="P:Microsoft.Build.Framework.BuildEventArgs.HelpKeyword"></see>, and <see cref="P:Microsoft.Build.Framework.BuildEventArgs.SenderName"></see> values.</summary>
+			<param name="file">The name of the file associated with the event.</param>
+			<param name="subcategory">The custom subcategory of the event.</param>
+			<param name="message">The text of the event.</param>
+			<param name="helpKeyword">The Help keyword associated with the event.</param>
+			<param name="columnNumber">The column number that corresponds to the beginning of the section of code that raised the event.</param>
+			<param name="code">The error code of the event.</param>
+			<param name="endLineNumber">The line number that corresponds to the end of the section of code that raised the event.</param>
+			<param name="senderName">The source of the event.</param>
+			<param name="endColumnNumber">The column number that corresponds to the end of the section of code that raised the event.</param>
+			<param name="lineNumber">The line number that corresponds to the beginning of the section of code that raised the event.</param>
+		</member>
+		<member name="P:Microsoft.Build.Framework.BuildErrorEventArgs.Code">
+			<summary>Gets the error code of the event.</summary>
+			<returns>The error code of the event.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.BuildErrorEventArgs.ColumnNumber">
+			<summary>Gets the column number that corresponds to the beginning of the section of code that raised the event.</summary>
+			<returns>The column number that corresponds to the beginning of the section of code that raised the event.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.BuildErrorEventArgs.EndColumnNumber">
+			<summary>Gets the column number that corresponds to the end of the section of code that raised the event.</summary>
+			<returns>The column number that corresponds to the end of the section of code that raised the event.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.BuildErrorEventArgs.EndLineNumber">
+			<summary>Gets the line number that corresponds to the end of the section of code that raised the event.</summary>
+			<returns>The line number that corresponds to the end of the section of code that raised the event.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.BuildErrorEventArgs.File">
+			<summary>Gets the name of the file that raised the event.</summary>
+			<returns>The name of the file that raised the event.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.BuildErrorEventArgs.LineNumber">
+			<summary>Gets the line number that corresponds to the beginning of the section of code that raised the event.</summary>
+			<returns>The line number that corresponds to the beginning of the section of code that raised the event.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.BuildErrorEventArgs.Subcategory">
+			<summary>Gets the custom subtype of the event.</summary>
+			<returns>The custom subtype of the event.</returns>
+		</member>
+		<member name="T:Microsoft.Build.Framework.BuildErrorEventHandler">
+			<summary>Represents the method that will handle the <see cref="E:Microsoft.Build.Framework.IEventSource.ErrorRaised"></see> event of a build.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Framework.BuildEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.Build.Framework.IEventSource.AnyEventRaised"></see> event.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.BuildEventArgs.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildEventArgs"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.BuildEventArgs.#ctor(System.String,System.String,System.String)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildEventArgs"></see> class with the specified <see cref="P:Microsoft.Build.Framework.BuildEventArgs.Message"></see>, <see cref="P:Microsoft.Build.Framework.BuildEventArgs.HelpKeyword"></see>, and <see cref="P:Microsoft.Build.Framework.BuildEventArgs.SenderName"></see> values.</summary>
+			<param name="message">The text of the event.</param>
+			<param name="helpKeyword">The Help keyword associated with the event.</param>
+			<param name="senderName">The source of the event.</param>
+		</member>
+		<member name="P:Microsoft.Build.Framework.BuildEventArgs.HelpKeyword">
+			<summary>Gets the Help keyword for the event.</summary>
+			<returns>The Help keyword for the event.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.BuildEventArgs.Message">
+			<summary>Gets the message for the event.</summary>
+			<returns>The message for the event.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.BuildEventArgs.SenderName">
+			<summary>Gets the name of the <see cref="T:System.Object"></see> raising the event.</summary>
+			<returns>The name of the <see cref="T:System.Object"></see> raising the event.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.BuildEventArgs.ThreadId">
+			<summary>Gets an integer identifier for the thread that raised the event.</summary>
+			<returns>An integer identifier for the thread that raised the event.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.BuildEventArgs.Timestamp">
+			<summary>Gets the time the event was raised as a <see cref="T:System.DateTime"></see>.</summary>
+			<returns>The time the event was raised as a <see cref="T:System.DateTime"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Build.Framework.BuildFinishedEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.Build.Framework.IEventSource.BuildFinished"></see> event.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.BuildFinishedEventArgs.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildFinishedEventArgs"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.BuildFinishedEventArgs.#ctor(System.String,System.String,System.Boolean)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildFinishedEventArgs"></see> class with the specified <see cref="P:Microsoft.Build.Framework.BuildEventArgs.Message"></see>, <see cref="P:Microsoft.Build.Framework.BuildEventArgs.HelpKeyword"></see>, and <see cref="P:Microsoft.Build.Framework.BuildFinishedEventArgs.Succeeded"></see> values.</summary>
+			<param name="message">The text of the event.</param>
+			<param name="helpKeyword">The Help keyword associated with the event.</param>
+			<param name="succeeded">true to indicate the build succeeded; otherwise, false.</param>
+		</member>
+		<member name="P:Microsoft.Build.Framework.BuildFinishedEventArgs.Succeeded">
+			<summary>Gets or sets a value indicating whether the build succeeded.</summary>
+			<returns>true to indicate the build succeeded; otherwise, false.</returns>
+		</member>
+		<member name="T:Microsoft.Build.Framework.BuildFinishedEventHandler">
+			<summary>Represents the method that will handle the <see cref="E:Microsoft.Build.Framework.IEventSource.BuildFinished"></see> event of a build.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Framework.BuildMessageEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.Build.Framework.IEventSource.MessageRaised"></see> event.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.BuildMessageEventArgs.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildMessageEventArgs"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.BuildMessageEventArgs.#ctor(System.String,System.String,System.String,Microsoft.Build.Framework.MessageImportance)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildMessageEventArgs"></see> class with the specified <see cref="P:Microsoft.Build.Framework.BuildEventArgs.Message"></see>, <see cref="P:Microsoft.Build.Framework.BuildEventArgs.HelpKeyword"></see>, <see cref="P:Microsoft.Build.Framework.BuildEventArgs.SenderName"></see>, and <see cref="P:Microsoft.Build.Framework.BuildEventArgs.Importance"></see> values.</summary>
+			<param name="importance">A <see cref="T:Microsoft.Build.Framework.MessageImportance"></see> value indicating the importance of the event.</param>
+			<param name="message">The text of the event.</param>
+			<param name="helpKeyword">The Help keyword associated with the event.</param>
+			<param name="senderName">The source of the event.</param>
+		</member>
+		<member name="P:Microsoft.Build.Framework.BuildMessageEventArgs.Importance">
+			<summary>Gets the importance of the event.</summary>
+			<returns>A <see cref="T:Microsoft.Build.Framework.MessageImportance"></see> value indicating the importance of the event.</returns>
+		</member>
+		<member name="T:Microsoft.Build.Framework.BuildMessageEventHandler">
+			<summary>Represents the method that will handle the <see cref="E:Microsoft.Build.Framework.IEventSource.MessageRaised"></see> event of a build.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Framework.BuildStartedEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.Build.Framework.IEventSource.BuildStarted"></see> event.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.BuildStartedEventArgs.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildStartedEventArgs"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.BuildStartedEventArgs.#ctor(System.String,System.String)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildStartedEventArgs"></see> class with the specified message and Help keyword.</summary>
+			<param name="message">The text of the event.</param>
+			<param name="helpKeyword">The Help keyword associated with the event.</param>
+		</member>
+		<member name="T:Microsoft.Build.Framework.BuildStartedEventHandler">
+			<summary>Represents the method that will handle the <see cref="E:Microsoft.Build.Framework.IEventSource.BuildStarted"></see> event of a build. </summary>
+		</member>
+		<member name="T:Microsoft.Build.Framework.BuildStatusEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.Build.Framework.IEventSource.StatusEventRaised"></see> event.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.BuildStatusEventArgs.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildStatusEventArgs"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.BuildStatusEventArgs.#ctor(System.String,System.String,System.String)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildStatusEventArgs"></see> class with the specified <see cref="P:Microsoft.Build.Framework.BuildEventArgs.Message"></see>, <see cref="P:Microsoft.Build.Framework.BuildEventArgs.HelpKeyword"></see>, and <see cref="P:Microsoft.Build.Framework.BuildEventArgs.SenderName"></see> values.</summary>
+			<param name="message">The text of the event.</param>
+			<param name="helpKeyword">The Help keyword associated with the event.</param>
+			<param name="senderName">The source of the event.</param>
+		</member>
+		<member name="T:Microsoft.Build.Framework.BuildStatusEventHandler">
+			<summary>Represents the method that will handle the <see cref="E:Microsoft.Build.Framework.IEventSource.StatusEventRaised"></see> event of a build. </summary>
+		</member>
+		<member name="T:Microsoft.Build.Framework.BuildWarningEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.Build.Framework.IEventSource.WarningRaised"></see> event.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.BuildWarningEventArgs.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildWarningEventArgs"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.BuildWarningEventArgs.#ctor(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildWarningEventArgs"></see> class with the specified <see cref="P:Microsoft.Build.Framework.BuildWarningEventArgs.SubCategory"></see>, <see cref="P:Microsoft.Build.Framework.BuildWarningEventArgs.Code"></see>, <see cref="P:Microsoft.Build.Framework.BuildWarningEventArgs.File"></see>, <see cref="P:Microsoft.Build.Framework.BuildWarningEventArgs.LineNumber"></see>, <see cref="P:Microsoft.Build.Framework.BuildWarningEventArgs.ColumnNumber"></see>, <see cref="P:Microsoft.Build.Framework.BuildWarningEventArgs.EndLineNumber"></see>, <see cref="P:Microsoft.Build.Framework.BuildWarningEventArgs.EndColumnNumber"></see>, <see cref="P:Microsoft.Build.Framework.BuildEventArgs.Message"></see>, <see cref="P:Microsoft.Build.Framework.BuildEventArgs.HelpKeyword"></see>, and <see cref="P:Microsoft.Build.Framework.BuildEventArgs.SenderName"></see> values.</summary>
+			<param name="file">The name of the file associated with the event.</param>
+			<param name="subcategory">The custom subcategory of the event.</param>
+			<param name="message">The text of the event.</param>
+			<param name="helpKeyword">The Help keyword associated with the event.</param>
+			<param name="columnNumber">The column number that corresponds to the beginning of the section of code that raised the event.</param>
+			<param name="code">The warning code of the event.</param>
+			<param name="endLineNumber">The line number that corresponds to the end of the section of code that raised the event.</param>
+			<param name="senderName">The source of the event.</param>
+			<param name="endColumnNumber">The column number that corresponds to the end of the section of code that raised the event.</param>
+			<param name="lineNumber">The line number that corresponds to the beginning of the section of code that raised the event.</param>
+		</member>
+		<member name="P:Microsoft.Build.Framework.BuildWarningEventArgs.Code">
+			<summary>Gets the warning code of the event.</summary>
+			<returns>The warning code of the event.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.BuildWarningEventArgs.ColumnNumber">
+			<summary>Gets the column number that corresponds to the beginning of the section of code that raised the event.</summary>
+			<returns>The column number that corresponds to the beginning of the section of code that raised the event.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.BuildWarningEventArgs.EndColumnNumber">
+			<summary>Gets the column number that corresponds to the end of the section of code that raised the event.</summary>
+			<returns>The column number that corresponds to the end of the section of code that raised the event.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.BuildWarningEventArgs.EndLineNumber">
+			<summary>Gets the line number that corresponds to the end of the section of code that raised the event.</summary>
+			<returns>The line number that corresponds to the end of the section of code that raised the event.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.BuildWarningEventArgs.File">
+			<summary>Gets the name of the file that raised the event.</summary>
+			<returns>The name of the file that raised the event.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.BuildWarningEventArgs.LineNumber">
+			<summary>Gets the line number that corresponds to the beginning of the section of code that raised the event.</summary>
+			<returns>The line number that corresponds to the beginning of the section of code that raised the event.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.BuildWarningEventArgs.Subcategory">
+			<summary>Gets the custom subcategory of the event.</summary>
+			<returns>The custom subcategory of the event.</returns>
+		</member>
+		<member name="T:Microsoft.Build.Framework.BuildWarningEventHandler">
+			<summary>Represents the method that will handle the <see cref="E:Microsoft.Build.Framework.IEventSource.WarningRaised"></see> event of a build.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Framework.CustomBuildEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.Build.Framework.IEventSource.CustomEventRaised"></see> event.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.CustomBuildEventArgs.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.CustomBuildEventArgs"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.CustomBuildEventArgs.#ctor(System.String,System.String,System.String)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.CustomBuildEventArgs"></see> class with the specified <see cref="P:Microsoft.Build.Framework.BuildEventArgs.Message"></see>, <see cref="P:Microsoft.Build.Framework.BuildEventArgs.HelpKeyword"></see>, and <see cref="P:Microsoft.Build.Framework.BuildEventArgs.SenderName"></see> values.</summary>
+			<param name="message">The text of the event.</param>
+			<param name="helpKeyword">The Help keyword associated with the event.</param>
+			<param name="senderName">The source of the event.</param>
+		</member>
+		<member name="T:Microsoft.Build.Framework.CustomBuildEventHandler">
+			<summary>Represents the method that will handle the <see cref="E:Microsoft.Build.Framework.IEventSource.CustomEventRaised"></see> event of a build.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Framework.ExternalProjectFinishedEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.Build.Framework.IEventSource.CustomEventRaised"></see> event.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.ExternalProjectFinishedEventArgs.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.ExternalProjectFinishedEventArgs"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.ExternalProjectFinishedEventArgs.#ctor(System.String,System.String,System.String,System.String,System.Boolean)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.ExternalProjectFinishedEventArgs"></see> class, with the specified values.</summary>
+			<param name="message">The text of the event.</param>
+			<param name="helpKeyword">The Help keyword associated with the event.</param>
+			<param name="projectFile">The project file name.</param>
+			<param name="senderName">The source of the event.</param>
+			<param name="succeeded">true to indicate that the project built successfully; otherwise false.</param>
+		</member>
+		<member name="P:Microsoft.Build.Framework.ExternalProjectFinishedEventArgs.ProjectFile">
+			<summary>Gets the project file name that raised the event.</summary>
+			<returns>The project file name that raised the event.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.ExternalProjectFinishedEventArgs.Succeeded">
+			<summary>Gets a value indicating whether the build succeeded.</summary>
+			<returns>true if the build succeeded; otherwise, false.</returns>
+		</member>
+		<member name="T:Microsoft.Build.Framework.ExternalProjectStartedEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.Build.Framework.IEventSource.CustomEventRaised"></see> event.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.ExternalProjectStartedEventArgs.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.ExternalProjectStartedEventArgs"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.ExternalProjectStartedEventArgs.#ctor(System.String,System.String,System.String,System.String,System.String)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.ExternalProjectFinishedEventArgs"></see> class, with the specified values.</summary>
+			<param name="message">The text of the event.</param>
+			<param name="helpKeyword">The Help keyword associated with the event.</param>
+			<param name="projectFile">The project file name.</param>
+			<param name="senderName">The source of the event.</param>
+			<param name="targetNames">The names of the targets to build in the external project. This can be a null reference (Nothing in Visual Basic) if the external project is being built with the default targets.</param>
+		</member>
+		<member name="P:Microsoft.Build.Framework.ExternalProjectStartedEventArgs.ProjectFile">
+			<summary>Gets the project file that raised the event.</summary>
+			<returns>The project file that raised the event.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.ExternalProjectStartedEventArgs.TargetNames">
+			<summary>Gets the target names that are being built in the project.</summary>
+			<returns>The names of the targets being built in the external project. This can be a null reference (Nothing in Visual Basic) if the external project is being built with the default target.</returns>
+		</member>
+		<member name="T:Microsoft.Build.Framework.IBuildEngine">
+			<summary>Provides a way for task authors to use a subset of the functionality of the MSBuild engine.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.IBuildEngine.BuildProjectFile(System.String,System.String[],System.Collections.IDictionary,System.Collections.IDictionary)">
+			<summary>Initiates a build of a project file. If the build is successful, the outputs, if any, of the specified targets are returned.</summary>
+			<returns>true if the build was successful; otherwise, false.</returns>
+			<param name="projectFileName">The name of the project file to build.</param>
+			<param name="targetOutputs">The outputs of each specified target.</param>
+			<param name="targetNames">The names of the target in the project to build. Separate multiple targets with a semicolon (;).</param>
+			<param name="globalProperties">An <see cref="T:System.Collections.IDictionary"></see> of additional global properties to apply to the project. The key and value must be String data types.</param>
+		</member>
+		<member name="M:Microsoft.Build.Framework.IBuildEngine.LogCustomEvent(Microsoft.Build.Framework.CustomBuildEventArgs)">
+			<summary>Raises a custom event to all registered loggers.</summary>
+			<param name="e">The event data.</param>
+		</member>
+		<member name="M:Microsoft.Build.Framework.IBuildEngine.LogErrorEvent(Microsoft.Build.Framework.BuildErrorEventArgs)">
+			<summary>Raises an error event to all registered loggers.</summary>
+			<param name="e">The event data.</param>
+		</member>
+		<member name="M:Microsoft.Build.Framework.IBuildEngine.LogMessageEvent(Microsoft.Build.Framework.BuildMessageEventArgs)">
+			<summary>Raises a message event to all registered loggers.</summary>
+			<param name="e">The event data.</param>
+		</member>
+		<member name="M:Microsoft.Build.Framework.IBuildEngine.LogWarningEvent(Microsoft.Build.Framework.BuildWarningEventArgs)">
+			<summary>Raises a warning event to all registered loggers.</summary>
+			<param name="e">The event data.</param>
+		</member>
+		<member name="P:Microsoft.Build.Framework.IBuildEngine.ColumnNumberOfTaskNode">
+			<summary>Gets the line number of the task node within the project file that called it.</summary>
+			<returns>The line number of the task node within the project file that called it.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.IBuildEngine.ContinueOnError">
+			<summary>Returns true if the ContinueOnError flag was set to true for this particular task in the project file.</summary>
+			<returns>true if the ContinueOnError flag was set to true for this particular task in the project file.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.IBuildEngine.LineNumberOfTaskNode">
+			<summary>Gets the line number of the task node within the project file that called it.</summary>
+			<returns>The line number of the task node within the project file that called it.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.IBuildEngine.ProjectFileOfTaskNode">
+			<summary>Gets the full path to the project file that contained the call to this task.</summary>
+			<returns>The full path to the project file that contained the call to this task.</returns>
+		</member>
+		<member name="T:Microsoft.Build.Framework.IEventSource">
+			<summary>Defines the events raised by the build engine. Loggers receive an object implementing this interface in their <see cref="M:Microsoft.Build.Framework.ILogger.Initialize(Microsoft.Build.Framework.IEventSource)"></see> method and use it to subscribe to the events they are interested in receiving.</summary>
+		</member>
+		<member name="E:Microsoft.Build.Framework.IEventSource.AnyEventRaised">
+			<summary>Occurs when a build raises any other type of build event.</summary>
+		</member>
+		<member name="E:Microsoft.Build.Framework.IEventSource.BuildFinished">
+			<summary>Occurs when a build finishes.</summary>
+		</member>
+		<member name="E:Microsoft.Build.Framework.IEventSource.BuildStarted">
+			<summary>Occurs when a build starts.</summary>
+		</member>
+		<member name="E:Microsoft.Build.Framework.IEventSource.CustomEventRaised">
+			<summary>Occurs when a build raises a custom event.</summary>
+		</member>
+		<member name="E:Microsoft.Build.Framework.IEventSource.ErrorRaised">
+			<summary>Occurs when a build raises an error.</summary>
+		</member>
+		<member name="E:Microsoft.Build.Framework.IEventSource.MessageRaised">
+			<summary>Occurs when a build raises a message.</summary>
+		</member>
+		<member name="E:Microsoft.Build.Framework.IEventSource.ProjectFinished">
+			<summary>Occurs when a project finishes building.</summary>
+		</member>
+		<member name="E:Microsoft.Build.Framework.IEventSource.ProjectStarted">
+			<summary>Occurs when a project starts building.</summary>
+		</member>
+		<member name="E:Microsoft.Build.Framework.IEventSource.StatusEventRaised">
+			<summary>Occurs when a build raises a status event.</summary>
+		</member>
+		<member name="E:Microsoft.Build.Framework.IEventSource.TargetFinished">
+			<summary>Occurs when a target finishes building.</summary>
+		</member>
+		<member name="E:Microsoft.Build.Framework.IEventSource.TargetStarted">
+			<summary>Occurs when a target starts building.</summary>
+		</member>
+		<member name="E:Microsoft.Build.Framework.IEventSource.TaskFinished">
+			<summary>Occurs when a task completes execution.</summary>
+		</member>
+		<member name="E:Microsoft.Build.Framework.IEventSource.TaskStarted">
+			<summary>Occurs when a task begins execution.</summary>
+		</member>
+		<member name="E:Microsoft.Build.Framework.IEventSource.WarningRaised">
+			<summary>Occurs when a build raises a warning.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Framework.ILogger">
+			<summary>Defines an MSBuild logger, which subscribes to build system events.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.ILogger.Initialize(Microsoft.Build.Framework.IEventSource)">
+			<summary>Subscribes loggers to specific events. This method is called when the logger is registered with the build engine, before any events are raised.</summary>
+			<param name="eventSource">The events available to loggers.</param>
+		</member>
+		<member name="M:Microsoft.Build.Framework.ILogger.Shutdown">
+			<summary>Releases the resources allocated to the logger at the time of initialization or during the build. This method is called when the logger is unregistered from the engine, after all events are raised. A host of MSBuild typically unregisters loggers immediately before quitting.</summary>
+		</member>
+		<member name="P:Microsoft.Build.Framework.ILogger.Parameters">
+			<summary>Gets or sets the user-defined parameters of the logger. </summary>
+			<returns>The logger parameters.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.ILogger.Verbosity">
+			<summary>Gets or sets the level of detail to show in the event log.</summary>
+			<returns>One of the enumeration values. The default is <see cref="F:Microsoft.Build.Framework.LoggerVerbosity.Normal"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Build.Framework.ITask">
+			<summary>Defines a task, which is a unit of executable code used by MSBuild to perform build operations.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.ITask.Execute">
+			<summary>Executes a task.</summary>
+			<returns>true if the task executed successfully; otherwise, false.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.ITask.BuildEngine">
+			<summary>Gets or sets the build engine associated with the task.</summary>
+			<returns>The build engine associated with the task.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.ITask.HostObject">
+			<summary>Gets or sets any host object that is associated with the task.</summary>
+			<returns>The host object associated with the task.</returns>
+		</member>
+		<member name="T:Microsoft.Build.Framework.ITaskHost">
+			<summary>Passes host objects from an integrated development environment (IDE) to individual tasks.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Framework.ITaskItem">
+			<summary>Defines an MSBuild item that can be consumed and emitted by tasks.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.ITaskItem.CloneCustomMetadata">
+			<summary>Gets the collection of custom metadata.</summary>
+			<returns>The collection of custom metadata.</returns>
+		</member>
+		<member name="M:Microsoft.Build.Framework.ITaskItem.CopyMetadataTo(Microsoft.Build.Framework.ITaskItem)">
+			<summary>Copies the custom metadata entries to another item.</summary>
+			<param name="destinationItem">The item to copy the metadata entries to.</param>
+		</member>
+		<member name="M:Microsoft.Build.Framework.ITaskItem.GetMetadata(System.String)">
+			<summary>Gets the value of the specified metadata entry.</summary>
+			<returns>The value of the attributeName metadata.</returns>
+			<param name="metadataName">The name of the metadata entry.</param>
+		</member>
+		<member name="M:Microsoft.Build.Framework.ITaskItem.RemoveMetadata(System.String)">
+			<summary>Removes the specified metadata entry from the item.</summary>
+			<param name="metadataName">The name of the metadata entry to remove.</param>
+		</member>
+		<member name="M:Microsoft.Build.Framework.ITaskItem.SetMetadata(System.String,System.String)">
+			<summary>Adds or changes a custom metadata entry to the item.</summary>
+			<param name="metadataValue">The value of the metadata entry.</param>
+			<param name="metadataName">The name of the metadata entry.</param>
+		</member>
+		<member name="P:Microsoft.Build.Framework.ITaskItem.ItemSpec">
+			<summary>Gets or sets the item specification.</summary>
+			<returns>The item specification.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.ITaskItem.MetadataCount">
+			<summary>Gets the number of metadata entries associated with the item.</summary>
+			<returns>The number of metadata entries associated with the item.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.ITaskItem.MetadataNames">
+			<summary>Gets the names of the metadata entries associated with the item.</summary>
+			<returns>The names of the metadata entries associated with the item.</returns>
+		</member>
+		<member name="T:Microsoft.Build.Framework.LoadInSeparateAppDomainAttribute">
+			<summary>Defines the metadata attribute that MSBuild uses to identify tasks that must be executed in their own application domains.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.LoadInSeparateAppDomainAttribute.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.LoadInSeparateAppDomainAttribute"></see> class.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Framework.LoggerException">
+			<summary>Allows a logger to force the build to stop in an explicit way.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.LoggerException.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.LoggerException"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.LoggerException.#ctor(System.String)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.LoggerException"></see> class with the specified values.</summary>
+			<param name="message">The error message that explains the reason for the exception.</param>
+		</member>
+		<member name="M:Microsoft.Build.Framework.LoggerException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.LoggerException"></see> class with the values specified.</summary>
+			<param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext"></see> that contains contextual information about the source or destination.</param>
+			<param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo"></see> that holds the serialized object data about the exception being thrown.</param>
+		</member>
+		<member name="M:Microsoft.Build.Framework.LoggerException.#ctor(System.String,System.Exception)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.LoggerException"></see> class with the values specified.</summary>
+			<param name="message">The error message that explains the reason for the exception.</param>
+			<param name="innerException">The exception that is the cause of the current excpetion. If the innerException parameter is not a null reference (Nothing in Visual Basic), the current exception is raised in a catch block that handles the inner exception.</param>
+		</member>
+		<member name="M:Microsoft.Build.Framework.LoggerException.#ctor(System.String,System.Exception,System.String,System.String)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.LoggerException"></see> class with the values specified.</summary>
+			<param name="errorCode">The error code associated with the exception's message.</param>
+			<param name="message">The error message that explains the reason for the exception.</param>
+			<param name="helpKeyword">The Help keyword for the error.</param>
+			<param name="innerException">The exception that is the cause of the current excpetion. If the innerException parameter is not a null reference (Nothing in Visual Basic), the current exception is raised in a catch block that handles the inner exception.</param>
+		</member>
+		<member name="M:Microsoft.Build.Framework.LoggerException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+			<summary>Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo"></see> with information about the exception.</summary>
+			<param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext"></see> that contains contextual information about the source or destination.</param>
+			<param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo"></see> that holds the serialized object data about the exception being thrown.</param>
+		</member>
+		<member name="P:Microsoft.Build.Framework.LoggerException.ErrorCode">
+			<summary>Gets the error code associated with this exception's message.</summary>
+			<returns>The error code associated with this exception's message.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.LoggerException.HelpKeyword">
+			<summary>Gets the F1-help keyword associated with this error.</summary>
+			<returns>The F1-help keyword for the error.</returns>
+		</member>
+		<member name="T:Microsoft.Build.Framework.LoggerVerbosity">
+			<summary>Specifies the available verbosity levels of a <see cref="T:Microsoft.Build.Utilities.Logger"></see>.</summary>
+		</member>
+		<member name="F:Microsoft.Build.Framework.LoggerVerbosity.Detailed">
+			<summary>Minimal verbosity, which displays errors, warnings, messages with <see cref="MessageImportance"></see> values of <see cref="High"></see> or <see cref="Normal"></see>, all status events, and a build summary.</summary>
+		</member>
+		<member name="F:Microsoft.Build.Framework.LoggerVerbosity.Diagnostic">
+			<summary>Diagnostic verbosity, which displays all errors, warnings, messages, status events, and a build summary.</summary>
+		</member>
+		<member name="F:Microsoft.Build.Framework.LoggerVerbosity.Minimal">
+			<summary>Minimal verbosity, which displays errors, warnings, messages with <see cref="MessageImportance"></see> values of <see cref="High"></see>, and a build summary.</summary>
+		</member>
+		<member name="F:Microsoft.Build.Framework.LoggerVerbosity.Normal">
+			<summary>Normal verbosity, which displays errors, warnings, messages with <see cref="MessageImportance"></see> values of <see cref="High"></see>, some status events, and a build summary.</summary>
+		</member>
+		<member name="F:Microsoft.Build.Framework.LoggerVerbosity.Quiet">
+			<summary>Quiet verbosity, which displays a build summary.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Framework.MessageImportance">
+			<summary>Specifies constants that define the importance of a build message.</summary>
+		</member>
+		<member name="F:Microsoft.Build.Framework.MessageImportance.High">
+			<summary>A high importance message.</summary>
+		</member>
+		<member name="F:Microsoft.Build.Framework.MessageImportance.Low">
+			<summary>A low importance message.</summary>
+		</member>
+		<member name="F:Microsoft.Build.Framework.MessageImportance.Normal">
+			<summary>A normal importance message.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Framework.OutputAttribute">
+			<summary>Defines the metadata attribute that task authors use to identify task properties that output data from the task.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.OutputAttribute.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.OutputAttribute"></see> class.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Framework.ProjectFinishedEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.Build.Framework.IEventSource.ProjectFinished"></see> event.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.ProjectFinishedEventArgs.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.ProjectFinishedEventArgs"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.ProjectFinishedEventArgs.#ctor(System.String,System.String,System.String,System.Boolean)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.ProjectFinishedEventArgs"></see> class with the specified <see cref="P:Microsoft.Build.Framework.BuildEventArgs.Message"></see>, <see cref="P:Microsoft.Build.Framework.BuildEventArgs.HelpKeyword"></see>, <see cref="P:Microsoft.Build.Framework.ProjectFinishedEventArgs.ProjectFile"></see>, and <see cref="P:Microsoft.Build.Framework.ProjectFinishedEventArgs.Succeeded"></see> values.</summary>
+			<param name="message">The text of the event.</param>
+			<param name="helpKeyword">The Help keyword associated with the event.</param>
+			<param name="projectFile">The project file associated with the event.</param>
+			<param name="succeeded">true to indicate the build succeeded; otherwise, false.</param>
+		</member>
+		<member name="P:Microsoft.Build.Framework.ProjectFinishedEventArgs.ProjectFile">
+			<summary>Gets the project file associated with the event.</summary>
+			<returns>The project file associated with the event.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.ProjectFinishedEventArgs.Succeeded">
+			<summary>Gets a value indicating whether the build succeeded.</summary>
+			<returns>The value indicating whether the build succeeded.</returns>
+		</member>
+		<member name="T:Microsoft.Build.Framework.ProjectFinishedEventHandler">
+			<summary>Represents the method that will handle the <see cref="E:Microsoft.Build.Framework.IEventSource.ProjectFinished"></see> event of a build.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Framework.ProjectStartedEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.Build.Framework.IEventSource.ProjectStarted"></see> event. </summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.ProjectStartedEventArgs.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.ProjectStartedEventArgs"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.ProjectStartedEventArgs.#ctor(System.String,System.String,System.String,System.String,System.Collections.IEnumerable,System.Collections.IEnumerable)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.ProjectStartedEventArgs"></see> class with the specified values.</summary>
+			<param name="message">The text of the event.</param>
+			<param name="items">A list of items.</param>
+			<param name="helpKeyword">The Help keyword associated with the event.</param>
+			<param name="properties">A list of properties</param>
+			<param name="projectFile">The project file name.</param>
+			<param name="targetNames">The targets to be built.</param>
+		</member>
+		<member name="P:Microsoft.Build.Framework.ProjectStartedEventArgs.Items">
+			<summary>Gets the list of items for the event.</summary>
+			<returns>The list of items for the event.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.ProjectStartedEventArgs.ProjectFile">
+			<summary>Gets the project file associated with the event.</summary>
+			<returns>The project file associated with the event.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.ProjectStartedEventArgs.Properties">
+			<summary>Gets the list of properties for the event.</summary>
+			<returns>The list of properties for the event.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.ProjectStartedEventArgs.TargetNames">
+			<summary>Gets the list of targets to be built in the project.</summary>
+			<returns>The list of targets to be built in the project.</returns>
+		</member>
+		<member name="T:Microsoft.Build.Framework.ProjectStartedEventHandler">
+			<summary>Represents the method that will handle the <see cref="E:Microsoft.Build.Framework.IEventSource.ProjectStarted"></see> event of a build.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Framework.RequiredAttribute">
+			<summary>Defines the metadata attribute that task authors use to identify required task properties. Task properties with this attribute must have a set value when the task is run.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.RequiredAttribute.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.RequiredAttribute"></see> class.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Framework.TargetFinishedEventArgs">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.TargetFinishedEventArgs"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.TargetFinishedEventArgs.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.TargetFinishedEventArgs"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.TargetFinishedEventArgs.#ctor(System.String,System.String,System.String,System.String,System.String,System.Boolean)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.TargetFinishedEventArgs"></see> class with the specified <see cref="P:Microsoft.Build.Framework.BuildEventArgs.Message"></see>, <see cref="P:Microsoft.Build.Framework.BuildEventArgs.HelpKeyword"></see>, <see cref="P:Microsoft.Build.Framework.TargetFinishedEventArgs.TargetName"></see>, <see cref="P:Microsoft.Build.Framework.TargetFinishedEventArgs.ProjectFile"></see>, and <see cref="P:Microsoft.Build.Framework.TargetFinishedEventArgs.Succeeded"></see> values.</summary>
+			<param name="targetName">The name of the target associated with the event.</param>
+			<param name="message">The text of the event.</param>
+			<param name="helpKeyword">The Help keyword associated with the event.</param>
+			<param name="targetFile">The name of the target file.</param>
+			<param name="projectFile">The name of the project file associated with the event.</param>
+			<param name="succeeded">true to indicate the build succeeded; otherwise, false.</param>
+		</member>
+		<member name="P:Microsoft.Build.Framework.TargetFinishedEventArgs.ProjectFile">
+			<summary>Gets the name of the project file associated with the event.</summary>
+			<returns>the name of the project file associated with the event.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.TargetFinishedEventArgs.Succeeded">
+			<summary>Gets a value indicating whether the build of the target succeeded.</summary>
+			<returns>The value indicating whether the build of the target succeeded.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.TargetFinishedEventArgs.TargetFile">
+			<summary>Gets the name of the file that contains the implementation of this target.</summary>
+			<returns>The name of the file that contains the implementation of this target.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.TargetFinishedEventArgs.TargetName">
+			<summary>Gets the name of the target associated with the event.</summary>
+			<returns>The name of the target associated with the event.</returns>
+		</member>
+		<member name="T:Microsoft.Build.Framework.TargetFinishedEventHandler">
+			<summary>Represents the method that will handle the <see cref="E:Microsoft.Build.Framework.IEventSource.TargetFinished"></see> event of a build.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Framework.TargetStartedEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.Build.Framework.IEventSource.TargetStarted"></see> event. </summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.TargetStartedEventArgs.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.TargetStartedEventArgs"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.TargetStartedEventArgs.#ctor(System.String,System.String,System.String,System.String,System.String)">
+			<summary>Initalizes a new instance of the <see cref="T:Microsoft.Build.Framework.TargetStartedEventArgs"></see> class with the valudes provided.</summary>
+			<param name="targetName">The name of the target associated with the event.</param>
+			<param name="message">The text of the event.</param>
+			<param name="helpKeyword">The Help keyword associated with the event.</param>
+			<param name="targetFile">The name of the target file.</param>
+			<param name="projectFile">The name of the project file associated with the event.</param>
+		</member>
+		<member name="P:Microsoft.Build.Framework.TargetStartedEventArgs.ProjectFile">
+			<summary>Gets the name of the project file associated with the event.</summary>
+			<returns>The name of the project file associated with the event.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.TargetStartedEventArgs.TargetFile">
+			<summary>Gets the name of the file that contains the implementation of this target.</summary>
+			<returns>The name of the file that contains the implementation of this target.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.TargetStartedEventArgs.TargetName">
+			<summary>Gets the name of the target associated with the event.</summary>
+			<returns>The name of the target associated with the event.</returns>
+		</member>
+		<member name="T:Microsoft.Build.Framework.TargetStartedEventHandler">
+			<summary>Represents the method that will handle the <see cref="E:Microsoft.Build.Framework.IEventSource.TargetStarted"></see> event of a build.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Framework.TaskCommandLineEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.Build.Framework.IEventSource.MessageRaised"></see> event.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.TaskCommandLineEventArgs.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.TaskCommandLineEventArgs"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.TaskCommandLineEventArgs.#ctor(System.String,System.String,Microsoft.Build.Framework.MessageImportance)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.TaskCommandLineEventArgs"></see> class with the specified command line and <see cref="T:Microsoft.Build.Framework.MessageImportance"></see>.</summary>
+			<param name="taskName">The name of the task raising the event.</param>
+			<param name="importance">The <see cref="T:Microsoft.Build.Framework.MessageImportance"></see> of the message.</param>
+			<param name="commandLine">The command line used by the task to run the underlying program.</param>
+		</member>
+		<member name="P:Microsoft.Build.Framework.TaskCommandLineEventArgs.CommandLine">
+			<summary>Gets the command line used by the task to run the underlying program.</summary>
+			<returns>The command line used by the task to run the underlying program.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.TaskCommandLineEventArgs.TaskName">
+			<summary>Gets the name of the task that raised the event.</summary>
+			<returns>The name of the task that raised the event.</returns>
+		</member>
+		<member name="T:Microsoft.Build.Framework.TaskFinishedEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.Build.Framework.IEventSource.TaskFinished"></see> event.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.TaskFinishedEventArgs.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.TaskFinishedEventArgs"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.TaskFinishedEventArgs.#ctor(System.String,System.String,System.String,System.String,System.String,System.Boolean)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.TaskFinishedEventArgs"></see> class with the specified values.</summary>
+			<param name="taskName">The name of the task.</param>
+			<param name="M essage">The text for the message.</param>
+			<param name="helpKeyword">The Help keyword associated with the event.</param>
+			<param name="taskFile">The fine in which the task is defined.</param>
+			<param name="projectFile">The project file name.</param>
+			<param name="succeeded">true to indicate the task succeeded; otherwise, false</param>
+		</member>
+		<member name="P:Microsoft.Build.Framework.TaskFinishedEventArgs.ProjectFile">
+			<summary>Gets the name of the project file associated with the event.</summary>
+			<returns>The name of the project file associated with the event.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.TaskFinishedEventArgs.Succeeded">
+			<summary>Gets a value indicating whether the execution of the task succeeded.</summary>
+			<returns>The value indicating whether the execution of the task succeeded.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.TaskFinishedEventArgs.TaskFile">
+			<summary>Gets the MSBuild file where the task is defined.</summary>
+			<returns>The MSBuild file where the task is defined.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.TaskFinishedEventArgs.TaskName">
+			<summary>Gets the name of the task associated with the event.</summary>
+			<returns>The name of the task associated with the event.</returns>
+		</member>
+		<member name="T:Microsoft.Build.Framework.TaskFinishedEventHandler">
+			<summary>Represents the method that will handle the <see cref="E:Microsoft.Build.Framework.IEventSource.TaskFinished"></see> event of a build.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Framework.TaskStartedEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.Build.Framework.IEventSource.TaskStarted"></see> event. </summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.TaskStartedEventArgs.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.TaskStartedEventArgs"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Framework.TaskStartedEventArgs.#ctor(System.String,System.String,System.String,System.String,System.String)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.TaskStartedEventArgs"></see> class with the specified values002E</summary>
+			<param name="taskName">The name of the task.</param>
+			<param name="message">The text of the event.</param>
+			<param name="helpKeyword">The Help keyword associated with the event.</param>
+			<param name="taskFile">The file in which the task is defined.</param>
+			<param name="projectFile">The name of the project file associated with the event.</param>
+		</member>
+		<member name="P:Microsoft.Build.Framework.TaskStartedEventArgs.ProjectFile">
+			<summary>Gets the name of the project file associated with the event.</summary>
+			<returns>The name of the project file associated with the event.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.TaskStartedEventArgs.TaskFile">
+			<summary>Gets the MSBuild file where the task was defined.</summary>
+			<returns>The MSBuild file where the task was defined.</returns>
+		</member>
+		<member name="P:Microsoft.Build.Framework.TaskStartedEventArgs.TaskName">
+			<summary>Gets the name of the task associated with the event.</summary>
+			<returns>The name of the task associated with the event.</returns>
+		</member>
+		<member name="T:Microsoft.Build.Framework.TaskStartedEventHandler">
+			<summary>Represents the method that will handle the <see cref="E:Microsoft.Build.Framework.IEventSource.TaskStarted"></see> event of a build.</summary>
+		</member>
+	</members>
+</doc>

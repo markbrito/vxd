@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema targetNamespace='http://schemas.microsoft.com/intellisense/http-application-directives'
+            xmlns:xsd='http://www.w3.org/2001/XMLSchema'
+            xmlns='http://schemas.microsoft.com/intellisense/http-application-directives'
+            xmlns:vs='http://schemas.microsoft.com/Visual-Studio-Intellisense'
+            vs:ishtmlschema='false'
+            vs:isserverschema='true'
+            vs:nonbrowseable='true'
+            vs:SuccinctFriendlyName="ASP.Net">
+
+<xsd:annotation>
+  <xsd:documentation>
+    HTTP Application directives schema.
+  </xsd:documentation>
+</xsd:annotation>
+
+<xsd:include schemaLocation="CommonDirectiveTypes.xsd" />
+
+<!-- Valid top level elements -->
+<xsd:element name="Application" type="ApplicationDef" vs:htmlequivalent="%@" />
+<xsd:element name="Assembly" type="AssemblyDef" vs:htmlequivalent="%@" />
+<xsd:element name="Import" type="ImportDef" vs:htmlequivalent="%@" />
+
+<!-- Definitions for top level elements -->
+<xsd:complexType name="ApplicationDef">
+  <xsd:attribute name="ClassName" type="xsd:string" vs:nonfilterable="true" vs:nonbrowseable="true" />
+  <xsd:attribute name="CodeBehind" type="xsd:string" />
+  <xsd:attribute name="Description" type="xsd:string" vs:nonfilterable="true" />
+  <xsd:attribute name="Inherits" type="xsd:string" vs:nonfilterable="true" />
+  <xsd:attribute name="Language" type="ServerLanguagesDef" vs:readonly="true" vs:nonfilterable="true" />
+</xsd:complexType>
+
+</xsd:schema>

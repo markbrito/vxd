@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="~/Pages/Home.aspx" title="Home"  description="">
+		<siteMapNode url="~/Pages/Venture.aspx" title="Business"  description="">
+			<siteMapNode url="~/Pages/RequestService.aspx?view=ScheduleDemo" title="Schedule Demo"  description=""/>
+
+			<siteMapNode url="~/Pages/Venture.aspx?view=ExecutiveSummary" title="Executive Summary"  description=""/>
+			<siteMapNode url="~/Pages/KeyPoints.aspx?view=KeyPoints" title="Key Points"  description="">
+				<siteMapNode url="~/Pages/KeyPoints.aspx?view=DataIntegration" title="Data Integration"  description=""/>
+				<siteMapNode url="~/Pages/KeyPoints.aspx?view=DataMining" title="Data Mining"  description=""/>
+				<siteMapNode url="~/Pages/KeyPoints.aspx?view=ReportDashboards" title="Report Dashboards"  description=""/>
+				<siteMapNode url="~/Pages/KeyPoints.aspx?view=Campains" title="Campaigns"  description=""/>
+				<siteMapNode url="~/Pages/KeyPoints.aspx?view=WebAndDataServices" title="Web/Data Services"  description=""/>
+			</siteMapNode>
+			<siteMapNode url="~/Pages/Demos.aspx?view=Demos" title="Demos"  description="">
+				<siteMapNode url="~/Pages/Demos.aspx?view=MonsterDataImport" title="Monster Data Import"  description=""/>
+				<siteMapNode url="~/Pages/Demos.aspx?view=DiceDataIntegration" title="Dice Data Integration"  description=""/>
+				<siteMapNode url="~/Pages/Demos.aspx?view=WebServicesDashboard" title="Web Services Dashboard"  description=""/>
+
+			</siteMapNode>
+			<siteMapNode url="~/Pages/Venture.aspx?view=BizBlog" title="BizBlog"  description=""/>
+		</siteMapNode>
+
+		<siteMapNode url="~/Pages/UserProfile.aspx" title="Profile"  description="">
+
+			<siteMapNode url="~/Pages/UserProfile.aspx?view=MyProfile" title="My Profile"  description=""/>
+			<siteMapNode url="~/Pages/RequestService.aspx?view=RequestProfile" title="Request Profile"  description=""/>
+			<siteMapNode url="~/Pages/UserProfile.aspx?view=ManageProfiles" title="Manage Profiles"  description=""/>
+		</siteMapNode>
+		<siteMapNode url="~/Pages/Reporting.aspx" title="Reporting"  description="">
+			<siteMapNode url="~/Pages/Reporting.aspx?view=MyReportingDashboard" title="My Reporting Dashboard"  description="" />
+
+			<siteMapNode url="~/Pages/RequestService.aspx?view=RequestReportingServices" title="Request Reporting Services"  description="" />
+
+
+<!--			<siteMapNode url="~/Pages/Reporting.aspx?view=ReportDashboards" title="Report Dashboards"  description="" >
+
+
+
+				<siteMapNode url="~/Pages/Repordtdds2.aspx" title="Main Dashboard"  description="" />
+
+				<siteMapNode url="~/Pages/Rep2odrtdds2.aspx" title="Location Focus Dashboard"  description="" />
+				<siteMapNode url="~/Pages/Repeodrtdds2.aspx" title="Company Focus Dashboard"  description="" />
+				<siteMapNode url="~/Pages/Reporstdds2.aspx" title="Skill Focus Dashboard"  description="" />
+				<siteMapNode url="~/Pages/Managemen5t2.aspx" title="Configuration"  description="" />
+
+			</siteMapNode>
+			<siteMapNode url="~/Pages/Reporjssts3.aspx" title="Data Navigation"  description="" >
+				<siteMapNode url="~/Pages/RequestService.aspx?view=RequestDataNavigationAccess" title="Request Data Navigation Access"  description="" />
+				<siteMapNode url="~/Pages/Managemdddden5td2.aspx" title="Drill Grid Navigation"  description="" />
+				<siteMapNode url="~/Pages/Repossrjddsts2.aspx" title="Chart Navigation"  description="" />
+				<siteMapNode url="~/Pages/njssj.aspx" title="Schema Navigation"  description="" />
+				<siteMapNode url="~/Pages/dd.aspx" title="SQL Navigation"  description="" />
+
+			</siteMapNode> -->
+		</siteMapNode>
+		<siteMapNode url="~/Pages/IntegrationAndMining.aspx" title="Integration/Mining"  description="" >
+
+			<siteMapNode url="~/Pages/RequestService.aspx?view=RequestIntegrationAndMiningServices" title="Request Integration/Mining Services"  description="" />
+			<!--
+			<siteMapNode url="~/Pages/Management2.aspx" title="Statistics"  description="" />
+
+			<siteMapNode url="~/Pages/Management24.aspx" title="Data Import"  description="" />
+			<siteMapNode url="~/Pages/Management25.aspx" title="Processing"  description="" />
+
+			<siteMapNode url="~/Pages/Management245.aspx" title="Data Archive"  description="" />
+
+			<siteMapNode url="~/Pages/Management2545.aspx" title="Data Purge"  description="" />
+			<siteMapNode url="~/Pages/Management12.aspx" title="Configuration"  description="" />-->
+		</siteMapNode>
+		<siteMapNode url="~/Pages/WebAndDataServices.aspx" title="Web/Data Services"  description="" >
+			
+			<siteMapNode url="~/Pages/RequestService.aspx?view=RequestWebAndDataServices" title="Request Web/Data Services"  description="" />
+			<!--		<siteMapNode url="~/Pages/Managemen5td2.aspx" title="Data Integration Solutions"  description="" />
+			<siteMapNode url="~/Pages/Reporjts2.aspx" title="WSDL Service Description"  description="" />
+			<siteMapNode url="~/Pages/njj.aspx" title="SOAP Service Methods"  description="" />
+			<siteMapNode url="~/Pages/Manaddgemen5td2.aspx" title="XSLT Data Translations"  description="" />
+			<siteMapNode url="~/Pages/Manaddgddemen5td2.aspx" title="XHTML Report Cache Hosting"  description="" />
+			<siteMapNode url="~/Pages/Mafnaddgddemen5td2.aspx" title="Themeing"  description="" />
+			<siteMapNode url="~/Pages/Manaddgdddemen5td2.aspx" title="Portal"  description="" />
+-->
+		</siteMapNode>
+		<siteMapNode url="~/Pages/Architecture.aspx" title="Architecture"  description="">
+			<siteMapNode url="~/Pages/RequestService.aspx?view=TechnicalInquiries" title="Technical Inquiries"  description=""/>
+			<siteMapNode url="~/Pages/Architecture.aspx?view=Spec" title="Architectural Specification"  description=""/>
+			<siteMapNode url="~/Pages/Architecture.aspx?view=ERD" title="Database ERD"  description=""/>
+			<siteMapNode url="~/Pages/Architecture.aspx?view=ProjectStructure" title="Project Structure"  description=""/>
+
+			<siteMapNode url="~/Pages/Architecture.aspx?view=CM" title="Configuration Management"  description=""/>
+
+			<siteMapNode url="~/Pages/Architecture.aspx?view=Scalability" title="Enterprise Scalability"  description=""/>
+			<siteMapNode url="~/Pages/Architecture.aspx?view=TechBlog" title="TechBlog"  description=""/>
+			<!--
+			<siteMapNode url="~/Pages/dUserdrrProfdifffle3.aspx" title="Source Code Repository"  description=""/>
+			<siteMapNode url="~/dlkj"
+			title="Documentation Repository"  description=""/>
+			-->
+		</siteMapNode>
+		<siteMapNode url="~/Pages/About.aspx" title="About"  description="">
+			<siteMapNode url="~/Pages/About.aspx?view=Aboutmbrito" title="About mbrito"  description=""/>
+			<siteMapNode url="~/Pages/Resume.aspx?view=HtmlResume" title="Resume"  description=""/>
+		</siteMapNode>
+
+	</siteMapNode>
+</siteMap>

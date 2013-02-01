@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema targetNamespace='http://schemas.microsoft.com/intellisense/page-directives'
+            xmlns:xsd='http://www.w3.org/2001/XMLSchema'
+            xmlns='http://schemas.microsoft.com/intellisense/page-directives'
+            xmlns:vs='http://schemas.microsoft.com/Visual-Studio-Intellisense'
+            vs:ishtmlschema='false'
+            vs:isserverschema='true'
+            vs:nonbrowseable='true'
+            vs:SuccinctFriendlyName="ASP.Net">
+
+<xsd:annotation>
+  <xsd:documentation>
+    Page directives schema.
+  </xsd:documentation>
+</xsd:annotation>
+
+<xsd:include schemaLocation="CommonDirectiveTypes.xsd" />
+
+<!-- Valid top level elements -->
+<xsd:element name="Assembly" type="AssemblyDef" vs:htmlequivalent="%@" />
+<xsd:element name="Implements" type="ImplementsDef" vs:htmlequivalent="%@" />
+<xsd:element name="Import" type="ImportDef" vs:htmlequivalent="%@" />
+<xsd:element name="MasterType" type="MasterTypeDef" vs:htmlequivalent="%@" vs:disallowedonmobilepages="true" />
+<xsd:element name="OutputCache" type="OutputCacheDef" vs:htmlequivalent="%@" />
+<xsd:element name="Page" type="PageDef" vs:htmlequivalent="%@" />
+<xsd:element name="PreviousPageType" type="PreviousPageTypeDef" vs:htmlequivalent="%@" />
+<xsd:element name="Reference" type="ReferenceDef" vs:htmlequivalent="%@" />
+<xsd:element name="Register" type="RegisterDef" vs:htmlequivalent="%@" />
+
+<!-- Definitions for top level elements -->
+<xsd:complexType name="PageDef">
+  <xsd:attribute name="AspCompat" type="xsd:boolean" vs:nonfilterable="true" />
+  <xsd:attribute name="Async" type="xsd:boolean" vs:nonfilterable="true" />
+  <xsd:attribute name="AsyncTimeout" type="xsd:string" vs:nonfilterable="true" />
+  <xsd:attribute name="AutoEventWireup" type="xsd:boolean" vs:nonfilterable="true" />
+  <xsd:attribute name="Buffer" type="xsd:boolean" />
+  <xsd:attribute name="ClassName" type="xsd:string" vs:nonfilterable="true" />
+  <xsd:attribute name="ClientTarget" type="xsd:string" vs:nonbrowseable="true" />
+
+  <xsd:attribute name="Codebehind" type="xsd:anyURI" vs:deprecated="true" vs:deprecatedintool="true" vs:serverlanguageextensions="true" />
+  <xsd:attribute name="CodePage" type="xsd:string" />
+  <xsd:attribute name="CompilationMode" type="CompilationModeDef" vs:nonfilterable="true" />
+  <xsd:attribute name="CompilerOptions" type="xsd:string" vs:nonfilterable="true" />
+  <xsd:attribute name="CodeFile" type="xsd:anyURI" vs:serverlanguageextensions="true" vs:nonfilterable="true" />
+  <xsd:attribute name="CodeFileBaseClass" vs:nonfilterable="true" />
+
+  <!-- Do we want to make the list of MIME type for a particular IIS here? -->
+  <xsd:attribute name="ContentType" type="xsd:string" />
+
+  <xsd:attribute name="Culture" type="xsd:string" vs:isCulture="true" />
+  <xsd:attribute name="Debug" type="xsd:boolean" vs:nonfilterable="true" />
+  <xsd:attribute name="Description" type="xsd:string" vs:nonfilterable="true" />
+  <xsd:attribute name="EnableEventValidation" type="xsd:boolean" vs:nonfilterable="true" />
+  <xsd:attribute name="EnableSessionState" type="EnableSessionStateDef" vs:nonfilterable="true" />
+  <xsd:attribute name="EnableTheming" type="xsd:boolean" vs:disallowedonmobilepages="true" />
+  <xsd:attribute name="EnableViewState" type="xsd:boolean" />
+  <xsd:attribute name="EnableViewStateMac" type="xsd:boolean" />
+  <xsd:attribute name="ErrorPage" type="xsd:anyURI" vs:preferredextensions=".asp;.aspx;.asmx;.asax;.ashx;.asix;.ascx;.htm;.html;.xml;.xsd;.config;.asa;.css;.shtm;.shtml;.php;.jsp" />
+  <xsd:attribute name="Explicit" type="xsd:boolean" vs:nonfilterable="true" />
+  <xsd:attribute name="Inherits" type="xsd:string" vs:nonfilterable="true" />
+  <xsd:attribute name="Language" type="ServerLanguagesDef" vs:readonly="true" vs:nonfilterable="true" />
+
+  <xsd:attribute name="LCID" type="xsd:string" />
+  <xsd:attribute name="LinePragmas" type="xsd:boolean" vs:nonfilterable="true" />
+  <xsd:attribute name="MaintainScrollPositionOnPostback" type="xsd:boolean" />
+  <xsd:attribute name="MasterPageFile" type="xsd:anyURI" vs:preferredextensions=".master" vs:builder="master" vs:disallowedonmobilepages="true" />
+  <xsd:attribute name="ResponseEncoding" type="xsd:string" />
+  <xsd:attribute name="SmartNavigation" type="xsd:boolean" vs:nonfilterable="true" vs:nonbrowseable="true" />
+  <xsd:attribute name="Src" type="xsd:anyURI" vs:serverlanguageextensions="true" vs:nonfilterable="true" />
+  <xsd:attribute name="Strict" type="xsd:boolean" vs:nonfilterable="true" />
+  <xsd:attribute name="StylesheetTheme" type="xsd:string" vs:disallowedonmobilepages="true" />
+  <xsd:attribute name="TargetSchema" type="xsd:string" vs:nonbrowseable="true" vs:nonfilterable="true" />
+  <xsd:attribute name="Theme" type="xsd:string" vs:disallowedonmobilepages="true" />
+  <xsd:attribute name="Title" type="xsd:string" vs:disallowedonmobilepages="true" />
+  <xsd:attribute name="Trace" type="xsd:boolean" vs:nonfilterable="true" />
+  <xsd:attribute name="TraceMode" type="TraceModeDef" vs:nonfilterable="true" />
+  <xsd:attribute name="Transaction" type="TransactionDef" vs:nonfilterable="true" />
+  <xsd:attribute name="UICulture" type="xsd:string" />
+  <xsd:attribute name="ValidateRequest" type="xsd:boolean" vs:nonfilterable="true" />
+  <xsd:attribute name="ViewStateEncryptionMode" type="ViewStateEncryptionModeTypeDef" vs:nonfilterable="true" />
+  <xsd:attribute name="WarningLevel" type="WarningLevelDef" vs:nonfilterable="true" />
+</xsd:complexType>
+
+
+<!-- This can't be shared by the controls schema, since it should have a VaryByHeader attribute -->
+<xsd:complexType name="OutputCacheDef">
+  <xsd:attribute name="CacheProfile" type="xsd:string" />
+  <xsd:attribute name="DiskCacheable" type="xsd:boolean" vs:nonfilterable="true" />
+  <xsd:attribute name="Duration" type="xsd:integer" vs:nonfilterable="true" />
+  <xsd:attribute name="Location" type="LocationDef" vs:nonfilterable="true" />
+  <xsd:attribute name="NoStore" type="xsd:boolean" vs:nonfilterable="true" />
+  <xsd:attribute name="SqlDependency" type="xsd:string" vs:nonfilterable="true" />
+  <xsd:attribute name="VaryByControl" type="xsd:string" vs:nonfilterable="true" />
+  <xsd:attribute name="VaryByCustom" type="xsd:string" vs:nonfilterable="true" />
+  <xsd:attribute name="VaryByHeader" type="xsd:string" vs:nonfilterable="true" />
+  <xsd:attribute name="VaryByParam" type="xsd:string" vs:nonfilterable="true" />
+</xsd:complexType>
+
+<xsd:complexType name="PreviousPageTypeDef">
+  <xsd:attribute name="TypeName" type="xsd:string" vs:nonfilterable="true" />
+  <xsd:attribute name="VirtualPath" type="xsd:anyURI" vs:preferredextensions=".aspx" vs:nonfilterable="true" />
+</xsd:complexType>
+
+<xsd:simpleType name="EnableSessionStateDef">
+  <xsd:restriction base="xsd:string">
+    <xsd:enumeration value="True" />
+    <xsd:enumeration value="False" />
+    <xsd:enumeration value="ReadOnly" />
+  </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="TraceModeDef">
+  <xsd:restriction base="xsd:string">
+    <xsd:enumeration value="SortByTime" />
+    <xsd:enumeration value="SortByCategory" />
+  </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="TransactionDef">
+  <xsd:restriction base="xsd:string">
+    <xsd:enumeration value="Disabled" />
+    <xsd:enumeration value="NotSupported" />
+    <xsd:enumeration value="Supported" />
+    <xsd:enumeration value="Required" />
+    <xsd:enumeration value="RequiresNew" />
+  </xsd:restriction>
+</xsd:simpleType>
+
+
+<xsd:simpleType name="ViewStateEncryptionModeTypeDef">
+  <xsd:restriction base="xsd:string">
+    <xsd:enumeration value="Auto" />
+    <xsd:enumeration value="Always" />
+    <xsd:enumeration value="Never" />
+  </xsd:restriction>
+</xsd:simpleType>
+
+</xsd:schema>

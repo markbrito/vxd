@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE VisualAltaBPM SYSTEM "VisualAltaBPM.dtd">
+<VisualAltaBPM Order="0" Language="VisualAltaBPM" Name="VisualAltaBPM" Translator="VisualAltaBPM" TextNote="" Package="ProposalWorkflow" YPos="-1" Port="80" Title="ProposalWorkflow" Value="" Build="Debug" ID="0" Visible="TRUE" URI="/ProjectName" XPos="-1" Platform="Linux XSP Mono">
+  <Workflow ID="11" Name="Proposal" Value="" YPos="0" Visible="TRUE" Order="0" XPos="10">
+    <Queue ID="93" Name="Queue" Value="" YPos="12" Visible="TRUE" Order="0" XPos="114">
+      <WebService ID="95" Name="NewProp" Value="" YPos="106" Visible="TRUE" Order="0" XPos="185">
+        <Database ID="134" Name="Database" Value="" YPos="184" Visible="TRUE" Order="0" XPos="215" />
+        <ASPNET ID="135" Name="Web" Value="" YPos="187" Visible="TRUE" Order="0" XPos="170" />
+      </WebService>
+      <FlowOnPage ID="99" Name="Start" Value="" YPos="14" Visible="TRUE" Order="0" XPos="215">
+        <FlowProcess ID="100" Name="Propose" Value="" YPos="16" Visible="TRUE" Order="0" XPos="298">
+          <FlowData ID="101" Name="Valid" Value="" YPos="19" Visible="TRUE" Order="0" XPos="384">
+            <FlowDecision ID="107" Name="Approve" Value="" YPos="21" Visible="TRUE" Order="0" XPos="484">
+              <Xml ID="111" Name="Approval" Value="" YPos="128" Visible="TRUE" Order="0" XPos="493">
+                <ASPNET ID="139" Name="Web" Value="" YPos="193" Visible="TRUE" Order="0" XPos="478" />
+                <Timer ID="140" Name="Timer" Value="" YPos="353" Visible="TRUE" Order="0" XPos="456" />
+                <Mail ID="207" Name="Mail" Value="" YPos="279" Visible="TRUE" Order="0" XPos="463" />
+              </Xml>
+              <FlowOnPage ID="144" Name="Close" Value="" YPos="14" Visible="TRUE" Order="0" XPos="765">
+                <Xml ID="161" Name="Close" Value="" YPos="16" Visible="TRUE" Order="0" XPos="841">
+                  <Mail ID="162" Name="Mail" Value="" YPos="18" Visible="TRUE" Order="0" XPos="918" />
+                </Xml>
+              </FlowOnPage>
+              <FlowProcess ID="186" Name="Vendors" Value="" YPos="48" Visible="TRUE" Order="0" XPos="588">
+                <Xml ID="188" Name="Vendors" Value="" YPos="131" Visible="TRUE" Order="0" XPos="581">
+                  <ASPNET ID="197" Name="Web" Value="" YPos="210" Visible="TRUE" Order="0" XPos="572" />
+                  <PO ID="198" Name="POs" Value="" YPos="432" Visible="TRUE" Order="0" XPos="566" />
+                  <Deal ID="199" Name="WOs" Value="" YPos="367" Visible="TRUE" Order="0" XPos="567" />
+                  <Mail ID="208" Name="Mail" Value="" YPos="290" Visible="TRUE" Order="0" XPos="570" />
+                  <Timer ID="227" Name="Timer" Value="" YPos="211" Visible="TRUE" Order="0" XPos="613" />
+                </Xml>
+                <FlowProcess ID="194" Name="Company" Value="" YPos="51" Visible="TRUE" Order="0" XPos="683">
+                  <SO ID="200" Name="SOs" Value="" YPos="444" Visible="TRUE" Order="0" XPos="689" />
+                  <Deal ID="201" Name="WOs" Value="" YPos="368" Visible="TRUE" Order="0" XPos="640" />
+                  <WebService ID="209" Name="Company" Value="" YPos="136" Visible="TRUE" Order="0" XPos="684">
+                    <Mail ID="210" Name="Mail" Value="" YPos="295" Visible="TRUE" Order="0" XPos="689" />
+                    <ASPNET ID="219" Name="Web" Value="" YPos="211" Visible="TRUE" Order="0" XPos="680" />
+                    <SO ID="220" Name="PRs" Value="" YPos="436" Visible="TRUE" Order="0" XPos="629" />
+                    <Bookings ID="226" Name="Bookings" Value="" YPos="372" Visible="TRUE" Order="0" XPos="694" />
+                    <Timer ID="228" Name="Timer" Value="" YPos="215" Visible="TRUE" Order="0" XPos="718" />
+                  </WebService>
+                  <FlowProcess ID="211" Name="Customer" Value="" YPos="77" Visible="TRUE" Order="0" XPos="764">
+                    <FlowProcess ID="212" Name="Shipping" Value="" YPos="102" Visible="TRUE" Order="0" XPos="885">
+                      <Xml ID="232" Name="Shipping" Value="" YPos="184" Visible="TRUE" Order="0" XPos="902">
+                        <PO ID="234" Name="Shipment" Value="" YPos="286" Visible="TRUE" Order="0" XPos="906" />
+                        <Product ID="235" Name="Delivery" Value="" YPos="360" Visible="TRUE" Order="0" XPos="904" />
+                      </Xml>
+                    </FlowProcess>
+                    <Xml ID="216" Name="Customer" Value="" YPos="154" Visible="TRUE" Order="0" XPos="787">
+                      <Mail ID="217" Name="Mail" Value="" YPos="309" Visible="TRUE" Order="0" XPos="773" />
+                      <Run-Rate ID="218" Name="Invoices" Value="" YPos="376" Visible="TRUE" Order="0" XPos="767" />
+                      <ASPNET ID="221" Name="Web" Value="" YPos="227" Visible="TRUE" Order="0" XPos="779" />
+                      <Deal ID="223" Name="WOs" Value="" YPos="442" Visible="TRUE" Order="0" XPos="818" />
+                      <SO ID="224" Name="POs" Value="" YPos="442" Visible="TRUE" Order="0" XPos="760" />
+                      <Timer ID="229" Name="Timer" Value="" YPos="229" Visible="TRUE" Order="0" XPos="826" />
+                    </Xml>
+                  </FlowProcess>
+                </FlowProcess>
+              </FlowProcess>
+            </FlowDecision>
+            <WebService ID="119" Name="Validation" Value="" YPos="107" Visible="TRUE" Order="0" XPos="389">
+              <ASPNET ID="127" Name="Web" Value="" YPos="192" Visible="TRUE" Order="0" XPos="384" />
+              <Timer ID="149" Name="Timer" Value="" YPos="348" Visible="TRUE" Order="0" XPos="373" />
+              <Mail ID="205" Name="Mail" Value="" YPos="289" Visible="TRUE" Order="0" XPos="379" />
+            </WebService>
+          </FlowData>
+          <Xml ID="130" Name="EditProp" Value="" YPos="101" Visible="TRUE" Order="0" XPos="294">
+            <ASPNET ID="131" Name="Web" Value="" YPos="191" Visible="TRUE" Order="0" XPos="280" />
+            <Timer ID="141" Name="Timer" Value="" YPos="344" Visible="TRUE" Order="0" XPos="288" />
+            <Mail ID="204" Name="Mail" Value="" YPos="275" Visible="TRUE" Order="0" XPos="286" />
+          </Xml>
+        </FlowProcess>
+      </FlowOnPage>
+    </Queue>
+    <DataGrid ID="172" Name="Data" Value="" YPos="84" Visible="TRUE" Order="0" XPos="7">
+      <Deal ID="173" Name="Deal" Value="" YPos="168" Visible="TRUE" Order="0" XPos="23" />
+      <DealValue ID="174" Name="DealValue" Value="" YPos="241" Visible="TRUE" Order="0" XPos="21" />
+      <Product ID="176" Name="Materials" Value="" YPos="316" Visible="TRUE" Order="0" XPos="14" />
+      <DealProbability ID="177" Name="DealProbability" Value="" YPos="373" Visible="TRUE" Order="0" XPos="21" />
+      <Company ID="178" Name="Customer" Value="" YPos="96" Visible="TRUE" Order="0" XPos="79" />
+      <Calendar ID="179" Name="Calendar" Value="" YPos="315" Visible="TRUE" Order="0" XPos="92" />
+      <Actor ID="181" Name="Assignee" Value="" YPos="172" Visible="TRUE" Order="0" XPos="88" />
+      <Document ID="182" Name="Proposal" Value="" YPos="381" Visible="TRUE" Order="0" XPos="90" />
+      <BusinessUnit ID="183" Name="Manager" Value="" YPos="243" Visible="TRUE" Order="0" XPos="94" />
+      <DealStatus ID="236" Name="DealStatus" Value="" YPos="441" Visible="TRUE" Order="0" XPos="12" />
+      <Document ID="237" Name="Quotes" Value="" YPos="439" Visible="TRUE" Order="0" XPos="86" />
+    </DataGrid>
+  </Workflow>
+</VisualAltaBPM>
+

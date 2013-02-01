@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Language  xmlns="http://tempuri.org/ASP.NET.xsd" Name="ASP.NET" StructureDTD="ASP.NET.dtd">
+ <Icons>
+<Icon Name="ASPXPage" Image="Languages/ASP.NET/Images/ASPNET.GIF"/>
+<Icon Name="AdRotator" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.AdRotator.GIF"/>
+<Icon Name="Button" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.Button.GIF"/>
+<Icon Name="Calendar" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.Calendar.GIF"/>
+<Icon Name="CheckBox" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.CheckBox.GIF"/>
+<Icon Name="CheckBoxList" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.CheckBoxList.GIF"/>
+<Icon Name="CompareValidator" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.CompareValidator.GIF"/>
+<Icon Name="CustomValidator" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.CustomValidator.GIF"/>
+<Icon Name="DataGrid" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.DataGrid.GIF"/>
+<Icon Name="DataList" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.DataList.GIF"/>
+<Icon Name="DropDownList" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.DropDownList.GIF"/>
+<Icon Name="HyperLink" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.HyperLink.GIF"/>
+<Icon Name="Image" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.Image.GIF"/>
+<Icon Name="ImageButton" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.ImageButton.GIF"/>
+<Icon Name="Label" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.Label.GIF"/>
+<Icon Name="LinkButton" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.LinkButton.GIF"/>
+<Icon Name="ListBox" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.ListBox.GIF"/>
+<Icon Name="Literal" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.Literal.GIF"/>
+<Icon Name="Panel" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.Panel.GIF"/>
+<Icon Name="PlaceHolder" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.PlaceHolder.GIF"/>
+<Icon Name="RadioButton" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.RadioButton.GIF"/>
+<Icon Name="RadioButtonList" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.RadioButtonList.GIF"/>
+<Icon Name="RangeValidator" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.RangeValidator.GIF"/>
+<Icon Name="RegularExpressionValidator" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.RegularExpressionValidator.GIF"/>
+<Icon Name="Repeater" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.Repeater.GIF"/>
+<Icon Name="RequiredFieldValidator" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.RequiredFieldValidator.GIF"/>
+<Icon Name="Table" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.Table.GIF"/>
+<Icon Name="TextBox" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.TextBox.GIF"/>
+<Icon Name="ValidationSummary" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.ValidationSummary.GIF"/>
+<Icon Name="Xml" Image="Languages/ASP.NET/Images/System.Web.UI.WebControls.Xml.GIF"/>
+ </Icons>
+ <Connectors>
+   <Connector Name="Connection" Image="Languages/VisualWeb/Images/connection.gif" Type="CONNECTION"/>
+ </Connectors>
+ <Editors>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="ASPXPage" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="AdRotator" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="Button" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="Calendar" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="CheckBox" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="CheckBoxList" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="CompareValidator" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="CustomValidator" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="DataGrid" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="DataList" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="DropDownList" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="HyperLink" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="Image" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="ImageButton" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="Label" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="LinkButton" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="ListBox" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="Literal" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="Panel" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="PlaceHolder" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="RadioButton" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="RadioButtonList" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="RangeValidator" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="RegularExpressionValidator" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="Repeater" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="RequiredFieldValidator" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="Table" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="TextBox" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="ValidationSummary" AttributeName="Variable" Type="PANEL"/>
+<Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="Xml" AttributeName="Variable" Type="PANEL"/>
+ </Editors>
+</Language>

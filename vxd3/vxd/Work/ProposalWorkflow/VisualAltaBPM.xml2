@@ -1,0 +1,114 @@
+<Language   Name="VisualAltaBPM" xmlns="http://tempuri.org/VisualAltaBPM.xsd>
+ <Icons>
+
+ <Icon Name="WorkFlow" Image="Languages/VisualAltaBPM/Images/vxdicon.jpg"/>
+<Icon Name="ASPNET" Image="Languages/VisualAltaBPM/Images/ASPNET.JPG"/>
+<Icon Name="ATT" Image="Languages/VisualAltaBPM/Images/ATT.gif"/>
+<Icon Name="ATTITEM" Image="Languages/VisualAltaBPM/Images/ATTITEM.gif"/>
+<Icon Name="ATTLST" Image="Languages/VisualAltaBPM/Images/ATTLST.gif"/>
+<Icon Name="Bookings" Image="Languages/VisualAltaBPM/Images/Bookings.JPG"/>
+<Icon Name="BusinessUnit" Image="Languages/VisualAltaBPM/Images/BusinessUnit.JPG"/>
+<Icon Name="CVS" Image="Languages/VisualAltaBPM/Images/CVS"/>
+<Icon Name="Chart" Image="Languages/VisualAltaBPM/Images/Chart.JPG"/>
+<Icon Name="Commit" Image="Languages/VisualAltaBPM/Images/Commit.JPG"/>
+<Icon Name="Company" Image="Languages/VisualAltaBPM/Images/Company.JPG"/>
+<Icon Name="DTD" Image="Languages/VisualAltaBPM/Images/DTD.gif"/>
+<Icon Name="Dashboard" Image="Languages/VisualAltaBPM/Images/Dashboard.JPG"/>
+<Icon Name="De-bookings" Image="Languages/VisualAltaBPM/Images/De-bookings.JPG"/>
+<Icon Name="Deal" Image="Languages/VisualAltaBPM/Images/Deal.JPG"/>
+<Icon Name="DealProbability" Image="Languages/VisualAltaBPM/Images/DealProbability.JPG"/>
+<Icon Name="DealStatus" Image="Languages/VisualAltaBPM/Images/DealStatus.JPG"/>
+<Icon Name="DealValue" Image="Languages/VisualAltaBPM/Images/DealValue.JPG"/>
+<Icon Name="Distributor" Image="Languages/VisualAltaBPM/Images/Distributor.gif"/>
+<Icon Name="ELEMNT" Image="Languages/VisualAltaBPM/Images/ELEMNT.gif"/>
+<Icon Name="ELEMNTGROUP" Image="Languages/VisualAltaBPM/Images/ELEMNTGROUP.gif"/>
+<Icon Name="FiscalPeriod" Image="Languages/VisualAltaBPM/Images/FiscalPeriod.JPG"/>
+<Icon Name="Forecast" Image="Languages/VisualAltaBPM/Images/Forecast.JPG"/>
+<Icon Name="Group" Image="Languages/VisualAltaBPM/Images/Group.JPG"/>
+<Icon Name="Product" Image="Languages/VisualAltaBPM/Images/Product.JPG"/>
+<Icon Name="ProductFamily" Image="Languages/VisualAltaBPM/Images/ProductFamily.JPG"/>
+<Icon Name="ProductLine" Image="Languages/VisualAltaBPM/Images/ProductLine.JPG"/>
+<Icon Name="Projection" Image="Languages/VisualAltaBPM/Images/Projection.JPG"/>
+<Icon Name="Report" Image="Languages/VisualAltaBPM/Images/Report.JPG"/>
+<Icon Name="Run-Rate" Image="Languages/VisualAltaBPM/Images/Run-Rate.JPG"/>
+<Icon Name="AdRotator" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.AdRotator.GIF"/>
+<Icon Name="Button" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.Button.GIF"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.Calendar.GIF"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.CheckBox.GIF"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.CheckBoxList.GIF"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.CompareValidator.GIF"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.CustomValidator.GIF"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.DataGrid.GIF"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.DataList.GIF"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.DropDownList.GIF"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.HTML.gif"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.HyperLink.GIF"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.Image.GIF"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.ImageButton.GIF"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.Label.GIF"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.LinkButton.GIF"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.ListBox.GIF"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.Literal.GIF"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.Panel.GIF"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.PlaceHolder.GIF"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.RadioButton.GIF"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.RadioButtonList.GIF"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.RangeValidator.GIF"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.RegularExpressionValidator.GIF"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.Repeater.GIF"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.RequiredFieldValidator.GIF"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.Table.GIF"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.TextBox.GIF"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.ValidationSummary.GIF"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.Xml.GIF"/>
+<Icon Name="System" Image="Languages/VisualAltaBPM/Images/System.Web.UI.WebControls.XmlElement.GIF"/>
+<Icon Name="Theater" Image="Languages/VisualAltaBPM/Images/Theater.JPG"/>
+<Icon Name="Thumbs" Image="Languages/VisualAltaBPM/Images/Thumbs.db"/>
+<Icon Name="VXDIcon" Image="Languages/VisualAltaBPM/Images/VXDIcon.JPG"/>
+<Icon Name="XmlElement" Image="Languages/VisualAltaBPM/Images/XmlElement.GIF"/>
+<Icon Name="button" Image="Languages/VisualAltaBPM/Images/button.gif"/>
+<Icon Name="cgi" Image="Languages/VisualAltaBPM/Images/cgi.gif"/>
+<Icon Name="checkbox" Image="Languages/VisualAltaBPM/Images/checkbox.gif"/>
+<Icon Name="combobox" Image="Languages/VisualAltaBPM/Images/combobox.gif"/>
+<Icon Name="database" Image="Languages/VisualAltaBPM/Images/database.gif"/>
+<Icon Name="endif" Image="Languages/VisualAltaBPM/Images/endif.gif"/>
+<Icon Name="exit" Image="Languages/VisualAltaBPM/Images/exit.gif"/>
+<Icon Name="fileupload" Image="Languages/VisualAltaBPM/Images/fileupload.gif"/>
+<Icon Name="form" Image="Languages/VisualAltaBPM/Images/form.gif"/>
+<Icon Name="help" Image="Languages/VisualAltaBPM/Images/help.jpg"/>
+<Icon Name="hidden" Image="Languages/VisualAltaBPM/Images/hidden.gif"/>
+<Icon Name="href" Image="Languages/VisualAltaBPM/Images/href.gif"/>
+<Icon Name="html" Image="Languages/VisualAltaBPM/Images/html.gif"/>
+<Icon Name="http" Image="Languages/VisualAltaBPM/Images/http.jpg"/>
+<Icon Name="if" Image="Languages/VisualAltaBPM/Images/if.gif"/>
+<Icon Name="image" Image="Languages/VisualAltaBPM/Images/image.gif"/>
+<Icon Name="imagebutton" Image="Languages/VisualAltaBPM/Images/imagebutton.gif"/>
+<Icon Name="images" Image="Languages/VisualAltaBPM/Images/images.gif"/>
+<Icon Name="listbox" Image="Languages/VisualAltaBPM/Images/listbox.gif"/>
+<Icon Name="new" Image="Languages/VisualAltaBPM/Images/new.gif"/>
+<Icon Name="newdtd" Image="Languages/VisualAltaBPM/Images/newdtd.gif"/>
+<Icon Name="newlang" Image="Languages/VisualAltaBPM/Images/newlang.jpg"/>
+<Icon Name="news" Image="Languages/VisualAltaBPM/Images/news.gif"/>
+<Icon Name="open" Image="Languages/VisualAltaBPM/Images/open.gif"/>
+<Icon Name="outconnection" Image="Languages/VisualAltaBPM/Images/outconnection.gif"/>
+<Icon Name="password" Image="Languages/VisualAltaBPM/Images/password.gif"/>
+<Icon Name="queue" Image="Languages/VisualAltaBPM/Images/queue.gif"/>
+<Icon Name="radiobutton" Image="Languages/VisualAltaBPM/Images/radiobutton.gif"/>
+<Icon Name="save" Image="Languages/VisualAltaBPM/Images/save.gif"/>
+<Icon Name="sms" Image="Languages/VisualAltaBPM/Images/sms.jpg"/>
+<Icon Name="soap" Image="Languages/VisualAltaBPM/Images/soap.gif"/>
+<Icon Name="splash" Image="Languages/VisualAltaBPM/Images/splash.jpg"/>
+<Icon Name="submit" Image="Languages/VisualAltaBPM/Images/submit.gif"/>
+<Icon Name="text" Image="Languages/VisualAltaBPM/Images/text.gif"/>
+<Icon Name="textarea" Image="Languages/VisualAltaBPM/Images/textarea.gif"/>
+<Icon Name="textbox" Image="Languages/VisualAltaBPM/Images/textbox.gif"/>
+<Icon Name="timer" Image="Languages/VisualAltaBPM/Images/timer.gif"/></Icons>
+
+ <Connectors>
+   <Connector Name="Connection" Image="Languages/VisualAltaBPM/Images/connection.gif" Type="CONNECTION"/>
+ </Connectors>
+ <Editors>
+
+
+ </Editors>
+</Language>

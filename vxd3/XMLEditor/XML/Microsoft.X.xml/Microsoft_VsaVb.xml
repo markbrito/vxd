@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>Microsoft_VsaVb</name>
+	</assembly>
+	<members>
+		<member name="M:Microsoft_VsaVb.VsaDTEngineClass.AttachDebugger(System.Boolean)">
+			<param name="isAttach"> </param>
+		</member>
+		<member name="M:Microsoft_VsaVb.VsaEngineClass.GetOption(System.String)">
+			<param name="Name"> </param>
+		</member>
+		<member name="M:Microsoft_VsaVb.VsaEngineClass.IsValidIdentifier(System.String)">
+			<param name="identifier"> </param>
+		</member>
+		<member name="M:Microsoft_VsaVb.VsaEngineClass.LoadSourceState(Microsoft.Vsa.IVsaPersistSite)">
+			<param name="Site"> </param>
+		</member>
+		<member name="M:Microsoft_VsaVb.VsaEngineClass.SaveCompiledState(System.Byte[]@,System.Byte[]@)">
+			<param name="pdb"> </param>
+			<param name="pe"> </param>
+		</member>
+		<member name="M:Microsoft_VsaVb.VsaEngineClass.SaveSourceState(Microsoft.Vsa.IVsaPersistSite)">
+			<param name="Site"> </param>
+		</member>
+		<member name="M:Microsoft_VsaVb.VsaEngineClass.SetOption(System.String,System.Object)">
+			<param name="Name"> </param>
+			<param name="value"> </param>
+		</member>
+	</members>
+</doc>

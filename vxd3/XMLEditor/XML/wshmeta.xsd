@@ -1,0 +1,104 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<xsd:schema targetNamespace='http://schemas.microsoft.com/WindowsScriptHost' xmlns='http://schemas.microsoft.com/WindowsScriptHost' xmlns:xsd='http://www.w3.org/2001/XMLSchema' elementFormDefault='qualified' xmlns:vs='urn:schemas-microsoft-com:HTML-Intellisense' vs:ishtmlschema="false" vs:iscasesensitive="false">
+	<xsd:annotation>
+		<xsd:documentation>
+			Windows Script Host schema.
+			Version 5.6
+		</xsd:documentation>
+	</xsd:annotation>
+	<!-- <package> -->
+	<xsd:element name='package'>
+		<xsd:complexType>
+			<xsd:choice>
+				<xsd:element ref='comment' />
+				<xsd:element name='job' type='jobType' />
+			</xsd:choice>
+			<xsd:attribute name='id' type='xsd:string' />
+		</xsd:complexType>
+	</xsd:element>
+	<!-- <comment> -->
+	<!-- 
+	simple types (e.g. 'string') can't have attributes in XSD so we must
+	derive a complexType to give <comment> it's id attribute.
+  -->
+	<xsd:element name='comment'>
+		<xsd:complexType>
+			<xsd:attribute name='id' type='xsd:string' />
+		</xsd:complexType>
+	</xsd:element>
+	<!-- <job> -->
+	<xsd:complexType name='jobType'>
+		<xsd:choice>
+			<xsd:element ref='comment' />
+			<xsd:element name='object' type='objectType' vs:htmlequivalent="object" />
+			<xsd:element name='reference' type='referenceType' />
+			<xsd:element name='resource' type='resourceType' />
+			<xsd:element name='runtime' type='runtimeType' />
+			<xsd:element name='script' type='scriptType' vs:htmlequivalent="script" />
+		</xsd:choice>
+		<xsd:attribute name='id' type='xsd:string' />
+	</xsd:complexType>
+	<!-- <object> -->
+	<xsd:complexType name='objectType'>
+		<xsd:attribute name='events' type='xsd:string' />
+		<xsd:attribute name='id' type='xsd:string' />
+		<xsd:attribute name='classid' type='xsd:string' />
+		<xsd:attribute name='progid' type='xsd:string' />
+		<xsd:attribute name='reference' type='xsd:boolean' />
+	</xsd:complexType>
+	<!-- <reference> -->
+	<xsd:complexType name='referenceType'>
+		<xsd:attribute name='id' type='xsd:string' />
+		<xsd:attribute name='guid' type='xsd:string' />
+		<xsd:attribute name='object' type='xsd:string' />
+		<xsd:attribute name='version' type='xsd:string' />
+	</xsd:complexType>
+	<!-- <resource> -->
+	<xsd:complexType name='resourceType'>
+		<xsd:attribute name='id' type='xsd:string' />
+		<xsd:attribute name='src' type='xsd:anyURI' />
+	</xsd:complexType>
+	<!-- <script> -->
+	<xsd:complexType name='scriptType'>
+		<xsd:attribute name='id' type='xsd:string' />
+		<xsd:attribute name='language'>
+			<xsd:simpleType>
+				<xsd:restriction base='xsd:string'>
+					<xsd:enumeration value='JScript' />
+					<xsd:enumeration value='VBscript' />
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name='src' type='xsd:anyURI' />
+	</xsd:complexType>
+	<!-- <runtime> -->
+	<xsd:complexType name='runtimeType'>
+		<xsd:choice>
+			<xsd:element ref='comment' />
+			<xsd:element name='named' type='namedType' />
+			<xsd:element name='unnamed' type='unnamedType' />
+			<xsd:element name='usage' type='usageType' />
+			<xsd:element name='example' type='exampleType' />
+		</xsd:choice>
+	</xsd:complexType>
+	<!-- <named> -->
+	<xsd:complexType name='namedType'>
+		<xsd:attribute name='name' type='xsd:string' />
+		<xsd:attribute name='description' type='xsd:string' />
+		<xsd:attribute name='required' type='xsd:boolean' />
+	</xsd:complexType>
+	<!-- <unnamed> -->
+	<xsd:complexType name='unnamedType'>
+		<xsd:attribute name='name' type='xsd:string' />
+		<xsd:attribute name='description' type='xsd:string' />
+		<xsd:attribute name='required' type='xsd:boolean' />
+	</xsd:complexType>
+	<!-- <usage> -->
+	<xsd:complexType name='usageType'>
+		<xsd:attribute name='id' type='xsd:string' />
+	</xsd:complexType>
+	<!-- <example> -->
+	<xsd:complexType name='exampleType'>
+		<xsd:attribute name='id' type='xsd:string' />
+	</xsd:complexType>
+</xsd:schema>

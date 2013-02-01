@@ -1,0 +1,40 @@
+<!ELEMENT VisualLanguage (Language)*>
+<!ATTLIST VisualLanguage
+Title CDATA #REQUIRED
+		    Package CDATA #REQUIRED
+		    URI CDATA #REQUIRED
+		    Port CDATA "80"
+		    Language CDATA #FIXED "VisualLanguage"
+		    Translator CDATA #FIXED "VisualWebJavaServlet"
+		    Platform CDATA #FIXED "Tomcat403"
+                    TextNote CDATA #IMPLIED
+                    Build (Debug|Release|Optimized) "Debug">
+<!ELEMENT Language (Icons|Connectors|Editors)*>
+<!ATTLIST Language  Name CDATA "Language"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"           Image CDATA #IMPLIED              Value CDATA #IMPLIED >
+<!ELEMENT Icons (Icon)*>
+<!ATTLIST Icons  Name CDATA "Icons"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"            Image CDATA #IMPLIED             Value CDATA #IMPLIED >
+
+<!ELEMENT Icon (#PCDATA)>
+<!ATTLIST Icon  Name CDATA "Icon"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"           Image CDATA #IMPLIED              Value CDATA #IMPLIED >
+<!ELEMENT Connectors (Connector)*>
+<!ATTLIST Connectors   Name CDATA "Connectors"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED
+                    Image CDATA #IMPLIED
+                    >
+<!ELEMENT Connector (#PCDATA)>
+<!ATTLIST Connector   Name CDATA "Connector"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED
+                    Image CDATA #IMPLIED
+                    Type (AGGREGATION|CONNECTION) "CONNECTION">
+<!ELEMENT Editors (Editor)*>
+<!ATTLIST Editors Name CDATA "Editors"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED
+                    Image CDATA #IMPLIED
+                 Class CDATA #REQUIRED
+		 ElementName CDATA #REQUIRED
+		 AttributeName CDATA #REQUIRED
+		 Type (DIALOG|PANEL) "DIALOG">
+<!ELEMENT Editor (#PCDATA)>
+<!ATTLIST Editor Name CDATA "Editor"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED
+                    Image CDATA #IMPLIED
+                 Class CDATA #REQUIRED
+		 ElementName CDATA #REQUIRED
+		 AttributeName CDATA #REQUIRED
+		 Type (DIALOG|PANEL) "DIALOG">

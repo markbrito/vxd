@@ -1,0 +1,1 @@
+for i in `ls |grep -v -i ico`; do export x="`echo $i|sed -e 's/\.[^.]*$//'`";  echo '<!ELEMENT '$x `cat list.txt`'*><!ATTLIST '$x' Name CDATA "'$x'" ID CDATA #IMPLIED  XPos CDATA #IMPLIED YPos CDATA #IMPLIED        Order CDATA "0"        Visible (TRUE|FALSE) "TRUE"                        Value CDATA #IMPLIED >'; done

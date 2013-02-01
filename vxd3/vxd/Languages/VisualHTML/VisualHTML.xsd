@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema  xmlns="http://tempuri.org/VisualHTML.xsd" 
+xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="VisualHTML">
+		<xs:complexType>
+			<xs:sequence minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="HTML" />
+			</xs:sequence>
+			<xs:attribute name="Title" type="xs:string" use="required"/>
+			<xs:attribute name="Package" type="xs:string" use="required" />
+			<xs:attribute name="URI" type="xs:string" use="required" />
+			<xs:attribute default="80" name="Port" type="xs:string" />
+			<xs:attribute fixed="VisualHTML" name="Language" type="xs:string" />
+			<xs:attribute fixed="VisualHTMLtoHTML" name="Translator" type="xs:string" />
+			<xs:attribute fixed="Tomcat403" name="Platform" type="xs:string" />
+			<xs:attribute name="TextNote" type="xs:string" />
+			<xs:attribute default="Debug" name="Build">
+				<xs:simpleType>
+					<xs:restriction base="xs:NMTOKEN">
+						<xs:enumeration value="Debug" />
+						<xs:enumeration value="Release" />
+						<xs:enumeration value="Optimized" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HTML">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="Form" />
+				<xs:element ref="Text" />
+				<xs:element ref="Href" />
+				<xs:element ref="Image" />
+			</xs:choice>
+			<xs:attribute name="Name" type="xs:string" use="required" />
+			<xs:attribute default="." name="RelativeDirectory" type="xs:string" />
+			<xs:attribute name="ID" type="xs:string" />
+			<xs:attribute name="XPos" type="xs:string" />
+			<xs:attribute name="YPos" type="xs:string" />
+			<xs:attribute default="0" name="Order" type="xs:string" />
+			<xs:attribute default="TRUE" name="Visible">
+				<xs:simpleType>
+					<xs:restriction base="xs:NMTOKEN">
+						<xs:enumeration value="TRUE" />
+						<xs:enumeration value="FALSE" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="HtmlEditor" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Form">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="Textbox" />
+				<xs:element ref="Text" />
+				<xs:element ref="Submit" />
+				<xs:element ref="Href" />
+				<xs:element ref="Connector" />
+				<xs:element ref="ComboBox" />
+				<xs:element ref="CheckBox" />
+				<xs:element ref="TextArea" />
+				<xs:element ref="FileUpload" />
+				<xs:element ref="PasswordField" />
+				<xs:element ref="RadioButton" />
+				<xs:element ref="Hidden" />
+				<xs:element ref="Image" />
+				<xs:element ref="ImageButton" />
+				<xs:element ref="Button" />
+				<xs:element ref="ListBox" />
+			</xs:choice>
+			<xs:attribute name="Name" type="xs:string" use="required" />
+			<xs:attribute name="ID" type="xs:string" />
+			<xs:attribute name="XPos" type="xs:string" />
+			<xs:attribute name="YPos" type="xs:string" />
+			<xs:attribute default="0" name="Order" type="xs:string" />
+			<xs:attribute default="TRUE" name="Visible">
+				<xs:simpleType>
+					<xs:restriction base="xs:NMTOKEN">
+						<xs:enumeration value="TRUE" />
+						<xs:enumeration value="FALSE" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute default="POST" name="Method">
+				<xs:simpleType>
+					<xs:restriction base="xs:NMTOKEN">
+						<xs:enumeration value="POST" />
+						<xs:enumeration value="GET" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Textbox">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="Name" type="xs:string" use="required" />
+					<xs:attribute name="ID" type="xs:string" />
+					<xs:attribute name="XPos" type="xs:string" />
+					<xs:attribute name="YPos" type="xs:string" />
+					<xs:attribute default="0" name="Order" type="xs:string" />
+					<xs:attribute default="TRUE" name="Visible">
+						<xs:simpleType>
+							<xs:restriction base="xs:NMTOKEN">
+								<xs:enumeration value="TRUE" />
+								<xs:enumeration value="FALSE" />
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute name="Value" type="xs:string" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Text">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="Name" type="xs:string" use="required" />
+					<xs:attribute name="ID" type="xs:string" />
+					<xs:attribute name="XPos" type="xs:string" />
+					<xs:attribute name="YPos" type="xs:string" />
+					<xs:attribute default="0" name="Order" type="xs:string" />
+					<xs:attribute default="TRUE" name="Visible">
+						<xs:simpleType>
+							<xs:restriction base="xs:NMTOKEN">
+								<xs:enumeration value="TRUE" />
+								<xs:enumeration value="FALSE" />
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute name="Value" type="xs:string" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Submit">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="Name" type="xs:string" use="required" />
+					<xs:attribute name="ID" type="xs:string" />
+					<xs:attribute name="XPos" type="xs:string" />
+					<xs:attribute name="YPos" type="xs:string" />
+					<xs:attribute default="0" name="Order" type="xs:string" />
+					<xs:attribute default="TRUE" name="Visible">
+						<xs:simpleType>
+							<xs:restriction base="xs:NMTOKEN">
+								<xs:enumeration value="TRUE" />
+								<xs:enumeration value="FALSE" />
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute name="Value" type="xs:string" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Href">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="Connector" />
+				<xs:element ref="Text" />
+				<xs:element ref="Image" />
+			</xs:choice>
+			<xs:attribute name="Name" type="xs:string" use="required" />
+			<xs:attribute name="ID" type="xs:string" />
+			<xs:attribute name="XPos" type="xs:string" />
+			<xs:attribute name="YPos" type="xs:string" />
+			<xs:attribute default="0" name="Order" type="xs:string" />
+			<xs:attribute default="TRUE" name="Visible">
+				<xs:simpleType>
+					<xs:restriction base="xs:NMTOKEN">
+						<xs:enumeration value="TRUE" />
+						<xs:enumeration value="FALSE" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="Value" type="xs:string" />
+			<xs:attribute name="Variable" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Button">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="Name" type="xs:string" use="required" />
+					<xs:attribute name="ID" type="xs:string" />
+					<xs:attribute name="XPos" type="xs:string" />
+					<xs:attribute name="YPos" type="xs:string" />
+					<xs:attribute default="0" name="Order" type="xs:string" />
+					<xs:attribute default="TRUE" name="Visible">
+						<xs:simpleType>
+							<xs:restriction base="xs:NMTOKEN">
+								<xs:enumeration value="TRUE" />
+								<xs:enumeration value="FALSE" />
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute name="Value" type="xs:string" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ListBox">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="Name" type="xs:string" use="required" />
+					<xs:attribute name="ID" type="xs:string" />
+					<xs:attribute name="XPos" type="xs:string" />
+					<xs:attribute name="YPos" type="xs:string" />
+					<xs:attribute default="0" name="Order" type="xs:string" />
+					<xs:attribute default="TRUE" name="Visible">
+						<xs:simpleType>
+							<xs:restriction base="xs:NMTOKEN">
+								<xs:enumeration value="TRUE" />
+								<xs:enumeration value="FALSE" />
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute name="DisplayValues" type="xs:string" />
+					<xs:attribute name="Values" type="xs:string" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ImageButton">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="Name" type="xs:string" use="required" />
+					<xs:attribute name="ID" type="xs:string" />
+					<xs:attribute name="XPos" type="xs:string" />
+					<xs:attribute name="YPos" type="xs:string" />
+					<xs:attribute default="0" name="Order" type="xs:string" />
+					<xs:attribute default="TRUE" name="Visible">
+						<xs:simpleType>
+							<xs:restriction base="xs:NMTOKEN">
+								<xs:enumeration value="TRUE" />
+								<xs:enumeration value="FALSE" />
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute name="Src" type="xs:string" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Image">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="Name" type="xs:string" use="required" />
+					<xs:attribute name="ID" type="xs:string" />
+					<xs:attribute name="XPos" type="xs:string" />
+					<xs:attribute name="YPos" type="xs:string" />
+					<xs:attribute default="0" name="Order" type="xs:string" />
+					<xs:attribute default="TRUE" name="Visible">
+						<xs:simpleType>
+							<xs:restriction base="xs:NMTOKEN">
+								<xs:enumeration value="TRUE" />
+								<xs:enumeration value="FALSE" />
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute name="Value" type="xs:string" />
+					<xs:attribute name="Src" type="xs:string" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Hidden">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="Name" type="xs:string" use="required" />
+					<xs:attribute name="ID" type="xs:string" />
+					<xs:attribute name="XPos" type="xs:string" />
+					<xs:attribute name="YPos" type="xs:string" />
+					<xs:attribute default="0" name="Order" type="xs:string" />
+					<xs:attribute default="TRUE" name="Visible">
+						<xs:simpleType>
+							<xs:restriction base="xs:NMTOKEN">
+								<xs:enumeration value="TRUE" />
+								<xs:enumeration value="FALSE" />
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute name="Value" type="xs:string" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RadioButton">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="Name" type="xs:string" use="required" />
+					<xs:attribute name="ID" type="xs:string" />
+					<xs:attribute name="Group" type="xs:string" />
+					<xs:attribute name="XPos" type="xs:string" />
+					<xs:attribute name="YPos" type="xs:string" />
+					<xs:attribute default="0" name="Order" type="xs:string" />
+					<xs:attribute default="TRUE" name="Visible">
+						<xs:simpleType>
+							<xs:restriction base="xs:NMTOKEN">
+								<xs:enumeration value="TRUE" />
+								<xs:enumeration value="FALSE" />
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute name="Value" type="xs:string" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PasswordField">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="Name" type="xs:string" use="required" />
+					<xs:attribute name="ID" type="xs:string" />
+					<xs:attribute name="XPos" type="xs:string" />
+					<xs:attribute name="YPos" type="xs:string" />
+					<xs:attribute default="0" name="Order" type="xs:string" />
+					<xs:attribute default="&lt;INPUT Name=&quot;@Name@&quot; Type=&quot;PASSWORD&quot; Value=&quot;@Value@&quot;&gt;" name="BeforeHtml" type="xs:string" />
+					<xs:attribute name="AfterHtml" type="xs:string" />
+					<xs:attribute name="Value" type="xs:string" />
+					<xs:attribute default="TRUE" name="Visible">
+						<xs:simpleType>
+							<xs:restriction base="xs:NMTOKEN">
+								<xs:enumeration value="TRUE" />
+								<xs:enumeration value="FALSE" />
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute name="Variable" type="xs:string" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="FileUpload">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="Name" type="xs:string" use="required" />
+					<xs:attribute name="ID" type="xs:string" />
+					<xs:attribute name="XPos" type="xs:string" />
+					<xs:attribute name="YPos" type="xs:string" />
+					<xs:attribute default="0" name="Order" type="xs:string" />
+					<xs:attribute default="TRUE" name="Visible">
+						<xs:simpleType>
+							<xs:restriction base="xs:NMTOKEN">
+								<xs:enumeration value="TRUE" />
+								<xs:enumeration value="FALSE" />
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TextArea">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="Name" type="xs:string" use="required" />
+					<xs:attribute name="ID" type="xs:string" />
+					<xs:attribute name="XPos" type="xs:string" />
+					<xs:attribute name="YPos" type="xs:string" />
+					<xs:attribute default="0" name="Order" type="xs:string" />
+					<xs:attribute default="TRUE" name="Visible">
+						<xs:simpleType>
+							<xs:restriction base="xs:NMTOKEN">
+								<xs:enumeration value="TRUE" />
+								<xs:enumeration value="FALSE" />
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute name="Value" type="xs:string" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CheckBox">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="Name" type="xs:string" use="required" />
+					<xs:attribute name="ID" type="xs:string" />
+					<xs:attribute name="XPos" type="xs:string" />
+					<xs:attribute name="YPos" type="xs:string" />
+					<xs:attribute default="0" name="Order" type="xs:string" />
+					<xs:attribute default="TRUE" name="Visible">
+						<xs:simpleType>
+							<xs:restriction base="xs:NMTOKEN">
+								<xs:enumeration value="TRUE" />
+								<xs:enumeration value="FALSE" />
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute name="Value" type="xs:string" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ComboBox">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="Name" type="xs:string" use="required" />
+					<xs:attribute name="ID" type="xs:string" />
+					<xs:attribute name="XPos" type="xs:string" />
+					<xs:attribute name="YPos" type="xs:string" />
+					<xs:attribute default="0" name="Order" type="xs:string" />
+					<xs:attribute default="TRUE" name="Visible">
+						<xs:simpleType>
+							<xs:restriction base="xs:NMTOKEN">
+								<xs:enumeration value="TRUE" />
+								<xs:enumeration value="FALSE" />
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute name="Values" type="xs:string" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Connector">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="Name" type="xs:string" use="required" />
+					<xs:attribute name="ID" type="xs:string" />
+					<xs:attribute default="0" name="Order" type="xs:string" />
+					<xs:attribute name="SourceID" type="xs:string" />
+					<xs:attribute name="DestID" type="xs:string" />
+					<xs:attribute default="HTML" name="DestType">
+						<xs:simpleType>
+							<xs:restriction base="xs:NMTOKEN">
+								<xs:enumeration value="HTML" />
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

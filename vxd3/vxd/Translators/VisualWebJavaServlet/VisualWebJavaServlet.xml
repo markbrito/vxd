@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE Translator SYSTEM "../Translator.dtd">
+<Translator name="VisualWebJavaServlet" 
+            TranslatorXSL="VisualWebJavaServlet.xsl">
+<toolbar>
+   <toolbarbutton image="Translators/VisualWebJavaServlet/Images/savecode.gif" text="Save Generated Code" command="SAVECODE"/>
+   <toolbarbutton image="Translators/VisualWebJavaServlet/Images/savexsl.gif" text="Save XSL" command="SAVEXSL"/>
+</toolbar>
+<menu name="XSL" letter="S">
+   <menuitem image="Translators/VisualWebJavaServlet/Images/savecode.gif" text="Save Generated Code" command="SAVECODE"/>
+   <menuitem image="Translators/VisualWebJavaServlet/Images/savexsl.gif" text="Save XSL" command="SAVEXSL"/>
+</menu>
+<eventhandler class="vxd.Translators.VisualWebJavaServlet.ExternalTranslators.TranslationActionEventHandler"/>
+</Translator>

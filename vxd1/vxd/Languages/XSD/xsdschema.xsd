@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.w3.org/2001/XMLSchema">
+	<annotation>
+		<documentation>
+			Microsoft Visual Studio.NET schema for XSD. This is a reduced version of the 
+			W3C schema for schemas that has been optimized for use by the Visual Studio.NET 
+			XML Designer. Information in the official W3C schema for schemas that is not 
+			used by the Visual Studio.NET XML Designer has been stripped out. For the 
+			official version of the W3C schema for schemas, please visit http://www.w3.org.
+		</documentation>
+	</annotation>
+	<element name="schema">
+		<complexType>
+			<sequence>
+				<choice minOccurs="0" maxOccurs="unbounded">
+					<element name="include" type="includeDef" />
+					<element name="import" type="importDef" />
+					<element name="redefine" type="redefineDef" />
+					<element name="annotation" type="annotationDef" />
+					<element name="attribute" type="attributeDef" />
+					<element name="attributeGroup" type="namedAttributeGroupDef" />
+					<element name="complexType" type="namedComplexTypeDef" />
+					<element name="element" type="elementDef" />
+					<element name="group" type="groupDef" />
+					<element name="notation" type="notationDef" />
+					<element name="simpleType" type="namedSimpleTypeDef" />
+				</choice>
+			</sequence>
+			<attribute name="attributeFormDefault" type="formEnum" default="unqualified" />
+			<attribute name="blockDefault" type="blockEnum" />
+			<attribute name="elementFormDefault" type="formEnum" default="unqualified" />
+			<attribute name="finalDefault" type="finalEnum" />
+			<attribute name="id" type="ID" />
+			<attribute name="targetNamespace" type="anyURI" />
+			<attribute name="version" type="token" />
+		</complexType>
+	</element>
+	<complexType name="attributeDef">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element name="annotation" type="annotationDef" />
+			<element name="simpleType" type="unnamedSimpleTypeDef" />
+		</choice>
+		<attribute name="default" type="string" />
+		<attribute name="fixed" type="string" />
+		<attribute name="form" type="formEnum" />
+		<attribute name="id" type="ID" />
+		<attributeGroup ref="nameAttributes" />
+		<attribute name="type" type="QName" />
+		<attribute name="use" type="useEnum" default="optional" />
+	</complexType>
+	<complexType name="elementDef">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element name="annotation" type="annotationDef" />
+			<element name="simpleType" type="unnamedSimpleTypeDef" />
+			<element name="complexType" type="unnamedComplexTypeDef" />
+			<element name="key" type="constraintDef" />
+			<element name="keyref" type="keyrefDef" />
+			<element name="unique" type="constraintDef" />
+		</choice>
+		<attribute name="abstract" type="booleanOrBinaryDigitType" default="false" />
+		<attribute name="block" type="blockEnum" />
+		<attribute name="default" type="string" />
+		<attribute name="final" type="finalEnum" />
+		<attribute name="fixed" type="string" />
+		<attribute name="form" type="formEnum" />
+		<attribute name="id" type="ID" />
+		<attributeGroup ref="occursAttributes" />
+		<attributeGroup ref="nameAttributes" />
+		<attribute name="nillable" type="booleanOrBinaryDigitType" />
+		<attribute name="substitutionGroup" type="QName" />
+		<attribute name="type" type="QName" />
+	</complexType>
+	<complexType name="namedComplexTypeDef">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element name="annotation" type="annotationDef" />
+			<element name="simpleContent" type="simpleContentDef" />
+			<element name="complexContent" type="complexContentDef" />
+			<element name="group" type="unnamedGroupDef" />
+			<element name="all" type="allDef" />
+			<element name="choice" type="choiceDef" />
+			<element name="sequence" type="sequenceDef" />
+			<element name="attribute" type="attributeDef" />
+			<element name="attributeGroup" type="unnamedAttributeGroupDef" />
+			<element name="anyAttribute" type="anyAttributeDef" />
+		</choice>
+		<attribute name="abstract" type="booleanOrBinaryDigitType" default="false" />
+		<attribute name="block" type="finalEnum" />
+		<attribute name="final" type="finalEnum" />
+		<attribute name="id" type="ID" />
+		<attribute name="mixed" type="booleanOrBinaryDigitType" default="false" />
+		<attribute name="name" type="NCName" use="required" />
+	</complexType>
+	<complexType name="unnamedComplexTypeDef">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element name="annotation" type="annotationDef" />
+			<element name="simpleContent" type="simpleContentDef" />
+			<element name="complexContent" type="complexContentDef" />
+			<element name="group" type="unnamedGroupDef" />
+			<element name="all" type="allDef" />
+			<element name="choice" type="choiceDef" />
+			<element name="sequence" type="sequenceDef" />
+			<element name="attribute" type="attributeDef" />
+			<element name="attributeGroup" type="unnamedAttributeGroupDef" />
+			<element name="anyAttribute" type="anyAttributeDef" />
+		</choice>
+		<attribute name="abstract" type="booleanOrBinaryDigitType" default="false" />
+		<attribute name="block" type="finalEnum" />
+		<attribute name="final" type="finalEnum" />
+		<attribute name="id" type="ID" />
+		<attribute name="mixed" type="booleanOrBinaryDigitType" default="false" />
+	</complexType>
+	<complexType name="simpleContentDef">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element name="annotation" type="annotationDef" />
+			<element name="restriction" type="simpleContentRestrictionDef" />
+			<element name="extension" type="simpleContentExtensionDef" />
+		</choice>
+		<attribute name="id" type="ID" />
+	</complexType>
+	<complexType name="simpleContentRestrictionDef">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element name="annotation" type="annotationDef" />
+			<element name="simpleType" type="unnamedSimpleTypeDef" />
+			<element name="enumeration" type="facetDef" />
+			<element name="length" type="facetFixedDef" />
+			<element name="maxExclusive" type="facetFixedDef" />
+			<element name="maxInclusive" type="facetFixedDef" />
+			<element name="maxLength" type="facetFixedDef" />
+			<element name="minExclusive" type="facetFixedDef" />
+			<element name="minInclusive" type="facetFixedDef" />
+			<element name="minLength" type="facetFixedDef" />
+			<element name="pattern" type="facetDef" />
+			<element name="totalDigits" type="facetFixedDef"/>
+			<element name="fractionDigits" type="facetFixedDef"/>
+			<element name="whiteSpace" type="facetFixedDef" />
+			<element name="attribute" type="attributeDef" />
+			<element name="attributeGroup" type="unnamedAttributeGroupDef" />
+			<element name="anyAttribute" type="anyAttributeDef" />
+		</choice>
+		<attribute name="base" type="QName" />
+		<attribute name="id" type="ID" />
+	</complexType>
+	<complexType name="simpleContentExtensionDef">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element name="annotation" type="annotationDef" />
+			<element name="attribute" type="attributeDef" />
+			<element name="attributeGroup" type="unnamedAttributeGroupDef" />
+			<element name="anyAttribute" type="anyAttributeDef" />
+		</choice>
+		<attribute name="base" type="QName" />
+		<attribute name="id" type="ID" />
+	</complexType>	
+	<complexType name="complexContentDef">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element name="annotation" type="annotationDef" />
+			<element name="restriction" type="complexContentRestrictionDef" />
+			<element name="extension" type="complexContentExtensionDef" />
+		</choice>
+		<attribute name="id" type="ID" />
+		<attribute name="mixed" type="booleanOrBinaryDigitType" />
+	</complexType>
+	<complexType name="complexContentRestrictionDef">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element name="annotation" type="annotationDef" />
+			<element name="group" type="unnamedGroupDef" />
+			<element name="all" type="allDef" />
+			<element name="choice" type="choiceDef" />
+			<element name="sequence" type="sequenceDef" />
+			<element name="attribute" type="attributeDef" />
+			<element name="attributeGroup" type="unnamedAttributeGroupDef" />
+			<element name="anyAttribute" type="anyAttributeDef" />
+		</choice>
+		<attribute name="base" type="QName" />
+		<attribute name="id" type="ID" />
+	</complexType>
+	<complexType name="complexContentExtensionDef">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element name="annotation" type="annotationDef" />
+			<element name="group" type="unnamedGroupDef" />
+			<element name="all" type="allDef" />
+			<element name="choice" type="choiceDef" />
+			<element name="sequence" type="sequenceDef" />
+			<element name="attribute" type="attributeDef" />
+			<element name="attributeGroup" type="unnamedAttributeGroupDef" />
+			<element name="anyAttribute" type="anyAttributeDef" />
+		</choice>
+		<attribute name="base" type="QName" />
+		<attribute name="id" type="ID" />
+	</complexType>
+	<complexType name="anyAttributeDef">
+		<choice minOccurs="0" maxOccurs="1">
+			<element name="annotation" type="annotationDef" />
+		</choice>
+		<attribute name="id" type="ID" />
+		<attribute name="namespace" type="string" />
+		<attribute name="processContents" type="processContentsEnum" default="strict" />
+	</complexType>
+	<complexType name="namedAttributeGroupDef">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element name="annotation" type="annotationDef" />
+			<element name="attribute" type="attributeDef" />
+			<element name="attributeGroup" type="unnamedAttributeGroupDef" />
+			<element name="anyAttribute" type="anyAttributeDef" />
+		</choice>
+		<attribute name="id" type="ID" />
+		<attribute name="name" type="NCName" use="required" />
+	</complexType>
+	<complexType name="unnamedAttributeGroupDef">
+		<choice minOccurs="0" maxOccurs="1">
+			<element name="annotation" type="annotationDef" />
+		</choice>
+		<attribute name="id" type="ID" />
+		<attribute name="ref" type="QName" use="required" />
+	</complexType>
+	<complexType name="unnamedGroupDef">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element name="annotation" type="annotationDef" />
+		</choice>
+		<attribute name="id" type="ID" />
+		<attribute name="ref" type="QName" use="required" />
+		<attributeGroup ref="occursAttributes" />
+	</complexType>
+	<complexType name="groupDef">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element name="annotation" type="annotationDef" />
+			<element name="all" type="allDef" />
+			<element name="choice" type="choiceDef" />
+			<element name="sequence" type="sequenceDef" />
+		</choice>
+		<attribute name="id" type="ID" />
+		<attribute name="name" type="NCName" use="required" />
+	</complexType>
+	<complexType name="allDef">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element name="annotation" type="annotationDef" />
+			<element name="element" type="elementDef" />
+		</choice>
+		<attribute name="id" type="ID" />
+		<attributeGroup ref="occursAttributes" />
+	</complexType>
+	<complexType name="choiceDef">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element name="annotation" type="annotationDef" />
+			<element name="element" type="elementDef" />
+			<element name="group" type="unnamedGroupDef" />
+			<element name="choice" type="choiceDef" />
+			<element name="sequence" type="sequenceDef" />
+			<element name="any" type="anyDef" />
+		</choice>
+		<attribute name="id" type="ID" />
+		<attributeGroup ref="occursAttributes" />
+	</complexType>
+	<complexType name="sequenceDef">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element name="annotation" type="annotationDef" />
+			<element name="element" type="elementDef" />
+			<element name="group" type="unnamedGroupDef" />
+			<element name="choice" type="choiceDef" />
+			<element name="sequence" type="sequenceDef" />
+			<element name="any" type="anyDef" />
+		</choice>
+		<attribute name="id" type="ID" />
+		<attributeGroup ref="occursAttributes" />
+	</complexType>
+	<complexType name="anyDef">
+		<choice minOccurs="0" maxOccurs="1">
+			<element name="annotation" type="annotationDef" />
+		</choice>
+		<attribute name="id" type="ID" />
+		<attribute name="namespace" type="anyURI" />
+		<attribute name="processContents" type="processContentsEnum" />
+		<attributeGroup ref="occursAttributes" />
+	</complexType>
+	<complexType name="constraintDef">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element name="annotation" type="annotationDef" />
+			<element name="selector" type="selectorDef" />
+			<element name="field" type="fieldDef" />
+		</choice>
+		<attribute name="id" type="ID" />
+		<attribute name="name" type="NCName" use="required" />
+	</complexType>
+	<complexType name="keyrefDef">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element name="annotation" type="annotationDef" />
+			<element name="selector" type="selectorDef" />
+			<element name="field" type="fieldDef" />
+		</choice>
+		<attribute name="id" type="ID" />
+		<attribute name="name" type="NCName" use="required" />
+		<attribute name="refer" type="QName" use="required" />
+	</complexType>
+	<complexType name="selectorDef">
+		<choice minOccurs="0" maxOccurs="1">
+			<element name="annotation" type="annotationDef" />
+		</choice>
+		<attribute name="id" type="ID" />
+		<attribute name="xpath" type="string" />
+	</complexType>
+	<complexType name="fieldDef">
+		<choice minOccurs="0" maxOccurs="1">
+			<element name="annotation" type="annotationDef" />
+		</choice>
+		<attribute name="id" type="ID" />
+		<attribute name="xpath" type="string" />
+	</complexType>
+	<complexType name="notationDef">
+		<choice minOccurs="0" maxOccurs="1">
+			<element name="annotation" type="annotationDef" />
+		</choice>
+		<attribute name="id" type="ID" />
+		<attribute name="name" type="NCName" />
+		<attribute name="public" type="string" />
+		<attribute name="system" type="string" />
+	</complexType>
+	<complexType name="annotationDef">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element name="appinfo">
+				<complexType>
+					<choice>
+						<any processContents="skip" namespace="##any"/>
+					</choice>
+					<attribute name="source" type="anyURI" />
+				</complexType>
+			</element>
+			<element name="documentation">
+				<complexType>
+					<choice>
+						<any />
+					</choice>
+					<attribute name="source" type="string" />
+				</complexType>
+			</element>
+		</choice>
+		<attribute name="id" type="ID" />
+		<anyAttribute namespace="##other"/>
+	</complexType>
+	<complexType name="includeDef">
+		<choice minOccurs="0" maxOccurs="1">
+			<element name="annotation" type="annotationDef" />
+		</choice>
+		<attribute name="id" type="ID" />
+		<attribute name="schemaLocation" type="string" use="required" />
+	</complexType>
+	<complexType name="redefineDef">
+		<choice minOccurs="0" maxOccurs="1">
+			<element name="annotation" type="annotationDef" />
+			<element name="attributeGroup" type="namedAttributeGroupDef" />
+			<element name="complexType" type="namedComplexTypeDef" />
+			<element name="group" type="groupDef" />
+			<element name="simpleType" type="namedSimpleTypeDef" />
+		</choice>
+		<attribute name="id" type="ID" />
+		<attribute name="schemaLocation" type="string" use="required" />
+	</complexType>
+	<complexType name="importDef">
+		<choice minOccurs="0" maxOccurs="1">
+			<element name="annotation" type="annotationDef" />
+		</choice>
+		<attribute name="id" type="ID" />
+		<attribute name="namespace" type="string" />
+		<attribute name="schemaLocation" type="string" />
+	</complexType>
+	<complexType name="namedSimpleTypeDef">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element name="annotation" type="annotationDef" />
+			<element name="list" type="listDef" />
+			<element name="restriction" type="simpleTypeRestrictionDef" />
+			<element name="union" type="unionDef" />
+		</choice>
+		<attribute name="final" type="simpleTypeFinalEnum" />
+		<attribute name="id" type="ID" />
+		<attribute name="name" type="NCName" use="required" />
+	</complexType>
+	<complexType name="unnamedSimpleTypeDef">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element name="annotation" type="annotationDef" />
+			<element name="list" type="listDef" />
+			<element name="restriction" type="simpleTypeRestrictionDef" />
+			<element name="union" type="unionDef" />
+		</choice>
+		<attribute name="final" type="simpleTypeFinalEnum" />
+		<attribute name="id" type="ID" />
+	</complexType>
+	<complexType name="simpleTypeRestrictionDef">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element name="annotation" type="annotationDef" />
+			<element name="simpleType" type="unnamedSimpleTypeDef" />
+			<element name="length" type="facetFixedDef" />
+			<element name="minLength" type="facetFixedDef" />
+			<element name="maxLength" type="facetFixedDef" />
+			<element name="pattern" type="facetDef" />
+			<element name="enumeration" type="facetDef" />
+			<element name="whiteSpace" type="facetFixedDef" />
+			<element name="maxInclusive" type="facetFixedDef" />
+			<element name="maxExclusive" type="facetFixedDef" />
+			<element name="minInclusive" type="facetFixedDef" />
+			<element name="minExclusive" type="facetFixedDef" />
+			<element name="totalDigits" type="facetFixedDef"/>
+			<element name="fractionDigits" type="facetFixedDef"/>
+		</choice>
+		<attribute name="base" type="QName" />
+		<attribute name="id" type="ID" />
+	</complexType>
+	<complexType name="listDef">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element name="annotation" type="annotationDef" />
+			<element name="simpleType" type="unnamedSimpleTypeDef" />
+		</choice>
+		<attribute name="itemType" type="QName" />
+		<attribute name="id" type="ID" />
+	</complexType>
+	<complexType name="unionDef">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element name="annotation" type="annotationDef" />
+			<element name="simpleType" type="unnamedSimpleTypeDef" />
+		</choice>
+		<attribute name="memberTypes" type="string" />
+		<attribute name="id" type="ID" />
+	</complexType>
+	<complexType name="facetDef">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element name="annotation" type="annotationDef" />
+		</choice>
+		<attribute name="value" type="string" />
+		<attribute name="id" type="ID" />
+	</complexType>
+	<complexType name="facetFixedDef">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element name="annotation" type="annotationDef" />
+		</choice>
+		<attribute name="value" type="string" />
+		<attribute name="id" type="ID" />
+		<attribute name="fixed" type="booleanOrBinaryDigitType" default="false" />
+	</complexType>
+	<simpleType name="useEnum">
+		<restriction base="string">
+			<enumeration value="optional" />
+			<enumeration value="prohibited" />
+			<enumeration value="required" />
+		</restriction>
+	</simpleType>
+	<simpleType name="processContentsEnum">
+		<restriction base="string">
+			<enumeration value="lax" />
+			<enumeration value="skip" />
+			<enumeration value="strict" />
+		</restriction>
+	</simpleType>
+	<simpleType name="formEnum">
+		<restriction base="string">
+			<enumeration value="qualified" />
+			<enumeration value="unqualified" />
+		</restriction>
+	</simpleType>
+	<simpleType name="finalEnum">
+		<union>
+			<simpleType>
+				<restriction base="string" >
+					<enumeration value="#all" />
+				</restriction>
+			</simpleType>
+			<simpleType>
+				<list>
+					<simpleType>
+						<restriction base="string">
+							<enumeration value="extension" />
+							<enumeration value="restriction" />
+						</restriction>
+					</simpleType>
+				</list>
+			</simpleType>
+		</union>
+	</simpleType>
+	<simpleType name="simpleTypeFinalEnum">
+		<union>
+			<simpleType>
+				<restriction base="string" >
+					<enumeration value="#all" />
+				</restriction>
+			</simpleType>
+			<simpleType>
+				<list>
+					<simpleType>
+						<restriction base="string">
+							<enumeration value="list" />
+							<enumeration value="union" />
+							<enumeration value="restriction" />
+						</restriction>
+					</simpleType>
+				</list>
+			</simpleType>
+		</union>
+	</simpleType>
+	<simpleType name="blockEnum">
+		<union>
+			<simpleType>
+				<restriction base="string" >
+					<enumeration value="#all" />
+				</restriction>
+			</simpleType>
+			<simpleType>
+				<list>
+					<simpleType>
+						<restriction base="string">
+							<enumeration value="substitution" />
+							<enumeration value="extension" />
+							<enumeration value="restriction" />
+						</restriction>
+					</simpleType>
+				</list>
+			</simpleType>
+		</union>
+	</simpleType>
+	<simpleType name="booleanOrBinaryDigitType">
+		<restriction base="xsd:string">
+			<enumeration value="0" />
+			<enumeration value="1" />
+			<enumeration value="false" />
+			<enumeration value="true" />
+		</restriction>
+	</simpleType>
+	<attributeGroup name="nameAttributes">
+		<attribute name="name" type="NCName" />
+		<attribute name="ref" type="QName" />
+	</attributeGroup>
+	<attributeGroup name="occursAttributes">
+		<attribute name="maxOccurs" type="string" default="1" />
+		<attribute name="minOccurs" type="nonNegativeInteger" default="1" />
+	</attributeGroup>
+</schema>

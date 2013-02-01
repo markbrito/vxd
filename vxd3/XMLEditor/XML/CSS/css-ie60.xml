@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<cssmd:cssmd xmlns:cssmd="http://schemas.microsoft.com/Visual-Studio-Intellisense/css" version="VS8" description="CSS supported by IE6 validation data">
+  <cssmd:property-set>
+	<!-- http://msdn.microsoft.com/workshop/author/dhtml/reference/objects/obj_style.asp -->
+
+    <!-- Font Properties -->
+    <cssmd:property-def _locID="color" _locAttrData="description,syntax" type="color" 
+		description="Color of an element's text" 
+		syntax="#RRGGBB | Named Color" 
+		enum="AliceBlue AntiqueWhite Aqua Aquamarine Azure 
+			Beige Bisque Black BlanchedAlmond Blue BlueViolet Brown Burlywood
+			CadetBlue Chartreuse Chocolate Coral CornflowerBlue	Cornsilk Crimson Cyan
+			DarkBlue DarkCyan DarkGoldenrod DarkGray DarkGreen DarkKhaki DarkMagenta DarkOliveGreen 
+			DarkOrange DarkOrchid DarkRed DarkSalmon DarkSeaGreen DarkSlateBlue	DarkSlateGray
+			DarkTurquoise DarkViolet DeepPink DeepSkyBlue DimGray DodgerBlu
+			Firebrick FloralWhite ForestGreen Fuchsia
+			Gainsboro GhostWhite Gold Goldenrod Gray Green GreenYellow
+			Honeydew HotPink
+			IndianRed Indigo Ivory
+			Khaki
+			Lavender LavenderBlush LawnGreen LemonChiffon LightBlue	LightCoral LightCyan
+			LightGoldenrodYellow LightGreen	LightGrey LightPink	LightSalmon	LightSeaGreen
+			LightSkyBlue LightSlateGray	LightSteelBlue LightYellow Lime LimeGreen Linen
+			Magenta	Maroon MediumAquamarine MediumBlue MediumOrchid MediumPurple MediumSeaGreen
+			MediumSlateBlue MediumSpringGreen MediumTurquoise MediumVioletRed MidnightBlue
+			MintCream MistyRose	Moccasin
+			NavajoWhite Navy
+			Oldlace Olive OliveDrab Orange OrangeRed Orchid
+			PaleGoldenrod PaleGreen PaleTurquoise PaleVioletRed	PapayaWhip Peachpuff
+			Peru Pink Plum PowderBlue Purple Red RosyBrown RoyalBlue
+			SaddleBrown Salmon SandyBrown SeaGreen Seashell Sienna Silver SkyBlue
+			SlateBlue SlateGray Snow SpringGreen SteelBlue 
+			Tan	Teal Thistle Tomato Turquoise
+			Violet
+			Wheat White	WhiteSmoke
+			Yellow YellowGreen
+			Transparent
+			ActiveBorder ActiveCaption AppWorkspace Background ButtonFace ButtonHighlight ButtonShadow ButtonText CaptionText GrayText Highlight HighlightTxt InactiveBorder InactiveCaption InactiveCaptionText InfoBackground InfoText Menu MenuText Scrollbar ThreeDDarkShadow ThreeDFace ThreeDHighlight ThreeDLighShadow ThreeDShadow Window WindowFrame WindowText"/>
+
+    <cssmd:property-def _locID="font" _locAttrData="description,syntax" type="composite" 
+		description="Font used for an element's text" 
+		syntax="one of the system fonts | [font-style] [font-variant] [font-weight] [font-size]/[line-height] [font-family]" 
+		enum="caption icon menu message-box small-caption status-bar"/>
+    <cssmd:property-def _locID="font-family" _locAttrData="description,syntax" type="font" 
+		description="Name of the font used for an element's text" 
+		syntax="A font face name sequence"/>
+    <cssmd:property-def _locID="font-style" _locAttrData="description,syntax" type="enum" 
+		description="Style of the font used for an element's text" 
+		syntax="One of the font-style values" 
+		enum="italic normal oblique"/>
+    <cssmd:property-def _locID="font-variant" _locAttrData="description,syntax" type="enum" 
+		description="Variant of the font used for an element's text" 
+		syntax="One of the font-variant values" 
+		enum="normal small-caps"/>
+    <cssmd:property-def _locID="font-size" _locAttrData="description,syntax" type="composite" 
+		description="Size of the font used for an element's text" 
+		syntax="length | percentage | standard font size value" 
+		enum="large larger medium small smaller x-large x-small xx-large xx-small"/>
+    <cssmd:property-def _locID="font-weight" _locAttrData="description,syntax" type="enum" 
+		description="Boldness of the font used for an element's text" 
+		syntax="One of the font-weight values" 
+		enum="bold bolder lighter normal 100 200 300 400 500 600 700 800 900"/>
+    <cssmd:property-def _locID="text-decoration" _locAttrData="description,syntax" type="composite" 
+		description="Decorations applied to font used for an element's text" 
+		syntax="none | combination of 'underline', 'overline', 'line-through' and 'blink'"/>
+
+    <!-- Background Properties -->
+    <cssmd:property-def _locID="background" _locAttrData="description,syntax" type="composite" 
+		description="Background of an element" 
+		syntax="[background-color] [background-image] [background-repeat] [background-attachment] [background-position]"/>
+    <cssmd:property-def _locID="background-color" _locAttrData="description,syntax" type="color" 
+		description="Color used for an element's background" 
+		syntax="#RRGGBB | Transparent | Named Color" 
+		enum="AliceBlue AntiqueWhite Aqua Aquamarine Azure 
+			Beige Bisque Black BlanchedAlmond Blue BlueViolet Brown Burlywood
+			CadetBlue Chartreuse Chocolate Coral CornflowerBlue	Cornsilk Crimson Cyan
+			DarkBlue DarkCyan DarkGoldenrod DarkGray DarkGreen DarkKhaki DarkMagenta DarkOliveGreen 
+			DarkOrange DarkOrchid DarkRed DarkSalmon DarkSeaGreen DarkSlateBlue	DarkSlateGray
+			DarkTurquoise DarkViolet DeepPink DeepSkyBlue DimGray DodgerBlu
+			Firebrick FloralWhite ForestGreen Fuchsia
+			Gainsboro GhostWhite Gold Goldenrod Gray Green GreenYellow
+			Honeydew HotPink
+			IndianRed Indigo Ivory
+			Khaki
+			Lavender LavenderBlush LawnGreen LemonChiffon LightBlue	LightCoral LightCyan
+			LightGoldenrodYellow LightGreen	LightGrey LightPink	LightSalmon	LightSeaGreen
+			LightSkyBlue LightSlateGray	LightSteelBlue LightYellow Lime LimeGreen Linen
+			Magenta	Maroon MediumAquamarine MediumBlue MediumOrchid MediumPurple MediumSeaGreen
+			MediumSlateBlue MediumSpringGreen MediumTurquoise MediumVioletRed MidnightBlue
+			MintCream MistyRose	Moccasin
+			NavajoWhite Navy
+			Oldlace Olive OliveDrab Orange OrangeRed Orchid
+			PaleGoldenrod PaleGreen PaleTurquoise PaleVioletRed	PapayaWhip Peachpuff
+			Peru Pink Plum PowderBlue Purple Red RosyBrown RoyalBlue
+			SaddleBrown Salmon SandyBrown SeaGreen Seashell Sienna Silver SkyBlue
+			SlateBlue SlateGray Snow SpringGreen SteelBlue 
+			Tan	Teal Thistle Tomato Turquoise
+			Violet
+			Wheat White	WhiteSmoke
+			Yellow YellowGreen
+			Transparent
+			ActiveBorder ActiveCaption AppWorkspace Background ButtonFace ButtonHighlight ButtonShadow ButtonText CaptionText GrayText Highlight HighlightTxt InactiveBorder InactiveCaption InactiveCaptionText InfoBackground InfoText Menu MenuText Scrollbar ThreeDDarkShadow ThreeDFace ThreeDHighlight ThreeDLighShadow ThreeDShadow Window WindowFrame WindowText"/>
+
+    <cssmd:property-def _locID="background-image" _locAttrData="description,syntax" type="url" 
+		description="Image used for an element's background" 
+		syntax="none | url([url to image])"/>
+    <cssmd:property-def _locID="background-attachment" _locAttrData="description,syntax" type="enum" 
+		description="How the background image is attached to an element within the document" 
+		syntax="One of the background-attachment values" 
+		enum="fixed scroll"/>
+    <cssmd:property-def _locID="background-repeat" _locAttrData="description,syntax" type="enum" 
+		description="How the background image is tiled within an element" 
+		syntax="One of the background-repeat values" 
+		enum="no-repeat repeat repeat-x repeat-y"/>
+    <cssmd:property-def _locID="background-position" _locAttrData="description,syntax" type="composite" 
+		description="How the background is positioned within an element" 
+		syntax="[horizontal position] [vertical position]"
+		enum="bottom center left right top"/>
+	<!-- IE specific -->
+    <cssmd:property-def _locID="background-position-x" _locAttrData="description,syntax" type="composite" 
+		description="How the background is positioned within an element" 
+		syntax="[horizontal position] [vertical position]"
+		enum="center left right"/>
+    <cssmd:property-def _locID="background-position-y" _locAttrData="description,syntax" type="composite" 
+		description="How the background is positioned within an element" 
+		syntax="[horizontal position] [vertical position]"
+		enum="bottom center top"/>
+
+    <!-- Text Properties -->
+    <cssmd:property-def _locID="text-align" _locAttrData="description,syntax" type="enum" 
+		description="The horizontal alignment of an element's text" 
+		syntax="One of the text-align values" 
+		enum="center justify left right"/>
+    <cssmd:property-def _locID="vertical-align" _locAttrData="description,syntax" type="composite" 
+		description="The vertical alignment of an element's text" 
+		syntax="One of the vertical-align values | a unit" 
+		enum="baseline bottom middle sub super text-bottom text-top top"/>
+    <cssmd:property-def _locID="letter-spacing" _locAttrData="description,syntax" type="composite" 
+		description="The spacing between characters" 
+		syntax="normal | a unit" 
+		enum="normal"/>
+    <cssmd:property-def _locID="line-height" _locAttrData="description,syntax" type="composite" 
+		description="The spacing between lines" 
+		syntax="normal | a unit" 
+		enum="normal"/>
+    <cssmd:property-def _locID="text-indent" _locAttrData="description,syntax" type="length" 
+		description="The indentation of text" 
+		syntax="a unit"/>
+    <cssmd:property-def _locID="text-transform" _locAttrData="description,syntax" type="enum" 
+		description="Letter case of the text" 
+		syntax="One of the text-transform values" 
+		enum="capitalize lowercase none uppercase"/>
+    <cssmd:property-def _locID="word-spacing" _locAttrData="description,syntax" type="composite" 
+		description="The spacing between words" 
+		syntax="normal | a unit" 
+		enum="normal"/>
+    <cssmd:property-def _locID="white-space" _locAttrData="description,syntax" type="enum" 
+		description="A value that indicates whether lines are automatically broken inside the object" 
+		syntax="One of the white-space values" 
+		enum="normal nowrap pre"/>
+	<!-- IE specific -->
+    <cssmd:property-def _locID="line-break" _locAttrData="description,syntax" type="enum" 
+		description="Line-breaking rules for Japanese text" 
+		syntax="One of the line-break values"
+		enum="normal strict"/>
+    <cssmd:property-def _locID="text-align-last" _locAttrData="description,syntax" type="enum" 
+		description="Defines how to align the last line or only line of text in the object" 
+		syntax="One of the text-align-last values" 
+		enum="auto center justify left right"/>
+    <cssmd:property-def _locID="text-autospace" _locAttrData="description,syntax" type="enum" 
+		description="Autospacing and narrow space width adjustment of text" 
+		syntax="One of the text-autospace values" 
+		enum="none ideograph-alpha ideograph-numeric ideograph-parenthesis ideograph-space"/>
+    <cssmd:property-def _locID="text-justify" _locAttrData="description,syntax" type="enum" 
+		description="Alignment used to justify text in the object" 
+		syntax="One of the text-justify values" 
+		enum="auto distribute distribute-all-lines distribute-center-last inter-cluster inter-ideograph inter-word kashida newspaper"/>
+    <cssmd:property-def _locID="text-kashida-space" _locAttrData="description,syntax" type="length" 
+		description="Ratio of kashida expansion to white space expansion when justifying lines of text in the object" 
+		syntax="a unit"/>
+    <cssmd:property-def _locID="text-overflow" _locAttrData="description,syntax" type="enum" 
+		description="Indicates whether to render ellipses(...) to indicate text overflow" 
+		syntax="One of the text-overflow values" 
+		enum="ellipsis clip"/>
+    <cssmd:property-def _locID="text-underline-position" _locAttrData="description,syntax" type="enum" 
+		description="Position of the underline decoration that is set through the textDecoration property" 
+		syntax="One of the text-underline-position values" 
+		enum="above below auto auto-pos"/>
+    <cssmd:property-def _locID="word-break" _locAttrData="description,syntax" type="enum" 
+		description="Line-breaking behavior within words, particularly where multiple languages appear in the object" 
+		syntax="One of the word-break values" 
+		enum="normal break-all keep-all"/>
+    <cssmd:property-def _locID="word-wrap" _locAttrData="description,syntax" type="enum" 
+		description="Defines whether to break words when the content exceeds the boundaries of its container" 
+		syntax="One of the word-wrap values" 
+		enum="normal break-word"/>
+    <cssmd:property-def _locID="writing-mode" _locAttrData="description,syntax" type="enum" 
+		description="Direction and flow of the content in the object" 
+		syntax="One of the writing-mode values" 
+		enum="lr-tb tb-rl"/>
+
+    <!-- Layout Properties -->
+    <cssmd:property-def _locID="display" _locAttrData="description,syntax" type="enum" 
+		description="The display mode of an element" 
+		syntax="One of the display values" 
+		enum="block inline inline-block list-item none table-footer-group table-header-group"/>
+    <cssmd:property-def _locID="float" _locAttrData="description,syntax" type="enum" 
+		description="Edge of the object on which text will flow" 
+		syntax="One of the float values" 
+		enum="left none right"/>
+    <cssmd:property-def _locID="clear" _locAttrData="description,syntax" type="enum" 
+		description="Sides on which floating objects will not be allowed" 
+		syntax="One of the clear values" 
+		enum="both left none right"/>
+    <cssmd:property-def _locID="visibility" _locAttrData="description,syntax" type="enum" 
+		description="The visibility of an element" 
+		syntax="One of the visibility values" 
+		enum="hidden visible"/>
+    <cssmd:property-def _locID="position" _locAttrData="description,syntax" type="enum" 
+		description="The positioning mode of an element" 
+		syntax="One of the position values" 
+		enum="absolute relative static"/>
+    <cssmd:property-def _locID="z-index" _locAttrData="description,syntax" type="composite" 
+		description="The stacking order of a positioned element" 
+		syntax="auto | an integer" 
+		enum="auto"/>
+    <cssmd:property-def _locID="left" _locAttrData="description,syntax" type="composite" 
+		description="The left edge of a positioned element" 
+		syntax="auto | a unit" 
+		enum="auto"/>
+    <cssmd:property-def _locID="right" _locAttrData="description,syntax" type="composite" 
+		description="The right edge of a positioned element" 
+		syntax="auto | a unit" 
+		enum="auto"/>
+    <cssmd:property-def _locID="top" _locAttrData="description,syntax" type="composite" 
+		description="The top edge of a positioned element" 
+		syntax="auto | a unit" 
+		enum="auto"/>
+    <cssmd:property-def _locID="bottom" _locAttrData="description,syntax" type="composite" 
+		description="The bottom edge of a positioned element" 
+		syntax="auto | a unit" 
+		enum="auto"/>
+    <cssmd:property-def _locID="overflow" _locAttrData="description,syntax" type="enum" 
+		description="Visibility of content extending beyond element's dimensions" 
+		syntax="One of the overflow values" 
+		enum="auto hidden scroll visible"/>
+    <cssmd:property-def _locID="overflow-x" _locAttrData="description,syntax" type="enum" 
+		description="Defines how to manage the content of the object when the content exceeds the width of the object" 
+		syntax="One of the overflow-x values" 
+		enum="auto hidden scroll visible"/>
+    <cssmd:property-def _locID="overflow-y" _locAttrData="description,syntax" type="enum" 
+		description="Defines how to manage the content of the object when the content exceeds the height of the object" 
+		syntax="One of the overflow-y values" 
+		enum="auto hidden scroll visible"/>
+    <cssmd:property-def _locID="clip" _locAttrData="description,syntax" type="string" 
+		description="The clipping rectangle of an element" 
+		syntax="rect([top unit] [right unit] [bottom unit] [left unit]) | auto"/>
+    <cssmd:property-def _locID="width" _locAttrData="description,syntax" type="composite" 
+		description="The width of a positioned element" 
+		syntax="auto | a unit" 
+		enum="auto"/>
+    <cssmd:property-def _locID="height" _locAttrData="description,syntax" type="composite" 
+		description="The height of a positioned element" 
+		syntax="auto | a unit" 
+		enum="auto"/>
+    <cssmd:property-def _locID="min-height" _locAttrData="description,syntax" type="length" 
+		description="Constrains box height" 
+		syntax="a unit"/>
+	<!-- IE specific properties -->
+    <cssmd:property-def _locID="layout-flow" _locAttrData="description,syntax" type="enum" 
+		description="Direction and flow of the content in the object" 
+		syntax="One of the layout-flow values" 
+		enum="horizontal vertical-ideographic"/>
+    <cssmd:property-def _locID="layout-grid" _locAttrData="description,syntax" type="enum" 
+		description="Composite document grid properties that specify the layout of text characters" 
+		syntax="One of the layout-grid values" 
+		enum="mode type line char"/>
+    <cssmd:property-def _locID="layout-grid-char" _locAttrData="description,syntax" type="composite" 
+		description="Size of the character grid used for rendering the text content of an element" 
+		syntax="One of the layout-grid-char values | a unit" 
+		enum="auto none"/>
+    <cssmd:property-def _locID="layout-grid-line" _locAttrData="description,syntax" type="composite" 
+		description="Gridline value used for rendering the text content of an element" 
+		syntax="One of the layout-grid-line values | a unit" 
+		enum="auto none"/>
+    <cssmd:property-def _locID="layout-grid-mode" _locAttrData="description,syntax" type="enum" 
+		description="Specifies whether the text layout grid uses two dimensions" 
+		syntax="One of the layout-grid-mode values" 
+		enum="both none line char"/>
+    <cssmd:property-def _locID="layout-grid-type" _locAttrData="description,syntax" type="enum" 
+		description="Type of grid used for rendering the text content of an element" 
+		syntax="One of the layout-grid-type values" 
+		enum="loose strict fixed"/>
+
+    <!-- Edges Properties -->
+    <cssmd:property-def _locID="padding" _locAttrData="description,syntax" type="composite" 
+		description="The padding around all four edges of an element" 
+		syntax="[top unit] [right unit] [bottom unit] [left unit]"/>
+    <cssmd:property-def _locID="padding-left" _locAttrData="description,syntax" type="composite" 
+		description="The padding on the left edge of an element" 
+		syntax="auto | a unit" enum="auto"/>
+    <cssmd:property-def _locID="padding-right" _locAttrData="description,syntax" type="composite" 
+		description="The padding on the right edge of an element" 
+		syntax="auto | a unit" enum="auto"/>
+    <cssmd:property-def _locID="padding-top" _locAttrData="description,syntax" type="composite" 
+		description="The padding on the top edge of an element" 
+		syntax="auto | a unit" enum="auto"/>
+    <cssmd:property-def _locID="padding-bottom" _locAttrData="description,syntax" type="composite" 
+		description="The padding on the bottom edge of an element" 
+		syntax="auto | a unit" enum="auto"/>
+    <cssmd:property-def _locID="margin" _locAttrData="description,syntax" type="composite" 
+		description="The margin around all four edges of an element" 
+		syntax="[top unit] [right unit] [bottom unit] [left unit]"/>
+    <cssmd:property-def _locID="margin-left" _locAttrData="description,syntax" type="composite" 
+		description="The margin on the left edge of an element" 
+		syntax="auto | a unit" enum="auto"/>
+    <cssmd:property-def _locID="margin-right" _locAttrData="description,syntax" type="composite" 
+		description="The margin on the right edge of an element" 
+		syntax="auto | a unit" enum="auto"/>
+    <cssmd:property-def _locID="margin-top" _locAttrData="description,syntax" type="composite" 
+		description="The margin on the top edge of an element" 
+		syntax="auto | a unit" enum="auto"/>
+    <cssmd:property-def _locID="margin-bottom" _locAttrData="description,syntax" type="composite" 
+		description="The margin on the bottom edge of an element" 
+		syntax="auto | a unit" enum="auto"/>
+    <cssmd:property-def _locID="border" _locAttrData="description,syntax" type="composite" 
+		description="The border around all four edges of an element" 
+		syntax="[border-style] [border-width] [border-color]"/>
+    <cssmd:property-def _locID="border-left" _locAttrData="description,syntax" type="composite" 
+		description="The border on the left edge of an element" 
+		syntax="[border-style] [border-width] [border-color]"/>
+    <cssmd:property-def _locID="border-right" _locAttrData="description,syntax" type="composite" 
+		description="The border on the right edge of an element" 
+		syntax="[border-style] [border-width] [border-color]"/>
+    <cssmd:property-def _locID="border-top" _locAttrData="description,syntax" type="composite" 
+		description="The border on the top edge of an element" 
+		syntax="[border-style] [border-width] [border-color]"/>
+    <cssmd:property-def _locID="border-bottom" _locAttrData="description,syntax" type="composite" 
+		description="The border on the bottom edge of an element" 
+		syntax="[border-style] [border-width] [border-color]"/>
+    <cssmd:property-def _locID="border-color" _locAttrData="description,syntax" type="color" 
+		description="The color of the border around all four edges of an element" 
+		syntax="#RRGGBB | Named Color" 
+		enum="AliceBlue AntiqueWhite Aqua Aquamarine Azure 
+			Beige Bisque Black BlanchedAlmond Blue BlueViolet Brown Burlywood
+			CadetBlue Chartreuse Chocolate Coral CornflowerBlue	Cornsilk Crimson Cyan
+			DarkBlue DarkCyan DarkGoldenrod DarkGray DarkGreen DarkKhaki DarkMagenta DarkOliveGreen 
+			DarkOrange DarkOrchid DarkRed DarkSalmon DarkSeaGreen DarkSlateBlue	DarkSlateGray
+			DarkTurquoise DarkViolet DeepPink DeepSkyBlue DimGray DodgerBlu
+			Firebrick FloralWhite ForestGreen Fuchsia
+			Gainsboro GhostWhite Gold Goldenrod Gray Green GreenYellow
+			Honeydew HotPink
+			IndianRed Indigo Ivory
+			Khaki
+			Lavender LavenderBlush LawnGreen LemonChiffon LightBlue	LightCoral LightCyan
+			LightGoldenrodYellow LightGreen	LightGrey LightPink	LightSalmon	LightSeaGreen
+			LightSkyBlue LightSlateGray	LightSteelBlue LightYellow Lime LimeGreen Linen
+			Magenta	Maroon MediumAquamarine MediumBlue MediumOrchid MediumPurple MediumSeaGreen
+			MediumSlateBlue MediumSpringGreen MediumTurquoise MediumVioletRed MidnightBlue
+			MintCream MistyRose	Moccasin
+			NavajoWhite Navy
+			Oldlace Olive OliveDrab Orange OrangeRed Orchid
+			PaleGoldenrod PaleGreen PaleTurquoise PaleVioletRed	PapayaWhip Peachpuff
+			Peru Pink Plum PowderBlue Purple Red RosyBrown RoyalBlue
+			SaddleBrown Salmon SandyBrown SeaGreen Seashell Sienna Silver SkyBlue
+			SlateBlue SlateGray Snow SpringGreen SteelBlue 
+			Tan	Teal Thistle Tomato Turquoise
+			Violet
+			Wheat White	WhiteSmoke
+			Yellow YellowGreen
+			Transparent
+			ActiveBorder ActiveCaption AppWorkspace Background ButtonFace ButtonHighlight ButtonShadow ButtonText CaptionText GrayText Highlight HighlightTxt InactiveBorder InactiveCaption InactiveCaptionText InfoBackground InfoText Menu MenuText Scrollbar ThreeDDarkShadow ThreeDFace ThreeDHighlight ThreeDLighShadow ThreeDShadow Window WindowFrame WindowText"/>
+    <cssmd:property-def _locID="border-style" _locAttrData="description,syntax" type="enum" 
+		description="The style of the border around all four edges of an element" 
+		syntax="One of the border-style values" 
+		enum="dashed dotted double groove hidden inset none outset ridge solid"/>
+    <cssmd:property-def _locID="border-width" _locAttrData="description,syntax" type="composite" 
+		description="The width of the border around all four edges of an element" 
+		syntax="a unit | One of the border-width values" enum="medium thick thin"/>
+    <cssmd:property-def _locID="border-left-color" _locAttrData="description,syntax" type="color" 
+		description="The color of the border on the left edge of an element" 
+		syntax="#RRGGBB | Named Color" 
+		enum="AliceBlue AntiqueWhite Aqua Aquamarine Azure 
+			Beige Bisque Black BlanchedAlmond Blue BlueViolet Brown Burlywood
+			CadetBlue Chartreuse Chocolate Coral CornflowerBlue	Cornsilk Crimson Cyan
+			DarkBlue DarkCyan DarkGoldenrod DarkGray DarkGreen DarkKhaki DarkMagenta DarkOliveGreen 
+			DarkOrange DarkOrchid DarkRed DarkSalmon DarkSeaGreen DarkSlateBlue	DarkSlateGray
+			DarkTurquoise DarkViolet DeepPink DeepSkyBlue DimGray DodgerBlu
+			Firebrick FloralWhite ForestGreen Fuchsia
+			Gainsboro GhostWhite Gold Goldenrod Gray Green GreenYellow
+			Honeydew HotPink
+			IndianRed Indigo Ivory
+			Khaki
+			Lavender LavenderBlush LawnGreen LemonChiffon LightBlue	LightCoral LightCyan
+			LightGoldenrodYellow LightGreen	LightGrey LightPink	LightSalmon	LightSeaGreen
+			LightSkyBlue LightSlateGray	LightSteelBlue LightYellow Lime LimeGreen Linen
+			Magenta	Maroon MediumAquamarine MediumBlue MediumOrchid MediumPurple MediumSeaGreen
+			MediumSlateBlue MediumSpringGreen MediumTurquoise MediumVioletRed MidnightBlue
+			MintCream MistyRose	Moccasin
+			NavajoWhite Navy
+			Oldlace Olive OliveDrab Orange OrangeRed Orchid
+			PaleGoldenrod PaleGreen PaleTurquoise PaleVioletRed	PapayaWhip Peachpuff
+			Peru Pink Plum PowderBlue Purple Red RosyBrown RoyalBlue
+			SaddleBrown Salmon SandyBrown SeaGreen Seashell Sienna Silver SkyBlue
+			SlateBlue SlateGray Snow SpringGreen SteelBlue 
+			Tan	Teal Thistle Tomato Turquoise
+			Violet
+			Wheat White	WhiteSmoke
+			Yellow YellowGreen
+			Transparent
+			ActiveBorder ActiveCaption AppWorkspace Background ButtonFace ButtonHighlight ButtonShadow ButtonText CaptionText GrayText Highlight HighlightTxt InactiveBorder InactiveCaption InactiveCaptionText InfoBackground InfoText Menu MenuText Scrollbar ThreeDDarkShadow ThreeDFace ThreeDHighlight ThreeDLighShadow ThreeDShadow Window WindowFrame WindowText"/>
+    <cssmd:property-def _locID="border-left-width" _locAttrData="description,syntax" type="composite" 
+		description="The width of the border on the left edge of an element" 
+		syntax="a unit | One of the border-width values" enum="medium thick thin"/>
+    <cssmd:property-def _locID="border-left-style" _locAttrData="description,syntax" type="enum" 
+		description="The style of the border on the left edge of an element" 
+		syntax="One of the border-style values" 
+		enum="dashed dotted double groove inset none outset ridge solid window-inset"/>
+    <cssmd:property-def _locID="border-right-color" _locAttrData="description,syntax" type="color" 
+		description="The color of the border on the right edge of an element" 
+		syntax="#RRGGBB | Named Color" 
+		enum="AliceBlue AntiqueWhite Aqua Aquamarine Azure 
+			Beige Bisque Black BlanchedAlmond Blue BlueViolet Brown Burlywood
+			CadetBlue Chartreuse Chocolate Coral CornflowerBlue	Cornsilk Crimson Cyan
+			DarkBlue DarkCyan DarkGoldenrod DarkGray DarkGreen DarkKhaki DarkMagenta DarkOliveGreen 
+			DarkOrange DarkOrchid DarkRed DarkSalmon DarkSeaGreen DarkSlateBlue	DarkSlateGray
+			DarkTurquoise DarkViolet DeepPink DeepSkyBlue DimGray DodgerBlu
+			Firebrick FloralWhite ForestGreen Fuchsia
+			Gainsboro GhostWhite Gold Goldenrod Gray Green GreenYellow
+			Honeydew HotPink
+			IndianRed Indigo Ivory
+			Khaki
+			Lavender LavenderBlush LawnGreen LemonChiffon LightBlue	LightCoral LightCyan
+			LightGoldenrodYellow LightGreen	LightGrey LightPink	LightSalmon	LightSeaGreen
+			LightSkyBlue LightSlateGray	LightSteelBlue LightYellow Lime LimeGreen Linen
+			Magenta	Maroon MediumAquamarine MediumBlue MediumOrchid MediumPurple MediumSeaGreen
+			MediumSlateBlue MediumSpringGreen MediumTurquoise MediumVioletRed MidnightBlue
+			MintCream MistyRose	Moccasin
+			NavajoWhite Navy
+			Oldlace Olive OliveDrab Orange OrangeRed Orchid
+			PaleGoldenrod PaleGreen PaleTurquoise PaleVioletRed	PapayaWhip Peachpuff
+			Peru Pink Plum PowderBlue Purple Red RosyBrown RoyalBlue
+			SaddleBrown Salmon SandyBrown SeaGreen Seashell Sienna Silver SkyBlue
+			SlateBlue SlateGray Snow SpringGreen SteelBlue 
+			Tan	Teal Thistle Tomato Turquoise
+			Violet
+			Wheat White	WhiteSmoke
+			Yellow YellowGreen
+			Transparent
+			ActiveBorder ActiveCaption AppWorkspace Background ButtonFace ButtonHighlight ButtonShadow ButtonText CaptionText GrayText Highlight HighlightTxt InactiveBorder InactiveCaption InactiveCaptionText InfoBackground InfoText Menu MenuText Scrollbar ThreeDDarkShadow ThreeDFace ThreeDHighlight ThreeDLighShadow ThreeDShadow Window WindowFrame WindowText"/>
+    <cssmd:property-def _locID="border-right-width" _locAttrData="description,syntax" type="composite" 
+		description="The width of the border on the right edge of an element" 
+		syntax="a unit | One of the border-width values" 
+		enum="medium thick thin"/>
+    <cssmd:property-def _locID="border-right-style" _locAttrData="description,syntax" type="enum" 
+		description="The style of the border on the right edge of an element" 
+		syntax="One of the border-style values" 
+		enum="dashed dotted double groove inset none outset ridge solid window-inset"/>
+    <cssmd:property-def _locID="border-top-color" _locAttrData="description,syntax" type="color" 
+		description="The color of the border on the top edge of an element" 
+		syntax="#RRGGBB | Named Color" 
+		enum="AliceBlue AntiqueWhite Aqua Aquamarine Azure 
+			Beige Bisque Black BlanchedAlmond Blue BlueViolet Brown Burlywood
+			CadetBlue Chartreuse Chocolate Coral CornflowerBlue	Cornsilk Crimson Cyan
+			DarkBlue DarkCyan DarkGoldenrod DarkGray DarkGreen DarkKhaki DarkMagenta DarkOliveGreen 
+			DarkOrange DarkOrchid DarkRed DarkSalmon DarkSeaGreen DarkSlateBlue	DarkSlateGray
+			DarkTurquoise DarkViolet DeepPink DeepSkyBlue DimGray DodgerBlu
+			Firebrick FloralWhite ForestGreen Fuchsia
+			Gainsboro GhostWhite Gold Goldenrod Gray Green GreenYellow
+			Honeydew HotPink
+			IndianRed Indigo Ivory
+			Khaki
+			Lavender LavenderBlush LawnGreen LemonChiffon LightBlue	LightCoral LightCyan
+			LightGoldenrodYellow LightGreen	LightGrey LightPink	LightSalmon	LightSeaGreen
+			LightSkyBlue LightSlateGray	LightSteelBlue LightYellow Lime LimeGreen Linen
+			Magenta	Maroon MediumAquamarine MediumBlue MediumOrchid MediumPurple MediumSeaGreen
+			MediumSlateBlue MediumSpringGreen MediumTurquoise MediumVioletRed MidnightBlue
+			MintCream MistyRose	Moccasin
+			NavajoWhite Navy
+			Oldlace Olive OliveDrab Orange OrangeRed Orchid
+			PaleGoldenrod PaleGreen PaleTurquoise PaleVioletRed	PapayaWhip Peachpuff
+			Peru Pink Plum PowderBlue Purple Red RosyBrown RoyalBlue
+			SaddleBrown Salmon SandyBrown SeaGreen Seashell Sienna Silver SkyBlue
+			SlateBlue SlateGray Snow SpringGreen SteelBlue 
+			Tan	Teal Thistle Tomato Turquoise
+			Violet
+			Wheat White	WhiteSmoke
+			Yellow YellowGreen
+			Transparent
+			ActiveBorder ActiveCaption AppWorkspace Background ButtonFace ButtonHighlight ButtonShadow ButtonText CaptionText GrayText Highlight HighlightTxt InactiveBorder InactiveCaption InactiveCaptionText InfoBackground InfoText Menu MenuText Scrollbar ThreeDDarkShadow ThreeDFace ThreeDHighlight ThreeDLighShadow ThreeDShadow Window WindowFrame WindowText"/>
+    <cssmd:property-def _locID="border-top-width" _locAttrData="description,syntax" type="composite" 
+		description="The width of the border on the top edge of an element" 
+		syntax="a unit | One of the border-width values" 
+		enum="medium thick thin"/>
+    <cssmd:property-def _locID="border-top-style" _locAttrData="description,syntax" type="enum" 
+		description="The style of the border on the top edge of an element" 
+		syntax="One of the border-style values" 
+		enum="dashed dotted double groove inset none outset ridge solid window-inset"/>
+    <cssmd:property-def _locID="border-bottom-color" _locAttrData="description,syntax" type="color" 
+		description="The color of the border on the bottom edge of an element" 
+		syntax="#RRGGBB | Named Color" 
+		enum="AliceBlue AntiqueWhite Aqua Aquamarine Azure 
+			Beige Bisque Black BlanchedAlmond Blue BlueViolet Brown Burlywood
+			CadetBlue Chartreuse Chocolate Coral CornflowerBlue	Cornsilk Crimson Cyan
+			DarkBlue DarkCyan DarkGoldenrod DarkGray DarkGreen DarkKhaki DarkMagenta DarkOliveGreen 
+			DarkOrange DarkOrchid DarkRed DarkSalmon DarkSeaGreen DarkSlateBlue	DarkSlateGray
+			DarkTurquoise DarkViolet DeepPink DeepSkyBlue DimGray DodgerBlu
+			Firebrick FloralWhite ForestGreen Fuchsia
+			Gainsboro GhostWhite Gold Goldenrod Gray Green GreenYellow
+			Honeydew HotPink
+			IndianRed Indigo Ivory
+			Khaki
+			Lavender LavenderBlush LawnGreen LemonChiffon LightBlue	LightCoral LightCyan
+			LightGoldenrodYellow LightGreen	LightGrey LightPink	LightSalmon	LightSeaGreen
+			LightSkyBlue LightSlateGray	LightSteelBlue LightYellow Lime LimeGreen Linen
+			Magenta	Maroon MediumAquamarine MediumBlue MediumOrchid MediumPurple MediumSeaGreen
+			MediumSlateBlue MediumSpringGreen MediumTurquoise MediumVioletRed MidnightBlue
+			MintCream MistyRose	Moccasin
+			NavajoWhite Navy
+			Oldlace Olive OliveDrab Orange OrangeRed Orchid
+			PaleGoldenrod PaleGreen PaleTurquoise PaleVioletRed	PapayaWhip Peachpuff
+			Peru Pink Plum PowderBlue Purple Red RosyBrown RoyalBlue
+			SaddleBrown Salmon SandyBrown SeaGreen Seashell Sienna Silver SkyBlue
+			SlateBlue SlateGray Snow SpringGreen SteelBlue 
+			Tan	Teal Thistle Tomato Turquoise
+			Violet
+			Wheat White	WhiteSmoke
+			Yellow YellowGreen
+			Transparent
+			ActiveBorder ActiveCaption AppWorkspace Background ButtonFace ButtonHighlight ButtonShadow ButtonText CaptionText GrayText Highlight HighlightTxt InactiveBorder InactiveCaption InactiveCaptionText InfoBackground InfoText Menu MenuText Scrollbar ThreeDDarkShadow ThreeDFace ThreeDHighlight ThreeDLighShadow ThreeDShadow Window WindowFrame WindowText"/>
+    <cssmd:property-def _locID="border-bottom-width" _locAttrData="description,syntax" type="composite" 
+		description="The width of the border on the bottom edge of an element" 
+		syntax="a unit | One of the border-width values" 
+		enum="medium thick thin"/>
+    <cssmd:property-def _locID="border-bottom-style" _locAttrData="description,syntax" type="enum" 
+		description="The style of the border on the bottom edge of an element" 
+		syntax="One of the border-style values" 
+		enum="dashed dotted double groove inset none outset ridge solid"/>
+
+    <!-- @font-face Properties -->
+    <cssmd:property-def _locID="src" _locAttrData="description,syntax" type="url" 
+		description="Location of the font file" 
+		syntax="url([url to font download])"/>
+		
+    <!-- Page Breaks Properties -->
+    <cssmd:property-def _locID="page-break-before" _locAttrData="description,syntax" type="enum" 
+		description="Page breaks before an element" 
+		syntax="One of the page-break-before values" 
+		enum="always auto avoid left right"/>
+    <cssmd:property-def _locID="page-break-after" _locAttrData="description,syntax" type="enum" 
+		description="Page breaks after an element" 
+		syntax="One of the page-break-after values" 
+		enum="always auto avoid left right"/>
+		
+    <!-- Lists Properties -->
+    <cssmd:property-def _locID="list-style" _locAttrData="description,syntax" type="composite" 
+		description="The bullet characteristics of a list item" 
+		syntax="[list-style-type] [list-style-image] [list-style-position]"/>
+    <cssmd:property-def _locID="list-style-type" _locAttrData="description,syntax" type="enum" 
+		description="The bullet style of a list item" 
+		syntax="One of the list-style-type values" 
+		enum="circle decimal disc lower-alpha lower-roman none square upper-alpha upper-roman"/>
+    <cssmd:property-def _locID="list-style-image" _locAttrData="description,syntax" type="url" 
+		description="The bullet image of a list item" 
+		syntax="none | url([url to bullet image])"/>
+    <cssmd:property-def _locID="list-style-position" _locAttrData="description,syntax" type="enum" 
+		description="The bullet position of a list item" 
+		syntax="One of the list-style-position values" 
+		enum="inside outside"/>
+
+    <!-- BiDi Properties -->
+    <cssmd:property-def _locID="direction" _locAttrData="description,syntax" type="enum" 
+		description="The direction that text flows in" 
+		syntax="One of the direction values" 
+		enum="ltr rtl"/>
+    <cssmd:property-def _locID="unicode-bidi" _locAttrData="description,syntax" type="enum" 
+		description="The level of embedding with respect to the bidirectional algorithm" 
+		syntax="One of the unicode-bidi values" 
+		enum="bidi-override embed normal"/>
+
+    <!-- Table Properties -->
+    <cssmd:property-def _locID="table-layout" _locAttrData="description,syntax" type="enum" 
+		description="The cell layout mode of a table" 
+		syntax="One of the table-layout values" 
+		enum="auto fixed"/>
+    <cssmd:property-def _locID="border-collapse" _locAttrData="description,syntax" type="enum" 
+		description="The table border model" 
+		syntax="One of the border-collapse values" 
+		enum="collapse separate"/>
+
+    <!-- Ruby Properties (CSS3) -->
+    <cssmd:property-def _locID="ruby-align" _locAttrData="description,syntax" type="enum" 
+		description="Alignment of the ruby text specified by the RT object" 
+		syntax="One of the ruby-align values" 
+		enum="auto center left right distribute-letter distribute-space line-edge"/>
+    <cssmd:property-def _locID="ruby-overhang" _locAttrData="description,syntax" type="enum" 
+		description="Overhang of the ruby text specified by the RT object" 
+		syntax="One of the ruby-align values" 
+		enum="auto whitespace none"/>
+    <cssmd:property-def _locID="ruby-position" _locAttrData="description,syntax" type="enum" 
+		description="Position of the ruby text specified by the RT object" 
+		syntax="One of the ruby-align values" 
+		enum="above inline"/>
+
+    <!-- Scrollbar Properties (IE-specific) -->
+    <cssmd:property-def _locID="scrollbar-3dlight-color" _locAttrData="description,syntax" type="color" 
+		description="Color of the top and left edges of the scroll box and scroll arrows of a scroll bar" 
+		syntax="#RRGGBB | Named Color" 
+		enum="AliceBlue AntiqueWhite Aqua Aquamarine Azure 
+			Beige Bisque Black BlanchedAlmond Blue BlueViolet Brown Burlywood
+			CadetBlue Chartreuse Chocolate Coral CornflowerBlue	Cornsilk Crimson Cyan
+			DarkBlue DarkCyan DarkGoldenrod DarkGray DarkGreen DarkKhaki DarkMagenta DarkOliveGreen 
+			DarkOrange DarkOrchid DarkRed DarkSalmon DarkSeaGreen DarkSlateBlue	DarkSlateGray
+			DarkTurquoise DarkViolet DeepPink DeepSkyBlue DimGray DodgerBlu
+			Firebrick FloralWhite ForestGreen Fuchsia
+			Gainsboro GhostWhite Gold Goldenrod Gray Green GreenYellow
+			Honeydew HotPink
+			IndianRed Indigo Ivory
+			Khaki
+			Lavender LavenderBlush LawnGreen LemonChiffon LightBlue	LightCoral LightCyan
+			LightGoldenrodYellow LightGreen	LightGrey LightPink	LightSalmon	LightSeaGreen
+			LightSkyBlue LightSlateGray	LightSteelBlue LightYellow Lime LimeGreen Linen
+			Magenta	Maroon MediumAquamarine MediumBlue MediumOrchid MediumPurple MediumSeaGreen
+			MediumSlateBlue MediumSpringGreen MediumTurquoise MediumVioletRed MidnightBlue
+			MintCream MistyRose	Moccasin
+			NavajoWhite Navy
+			Oldlace Olive OliveDrab Orange OrangeRed Orchid
+			PaleGoldenrod PaleGreen PaleTurquoise PaleVioletRed	PapayaWhip Peachpuff
+			Peru Pink Plum PowderBlue Purple Red RosyBrown RoyalBlue
+			SaddleBrown Salmon SandyBrown SeaGreen Seashell Sienna Silver SkyBlue
+			SlateBlue SlateGray Snow SpringGreen SteelBlue 
+			Tan	Teal Thistle Tomato Turquoise
+			Violet
+			Wheat White	WhiteSmoke
+			Yellow YellowGreen
+			Transparent
+			ActiveBorder ActiveCaption AppWorkspace Background ButtonFace ButtonHighlight ButtonShadow ButtonText CaptionText GrayText Highlight HighlightTxt InactiveBorder InactiveCaption InactiveCaptionText InfoBackground InfoText Menu MenuText Scrollbar ThreeDDarkShadow ThreeDFace ThreeDHighlight ThreeDLighShadow ThreeDShadow Window WindowFrame WindowText"/>
+    <cssmd:property-def _locID="scrollbar-arrow-color" _locAttrData="description,syntax" type="color" 
+		description="Color of the arrow elements of a scroll arrow" 
+		syntax="#RRGGBB | Named Color" 
+		enum="AliceBlue AntiqueWhite Aqua Aquamarine Azure 
+			Beige Bisque Black BlanchedAlmond Blue BlueViolet Brown Burlywood
+			CadetBlue Chartreuse Chocolate Coral CornflowerBlue	Cornsilk Crimson Cyan
+			DarkBlue DarkCyan DarkGoldenrod DarkGray DarkGreen DarkKhaki DarkMagenta DarkOliveGreen 
+			DarkOrange DarkOrchid DarkRed DarkSalmon DarkSeaGreen DarkSlateBlue	DarkSlateGray
+			DarkTurquoise DarkViolet DeepPink DeepSkyBlue DimGray DodgerBlu
+			Firebrick FloralWhite ForestGreen Fuchsia
+			Gainsboro GhostWhite Gold Goldenrod Gray Green GreenYellow
+			Honeydew HotPink
+			IndianRed Indigo Ivory
+			Khaki
+			Lavender LavenderBlush LawnGreen LemonChiffon LightBlue	LightCoral LightCyan
+			LightGoldenrodYellow LightGreen	LightGrey LightPink	LightSalmon	LightSeaGreen
+			LightSkyBlue LightSlateGray	LightSteelBlue LightYellow Lime LimeGreen Linen
+			Magenta	Maroon MediumAquamarine MediumBlue MediumOrchid MediumPurple MediumSeaGreen
+			MediumSlateBlue MediumSpringGreen MediumTurquoise MediumVioletRed MidnightBlue
+			MintCream MistyRose	Moccasin
+			NavajoWhite Navy
+			Oldlace Olive OliveDrab Orange OrangeRed Orchid
+			PaleGoldenrod PaleGreen PaleTurquoise PaleVioletRed	PapayaWhip Peachpuff
+			Peru Pink Plum PowderBlue Purple Red RosyBrown RoyalBlue
+			SaddleBrown Salmon SandyBrown SeaGreen Seashell Sienna Silver SkyBlue
+			SlateBlue SlateGray Snow SpringGreen SteelBlue 
+			Tan	Teal Thistle Tomato Turquoise
+			Violet
+			Wheat White	WhiteSmoke
+			Yellow YellowGreen
+			Transparent
+			ActiveBorder ActiveCaption AppWorkspace Background ButtonFace ButtonHighlight ButtonShadow ButtonText CaptionText GrayText Highlight HighlightTxt InactiveBorder InactiveCaption InactiveCaptionText InfoBackground InfoText Menu MenuText Scrollbar ThreeDDarkShadow ThreeDFace ThreeDHighlight ThreeDLighShadow ThreeDShadow Window WindowFrame WindowText"/>
+    <cssmd:property-def _locID="scrollbar-base-color" _locAttrData="description,syntax" type="color" 
+		description="Color of the main elements of a scroll bar, which include the scroll box, track, and scroll arrows" 
+		syntax="#RRGGBB | Named Color" 
+		enum="AliceBlue AntiqueWhite Aqua Aquamarine Azure 
+			Beige Bisque Black BlanchedAlmond Blue BlueViolet Brown Burlywood
+			CadetBlue Chartreuse Chocolate Coral CornflowerBlue	Cornsilk Crimson Cyan
+			DarkBlue DarkCyan DarkGoldenrod DarkGray DarkGreen DarkKhaki DarkMagenta DarkOliveGreen 
+			DarkOrange DarkOrchid DarkRed DarkSalmon DarkSeaGreen DarkSlateBlue	DarkSlateGray
+			DarkTurquoise DarkViolet DeepPink DeepSkyBlue DimGray DodgerBlu
+			Firebrick FloralWhite ForestGreen Fuchsia
+			Gainsboro GhostWhite Gold Goldenrod Gray Green GreenYellow
+			Honeydew HotPink
+			IndianRed Indigo Ivory
+			Khaki
+			Lavender LavenderBlush LawnGreen LemonChiffon LightBlue	LightCoral LightCyan
+			LightGoldenrodYellow LightGreen	LightGrey LightPink	LightSalmon	LightSeaGreen
+			LightSkyBlue LightSlateGray	LightSteelBlue LightYellow Lime LimeGreen Linen
+			Magenta	Maroon MediumAquamarine MediumBlue MediumOrchid MediumPurple MediumSeaGreen
+			MediumSlateBlue MediumSpringGreen MediumTurquoise MediumVioletRed MidnightBlue
+			MintCream MistyRose	Moccasin
+			NavajoWhite Navy
+			Oldlace Olive OliveDrab Orange OrangeRed Orchid
+			PaleGoldenrod PaleGreen PaleTurquoise PaleVioletRed	PapayaWhip Peachpuff
+			Peru Pink Plum PowderBlue Purple Red RosyBrown RoyalBlue
+			SaddleBrown Salmon SandyBrown SeaGreen Seashell Sienna Silver SkyBlue
+			SlateBlue SlateGray Snow SpringGreen SteelBlue 
+			Tan	Teal Thistle Tomato Turquoise
+			Violet
+			Wheat White	WhiteSmoke
+			Yellow YellowGreen
+			Transparent
+			ActiveBorder ActiveCaption AppWorkspace Background ButtonFace ButtonHighlight ButtonShadow ButtonText CaptionText GrayText Highlight HighlightTxt InactiveBorder InactiveCaption InactiveCaptionText InfoBackground InfoText Menu MenuText Scrollbar ThreeDDarkShadow ThreeDFace ThreeDHighlight ThreeDLighShadow ThreeDShadow Window WindowFrame WindowText"/>
+    <cssmd:property-def _locID="scrollbar-darkshadow-color" _locAttrData="description,syntax" type="color" 
+		description="Color of the gutter of a scroll bar" 
+		syntax="#RRGGBB | Named Color" 
+		enum="AliceBlue AntiqueWhite Aqua Aquamarine Azure 
+			Beige Bisque Black BlanchedAlmond Blue BlueViolet Brown Burlywood
+			CadetBlue Chartreuse Chocolate Coral CornflowerBlue	Cornsilk Crimson Cyan
+			DarkBlue DarkCyan DarkGoldenrod DarkGray DarkGreen DarkKhaki DarkMagenta DarkOliveGreen 
+			DarkOrange DarkOrchid DarkRed DarkSalmon DarkSeaGreen DarkSlateBlue	DarkSlateGray
+			DarkTurquoise DarkViolet DeepPink DeepSkyBlue DimGray DodgerBlu
+			Firebrick FloralWhite ForestGreen Fuchsia
+			Gainsboro GhostWhite Gold Goldenrod Gray Green GreenYellow
+			Honeydew HotPink
+			IndianRed Indigo Ivory
+			Khaki
+			Lavender LavenderBlush LawnGreen LemonChiffon LightBlue	LightCoral LightCyan
+			LightGoldenrodYellow LightGreen	LightGrey LightPink	LightSalmon	LightSeaGreen
+			LightSkyBlue LightSlateGray	LightSteelBlue LightYellow Lime LimeGreen Linen
+			Magenta	Maroon MediumAquamarine MediumBlue MediumOrchid MediumPurple MediumSeaGreen
+			MediumSlateBlue MediumSpringGreen MediumTurquoise MediumVioletRed MidnightBlue
+			MintCream MistyRose	Moccasin
+			NavajoWhite Navy
+			Oldlace Olive OliveDrab Orange OrangeRed Orchid
+			PaleGoldenrod PaleGreen PaleTurquoise PaleVioletRed	PapayaWhip Peachpuff
+			Peru Pink Plum PowderBlue Purple Red RosyBrown RoyalBlue
+			SaddleBrown Salmon SandyBrown SeaGreen Seashell Sienna Silver SkyBlue
+			SlateBlue SlateGray Snow SpringGreen SteelBlue 
+			Tan	Teal Thistle Tomato Turquoise
+			Violet
+			Wheat White	WhiteSmoke
+			Yellow YellowGreen
+			Transparent
+			ActiveBorder ActiveCaption AppWorkspace Background ButtonFace ButtonHighlight ButtonShadow ButtonText CaptionText GrayText Highlight HighlightTxt InactiveBorder InactiveCaption InactiveCaptionText InfoBackground InfoText Menu MenuText Scrollbar ThreeDDarkShadow ThreeDFace ThreeDHighlight ThreeDLighShadow ThreeDShadow Window WindowFrame WindowText"/>
+    <cssmd:property-def _locID="scrollbar-face-color" _locAttrData="description,syntax" type="color" 
+		description="Color of the scroll box and scroll arrows of a scroll bar" 
+		syntax="#RRGGBB | Named Color" 
+		enum="AliceBlue AntiqueWhite Aqua Aquamarine Azure 
+			Beige Bisque Black BlanchedAlmond Blue BlueViolet Brown Burlywood
+			CadetBlue Chartreuse Chocolate Coral CornflowerBlue	Cornsilk Crimson Cyan
+			DarkBlue DarkCyan DarkGoldenrod DarkGray DarkGreen DarkKhaki DarkMagenta DarkOliveGreen 
+			DarkOrange DarkOrchid DarkRed DarkSalmon DarkSeaGreen DarkSlateBlue	DarkSlateGray
+			DarkTurquoise DarkViolet DeepPink DeepSkyBlue DimGray DodgerBlu
+			Firebrick FloralWhite ForestGreen Fuchsia
+			Gainsboro GhostWhite Gold Goldenrod Gray Green GreenYellow
+			Honeydew HotPink
+			IndianRed Indigo Ivory
+			Khaki
+			Lavender LavenderBlush LawnGreen LemonChiffon LightBlue	LightCoral LightCyan
+			LightGoldenrodYellow LightGreen	LightGrey LightPink	LightSalmon	LightSeaGreen
+			LightSkyBlue LightSlateGray	LightSteelBlue LightYellow Lime LimeGreen Linen
+			Magenta	Maroon MediumAquamarine MediumBlue MediumOrchid MediumPurple MediumSeaGreen
+			MediumSlateBlue MediumSpringGreen MediumTurquoise MediumVioletRed MidnightBlue
+			MintCream MistyRose	Moccasin
+			NavajoWhite Navy
+			Oldlace Olive OliveDrab Orange OrangeRed Orchid
+			PaleGoldenrod PaleGreen PaleTurquoise PaleVioletRed	PapayaWhip Peachpuff
+			Peru Pink Plum PowderBlue Purple Red RosyBrown RoyalBlue
+			SaddleBrown Salmon SandyBrown SeaGreen Seashell Sienna Silver SkyBlue
+			SlateBlue SlateGray Snow SpringGreen SteelBlue 
+			Tan	Teal Thistle Tomato Turquoise
+			Violet
+			Wheat White	WhiteSmoke
+			Yellow YellowGreen
+			Transparent
+			ActiveBorder ActiveCaption AppWorkspace Background ButtonFace ButtonHighlight ButtonShadow ButtonText CaptionText GrayText Highlight HighlightTxt InactiveBorder InactiveCaption InactiveCaptionText InfoBackground InfoText Menu MenuText Scrollbar ThreeDDarkShadow ThreeDFace ThreeDHighlight ThreeDLighShadow ThreeDShadow Window WindowFrame WindowText"/>
+    <cssmd:property-def _locID="scrollbar-highlight-color" _locAttrData="description,syntax" type="color" 
+		description="Color of the top and left edges of the scroll box and scroll arrows of a scroll bar" 
+		syntax="#RRGGBB | Named Color" 
+		enum="AliceBlue AntiqueWhite Aqua Aquamarine Azure 
+			Beige Bisque Black BlanchedAlmond Blue BlueViolet Brown Burlywood
+			CadetBlue Chartreuse Chocolate Coral CornflowerBlue	Cornsilk Crimson Cyan
+			DarkBlue DarkCyan DarkGoldenrod DarkGray DarkGreen DarkKhaki DarkMagenta DarkOliveGreen 
+			DarkOrange DarkOrchid DarkRed DarkSalmon DarkSeaGreen DarkSlateBlue	DarkSlateGray
+			DarkTurquoise DarkViolet DeepPink DeepSkyBlue DimGray DodgerBlu
+			Firebrick FloralWhite ForestGreen Fuchsia
+			Gainsboro GhostWhite Gold Goldenrod Gray Green GreenYellow
+			Honeydew HotPink
+			IndianRed Indigo Ivory
+			Khaki
+			Lavender LavenderBlush LawnGreen LemonChiffon LightBlue	LightCoral LightCyan
+			LightGoldenrodYellow LightGreen	LightGrey LightPink	LightSalmon	LightSeaGreen
+			LightSkyBlue LightSlateGray	LightSteelBlue LightYellow Lime LimeGreen Linen
+			Magenta	Maroon MediumAquamarine MediumBlue MediumOrchid MediumPurple MediumSeaGreen
+			MediumSlateBlue MediumSpringGreen MediumTurquoise MediumVioletRed MidnightBlue
+			MintCream MistyRose	Moccasin
+			NavajoWhite Navy
+			Oldlace Olive OliveDrab Orange OrangeRed Orchid
+			PaleGoldenrod PaleGreen PaleTurquoise PaleVioletRed	PapayaWhip Peachpuff
+			Peru Pink Plum PowderBlue Purple Red RosyBrown RoyalBlue
+			SaddleBrown Salmon SandyBrown SeaGreen Seashell Sienna Silver SkyBlue
+			SlateBlue SlateGray Snow SpringGreen SteelBlue 
+			Tan	Teal Thistle Tomato Turquoise
+			Violet
+			Wheat White	WhiteSmoke
+			Yellow YellowGreen
+			Transparent
+			ActiveBorder ActiveCaption AppWorkspace Background ButtonFace ButtonHighlight ButtonShadow ButtonText CaptionText GrayText Highlight HighlightTxt InactiveBorder InactiveCaption InactiveCaptionText InfoBackground InfoText Menu MenuText Scrollbar ThreeDDarkShadow ThreeDFace ThreeDHighlight ThreeDLighShadow ThreeDShadow Window WindowFrame WindowText"/>
+    <cssmd:property-def _locID="scrollbar-shadow-color" _locAttrData="description,syntax" type="color" 
+		description="Color of the bottom and right edges of the scroll box and scroll arrows of a scroll bar" 
+		syntax="#RRGGBB | Named Color" 
+		enum="AliceBlue AntiqueWhite Aqua Aquamarine Azure 
+			Beige Bisque Black BlanchedAlmond Blue BlueViolet Brown Burlywood
+			CadetBlue Chartreuse Chocolate Coral CornflowerBlue	Cornsilk Crimson Cyan
+			DarkBlue DarkCyan DarkGoldenrod DarkGray DarkGreen DarkKhaki DarkMagenta DarkOliveGreen 
+			DarkOrange DarkOrchid DarkRed DarkSalmon DarkSeaGreen DarkSlateBlue	DarkSlateGray
+			DarkTurquoise DarkViolet DeepPink DeepSkyBlue DimGray DodgerBlu
+			Firebrick FloralWhite ForestGreen Fuchsia
+			Gainsboro GhostWhite Gold Goldenrod Gray Green GreenYellow
+			Honeydew HotPink
+			IndianRed Indigo Ivory
+			Khaki
+			Lavender LavenderBlush LawnGreen LemonChiffon LightBlue	LightCoral LightCyan
+			LightGoldenrodYellow LightGreen	LightGrey LightPink	LightSalmon	LightSeaGreen
+			LightSkyBlue LightSlateGray	LightSteelBlue LightYellow Lime LimeGreen Linen
+			Magenta	Maroon MediumAquamarine MediumBlue MediumOrchid MediumPurple MediumSeaGreen
+			MediumSlateBlue MediumSpringGreen MediumTurquoise MediumVioletRed MidnightBlue
+			MintCream MistyRose	Moccasin
+			NavajoWhite Navy
+			Oldlace Olive OliveDrab Orange OrangeRed Orchid
+			PaleGoldenrod PaleGreen PaleTurquoise PaleVioletRed	PapayaWhip Peachpuff
+			Peru Pink Plum PowderBlue Purple Red RosyBrown RoyalBlue
+			SaddleBrown Salmon SandyBrown SeaGreen Seashell Sienna Silver SkyBlue
+			SlateBlue SlateGray Snow SpringGreen SteelBlue 
+			Tan	Teal Thistle Tomato Turquoise
+			Violet
+			Wheat White	WhiteSmoke
+			Yellow YellowGreen
+			Transparent
+			ActiveBorder ActiveCaption AppWorkspace Background ButtonFace ButtonHighlight ButtonShadow ButtonText CaptionText GrayText Highlight HighlightTxt InactiveBorder InactiveCaption InactiveCaptionText InfoBackground InfoText Menu MenuText Scrollbar ThreeDDarkShadow ThreeDFace ThreeDHighlight ThreeDLighShadow ThreeDShadow Window WindowFrame WindowText"/>
+    <cssmd:property-def _locID="scrollbar-track-color" _locAttrData="description,syntax" type="color" 
+		description="Color of the track element of a scroll bar" 
+		syntax="#RRGGBB | Named Color" 
+		enum="AliceBlue AntiqueWhite Aqua Aquamarine Azure 
+			Beige Bisque Black BlanchedAlmond Blue BlueViolet Brown Burlywood
+			CadetBlue Chartreuse Chocolate Coral CornflowerBlue	Cornsilk Crimson Cyan
+			DarkBlue DarkCyan DarkGoldenrod DarkGray DarkGreen DarkKhaki DarkMagenta DarkOliveGreen 
+			DarkOrange DarkOrchid DarkRed DarkSalmon DarkSeaGreen DarkSlateBlue	DarkSlateGray
+			DarkTurquoise DarkViolet DeepPink DeepSkyBlue DimGray DodgerBlu
+			Firebrick FloralWhite ForestGreen Fuchsia
+			Gainsboro GhostWhite Gold Goldenrod Gray Green GreenYellow
+			Honeydew HotPink
+			IndianRed Indigo Ivory
+			Khaki
+			Lavender LavenderBlush LawnGreen LemonChiffon LightBlue	LightCoral LightCyan
+			LightGoldenrodYellow LightGreen	LightGrey LightPink	LightSalmon	LightSeaGreen
+			LightSkyBlue LightSlateGray	LightSteelBlue LightYellow Lime LimeGreen Linen
+			Magenta	Maroon MediumAquamarine MediumBlue MediumOrchid MediumPurple MediumSeaGreen
+			MediumSlateBlue MediumSpringGreen MediumTurquoise MediumVioletRed MidnightBlue
+			MintCream MistyRose	Moccasin
+			NavajoWhite Navy
+			Oldlace Olive OliveDrab Orange OrangeRed Orchid
+			PaleGoldenrod PaleGreen PaleTurquoise PaleVioletRed	PapayaWhip Peachpuff
+			Peru Pink Plum PowderBlue Purple Red RosyBrown RoyalBlue
+			SaddleBrown Salmon SandyBrown SeaGreen Seashell Sienna Silver SkyBlue
+			SlateBlue SlateGray Snow SpringGreen SteelBlue 
+			Tan	Teal Thistle Tomato Turquoise
+			Violet
+			Wheat White	WhiteSmoke
+			Yellow YellowGreen
+			Transparent
+			ActiveBorder ActiveCaption AppWorkspace Background ButtonFace ButtonHighlight ButtonShadow ButtonText CaptionText GrayText Highlight HighlightTxt InactiveBorder InactiveCaption InactiveCaptionText InfoBackground InfoText Menu MenuText Scrollbar ThreeDDarkShadow ThreeDFace ThreeDHighlight ThreeDLighShadow ThreeDShadow Window WindowFrame WindowText"/>
+
+    <!-- Other Properties -->
+    <cssmd:property-def _locID="cursor" _locAttrData="description,syntax" type="composite" 
+		description="The cursor over an element" 
+		syntax="One of the cursor values | url([url to the cursor resource])" 
+		enum="all-scroll auto col-resize crosshair default e-resize hand help move n-resize ne-resize no-drop not-allowed nw-resize pointer progress row-resize s-resize se-resize sw-resize text vertical-text w-resize wait"/>
+	
+	<!-- IE specific properties -->
+    <cssmd:property-def _locID="accelerator" _locAttrData="description,syntax" type="enum" 
+		description="Indicates whether the object contains an accelerator key" 
+		syntax="true | false" 
+		enum="true false"/>
+    <cssmd:property-def _locID="behavior" _locAttrData="description,syntax" type="url" 
+		description="DHTML behavior attached to an element" 
+		syntax="url([url to behavior implementation])"/>
+    <cssmd:property-def _locID="filter" _locAttrData="description,syntax" type="string" 
+		description="Visual effects applied to an element" 
+		syntax="sequence of visual filters and transitions"/>
+    <cssmd:property-def _locID="ime-mode" _locAttrData="description,syntax" type="enum" 
+		description="State of an Input Method Editor (IME)" 
+		syntax="One of the ime-mode values" 
+		enum="auto active inactive disabled"/>
+    <cssmd:property-def _locID="zoom" _locAttrData="description,syntax" type="composite" 
+		description="magnification scale of the object" 
+		syntax="normal | a unit" 
+		enum="normal"/>
+
+  </cssmd:property-set>
+</cssmd:cssmd>

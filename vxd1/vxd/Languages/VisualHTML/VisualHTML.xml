@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Language xmlns="http://tempuri.org/Language.xsd" Name="VisualHTML" >
+ <Icons>
+   <Icon Name="HTML" Image="Languages/VisualHTML/Images/html.gif"/>
+   <Icon Name="Form" Image="Languages/VisualHTML/Images/form.gif"/>
+   <Icon Name="Textbox" Image="Languages/VisualHTML/Images/textbox.gif"/>
+   <Icon Name="Text" Image="Languages/VisualHTML/Images/text.gif"/>
+   <Icon Name="Submit" Image="Languages/VisualHTML/Images/submit.gif"/>
+   <Icon Name="Href" Image="Languages/VisualHTML/Images/href.gif"/>
+   <Icon Name="ComboBox" Image="Languages/VisualHTML/Images/combobox.gif"/>
+   <Icon Name="CheckBox" Image="Languages/VisualHTML/Images/checkbox.gif"/>
+   <Icon Name="TextArea" Image="Languages/VisualHTML/Images/textarea.gif"/>
+   <Icon Name="FileUpload" Image="Languages/VisualHTML/Images/fileupload.gif"/>
+   <Icon Name="PasswordField" Image="Languages/VisualHTML/Images/passwordfield.gif"/>
+   <Icon Name="RadioButton" Image="Languages/VisualHTML/Images/radiobutton.gif"/>
+   <Icon Name="Hidden" Image="Languages/VisualHTML/Images/hidden.gif"/>
+   <Icon Name="Image" Image="Languages/VisualHTML/Images/image.gif"/>
+   <Icon Name="ImageButton" Image="Languages/VisualHTML/Images/imagebutton.gif"/>
+   <Icon Name="Button" Image="Languages/VisualHTML/Images/button.gif"/>
+   <Icon Name="ListBox" Image="Languages/VisualHTML/Images/listbox.gif"/>
+ </Icons>
+ <Connectors>
+   <Connector Name="Connector" Image="Languages/VisualHTML/Images/connection.gif" Type="CONNECTION"/>
+ </Connectors>
+ <Editors>
+   <Editor Name="VisualHTMLEditor" Class="vxd.Languages.VisualHTML.Editors.HtmlEditor"
+           ElementName="VisualHTML" AttributeName="HtmlEditor" Type="DIALOG"/>
+   <Editor Name="VariableSelector" 
+           Class="vxd.Languages.VisualHTML.Editors.VariableSelector" 
+	   ElementName="Textbox" AttributeName="Variable,Value" Type="PANEL"/>
+   <Editor Name="VariableSelector" 
+           Class="vxd.Languages.VisualHTML.Editors.VariableSelector" 
+	   ElementName="Text" AttributeName="Variable" Type="PANEL"/>
+   <Editor Name="VariableSelector" 
+           Class="vxd.Languages.VisualHTML.Editors.VariableSelector" 
+	   ElementName="Submit" AttributeName="Variable" Type="PANEL"/>
+   <Editor Name="VariableSelector" 
+           Class="vxd.Languages.VisualHTML.Editors.VariableSelector" 
+	   ElementName="Href" AttributeName="Variable" Type="PANEL"/>
+   <Editor Name="VariableSelector" 
+           Class="vxd.Languages.VisualHTML.Editors.VariableSelector" 
+	   ElementName="Button" AttributeName="Variable" Type="PANEL"/>
+   <Editor Name="VariableSelector" 
+           Class="vxd.Languages.VisualHTML.Editors.VariableSelector" 
+	   ElementName="ListBox" AttributeName="Variable" Type="PANEL"/>
+   <Editor Name="VariableSelector" 
+           Class="vxd.Languages.VisualHTML.Editors.VariableSelector" 
+	   ElementName="ImageButton" AttributeName="Variable" Type="PANEL"/>
+   <Editor Name="VariableSelector" 
+           Class="vxd.Languages.VisualHTML.Editors.VariableSelector" 
+	   ElementName="Image" AttributeName="Variable" Type="PANEL"/>
+   <Editor Name="VariableSelector" 
+           Class="vxd.Languages.VisualHTML.Editors.VariableSelector" 
+	   ElementName="Hidden" AttributeName="Variable" Type="PANEL"/>
+   <Editor Name="VariableSelector" 
+           Class="vxd.Languages.VisualHTML.Editors.VariableSelector" 
+	   ElementName="RadioButton" AttributeName="Variable" Type="PANEL"/>
+   <Editor Name="VariableSelector" 
+           Class="vxd.Languages.VisualHTML.Editors.VariableSelector" 
+	   ElementName="PasswordField" AttributeName="Variable" Type="PANEL"/>
+   <Editor Name="VariableSelector" 
+           Class="vxd.Languages.VisualHTML.Editors.VariableSelector" 
+	   ElementName="Textbox" AttributeName="Variable" Type="PANEL"/>
+   <Editor Name="VariableSelector" 
+           Class="vxd.Languages.VisualHTML.Editors.VariableSelector" 
+	   ElementName="TextArea" AttributeName="Variable" Type="PANEL"/>
+   <Editor Name="VariableSelector" 
+           Class="vxd.Languages.VisualHTML.Editors.VariableSelector" 
+	   ElementName="CheckBox" AttributeName="Variable" Type="PANEL"/>
+   <Editor Name="VariableSelector" 
+           Class="vxd.Languages.VisualHTML.Editors.VariableSelector" 
+	   ElementName="ComboBox" AttributeName="Variable" Type="PANEL"/>
+ </Editors>
+</Language>

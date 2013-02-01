@@ -1,0 +1,40 @@
+Making a servlet project for tomcat
+
+In the webapps directory make your project directory and add a WEB-INF subdirectory.
+In WEB-INF add a classes subdirectory as follows:
+
+*Tomcat
+|
+----*MyAppDir
+    |
+    -----*WEB-INF
+        |
+        -------*classes
+               |
+               --------*MyPackage
+
+Add a context tag in Tomcat/conf/server.xml as follows:
+
+<Context path="/MyAppMainURI" docBase="MyAppDir" debug="0"/>
+
+In the WEB-INF directory add a web.xml file as follows:
+
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+  <servlet>
+    <servlet-name>@NAME@</servlet-name>
+    <servlet-class>MyPackage.MyServletClass</servlet-class>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+    <servlet-mapping>
+      <servlet-name>@NAME@</servlet-name>
+      <url-pattern>/@NAME@</url-pattern>
+    </servlet-mapping>
+</web-app>
+
+
+The uri for the servlet will be MyAppMainURI/MyServletURI

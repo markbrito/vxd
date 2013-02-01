@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE VisualSalesManagement
+[<!ELEMENT VisualSalesManagement (Company)*>
+<!ATTLIST VisualSalesManagement
+Title CDATA #REQUIRED
+		    Package CDATA #REQUIRED
+		    URI CDATA #REQUIRED
+		    Port CDATA "80"
+		    Language CDATA #FIXED "VisualSalesManagement"
+		    Translator CDATA #FIXED "VisualSalesManagementWeb"
+		    Platform CDATA #FIXED "Tomcat403"
+                    TextNote CDATA #IMPLIED
+                    Build (Debug|Release|Optimized) "Debug">
+<!ELEMENT Company (Company|Connection|Group|BusinessUnit|ProductLine|ProductFamily|Product|Run-Rate|Commit|Forecast|Projection|FiscalPeriod|Chart|Report|Dashboard|Theater|Bookings|De-bookings|Deal|DealValue|DealProbability|DealStatus)*>
+<!ATTLIST Company Name CDATA "Company"
+	ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+
+<!ELEMENT Group (Company|Connection|Group|BusinessUnit|ProductLine|ProductFamily|Product|Run-Rate|Commit|Forecast|Projection|FiscalPeriod|Chart|Report|Dashboard|Theater|Bookings|De-bookings|Deal|DealValue|DealProbability|DealStatus)*>
+<!ATTLIST Group Name CDATA "Group"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+
+<!ELEMENT BusinessUnit (Company|Connection|Group|BusinessUnit|ProductLine|ProductFamily|Product|Run-Rate|Commit|Forecast|Projection|FiscalPeriod|Chart|Report|Dashboard|Theater|Bookings|De-bookings|Deal|DealValue|DealProbability|DealStatus)*>
+<!ATTLIST BusinessUnit Name CDATA "BusinessUnit"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+
+<!ELEMENT ProductLine (Company|Connection|Group|BusinessUnit|ProductLine|ProductFamily|Product|Run-Rate|Commit|Forecast|Projection|FiscalPeriod|Chart|Report|Dashboard|Theater|Bookings|De-bookings|Deal|DealValue|DealProbability|DealStatus)*>
+<!ATTLIST ProductLine Name CDATA "ProductLine"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+
+<!ELEMENT ProductFamily (Company|Connection|Group|BusinessUnit|ProductLine|ProductFamily|Product|Run-Rate|Commit|Forecast|Projection|FiscalPeriod|Chart|Report|Dashboard|Theater|Bookings|De-bookings|Deal|DealValue|DealProbability|DealStatus)*>
+<!ATTLIST ProductFamily Name CDATA "ProductFamily"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+
+<!ELEMENT Product (Company|Connection|Group|BusinessUnit|ProductLine|ProductFamily|Product|Run-Rate|Commit|Forecast|Projection|FiscalPeriod|Chart|Report|Dashboard|Theater|Bookings|De-bookings|Deal|DealValue|DealProbability|DealStatus)*>
+<!ATTLIST Product Name CDATA "Product"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+
+<!ELEMENT Run-Rate (Company|Connection|Group|BusinessUnit|ProductLine|ProductFamily|Product|Run-Rate|Commit|Forecast|Projection|FiscalPeriod|Chart|Report|Dashboard|Theater|Bookings|De-bookings|Deal|DealValue|DealProbability|DealStatus)*>
+<!ATTLIST Run-Rate Name CDATA "Run-Rate"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+
+<!ELEMENT Commit (Company|Connection|Group|BusinessUnit|ProductLine|ProductFamily|Product|Run-Rate|Commit|Forecast|Projection|FiscalPeriod|Chart|Report|Dashboard|Theater|Bookings|De-bookings|Deal|DealValue|DealProbability|DealStatus)*>
+<!ATTLIST Commit Name CDATA "Commit"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+
+<!ELEMENT Forecast (Company|Connection|Group|BusinessUnit|ProductLine|ProductFamily|Product|Run-Rate|Commit|Forecast|Projection|FiscalPeriod|Chart|Report|Dashboard|Theater|Bookings|De-bookings|Deal|DealValue|DealProbability|DealStatus)*>
+<!ATTLIST Forecast Name CDATA "Forecast"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+
+<!ELEMENT Projection (Company|Connection|Group|BusinessUnit|ProductLine|ProductFamily|Product|Run-Rate|Commit|Forecast|Projection|FiscalPeriod|Chart|Report|Dashboard|Theater|Bookings|De-bookings|Deal|DealValue|DealProbability|DealStatus)*>
+<!ATTLIST Projection Name CDATA "Projection"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+
+<!ELEMENT FiscalPeriod (Company|Connection|Group|BusinessUnit|ProductLine|ProductFamily|Product|Run-Rate|Commit|Forecast|Projection|FiscalPeriod|Chart|Report|Dashboard|Theater|Bookings|De-bookings|Deal|DealValue|DealProbability|DealStatus)*>
+<!ATTLIST FiscalPeriod Name CDATA "FiscalPeriod"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+
+<!ELEMENT Chart (Company|Connection|Group|BusinessUnit|ProductLine|ProductFamily|Product|Run-Rate|Commit|Forecast|Projection|FiscalPeriod|Chart|Report|Dashboard|Theater|Bookings|De-bookings|Deal|DealValue|DealProbability|DealStatus)*>
+<!ATTLIST Chart Name CDATA "Chart"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+
+<!ELEMENT Report (Company|Connection|Group|BusinessUnit|ProductLine|ProductFamily|Product|Run-Rate|Commit|Forecast|Projection|FiscalPeriod|Chart|Report|Dashboard|Theater|Bookings|De-bookings|Deal|DealValue|DealProbability|DealStatus)*>
+<!ATTLIST Report Name CDATA "Report"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+
+
+<!ELEMENT Dashboard (Company|Connection|Group|BusinessUnit|ProductLine|ProductFamily|Product|Run-Rate|Commit|Forecast|Projection|FiscalPeriod|Chart|Report|Dashboard|Theater|Bookings|De-bookings|Deal|DealValue|DealProbability|DealStatus)*>
+<!ATTLIST Dashboard Name CDATA "Dashboard"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+
+<!ELEMENT Theater (Company|Connection|Group|BusinessUnit|ProductLine|ProductFamily|Product|Run-Rate|Commit|Forecast|Projection|FiscalPeriod|Chart|Report|Dashboard|Theater|Bookings|De-bookings|Deal|DealValue|DealProbability|DealStatus)*>
+<!ATTLIST Theater Name CDATA "Theater"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+
+<!ELEMENT Bookings (Company|Connection|Group|BusinessUnit|ProductLine|ProductFamily|Product|Run-Rate|Commit|Forecast|Projection|FiscalPeriod|Chart|Report|Dashboard|Theater|Bookings|De-bookings|Deal|DealValue|DealProbability|DealStatus)*>
+<!ATTLIST Bookings Name CDATA "Bookings"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+
+<!ELEMENT De-bookings (Company|Connection|Group|BusinessUnit|ProductLine|ProductFamily|Product|Run-Rate|Commit|Forecast|Projection|FiscalPeriod|Chart|Report|Dashboard|Theater|Bookings|De-bookings|Deal|DealValue|DealProbability|DealStatus)*>
+<!ATTLIST De-bookings Name CDATA "De-bookings"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+
+<!ELEMENT Deal (Company|Connection|Group|BusinessUnit|ProductLine|ProductFamily|Product|Run-Rate|Commit|Forecast|Projection|FiscalPeriod|Chart|Report|Dashboard|Theater|Bookings|De-bookings|Deal|DealValue|DealProbability|DealStatus)*>
+<!ATTLIST Deal Name CDATA "Deal"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+
+<!ELEMENT DealValue (Company|Connection|Group|BusinessUnit|ProductLine|ProductFamily|Product|Run-Rate|Commit|Forecast|Projection|FiscalPeriod|Chart|Report|Dashboard|Theater|Bookings|De-bookings|Deal|DealValue|DealProbability|DealStatus)*>
+<!ATTLIST DealValue Name CDATA "DealValue"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+
+<!ELEMENT DealProbability (Company|Connection|Group|BusinessUnit|ProductLine|ProductFamily|Product|Run-Rate|Commit|Forecast|Projection|FiscalPeriod|Chart|Report|Dashboard|Theater|Bookings|De-bookings|Deal|DealValue|DealProbability|DealStatus)*>
+<!ATTLIST DealProbability Name CDATA "DealProbability"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+
+<!ELEMENT DealStatus (Company|Connection|Group|BusinessUnit|ProductLine|ProductFamily|Product|Run-Rate|Commit|Forecast|Projection|FiscalPeriod|Chart|Report|Dashboard|Theater|Bookings|De-bookings|Deal|DealValue|DealProbability|DealStatus)*>
+<!ATTLIST DealStatus Name CDATA "DealStatus"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+<!ELEMENT Connection (#PCDATA)>
+<!ATTLIST Connection Name CDATA #REQUIRED
+                     ID CDATA #IMPLIED
+		     Order CDATA "0"
+		     SourceID CDATA #IMPLIED
+                     DestID CDATA #IMPLIED
+		     DestType CDATA #IMPLIED>]>
+
+<VisualSalesManagement Language="VisualSalesManagement" Translator="VisualSalesManagementWeb" TextNote="" Package="ASalesReport" Port="80" Title="ASalesReport" Build="Debug" URI="/ASalesReport" Platform="Tomcat403">
+  <Company ID="1" Name="ACompany" Value="" YPos="34" Visible="TRUE" Order="0" XPos="36">
+    <Group ID="2" Name="Group" Value="" YPos="154" Visible="TRUE" Order="0" XPos="30">
+      <Dashboard ID="3" Name="Dashboard" Value="" YPos="246" Visible="TRUE" Order="0" XPos="122">
+        <Chart ID="4" Name="Chart" Value="" YPos="272" Visible="TRUE" Order="0" XPos="255">
+          <FiscalPeriod ID="5" Name="FiscalPeriod" Value="" YPos="375" Visible="TRUE" Order="0" XPos="169" />
+          <DealValue ID="6" Name="DealValue" Value="" YPos="373" Visible="TRUE" Order="0" XPos="268" />
+          <Projection ID="7" Name="Projection" Value="" YPos="360" Visible="TRUE" Order="0" XPos="389" />
+        </Chart>
+        <Connection ID="12" Name="Link" DestID="8" Order="0" SourceID="3" DestType="Dashboard" />
+      </Dashboard>
+    </Group>
+    <Dashboard ID="8" Name="Dashboard" Value="" YPos="116" Visible="TRUE" Order="0" XPos="161" />
+    <Group ID="9" Name="Group" Value="" YPos="57" Visible="TRUE" Order="0" XPos="348">
+      <Dashboard ID="10" Name="Dashboard" Value="" YPos="149" Visible="TRUE" Order="0" XPos="391">
+        <Report ID="11" Name="Report" Value="" YPos="258" Visible="TRUE" Order="0" XPos="398" />
+        <Connection ID="13" Name="Link" DestID="8" Order="0" SourceID="10" DestType="Dashboard" />
+      </Dashboard>
+    </Group>
+  </Company>
+</VisualSalesManagement>
+

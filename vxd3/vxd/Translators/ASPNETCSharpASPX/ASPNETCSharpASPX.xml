@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE Translator SYSTEM "../Translator.dtd">
+<Translator name="ASPNETCSharpASPX" 
+            TranslatorXSL="ASPNETCSharpASPX.xsl">
+<toolbar>
+   <toolbarbutton image="Translators/ASPNETCSharpASPX/Images/savecode.gif" text="Save Generated Code" command="SAVECODE"/>
+   <toolbarbutton image="Translators/ASPNETCSharpASPX/Images/savexsl.gif" text="Save XSL" command="SAVEXSL"/>
+</toolbar>
+<menu name="XSL" letter="S">
+   <menuitem image="Translators/ASPNETCSharpASPX/Images/savecode.gif" text="Save Generated Code" command="SAVECODE"/>
+   <menuitem image="Translators/ASPNETCSharpASPX/Images/savexsl.gif" text="Save XSL" command="SAVEXSL"/>
+</menu>
+<eventhandler class="vxd.Translators.ASPNETCSharpASPX.ExternalTranslators.TranslationActionEventHandler"/>
+</Translator>

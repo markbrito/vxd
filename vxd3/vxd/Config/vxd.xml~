@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vxd  xmlns="http://tempuri.org/vxd.xsd" title="Visual XML Designer" xsize="1000" ysize="735" 
+     xiconsize="25" yiconsize="30" iconborder="3" xdragsize="50"
+     ydragsize="60" savefiledir="Work/" deploymentdir="Deployments/"
+     exitstring="Are You Sure You Want to Exit?" exittitle="Exit Program"
+     splashimage="Images/splash.jpg">
+  <toolbar>
+    <toolbarbutton image="Images/new.gif" text="New XML (Visual Program)" command="NEWXML" enabled="TRUE"/>
+    <toolbarbutton image="Images/newdtd.gif" text="New DTD (Language Structure)" command="NEWDTD" enabled="FALSE"/>
+    <toolbarbutton image="Images/newlang.jpg" text="New XSL (Program Generator)" command="NEWXSL" enabled="FALSE"/>
+    <toolbarbutton image="Images/newlang.jpg" text="New Deployer (Installer)" command="NEWDEPLOYER"  enabled="FALSE"/>
+    <toolbarbutton image="Images/newlang.jpg" text="New Designer (Menu Layout)" command="NEWDESIGNER" enabled="FALSE"/>
+    <toolbarbutton image="Images/open.gif" text="Open" command="OPEN" enabled="TRUE"/>
+    <toolbarbutton image="Images/save.gif" text="Save" command="SAVE" enabled="FALSE"/>
+   <toolbarbutton image="Images/help.jpg" text="Help" command="HELP" enabled="FALSE"/>
+  </toolbar>
+  <menus>
+    <menu name="Design" letter="M">
+      <menuitem image="Images/new.gif" text="New XML (Visual Program)" command="NEWXML" enabled="TRUE"/>
+      <menuitem image="Images/newlang.jpg" text="New Visual Language (Language Images)" command="NEWLANG" enabled="FALSE"/>
+      <menuitem image="Images/newdtd.gif" text="New DTD (Language Structure)" command="NEWDTD" enabled="FALSE"/>
+      <menuitem image="Images/newlang.jpg" text="New XSL (Program Generator)" command="NEWXSL" enabled="FALSE"/>
+      <menuitem image="Images/newlang.jpg" text="New Deployer (Installer)" command="NEWDEPLOYER" enabled="FALSE"/>
+      <menuitem image="Images/newlang.jpg" text="New Designer (Menu Layout)" command="NEWDESIGNER" enabled="FALSE"/>
+     </menu>
+     <menu name="File" letter="F">
+      <menuitem image="Images/open.gif" text="Open" command="OPEN" enabled="FALSE"/>
+      <menuitem image="Images/save.gif" text="Save" command="SAVE" enabled="FALSE"/>
+      <menuitem image="Images/exit.gif" text="Exit Program" command="EXIT" enabled="TRUE"/>
+    </menu>
+  </menus>
+  <languages>
+	  <language name="Visual Web" language="VisualWeb" 
+				configfile="Languages/VisualWeb/VisualWeb.xml"
+			enabled="TRUE"/>
+	  <language name="Visual Web Merchant" language="VisualWebMerchant" 
+				configfile="Languages/VisualWebMerchant/VisualWebMerchant.xml"
+			enabled="TRUE"/>
+	 <language name="Visual Sales Management" language="VisualSalesManagement" 
+				configfile="Languages/VisualSalesManagement/VisualSalesManagement.xml"
+			enabled="TRUE"/>
+	  <language name="Visual ASP.NET" language="ASP.NET"
+ 	 configfile="Languages/ASP.NET/ASP.NET.xml"
+	      enabled="TRUE"/>
+	<language name="Visual XML" language="ASP.NET"
+ 	 configfile="Languages/ASP.NET/ASP.NET.xml"
+	     enabled="FALSE"/>
+   	<language name="Visual DTD" language="DTD"
+ 	 configfile="Languages/DTD/DTD.xml"
+	     enabled="TRUE"/>
+	<language name="Visual HTML" language="VisualHTML"
+ 	 configfile="Languages/VisualHTML/VisualHTML.xml"
+	     enabled="TRUE"/>
+	<language name="Visual XML Schema" language="ASP.NET"
+ 	 configfile="Languages/ASP.NET/ASP.NET.xml"
+	     enabled="FALSE"/>
+	 <language name="Visual XSL" language="ASP.NET"
+ 	 configfile="Languages/ASP.NET/ASP.NET.xml"
+	     enabled="FALSE"/>
+	  <language name="Visual Java Swing" language="ASP.NET"
+   configfile="Languages/ASP.NET/ASP.NET.xml"
+	   enabled="FALSE"/>    <language name="Visual Language" language="VisualLanguage"
+ 	 configfile="Languages/VisualLanguage/VisualLanguage.xml"
+	     enabled="TRUE"/>
+	  
+  </languages>
+  <translators>
+    <translator name="Visual Web to Java Servlets" translator="VisualWebJavaServlet"
+                configfile="Translators/VisualWebJavaServlet/VisualWebJavaServlet.xml"
+	        definitionfile="Translators/VisualWebJavaServlet/VisualWebJavaServlet.xsl"
+	        supportedlanguages="VisualWeb" enabled="TRUE"/>
+    <translator name="Visual ASP.NET to C# ASPX" translator="ASPNETCSharpASPX"
+                configfile="Translators/ASPNETCSharpASPX/ASPNETCSharpASPX.xml"
+	        definitionfile="Translators/ASPNETCSharpASPX/ASPNETCSharpASPX.xsl"
+	        supportedlanguages="ASP.NET" enabled="TRUE"/>
+	  <translator name="Visual Sales Management Web" translator="VisualSalesManagementWeb"
+                configfile="Translators/VisualSalesManagementWeb/VisualSalesManagementWeb.xml"
+	        definitionfile="Translators/VisualSalesManagementWeb/VisualSalesManagementWeb.xsl"
+	        supportedlanguages="VisualSalesManagement" enabled="TRUE"/>
+	  <translator name="Visual Web Merchant Html" translator="VisualSalesManagementWeb"
+                configfile="Translators/VisualSalesManagementWeb/VisualSalesManagementWeb.xml"
+	        definitionfile="Translators/VisualSalesManagementWeb/VisualSalesManagementWeb.xsl"
+	        supportedlanguages="VisualWebMerchant" enabled="TRUE"/>
+	<translator name="Visual DTD to DTD" translator="VisualDTDtoDTD"
+                configfile="Translators/VisualDTDtoDTD/VisualDTDtoDTD.xml"
+	        definitionfile="Translators/VisualDTDtoDTD/VisualDTDtoDTD.xsl"
+	        supportedlanguages="DTD" enabled="TRUE"/>
+	<translator name="Visual DTD to XSD" translator="VisualDTDtoXSD"
+                configfile="Translators/VisualDTDtoXSD/VisualDTDtoXSD.xml"
+	        definitionfile="Translators/VisualDTDtoXSD/VisualDTDtoXSD.xsl"
+	        supportedlanguages="DTD" enabled="FALSE"/>
+	<translator name="Visual XSD to XSD" translator="VisualXSDtoXSD"
+                configfile="Translators/VisualXSDtoXSD/VisualXSDtoXSD.xml"
+	        definitionfile="Translators/VisualXSDtoXSD/VisualXSDtoXSD.xsl"
+	        supportedlanguages="XSD" enabled="FALSE"/>
+	<translator name="Visual XSD to DTD" translator="VisualXSDtoDTD"
+                configfile="Translators/VisualXSDtoDTD/VisualXSDtoDTD.xml"
+	        definitionfile="Translators/VisualXSDtoDTD/VisualXSDtoDTD.xsl"
+	        supportedlanguages="XSD" enabled="FALSE"/>
+	  <translator name="Visual HTML to HTML" translator="VisualHTMLtoHTML"
+				  configfile="Translators/VisualHTMLtoHTML/VisualHTMLtoHTML.xml"
+			  definitionfile="Translators/VisualHTMLtoHTML/VisualHTMLtoHTML.xsl"
+			  supportedlanguages="VisualHTML" enabled="TRUE"/>
+	  <translator name="Visual Language to VXD Language" translator="VisualHTMLtoHTML"
+                configfile="Translators/VisualHTMLtoHTML/VisualHTMLtoHTML.xml"
+	        definitionfile="Translators/VisualHTMLtoHTML/VisualHTMLtoHTML.xsl"
+	        supportedlanguages="VisualLanguage" enabled="TRUE"/>
+  </translators>
+  <platforms>
+    <platform name="Linux JavaServer"
+              configfile="Platforms/WindowsTomcat/Tomcat403.xml" supportedtranslators="VisualWebJavaServlet"
+	      defintionfile="Platforms/WindowsTomcat/Tomcat403.dtd" platform="linux" enabled="TRUE"/>
+    <platform name="Windows Tomcat"
+              configfile="Platforms/WindowsTomcat/Tomcat403.xml" supportedtranslators="VisualWebJavaServlet"
+	      defintionfile="Platforms/WindowsTomcat/Tomcat403.dtd" platform="windows" enabled="TRUE"/>
+	<platform name="Windows JavaServer"
+              configfile="Platforms/WindowsTomcat/Tomcat403.xml" supportedtranslators="VisualWebJavaServlet"
+	      defintionfile="Platforms/WindowsTomcat/Tomcat403.dtd" platform="windows" enabled="FALSE"/>
+    <platform name="Linux XSP Mono" supportedtranslators="ASPNETCSharpASPX"
+              configfile="Platforms/WindowsTomcat/Tomcat403.xml"
+	      defintionfile="Platforms/WindowsTomcat/Tomcat403.dtd" platform="linux" enabled="TRUE"/>    <platform name="Linux Apache Mono Module" supportedtranslators="ASPNETCSharpASPX"
+              configfile="Platforms/WindowsTomcat/Tomcat403.xml"
+	      defintionfile="Platforms/WindowsTomcat/Tomcat403.dtd" platform="linux" enabled="TRUE"/>
+    <platform name="Windows 2003 IIS 6.0"
+              configfile="Platforms/WindowsTomcat/Tomcat403.xml" supportedtranslators="VisualSalesManagementWeb,ASPNETCSharpASPX,VisualHTMLtoHTML,VisualDTDtoDTD,VisualLanguage"
+	      defintionfile="Platforms/WindowsTomcat/Tomcat403.dtd" platform="linux" enabled="TRUE"/>
+   <platform name="Linux Apache HTML"
+              configfile="Platforms/WindowsTomcat/Tomcat403.xml" supportedtranslators="VisualHTMLtoHTML"
+	      defintionfile="Platforms/WindowsTomcat/Tomcat403.dtd" platform="linux" enabled="TRUE"/>
+   <platform name="Linux Filesystem"
+              configfile="Platforms/WindowsTomcat/Tomcat403.xml" supportedtranslators="VisualWebJavaServlet,ASPNETCSharpASPX,VisualHTMLtoHTML,VisualDTDtoDTD"
+	      defintionfile="Platforms/WindowsTomcat/Tomcat403.dtd" platform="linux" enabled="TRUE"/> <platform name="Windows Filesystem"
+              configfile="Platforms/WindowsTomcat/Tomcat403.xml" supportedtranslators="VisualSalesManagementWeb,VisualWebJavaServlet,ASPNETCSharpASPX,VisualHTMLtoHTML,VisualDTDtoDTD"
+	      defintionfile="Platforms/WindowsTomcat/Tomcat403.dtd" platform="linux" enabled="TRUE"/>
+	 
+  </platforms>
+</vxd>

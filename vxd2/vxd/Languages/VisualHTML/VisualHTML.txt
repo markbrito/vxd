@@ -1,0 +1,6 @@
+VisualHTML allows you to visually create VisualHTML pages
+
+VisualHTML.xml defines the image based visual language.
+VisualHTML.dtd defines the structure of the language.
+Images/ is the directory with the images for the language.
+Editors/ is the directory with the code for custom editors in this language.

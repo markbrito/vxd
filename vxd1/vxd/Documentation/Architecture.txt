@@ -1,0 +1,66 @@
+VXD Architecture
+
+Summary
+VXD is a development environment that allows the creation of programs using a
+drag and drop gui. The gui allows the user to drag icons to the canvas, connect
+them with different kinds of lines, and place icons inside of other icons.
+Icons and lines also have properties that can be edited. VXD is configured by
+a few XML documents and DTDs.  The first configuration document, the language 
+elements document, gives the GUI the icon images and line types to be used. When
+the diagram is being drawn, an XML document is generated that represents the picture.
+The second configuration document, the language structure document, gives the 
+legal structure of the elements and essentially defines a language.  Everytime a 
+new icon or line is added to the program, the validity of the diagram is checked 
+using the language structure document and doesn't allow diagrams that aren't structured
+as defined.  The third configuration document is an XSL document that converts the
+XML document generated from the diagram into the deployment language.  Finally,
+the generated program must be deployed and configured to be tested. Heres the
+flow of the code generation and deployment process.
+
+
+                  5.Program in Target Language
+
+                            /\
+                            ||
+                            ||
+
+                  4.XSL Document Providing
+             the Translation to the target language
+
+                            /\
+                            ||
+                            ||
+
+                  3.Structured XML Document
+                    representing the diagram
+
+                            /\
+                            ||
+                            ||
+1.LANGUAGE               Visual XML                   2.LANGUAGE
+  ELEMENTS -------->      Designer        <----------   STRUCTURE
+  DOCUMENT           Graphical Interface                DOCUMENT
+(XML Document)         (Java Program)         (XML Document Type Definition)
+
+The icon pictures     The user drags and      This defines the structure of which
+and line connectors    drops icons and         icons can be connected and arranged
+                     connects the pictures
+
+
+This architecture provides the flexibility of adding new language features by
+simply adding the icon to the the two documents.  Alternatively you can define
+your own language from scratch.  The goal is to create a highly productive
+language with which you can code using only the mouse by intuitively connecting
+the concepts. Also the Designer will not allow illegal code because the structure
+is checked every time a new element is added to the diagram.
+
+As the picture is drawn, an XML document is generated (3).  In essence, this
+generated document (3) is a program written in the language defined by (2) using
+the commands in (1).
+
+Once you have an XML visual program you can use XSL(4) to convert that language to 
+another(5).  This is powerful because you can generate the program for different
+platforms. Also realize that the Target Language is not only the code, but
+can also be the configuration for the deployment platform. Another step may
+be necessary to place the generated result into the final server environment.
+

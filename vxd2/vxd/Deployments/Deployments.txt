@@ -1,0 +1,2 @@
+Entire Virtual Machines or Application Servers can reside
+in this directory or references to the target deployment.

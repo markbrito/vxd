@@ -1,0 +1,162 @@
+<!ELEMENT VisualHTML (HTML)*>
+<!ATTLIST VisualHTML Title CDATA #REQUIRED
+		    Package CDATA #REQUIRED
+		    URI CDATA #REQUIRED
+		    Port CDATA "80"
+		    Language CDATA #FIXED "VisualHTML"
+		    Translator CDATA #FIXED "VisualHTMLtoHTML"
+		    Platform CDATA #FIXED "Tomcat403"
+                    TextNote CDATA #IMPLIED
+                    Build (Debug|Release|Optimized) "Debug">
+<!ELEMENT HTML (Form|Text|Href|Image)*>
+<!ATTLIST HTML Name CDATA #REQUIRED
+			   RelativeDirectory CDATA "."
+               ID CDATA #IMPLIED
+               XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       Order CDATA "0"
+	       Visible (TRUE|FALSE) "TRUE"
+	       HtmlEditor CDATA #IMPLIED>
+<!ELEMENT Form (Textbox|Text|Submit|Href|Connection|
+                ComboBox|CheckBox|TextArea|FileUpload|PasswordField|
+                RadioButton|Hidden|Image|ImageButton|Button|ListBox)*>
+<!ATTLIST Form Name CDATA #REQUIRED
+               ID CDATA #IMPLIED
+               XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       Order CDATA "0"
+	       Visible (TRUE|FALSE) "TRUE"
+	       Method (POST|GET) "POST" >
+<!ELEMENT Textbox (#PCDATA)>
+<!ATTLIST Textbox Name CDATA #REQUIRED
+               ID CDATA #IMPLIED
+               XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       Order CDATA "0"
+	       Visible (TRUE|FALSE) "TRUE"
+               Value CDATA #IMPLIED>
+<!ELEMENT Text (#PCDATA)>
+<!ATTLIST Text Name CDATA #REQUIRED
+               ID CDATA #IMPLIED
+               XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       Order CDATA "0"
+	       Visible (TRUE|FALSE) "TRUE"
+	                     Value CDATA #IMPLIED>
+<!ELEMENT Submit (#PCDATA)>
+<!ATTLIST Submit Name CDATA #REQUIRED
+               ID CDATA #IMPLIED
+               XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       Order CDATA "0"
+	       Visible (TRUE|FALSE) "TRUE"
+               Value CDATA #IMPLIED>
+<!ELEMENT Href (Connection|Text|Image)*>
+<!ATTLIST Href Name CDATA #REQUIRED
+               ID CDATA #IMPLIED
+               XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       Order CDATA "0"
+	       Visible (TRUE|FALSE) "TRUE"
+               Value CDATA #IMPLIED
+	       Variable CDATA #IMPLIED>
+<!ELEMENT Button (#PCDATA)>
+<!ATTLIST Button Name CDATA #REQUIRED
+               ID CDATA #IMPLIED
+               XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       Order CDATA "0"
+	       Visible (TRUE|FALSE) "TRUE"
+               Value CDATA #IMPLIED>
+<!ELEMENT ListBox (#PCDATA)>
+<!ATTLIST ListBox Name CDATA #REQUIRED
+               ID CDATA #IMPLIED
+               XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       Order CDATA "0"
+	       Visible (TRUE|FALSE) "TRUE"
+	       DisplayValues CDATA #IMPLIED
+               Values CDATA #IMPLIED>
+<!ELEMENT ImageButton (#PCDATA)>
+<!ATTLIST ImageButton Name CDATA #REQUIRED
+               ID CDATA #IMPLIED
+               XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       Order CDATA "0"
+	       Visible (TRUE|FALSE) "TRUE"
+               Src CDATA #IMPLIED>
+<!ELEMENT Image (#PCDATA)>
+<!ATTLIST Image Name CDATA #REQUIRED
+               ID CDATA #IMPLIED
+               XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       Order CDATA "0"
+	       Visible (TRUE|FALSE) "TRUE"
+             Value CDATA #IMPLIED
+               Src CDATA #IMPLIED>
+<!ELEMENT Hidden (#PCDATA)>
+<!ATTLIST Hidden Name CDATA #REQUIRED
+               ID CDATA #IMPLIED
+               XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       Order CDATA "0"
+	       Visible (TRUE|FALSE) "TRUE"
+              Value CDATA #IMPLIED>
+<!ELEMENT RadioButton (#PCDATA)>
+<!ATTLIST RadioButton Name CDATA #REQUIRED
+               ID CDATA #IMPLIED
+               Group CDATA #IMPLIED
+               XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       Order CDATA "0"
+	       Visible (TRUE|FALSE) "TRUE"
+               Value CDATA #IMPLIED>
+<!ELEMENT PasswordField (#PCDATA)>
+<!ATTLIST PasswordField Name CDATA #REQUIRED
+               ID CDATA #IMPLIED
+               XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       Order CDATA "0"
+	       BeforeHtml CDATA "&lt;INPUT Name=&quot;@Name@&quot; Type=&quot;PASSWORD&quot; Value=&quot;@Value@&quot;&gt;" 
+	       AfterHtml CDATA #IMPLIED
+               Value CDATA #IMPLIED
+	       Visible (TRUE|FALSE) "TRUE"
+	       Variable CDATA #IMPLIED>
+<!ELEMENT FileUpload (#PCDATA)>
+<!ATTLIST FileUpload Name CDATA #REQUIRED
+               ID CDATA #IMPLIED
+               XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       Order CDATA "0"
+	       Visible (TRUE|FALSE) "TRUE">
+<!ELEMENT TextArea (#PCDATA)>
+<!ATTLIST TextArea Name CDATA #REQUIRED
+               ID CDATA #IMPLIED
+               XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       Order CDATA "0"
+	       Visible (TRUE|FALSE) "TRUE"
+               Value CDATA #IMPLIED>
+<!ELEMENT CheckBox (#PCDATA)>
+<!ATTLIST CheckBox Name CDATA #REQUIRED
+               ID CDATA #IMPLIED
+               XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       Order CDATA "0"
+	       Visible (TRUE|FALSE) "TRUE"
+               Value CDATA #IMPLIED>
+<!ELEMENT ComboBox (#PCDATA)>
+<!ATTLIST ComboBox Name CDATA #REQUIRED
+               ID CDATA #IMPLIED
+               XPos CDATA #IMPLIED
+               YPos CDATA #IMPLIED
+	       Order CDATA "0"
+	       Visible (TRUE|FALSE) "TRUE"
+	        Values CDATA #IMPLIED>
+<!ELEMENT Connection (#PCDATA)>
+<!ATTLIST Connection Name CDATA #REQUIRED
+                     ID CDATA #IMPLIED
+		     Order CDATA "0"
+		     SourceID CDATA #IMPLIED
+                     DestID CDATA #IMPLIED
+		     DestType (HTML) "HTML">

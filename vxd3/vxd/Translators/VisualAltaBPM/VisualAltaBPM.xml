@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE Translator SYSTEM "../Translator.dtd">
+<Translator name="VisualAltaBPM" 
+            TranslatorXSL="VisualAltaBPM.xsl">
+<toolbar>
+   <toolbarbutton image="Translators/VisualAltaBPM/Images/savecode.gif" text="Save Generated Code" command="SAVECODE"/>
+   <toolbarbutton image="Translators/VisualAltaBPM/Images/savexsl.gif" text="Save XSL" command="SAVEXSL"/>
+</toolbar>
+<menu name="XSL" letter="S">
+   <menuitem image="Translators/VisualAltaBPM/Images/savecode.gif" text="Save Generated Code" command="SAVECODE"/>
+   <menuitem image="Translators/VisualAltaBPM/Images/savexsl.gif" text="Save XSL" command="SAVEXSL"/>
+</menu>
+<eventhandler class="vxd.Translators.VisualHTMLtoHTML.ExternalTranslators.TranslationActionEventHandler"/>
+</Translator>

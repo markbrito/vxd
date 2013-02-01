@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Language xmlns="http://tempuri.org/VisualAltaBPM.xsd" Name="VisualAltaBPM" StructureDTD="VisualAltaBPM.dtd">
+ <Icons>
+<Icon/>
+ </Icons>
+</Icons>
+ <Connectors>
+   <Connector Name="Connection" Image="Languages/VisualAltaBPM/Images/connection.gif" Type="CONNECTION"/>
+ </Connectors>
+ <Editors>
+  <Editor/>
+</Editors>
+</Language>

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>Accessibility</name>
+	</assembly>
+	<members>
+		<member name="N:Accessibility">
+			<summary>The <see cref="N:Accessibility"></see> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) accessibility interface.</summary>
+		</member>
+		<member name="T:Accessibility.__MIDL_IWinTypes_0009">
+			<summary>The <see cref="T:Accessibility.__MIDL_IWinTypes_0009"></see> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) accessibility interface.</summary>
+		</member>
+		<member name="F:Accessibility.__MIDL_IWinTypes_0009.hInproc">
+			<summary>The <see cref="T:Accessibility.__MIDL_IWinTypes_0009"></see> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) accessibility interface.</summary>
+		</member>
+		<member name="F:Accessibility.__MIDL_IWinTypes_0009.hRemote">
+			<summary>The <see cref="T:Accessibility.__MIDL_IWinTypes_0009"></see> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) accessibility interface.</summary>
+		</member>
+		<member name="T:Accessibility._RemotableHandle">
+			<summary>The <see cref="T:Accessibility.IAccessibleHandler"></see> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) accessibilityinterface.</summary>
+		</member>
+		<member name="T:Accessibility.AnnoScope">
+			<summary>The <see cref="T:Accessibility.AnnoScope"></see> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) accessibility interface.</summary>
+		</member>
+		<member name="T:Accessibility.IAccessible">
+			<summary>The <see cref="T:Accessibility.IAccessible"></see> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccessible interface.</summary>
+		</member>
+		<member name="M:Accessibility.IAccessible.accDoDefaultAction(System.Object)">
+			<summary>The <see cref="T:Accessibility.IAccessible"></see> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccessible interface.</summary>
+		</member>
+		<member name="M:Accessibility.IAccessible.accLocation(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Object)">
+			<summary>The <see cref="T:Accessibility.IAccessible"></see> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccessible interface.</summary>
+		</member>
+		<member name="M:Accessibility.IAccessible.accSelect(System.Int32,System.Object)">
+			<summary>The <see cref="T:Accessibility.IAccessible"></see> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccessible interface.</summary>
+		</member>
+		<member name="T:Accessibility.IAccessibleHandler">
+			<summary>The <see cref="T:Accessibility.IAccessibleHandler"></see> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccessibleHandler interface.</summary>
+		</member>
+		<member name="M:Accessibility.IAccessibleHandler.AccessibleObjectFromID(System.Int32,System.Int32,Accessibility.IAccessible@)">
+			<summary>The <see cref="T:Accessibility.IAccessibleHandler"></see> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccessibleHandler interface.</summary>
+		</member>
+		<member name="T:Accessibility.IAccIdentity">
+			<summary>The <see cref="T:Accessibility.IAccIdentity"></see> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccIdentity interface.</summary>
+		</member>
+		<member name="M:Accessibility.IAccIdentity.GetIdentityString(System.UInt32,System.IntPtr,System.UInt32@)">
+			<summary>The <see cref="T:Accessibility.IAccIdentity"></see> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccIndentity interface.</summary>
+		</member>
+		<member name="T:Accessibility.IAccPropServer">
+			<summary>The <see cref="T:Accessibility.IAccPropServer"></see> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccPropServer interface.</summary>
+		</member>
+		<member name="M:Accessibility.IAccPropServer.GetPropValue(System.Byte@,System.UInt32,System.Guid,System.Object@,System.Int32@)">
+			<summary>The <see cref="T:Accessibility.IAccPropServer"></see> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccPropServer interface.</summary>
+		</member>
+		<member name="T:Accessibility.IAccPropServices">
+			<summary>The <see cref="T:Accessibility.IAccPropServices"></see> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccPropServices interface.</summary>
+		</member>
+		<member name="M:Accessibility.IAccPropServices.ClearHmenuProps(Accessibility._RemotableHandle@,System.UInt32,System.Guid@,System.Int32)">
+			<summary>The <see cref="T:Accessibility.IAccPropServices"></see> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccPropServices interface.</summary>
+		</member>
+		<member name="M:Accessibility.IAccPropServices.ClearHwndProps(Accessibility._RemotableHandle@,System.UInt32,System.UInt32,System.Guid@,System.Int32)">
+			<summary>The <see cref="T:Accessibility.IAccPropServices"></see> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccPropServices interface.</summary>
+		</member>
+		<member name="M:Accessibility.IAccPropServices.ClearProps(System.Byte@,System.UInt32,System.Guid@,System.Int32)">
+			<summary>The <see cref="T:Accessibility.IAccPropServices"></see> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccPropServices interface.</summary>
+		</member>
+		<member name="M:Accessibility.IAccPropServices.ComposeHmenuIdentityString(Accessibility._RemotableHandle@,System.UInt32,System.IntPtr,System.UInt32@)">
+			<summary>The <see cref="T:Accessibility.IAccPropServices"></see> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccPropServices interface.</summary>
+		</member>
+		<member name="M:Accessibility.IAccPropServices.ComposeHwndIdentityString(Accessibility._RemotableHandle@,System.UInt32,System.UInt32,System.IntPtr,System.UInt32@)">
+			<summary>The <see cref="T:Accessibility.IAccPropServices"></see> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccPropServices interface.</summary>
+		</member>
+		<member name="M:Accessibility.IAccPropServices.DecomposeHmenuIdentityString(System.Byte@,System.UInt32,System.IntPtr,System.UInt32@)">
+			<summary>The <see cref="T:Accessibility.IAccPropServices"></see> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccPropServices interface.</summary>
+		</member>
+		<member name="M:Accessibility.IAccPropServices.DecomposeHwndIdentityString(System.Byte@,System.UInt32,System.IntPtr,System.UInt32@,System.UInt32@)">
+			<summary>The <see cref="T:Accessibility.IAccPropServices"></see> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccPropServices interface.</summary>
+		</member>
+		<member name="M:Accessibility.IAccPropServices.SetHmenuProp(Accessibility._RemotableHandle@,System.UInt32,System.Guid,System.Object)">
+			<summary>The <see cref="T:Accessibility.IAccPropServices"></see> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccPropServices interface.</summary>
+		</member>
+		<member name="M:Accessibility.IAccPropServices.SetHmenuPropServer(Accessibility._RemotableHandle@,System.UInt32,System.Guid@,System.Int32,Accessibility.IAccPropServer,Accessibility.AnnoScope)">
+			<summary>The <see cref="T:Accessibility.IAccPropServices"></see> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccPropServices interface.</summary>
+		</member>
+		<member name="M:Accessibility.IAccPropServices.SetHmenuPropStr(Accessibility._RemotableHandle@,System.UInt32,System.Guid,System.String)">
+			<summary>The <see cref="T:Accessibility.IAccPropServices"></see> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccPropServices interface.</summary>
+		</member>
+		<member name="M:Accessibility.IAccPropServices.SetHwndProp(Accessibility._RemotableHandle@,System.UInt32,System.UInt32,System.Guid,System.Object)">
+			<summary>The <see cref="T:Accessibility.IAccPropServices"></see> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccPropServices interface.</summary>
+		</member>
+		<member name="M:Accessibility.IAccPropServices.SetHwndPropServer(Accessibility._RemotableHandle@,System.UInt32,System.UInt32,System.Guid@,System.Int32,Accessibility.IAccPropServer,Accessibility.AnnoScope)">
+			<summary>The <see cref="T:Accessibility.IAccPropServices"></see> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccPropServices interface.</summary>
+		</member>
+		<member name="M:Accessibility.IAccPropServices.SetHwndPropStr(Accessibility._RemotableHandle@,System.UInt32,System.UInt32,System.Guid,System.String)">
+			<summary>The <see cref="T:Accessibility.IAccPropServices"></see> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccPropServices interface.</summary>
+		</member>
+		<member name="M:Accessibility.IAccPropServices.SetPropServer(System.Byte@,System.UInt32,System.Guid@,System.Int32,Accessibility.IAccPropServer,Accessibility.AnnoScope)">
+			<summary>The <see cref="T:Accessibility.IAccPropServices"></see> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccPropServices interface.</summary>
+		</member>
+		<member name="M:Accessibility.IAccPropServices.SetPropValue(System.Byte@,System.UInt32,System.Guid,System.Object)">
+			<summary>The <see cref="T:Accessibility.IAccPropServices"></see> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccPropServices interface.</summary>
+		</member>
+	</members>
+</doc>

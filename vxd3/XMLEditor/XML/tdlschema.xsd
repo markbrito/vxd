@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xsd:schema id="TDLSchema" targetNamespace="http://www.microsoft.com/schema/EnterpriseTemplates/TDLSchema" xmlns="http://www.microsoft.com/schema/EnterpriseTemplates/TDLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xsd:complexType name="MenuItemType">
+		<xsd:sequence>
+			<xsd:element name="ID" type="xsd:string" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="CMDID" type="xsd:positiveInteger" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="GUID" type="xsd:string" minOccurs="1" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="MenusType">
+		<xsd:sequence>
+			<xsd:element name="MENU" type="MenuItemType" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ToolboxItemType">
+		<xsd:sequence>
+			<xsd:element name="ID" type="xsd:string" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="DESCRIPTOR" type="xsd:string" minOccurs="1" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ToolboxItemsType">
+		<xsd:sequence>
+			<xsd:element name="TOOLBOXITEM" type="ToolboxItemType" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:simpleType name="DefaultActionType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="INCLUDE" />
+			<xsd:enumeration value="EXCLUDE" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="OrderType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="INCLUDEEXCLUDE" />
+			<xsd:enumeration value="EXCLUDEINCLUDE" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="PolicyModeType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="PERMISSIVE" />
+			<xsd:enumeration value="RESTRICTIVE" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="PseudoBooleanType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="0" />
+			<xsd:enumeration value="1" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:group name="MinMaxValue">
+		<xsd:sequence>
+			<xsd:element name="MINVALUE" type="xsd:string" minOccurs="0" maxOccurs="1" />
+			<xsd:element name="MAXVALUE" type="xsd:string" minOccurs="0" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:group>
+	<xsd:complexType name="PropertyConstraintType">
+		<xsd:sequence>
+			<xsd:element name="NAME" type="xsd:string" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="READONLY" type="PseudoBooleanType" minOccurs="1" maxOccurs="1" />
+			<xsd:choice minOccurs="0" maxOccurs="1">
+				<xsd:element name="DEFAULT" type="xsd:string" />
+				<xsd:group ref="MinMaxValue" />
+			</xsd:choice>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="PropertyConstraintsType">
+		<xsd:sequence>
+			<xsd:element name="PROPERTYCONSTRAINT" type="PropertyConstraintType" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="MenuConstraintType">
+		<xsd:sequence>
+			<xsd:element name="ID" type="xsd:string" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="ENABLED" type="PseudoBooleanType" minOccurs="1" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="MenuConstraintsType">
+		<xsd:sequence>
+			<xsd:element name="MENUCONSTRAINT" type="MenuConstraintType" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ToolboxConstraintType">
+		<xsd:sequence>
+			<xsd:element name="ID" type="xsd:string" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="ENABLED" type="PseudoBooleanType" minOccurs="1" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ToolboxConstraintsType">
+		<xsd:sequence>
+			<xsd:element name="TOOLBOXCONSTRAINT" type="ToolboxConstraintType" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ConstraintsType">
+		<xsd:sequence>
+			<xsd:element name="PROPERTYCONSTRAINTS" type="PropertyConstraintsType" minOccurs="0" maxOccurs="1" />
+			<xsd:element name="MENUCONSTRAINTS" type="MenuConstraintsType" minOccurs="0" maxOccurs="1" />
+			<xsd:element name="TOOLBOXCONSTRAINTS" type="ToolboxConstraintsType" minOccurs="0" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="DefaultSettingsType">
+		<xsd:sequence>
+			<xsd:element name="DEFAULTACTION" type="DefaultActionType" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="ORDER" type="OrderType" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="POLICYMODE" type="PolicyModeType" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="CONSTRAINTS" type="ConstraintsType" minOccurs="0" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ContextAttributeType">
+		<xsd:sequence>
+			<xsd:group ref="NameValuePair" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ContextType">
+		<xsd:sequence>
+			<xsd:element name="CTXTKEYWORD" type="xsd:string" minOccurs="1" maxOccurs="unbounded" />
+			<xsd:element name="CTXTATTRIBUTE" type="ContextAttributeType" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:group name="NameValuePair">
+		<xsd:sequence>
+			<xsd:element name="NAME" type="xsd:string" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="VALUE" type="xsd:string" minOccurs="1" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:group>
+	<xsd:complexType name="IdentifierDataType">
+		<xsd:sequence>
+			<xsd:group ref="NameValuePair" minOccurs="1" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:simpleType name="IdentifierTypeType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="PROJECT" />
+			<xsd:enumeration value="PROJECTITEM" />
+			<xsd:enumeration value="HTMLELEMENT" />
+			<xsd:enumeration value="CODE" />
+			<xsd:enumeration value="CODEVARIABLE" />
+			<xsd:enumeration value="REFERENCE" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="IdentifierType">
+		<xsd:sequence>
+			<xsd:element name="TYPE" type="IdentifierTypeType" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="IDENTIFIERDATA" type="IdentifierDataType" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="IdentifiersType">
+		<xsd:sequence>
+			<xsd:element name="IDENTIFIER" type="IdentifierType" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="MenuLinksType">
+		<xsd:sequence>
+			<xsd:element name="MENULINK" type="xsd:string" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ToolboxLinksType">
+		<xsd:sequence>
+			<xsd:element name="TOOLBOXLINK" type="xsd:string" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="FeatureLinksType">
+		<xsd:all>
+			<xsd:element name="MENULINKS" type="MenuLinksType"  minOccurs="0" maxOccurs="1" />
+			<xsd:element name="TOOLBOXLINKS" type="ToolboxLinksType" minOccurs="0" maxOccurs="1" />
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="PrototypesType">
+		<xsd:sequence>
+			<xsd:element name="PROTOTYPE" type="xsd:string" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="MemberConstraintType">
+		<xsd:sequence>
+			<xsd:element name="ID" type="xsd:string" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="PROPERTYCONSTRAINTS" type="PropertyConstraintsType" minOccurs="0" maxOccurs="1" />
+			<xsd:element name="MENUCONSTRAINTS" type="MenuConstraintsType" minOccurs="0" maxOccurs="1" />
+			<xsd:element name="TOOLBOXCONSTRAINTS" type="ToolboxConstraintsType" minOccurs="0" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="MemberConstraintsType">
+		<xsd:sequence>
+			<xsd:element name="MEMBERCONSTRAINT" type="MemberConstraintType" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:group name="IncludeExcludeChoice">
+		<xsd:choice>
+			<xsd:element name="INCLUDE" type="xsd:string" />
+			<xsd:element name="EXCLUDE" type="xsd:string" />
+		</xsd:choice>
+	</xsd:group>
+	<xsd:complexType name="ElementSetType">
+		<xsd:sequence>
+			<xsd:element name="DEFAULTACTION" type="DefaultActionType" minOccurs="0" maxOccurs="1" />
+			<xsd:element name="ORDER" type="OrderType" minOccurs="0" maxOccurs="1" />
+			<xsd:group ref="IncludeExcludeChoice" minOccurs="0" maxOccurs="unbounded" />
+			<xsd:element name="CONSTRAINTS" type="ConstraintsType" minOccurs="0" maxOccurs="1" />
+			<xsd:element name="MEMBERCONSTRAINTS" type="MemberConstraintsType" minOccurs="0" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ElementType">
+		<xsd:all>
+			<xsd:element name="ID" type="xsd:string" minOccurs="0" maxOccurs="1" />
+			<xsd:element name="CONTEXT" type="ContextType" minOccurs="0" maxOccurs="1" />
+			<xsd:element name="IDENTIFIERS" type="IdentifiersType" minOccurs="0" maxOccurs="1" />
+			<xsd:element name="FEATURELINKS" type="FeatureLinksType" minOccurs="0" maxOccurs="1" />
+			<xsd:element name="PROTOTYPES" type="PrototypesType" minOccurs="0" maxOccurs="1" />
+			<xsd:element name="CONSTRAINTS" type="ConstraintsType" minOccurs="0" maxOccurs="1" />
+			<xsd:element name="ELEMENTSET" type="ElementSetType" minOccurs="0" maxOccurs="1" />
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="ElementsType">
+		<xsd:sequence>
+			<xsd:element name="ELEMENT" type="ElementType" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="CategoryType">
+		<xsd:sequence>
+			<xsd:element name="ID" type="xsd:string" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="CATEGORYMEMBER" type="xsd:string" minOccurs="1" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="CategoriesType">
+		<xsd:sequence>
+			<xsd:element name="CATEGORY" type="CategoryType" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="FeaturesType">
+		<xsd:all>
+			<xsd:element name="MENUS" type="MenusType" minOccurs="0" maxOccurs="1" />
+			<xsd:element name="TOOLBOXITEMS" type="ToolboxItemsType" minOccurs="0" maxOccurs="1" />
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="TDLType">
+		<xsd:all>
+			<xsd:element name="DEFAULTSETTINGS" type="DefaultSettingsType" minOccurs="0" maxOccurs="1" />
+			<xsd:element name="ELEMENTS" type="ElementsType" minOccurs="0" maxOccurs="1" />
+			<xsd:element name="CATEGORIES" type="CategoriesType" minOccurs="0" maxOccurs="1" />
+			<xsd:element name="FEATURES" type="FeaturesType" minOccurs="0" maxOccurs="1" />
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:element name="TDL" type="TDLType">
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This schema is used by the Visual Studio Content Installer to validate .vscontent xml files. -->
+<xs:schema attributeFormDefault="unqualified" 
+           elementFormDefault="qualified"  
+           targetNamespace="http://schemas.microsoft.com/developer/vscontent/2005" 
+           xmlns="http://schemas.microsoft.com/developer/vscontent/2005" 
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:simpleType name="non-empty-string">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="VSContent" >
+      <xs:annotation>
+        <xs:documentation>
+           <!-- _logID_text-"VSContent" _locComment""-->The VSContent element is the root element of the VS Content XML Schema.
+        </xs:documentation>
+      </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="Content" minOccurs="1">
+            <xs:annotation>
+                <xs:documentation>
+                    <!-- _logID_text-"Content" _locComment""-->The Content element defines each item to be installed.
+                </xs:documentation>
+            </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:choice maxOccurs="unbounded">
+                  <xs:element name="FileName" type="non-empty-string" minOccurs="1" maxOccurs="1">
+                      <xs:annotation>
+                          <xs:documentation>
+                              <!-- _logID_text-"FileName" _locComment""-->The name of the file corresponding to the content.
+                          </xs:documentation>
+                      </xs:annotation>
+                  </xs:element>
+                  <xs:element name="DisplayName" type="non-empty-string" minOccurs="1" maxOccurs="1">
+                      <xs:annotation>
+                          <xs:documentation>
+                              <!-- _logID_text-"DisplayName" _locComment""-->Name displayed to user when installing the content
+                          </xs:documentation>
+                      </xs:annotation>
+                  </xs:element>
+                  <xs:element name="Description" type="non-empty-string" minOccurs="1" maxOccurs="1" >
+                      <xs:annotation>
+                          <xs:documentation>
+                              <!-- _logID_text-"Description" _locComment""-->Description displayed to user when installing the content
+                          </xs:documentation>
+                      </xs:annotation>
+                  </xs:element>
+                  <xs:element name="FileContentType" minOccurs="1" maxOccurs="1">
+                      <xs:annotation>
+                          <xs:documentation>
+                              <!-- _logID_text-"FileContentType" _locComment""-->The type of content to be installed.
+                          </xs:documentation>
+                      </xs:annotation>
+                           <xs:simpleType>
+                                    <xs:union>
+                                        <xs:simpleType>
+                                            <xs:restriction base ="non-empty-string"></xs:restriction>
+                                        </xs:simpleType>
+                                        <xs:simpleType>
+                                            <xs:restriction base="non-empty-string">
+                                                <xs:enumeration value="Addin"><xs:annotation><xs:documentation><!-- _logID_text-"Addin" _locComment""-->Denotes the content as an Add-in.</xs:documentation></xs:annotation></xs:enumeration>
+                                                <xs:enumeration value="Code Snippet"><xs:annotation><xs:documentation><!-- _logID_text-"Code Snippet" _locComment""-->Denotes the content as an Intellisense Code Snippet</xs:documentation></xs:annotation></xs:enumeration>
+                                                <xs:enumeration value="VSTemplate"><xs:annotation><xs:documentation><!-- _logID_text-"VSTemplate" _locComment""-->Denotes the content as a Template.</xs:documentation></xs:annotation></xs:enumeration>
+                                                <xs:enumeration value="Toolbox Control"><xs:annotation><xs:documentation><!-- _logID_text-"Toolbox Control" _locComment""-->Denotes the content as a Toolbox Control.</xs:documentation></xs:annotation></xs:enumeration>
+                                                <xs:enumeration value="Macro Project"><xs:annotation><xs:documentation><!-- _logID_text-"Macro Project" _locComment""-->Denotes the content as a Macro Project.</xs:documentation></xs:annotation></xs:enumeration>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:union>
+                                </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ContentVersion" type="xs:decimal" minOccurs="1" maxOccurs="1">
+                      <xs:annotation>
+                          <xs:documentation>
+                              <!-- _logID_text-"ContentVersion" _locComment""-->The version of the content.
+                          </xs:documentation>
+                      </xs:annotation>
+                  </xs:element>
+                <xs:element name="Attributes" minOccurs="0" maxOccurs="1">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <!-- _logID_text-"Attributes" _locComment""-->Collection of Attributes specific to the type of content.
+                        </xs:documentation>
+                    </xs:annotation>
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element maxOccurs="unbounded" name="Attribute">
+                          <xs:annotation>
+                              <xs:documentation>
+                                  <!-- _logID_text-"Attribute" _locComment""-->Name and value pair describing the content.
+                              </xs:documentation>
+                          </xs:annotation>
+                        <xs:complexType>
+                            <xs:attribute name="name" use="required">
+                                <xs:annotation>
+                                    <xs:documentation>
+                                        <!-- _logID_text-"name" _locComment""-->The name of the attribute to set.
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:union>
+                                        <xs:simpleType>
+                                            <xs:restriction base ="non-empty-string"></xs:restriction>
+                                        </xs:simpleType>
+                                        <xs:simpleType>
+                                            <xs:restriction base="non-empty-string">
+                                                <xs:enumeration value="language"><xs:annotation><xs:documentation><!-- _logID_text-"language" _locComment""-->Spoken language for the content. E.g. en, jp</xs:documentation></xs:annotation></xs:enumeration>
+                                                <xs:enumeration value="lang"><xs:annotation><xs:documentation><!-- _logID_text-"lang" _locComment""-->Programming language for the content. E.g. csharp, vjsharp, vb, xml</xs:documentation></xs:annotation></xs:enumeration>
+                                                <xs:enumeration value="TemplateType"><xs:annotation><xs:documentation><!-- _logID_text-"TemplateType" _locComment""-->Type of a template. E.g. Project, Item</xs:documentation></xs:annotation></xs:enumeration>
+                                                <xs:enumeration value="ProjectType"><xs:annotation><xs:documentation><!-- _logID_text-"ProjectType" _locComment""-->Language of a template. E.g. Visual Basic, Visual C#, Visual J#, Visual Web Developer</xs:documentation></xs:annotation></xs:enumeration>
+                                                <xs:enumeration value="ProjectSubType"><xs:annotation><xs:documentation><!-- _logID_text-"ProjectSubType" _locComment""-->SubType of the Template. E.g. Windows, Database, Office</xs:documentation></xs:annotation></xs:enumeration>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:union>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="value" use="required" >
+                                <xs:annotation>
+                                    <xs:documentation>
+                                        <!-- _logID_text-"value" _locComment""-->
+                                    </xs:documentation>
+                                </xs:annotation>                                <xs:simpleType>
+                                    <xs:union>
+                                        <xs:simpleType>
+                                            <xs:restriction base ="non-empty-string"></xs:restriction>
+                                        </xs:simpleType>
+                                        <xs:simpleType>
+                                            <xs:restriction base="non-empty-string">
+                                                <xs:enumeration value="csharp"><xs:annotation><xs:documentation><!-- _logID_text-"csharp" _locComment""-->Valid for Code Snippets. Indicates C# Programming Language for lang attribute</xs:documentation></xs:annotation></xs:enumeration>
+                                                <xs:enumeration value="vjsharp"><xs:annotation><xs:documentation><!-- _logID_text-"jsharp" _locComment""-->Valid for Code Snippets. Indicates J# Programming Language for lang attribute</xs:documentation></xs:annotation></xs:enumeration>
+                                                <xs:enumeration value="vb"><xs:annotation><xs:documentation><!-- _logID_text-"vb" _locComment""-->Valid for Code Snippets. Indicates VB Programming Language for lang attribute</xs:documentation></xs:annotation></xs:enumeration>
+                                                <xs:enumeration value="xml"><xs:annotation><xs:documentation><!-- _logID_text-"xml" _locComment""-->Valid for Code Snippets. Indicates XML Programming Language for lang attribute</xs:documentation></xs:annotation></xs:enumeration>
+                                                <xs:enumeration value="Item"><xs:annotation><xs:documentation><!-- _logID_text-"Item" _locComment""-->Valid for VSTemplates. Indicates Item Template for TemplateType attribute</xs:documentation></xs:annotation></xs:enumeration>
+                                                <xs:enumeration value="Project"><xs:annotation><xs:documentation><!-- _logID_text-"Project" _locComment""-->Valid for VSTemplates. Indicates content is an Project Templates for TemplateType attribute</xs:documentation></xs:annotation></xs:enumeration>
+                                                <xs:enumeration value="Visual Basic"><xs:annotation><xs:documentation><!-- _logID_text-"Visual Basic" _locComment""-->Valid for VSTemplates. Indicates Visual Basic for ProjectType attribute</xs:documentation></xs:annotation></xs:enumeration>
+                                                <xs:enumeration value="Visual C#"><xs:annotation><xs:documentation><!-- _logID_text-"Visual C#" _locComment""-->Valid for VSTemplates. Indicates Visual C# for ProjectType attribute</xs:documentation></xs:annotation></xs:enumeration>
+                                                <xs:enumeration value="Visual J#"><xs:annotation><xs:documentation><!-- _logID_text-"Visual J#" _locComment""-->Valid for VSTemplates. Indicates Visual J# for ProjectType attribute</xs:documentation></xs:annotation></xs:enumeration>
+                                                <xs:enumeration value="Visual Web Developer"><xs:annotation><xs:documentation><!-- _logID_text-"Visual Web Developer" _locComment""-->Valid for VSTemplates. Indicates Visual Web Developer for ProjectType attribute</xs:documentation></xs:annotation></xs:enumeration>
+                                                <xs:enumeration value="Windows"><xs:annotation><xs:documentation><!-- _logID_text-"Windows" _locComment""-->Valid for VSTemplates. Indicates Windows for ProjectSubType attribute</xs:documentation></xs:annotation></xs:enumeration>
+                                                <xs:enumeration value="Office"><xs:annotation><xs:documentation><!-- _logID_text-"Office" _locComment""-->Valid for VSTemplates. Indicates Windows for ProjectSubType attribute</xs:documentation></xs:annotation></xs:enumeration>
+                                                <xs:enumeration value="Smart Device"><xs:annotation><xs:documentation><!-- _logID_text-"Smart Device" _locComment""-->Valid for VSTemplates. Indicates Windows for ProjectSubType attribute</xs:documentation></xs:annotation></xs:enumeration>
+                                                <xs:enumeration value="Database"><xs:annotation><xs:documentation><!-- _logID_text-"Database" _locComment""-->Valid for VSTemplates. Indicates Windows for ProjectSubType attribute</xs:documentation></xs:annotation></xs:enumeration>
+                                                <xs:enumeration value="Test"><xs:annotation><xs:documentation><!-- _logID_text-"Test" _locComment""-->Valid for VSTemplates. Indicates Windows for ProjectSubType attribute</xs:documentation></xs:annotation></xs:enumeration>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:union>
+                                </xs:simpleType>
+                            </xs:attribute>
+                        </xs:complexType>
+                    </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

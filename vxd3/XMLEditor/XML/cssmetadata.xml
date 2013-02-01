@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<cssmd:cssmd xmlns:cssmd="x-schema:..\CSSMetaDataSchema.xml" version="VS7">
+  <cssmd:property-set>
+	<!-- Test suite see http://www.w3.org/Style/CSS/Test/CSS1 -->
+	
+    <!-- Font Properties -->
+    <cssmd:property-def id="color" type="color" description="Color of an element's text" syntax="#RRGGBB | Named Color" enum="Aqua Black Blue Fuchsia Gray Green Lime Maroon Navy Olive Purple Red Silver Teal White Yellow"/>
+    <cssmd:property-def id="font" type="composite" description="Font used for an element's text" syntax="one of the system fonts | [font-style] [font-variant] [font-weight] [font-size]/[line-height] [font-family]" enum="caption icon menu messagebox smallcaption statusbar"/>
+    <cssmd:property-def id="font-family" type="font" description="Name of the font used for an element's text" syntax="A font face name sequence"/>
+    <cssmd:property-def id="font-style" type="enum" description="Style of the font used for an element's text" syntax="One of the font-style values" enum="italic normal oblique"/>
+    <cssmd:property-def id="font-variant" type="enum" description="Variant of the font used for an element's text" syntax="One of the font-variant values" enum="normal small-caps"/>
+    <cssmd:property-def id="font-size" type="enum-length" description="Size of the font used for an element's text" syntax="length | percentage | standard font size value" enum="large larger medium small smaller x-large x-small xx-large xx-small"/>
+    <cssmd:property-def id="font-weight" type="enum" description="Boldness of the font used for an element's text" syntax="One of the font-weight values" enum="bold bolder lighter normal 100 200 300 400 500 600 700 800 900"/>
+    <cssmd:property-def id="text-decoration" type="composite" description="Decorations applied to font used for an element's text" syntax="none | combination of 'underline', 'overline', 'line-through' and 'blink'"/>
+
+    <!-- Background Properties -->
+    <cssmd:property-def id="background" type="composite" description="Background of an element" syntax="[background-color] [background-image] [background-repeat] [background-attachment] [background-position]"/>
+    <cssmd:property-def id="background-color" type="color" description="Color used for an element's background" syntax="#RRGGBB | Transparent | Named Color" enum="Aqua Black Blue Fuchsia Gray Green Lime Maroon Navy Olive Purple Red Silver Teal Transparent White Yellow"/>
+    <cssmd:property-def id="background-image" type="url" description="Image used for an element's background" syntax="none | url([url to image])"/>
+    <cssmd:property-def id="background-attachment" type="enum" description="How the background image is attached to an element within the document" syntax="One of the background-attachment values" enum="fixed scroll"/>
+    <cssmd:property-def id="background-repeat" type="enum" description="How the background image is tiled within an element" syntax="One of the background-repeat values" enum="no-repeat repeat repeat-x repeat-y"/>
+    <cssmd:property-def id="background-position" type="composite" description="How the background is positioned within an element" syntax="[horizontal position] [vertical position]"/>
+
+    <!-- Text Properties -->
+    <cssmd:property-def id="text-align" type="enum" description="The horizontal alignment of an element's text" syntax="One of the text-align values" enum="center justify left right"/>
+    <cssmd:property-def id="vertical-align" type="enum-length" description="The vertical alignment of an element's text" syntax="One of the vertical-align values | a unit" enum="baseline bottom middle sub super text-bottom text-top top"/>
+    <cssmd:property-def id="text-justify" type="enum" description="The justification style of justified text" syntax="One of the text-justify values" enum="auto distribute distribute-all-lines inter-word newspaper"/>
+    <cssmd:property-def id="letter-spacing" type="enum-length" description="The spacing between characters" syntax="normal | a unit" enum="normal"/>
+    <cssmd:property-def id="line-height" type="enum-length" description="The spacing between lines" syntax="normal | a unit" enum="normal"/>
+    <cssmd:property-def id="text-indent" type="length" description="The indentation of text" syntax="a unit"/>
+    <cssmd:property-def id="direction" type="enum" description="The direction that text flows in" syntax="One of the direction values" enum="inherit ltr rtl"/>
+    <cssmd:property-def id="text-transform" type="enum" description="Letter case of the text" syntax="One of the text-transform values" enum="capitalize lowercase none uppercase"/>
+    <cssmd:property-def id="word-spacing" type="enum-length" description="The spacing between words" syntax="normal | a unit" enum="normal"/>
+    <cssmd:property-def id="unicode-bidi" type="enum" description="The level of embedding with respect to the bidirectional algorithm" syntax="One of the unicode-bidi values" enum="bidi-override embed normal"/>
+    <cssmd:property-def id="white-space" type="enum" description="A value that indicates whether lines are automatically broken inside the object" syntax="One of the white-space values" enum="normal nowrap pre"/>
+
+    <!-- Position Properties -->
+    <cssmd:property-def id="position" type="enum" description="The positioning mode of an element" syntax="One of the position values" enum="absolute relative static"/>
+    <cssmd:property-def id="left" type="enum-length" description="The left edge of a positioned element" syntax="auto | a unit" enum="auto"/>
+    <cssmd:property-def id="right" type="enum-length" description="The right edge of a positioned element" syntax="auto | a unit" enum="auto"/>
+    <cssmd:property-def id="top" type="enum-length" description="The top edge of a positioned element" syntax="auto | a unit" enum="auto"/>
+    <cssmd:property-def id="bottom" type="enum-length" description="The bottom edge of a positioned element" syntax="auto | a unit" enum="auto"/>
+    <cssmd:property-def id="height" type="enum-length" description="The height of a positioned element" syntax="auto | a unit" enum="auto"/>
+    <cssmd:property-def id="width" type="enum-length" description="The width of a positioned element" syntax="auto | a unit" enum="auto"/>
+    <cssmd:property-def id="z-index" type="enum-length" description="The stacking order of a positioned element" syntax="auto | an integer" enum="auto"/>
+
+    <!-- Layout Properties -->
+    <cssmd:property-def id="display" type="enum" description="The display mode of an element" syntax="One of the display values" enum="block inline inline-block list-item none table-header-group table-footer-group"/>
+    <cssmd:property-def id="visibility" type="enum" description="The visibility of an element" syntax="One of the visibility values" enum="hidden inherit visible"/>
+    <cssmd:property-def id="float" type="enum" description="Edge of the object on which text will flow" syntax="One of the float values" enum="left none right"/>
+    <cssmd:property-def id="clear" type="enum" description="Sides on which floating objects will not be allowed" syntax="One of the clear values" enum="both left none right"/>
+    <cssmd:property-def id="clip" type="string" description="The clipping rectangle of an element" syntax="rect([top unit] [right unit] [bottom unit] [left unit]) | auto"/>
+    <cssmd:property-def id="overflow" type="enum" description="Visibility of content extending beyond element's dimensions" syntax="One of the overflow values" enum="auto hidden scroll visible"/>
+    <cssmd:property-def id="page-break-before" type="enum" description="Page breaks before an element" syntax="One of the page-break-before values" enum="always auto left right"/>
+    <cssmd:property-def id="page-break-after" type="enum" description="Page breaks after an element" syntax="One of the page-break-after values" enum="always auto left right"/>
+
+    <!-- Edges Properties -->
+    <cssmd:property-def id="padding" type="composite" description="The padding around all four edges of an element" syntax="[top unit] [right unit] [bottom unit] [left unit]"/>
+    <cssmd:property-def id="padding-left" type="enum-length" description="The padding on the left edge of an element" syntax="auto | a unit" enum="auto"/>
+    <cssmd:property-def id="padding-right" type="enum-length" description="The padding on the right edge of an element" syntax="auto | a unit" enum="auto"/>
+    <cssmd:property-def id="padding-top" type="enum-length" description="The padding on the top edge of an element" syntax="auto | a unit" enum="auto"/>
+    <cssmd:property-def id="padding-bottom" type="enum-length" description="The padding on the bottom edge of an element" syntax="auto | a unit" enum="auto"/>
+    <cssmd:property-def id="margin" type="composite" description="The margin around all four edges of an element" syntax="[top unit] [right unit] [bottom unit] [left unit]"/>
+    <cssmd:property-def id="margin-left" type="enum-length" description="The margin on the left edge of an element" syntax="auto | a unit" enum="auto"/>
+    <cssmd:property-def id="margin-right" type="enum-length" description="The margin on the right edge of an element" syntax="auto | a unit" enum="auto"/>
+    <cssmd:property-def id="margin-top" type="enum-length" description="The margin on the top edge of an element" syntax="auto | a unit" enum="auto"/>
+    <cssmd:property-def id="margin-bottom" type="enum-length" description="The margin on the bottom edge of an element" syntax="auto | a unit" enum="auto"/>
+    <cssmd:property-def id="border" type="composite" description="The border around all four edges of an element" syntax="[border-style] [border-width] [border-color]"/>
+    <cssmd:property-def id="border-left" type="composite" description="The border on the left edge of an element" syntax="[border-style] [border-width] [border-color]"/>
+    <cssmd:property-def id="border-right" type="composite" description="The border on the right edge of an element" syntax="[border-style] [border-width] [border-color]"/>
+    <cssmd:property-def id="border-top" type="composite" description="The border on the top edge of an element" syntax="[border-style] [border-width] [border-color]"/>
+    <cssmd:property-def id="border-bottom" type="composite" description="The border on the bottom edge of an element" syntax="[border-style] [border-width] [border-color]"/>
+    <cssmd:property-def id="border-color" type="color" description="The color of the border around all four edges of an element" syntax="#RRGGBB | Named Color" enum="Aqua Black Blue Fuchsia Gray Green Lime Maroon Navy Olive Purple Red Silver Teal White Yellow"/>
+    <cssmd:property-def id="border-style" type="enum" description="The style of the border around all four edges of an element" syntax="One of the border-style values" enum="dashed dotted double groove inset none outset ridge solid window-inset"/>
+    <cssmd:property-def id="border-width" type="enum-length" description="The width of the border around all four edges of an element" syntax="a unit | One of the border-width values" enum="medium thick thin"/>
+    <cssmd:property-def id="border-left-color" type="color" description="The color of the border on the left edge of an element" syntax="#RRGGBB | Named Color" enum="Aqua Black Blue Fuchsia Gray Green Lime Maroon Navy Olive Purple Red Silver Teal White Yellow"/>
+    <cssmd:property-def id="border-left-width" type="enum-length" description="The width of the border on the left edge of an element" syntax="a unit | One of the border-width values" enum="medium thick thin"/>
+    <cssmd:property-def id="border-left-style" type="enum" description="The style of the border on the left edge of an element" syntax="One of the border-style values" enum="dashed dotted double groove inset none outset ridge solid window-inset"/>
+    <cssmd:property-def id="border-right-color" type="color" description="The color of the border on the right edge of an element" syntax="#RRGGBB | Named Color" enum="Aqua Black Blue Fuchsia Gray Green Lime Maroon Navy Olive Purple Red Silver Teal White Yellow"/>
+    <cssmd:property-def id="border-right-width" type="enum-length" description="The width of the border on the right edge of an element" syntax="a unit | One of the border-width values" enum="medium thick thin"/>
+    <cssmd:property-def id="border-right-style" type="enum" description="The style of the border on the right edge of an element" syntax="One of the border-style values" enum="dashed dotted double groove inset none outset ridge solid window-inset"/>
+    <cssmd:property-def id="border-top-color" type="color" description="The color of the border on the top edge of an element" syntax="#RRGGBB | Named Color" enum="Aqua Black Blue Fuchsia Gray Green Lime Maroon Navy Olive Purple Red Silver Teal White Yellow"/>
+    <cssmd:property-def id="border-top-width" type="enum-length" description="The width of the border on the top edge of an element" syntax="a unit | One of the border-width values" enum="medium thick thin"/>
+    <cssmd:property-def id="border-top-style" type="enum" description="The style of the border on the top edge of an element" syntax="One of the border-style values" enum="dashed dotted double groove inset none outset ridge solid window-inset"/>
+    <cssmd:property-def id="border-bottom-color" type="color" description="The color of the border on the bottom edge of an element" syntax="#RRGGBB | Named Color" enum="Aqua Black Blue Fuchsia Gray Green Lime Maroon Navy Olive Purple Red Silver Teal White Yellow"/>
+    <cssmd:property-def id="border-bottom-width" type="enum-length" description="The width of the border on the bottom edge of an element" syntax="a unit | One of the border-width values" enum="medium thick thin"/>
+    <cssmd:property-def id="border-bottom-style" type="enum" description="The style of the border on the bottom edge of an element" syntax="One of the border-style values" enum="dashed dotted double groove inset none outset ridge solid window-inset"/>
+
+    <!-- Lists Properties -->
+    <cssmd:property-def id="list-style" type="composite" description="The bullet characteristics of a list item" syntax="[list-style-type] [list-style-image] [list-style-position]"/>
+    <cssmd:property-def id="list-style-type" type="enum" description="The bullet style of a list item" syntax="One of the list-style-type values" enum="circle decimal disc lower-alpha lower-roman none square upper-alpha upper-roman"/>
+    <cssmd:property-def id="list-style-image" type="url" description="The bullet image of a list item" syntax="none | url([url to bullet image])"/>
+    <cssmd:property-def id="list-style-position" type="enum" description="The bullet position of a list item" syntax="One of the list-style-position values" enum="inside outside"/>
+
+    <!-- Other Properties -->
+    <cssmd:property-def id="cursor" type="enum" description="The cursor over an element" syntax="One of the cursor values" enum="auto crosshair default e-resize hand help move n-resize ne-resize nw-resize s-resize se-resize sw-resize text w-resize wait"/>
+    <cssmd:property-def id="table-layout" type="enum" description="The cell layout mode of a table" syntax="One of the table-layout values" enum="auto fixed"/>
+    <cssmd:property-def id="border-collapse" type="enum" description="The cell border type in a table" syntax="One of the border-collapse values" enum="collapse separate"/>
+    <cssmd:property-def id="behavior" type="url" description="Script attached to an element" syntax="url([url to behavior implementation])"/>
+    <cssmd:property-def id="filter" type="string" description="Visual effects applied to an element" syntax="sequence of visual filters and transitions"/>
+
+    <!-- @font-face Properties -->
+    <cssmd:property-def id="src" type="url" description="Location of the font file" syntax="url([url to font download])"/>
+  </cssmd:property-set>
+</cssmd:cssmd>

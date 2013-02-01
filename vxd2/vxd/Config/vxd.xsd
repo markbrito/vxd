@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/vxd.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="vxd">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="toolbar">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element maxOccurs="unbounded" name="toolbarbutton">
+								<xs:complexType>
+									<xs:attribute name="image" type="xs:string" use="required" />
+									<xs:attribute name="text" type="xs:string" use="required" />
+									<xs:attribute name="command" type="xs:string" use="required" />
+									<xs:attribute name="enabled" type="xs:string" use="required" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="menus">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element maxOccurs="unbounded" name="menu">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element maxOccurs="unbounded" name="menuitem">
+											<xs:complexType>
+												<xs:attribute name="image" type="xs:string" use="required" />
+												<xs:attribute name="text" type="xs:string" use="required" />
+												<xs:attribute name="command" type="xs:string" use="required" />
+												<xs:attribute name="enabled" type="xs:string" use="required" />
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="name" type="xs:string" use="required" />
+									<xs:attribute name="letter" type="xs:string" use="required" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="languages">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element maxOccurs="unbounded" name="language">
+								<xs:complexType>
+									<xs:attribute name="name" type="xs:string" use="required" />
+									<xs:attribute name="language" type="xs:string" use="required" />
+									<xs:attribute name="configfile" type="xs:string" use="required" />
+									<xs:attribute name="enabled" type="xs:string" use="required" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="translators">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element maxOccurs="unbounded" name="translator">
+								<xs:complexType>
+									<xs:attribute name="name" type="xs:string" use="required" />
+									<xs:attribute name="translator" type="xs:string" use="required" />
+									<xs:attribute name="configfile" type="xs:string" use="required" />
+									<xs:attribute name="definitionfile" type="xs:string" use="required" />
+									<xs:attribute name="supportedlanguages" type="xs:string" use="required" />
+									<xs:attribute name="enabled" type="xs:string" use="required" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="platforms">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element maxOccurs="unbounded" name="platform">
+								<xs:complexType>
+									<xs:attribute name="name" type="xs:string" use="required" />
+									<xs:attribute name="configfile" type="xs:string" use="required" />
+									<xs:attribute name="supportedtranslators" type="xs:string" use="required" />
+									<xs:attribute name="defintionfile" type="xs:string" use="required" />
+									<xs:attribute name="platform" type="xs:string" use="required" />
+									<xs:attribute name="enabled" type="xs:string" use="required" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="title" type="xs:string" use="required" />
+			<xs:attribute name="xsize" type="xs:unsignedShort" use="required" />
+			<xs:attribute name="ysize" type="xs:unsignedShort" use="required" />
+			<xs:attribute name="xiconsize" type="xs:unsignedByte" use="required" />
+			<xs:attribute name="yiconsize" type="xs:unsignedByte" use="required" />
+			<xs:attribute name="iconborder" type="xs:unsignedByte" use="required" />
+			<xs:attribute name="xdragsize" type="xs:unsignedByte" use="required" />
+			<xs:attribute name="ydragsize" type="xs:unsignedByte" use="required" />
+			<xs:attribute name="savefiledir" type="xs:string" use="required" />
+			<xs:attribute name="deploymentdir" type="xs:string" use="required" />
+			<xs:attribute name="exitstring" type="xs:string" use="required" />
+			<xs:attribute name="exittitle" type="xs:string" use="required" />
+			<xs:attribute name="splashimage" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

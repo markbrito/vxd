@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>Microsoft.JScript</name>
+	</assembly>
+	<members>
+		<member name="N:Microsoft.JScript">
+			<summary>The <see cref="N:Microsoft.JScript"></see> namespace contains classes that support compilation and code generation using the JScript language.</summary>
+		</member>
+		<member name="T:Microsoft.JScript.JScriptCodeProvider">
+			<summary>Provides access to instances of the JScript code generator and code compiler.</summary>
+		</member>
+		<member name="M:Microsoft.JScript.JScriptCodeProvider.CreateCompiler">
+			<summary>Provides access to instances of the JScript code generator and code compiler.</summary>
+		</member>
+		<member name="M:Microsoft.JScript.JScriptCodeProvider.CreateGenerator">
+			<summary>Provides access to instances of the JScript code generator and code compiler.</summary>
+		</member>
+		<member name="P:Microsoft.JScript.JScriptCodeProvider.FileExtension">
+			<summary>Provides access to instances of the JScript code generator and code compiler.</summary>
+		</member>
+		<member name="T:Microsoft.JScript.Vsa.VsaEngine">
+			<summary>Implements <see cref="T:Microsoft.Vsa.IVsaEngine"></see> interface. </summary>
+		</member>
+		<member name="N:Microsoft.Vsa">
+			<summary>The Microsoft.Vsa namespace contains interfaces that allow you to integrate Script for the.NET Framework script engines into applications, and to compile and execute code at run time.</summary>
+		</member>
+	</members>
+</doc>

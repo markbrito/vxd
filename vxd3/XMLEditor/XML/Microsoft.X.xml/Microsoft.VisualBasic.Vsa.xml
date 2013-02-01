@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>Microsoft.VisualBasic.Vsa</name>
+	</assembly>
+	<members>
+		<member name="M:Microsoft.VisualBasic.Vsa.VsaCodeItem.#ctor(Microsoft.Vsa.IVsaCodeItem)">
+			<param name="item"> </param>
+		</member>
+		<member name="M:Microsoft.VisualBasic.Vsa.VsaCodeItem.AddEventSource(System.String,System.String)">
+			<param name="EventSourceName"> </param>
+			<param name="EventSourceType"> </param>
+		</member>
+		<member name="M:Microsoft.VisualBasic.Vsa.VsaCodeItem.AppendSourceText(System.String)">
+			<param name="Text"> </param>
+		</member>
+		<member name="M:Microsoft.VisualBasic.Vsa.VsaCodeItem.RemoveEventSource(System.String)">
+			<param name="EventSourceName"> </param>
+		</member>
+		<member name="M:Microsoft.VisualBasic.Vsa.VsaEngine.Dispose(System.Boolean)">
+			<param name="disposing"> </param>
+		</member>
+		<member name="M:Microsoft.VisualBasic.Vsa.VsaEngine.GetExceptionToThrow(System.Exception)">
+			<param name="e"> </param>
+		</member>
+		<member name="M:Microsoft.VisualBasic.Vsa.VsaEngine.GetOption(System.String)">
+			<param name="Name"> </param>
+		</member>
+		<member name="M:Microsoft.VisualBasic.Vsa.VsaEngine.IsValidIdentifier(System.String)">
+			<param name="identifier"> </param>
+		</member>
+		<member name="M:Microsoft.VisualBasic.Vsa.VsaEngine.LoadSourceState(Microsoft.Vsa.IVsaPersistSite)">
+			<param name="Site"> </param>
+		</member>
+		<member name="M:Microsoft.VisualBasic.Vsa.VsaEngine.SaveCompiledState(System.Byte[]@,System.Byte[]@)">
+			<param name="PDB"> </param>
+			<param name="PE"> </param>
+		</member>
+		<member name="M:Microsoft.VisualBasic.Vsa.VsaEngine.SaveSourceState(Microsoft.Vsa.IVsaPersistSite)">
+			<param name="Site"> </param>
+		</member>
+		<member name="M:Microsoft.VisualBasic.Vsa.VsaEngine.SetOption(System.String,System.Object)">
+			<param name="Name"> </param>
+			<param name="value"> </param>
+		</member>
+		<member name="M:Microsoft.VisualBasic.Vsa.VsaItem.GetOption(System.String)">
+			<param name="Name"> </param>
+		</member>
+		<member name="M:Microsoft.VisualBasic.Vsa.VsaItem.SetOption(System.String,System.Object)">
+			<param name="Name"> </param>
+			<param name="value"> </param>
+		</member>
+		<member name="M:Microsoft.VisualBasic.Vsa.VsaItems.#ctor(Microsoft.Vsa.IVsaItems)">
+			<param name="items"> </param>
+		</member>
+		<member name="M:Microsoft.VisualBasic.Vsa.VsaItems.AddCodeItemWrapper(Microsoft.Vsa.IVsaItem)">
+			<param name="item"> </param>
+		</member>
+		<member name="M:Microsoft.VisualBasic.Vsa.VsaItems.CreateItem(System.String,Microsoft.Vsa.VsaItemType,Microsoft.Vsa.VsaItemFlag)">
+			<param name="ItemFlag"> </param>
+			<param name="ItemType"> </param>
+			<param name="Name"> </param>
+		</member>
+		<member name="M:Microsoft.VisualBasic.Vsa.VsaItems.GetItemWrapper(Microsoft.Vsa.IVsaItem)">
+			<param name="item"> </param>
+		</member>
+		<member name="M:Microsoft.VisualBasic.Vsa.VsaItems.Remove(System.Int32)">
+			<param name="index"> </param>
+		</member>
+		<member name="M:Microsoft.VisualBasic.Vsa.VsaItems.Remove(System.String)">
+			<param name="Name"> </param>
+		</member>
+		<member name="P:Microsoft.VisualBasic.Vsa.VsaItems.Item(System.Int32)">
+			<param name="index"> </param>
+		</member>
+		<member name="P:Microsoft.VisualBasic.Vsa.VsaItems.Item(System.String)">
+			<param name="Name"> </param>
+		</member>
+	</members>
+</doc>

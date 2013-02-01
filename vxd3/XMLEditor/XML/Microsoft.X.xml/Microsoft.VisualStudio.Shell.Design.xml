@@ -1,0 +1,1541 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>Microsoft.VisualStudio.Shell.Design</name>
+	</assembly>
+	<members>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.AssemblyDeletedEventArgs.#ctor(System.Reflection.Assembly)">
+			<param name="assembly"> </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.AssemblyDeletedEventArgs.#ctor(System.Reflection.Assembly,System.Type[])">
+			<param name="types"> </param>
+			<param name="assembly"> </param>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.AssemblyDeletedEventHandler" />
+		<member name="T:Microsoft.VisualStudio.Shell.Design.AssemblyObsoleteEventArgs">
+			<summary>Represents an argument class for the <see cref="E:Microsoft.VisualStudio.Shell.Design.DynamicTypeService.AssemblyObsolete"></see> event. This class cannot be inherited.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.AssemblyObsoleteEventArgs.#ctor(System.Reflection.Assembly)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.VisualStudio.Shell.Design.AssemblyObsoleteEventArgs"></see> class.</summary>
+			<param name="assembly">A dynamic assembly that may have changed.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.AssemblyObsoleteEventArgs.#ctor(System.Reflection.Assembly,System.Type[])">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.VisualStudio.Shell.Design.AssemblyObsoleteEventArgs"></see> class.</summary>
+			<param name="types">An array of <see cref="T:System.Type"></see> containing objects for all the types defined in this assembly.</param>
+			<param name="assembly">A dynamic assembly that may have changed.</param>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.AssemblyObsoleteEventArgs.ObsoleteAssembly">
+			<summary>Gets the <see cref="T:System.Reflection.Assembly"></see> that has become obsolete.</summary>
+			<returns>An <see cref="T:System.Reflection.Assembly"></see> that has become obsolete.</returns>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.AssemblyObsoleteEventArgs.ObsoleteTypes">
+			<summary>Gets the <see cref="T:System.Reflection.Assembly"></see> that has become obsolete.</summary>
+			<returns>An array of <see cref="T:System.Type"></see> containing obsolete types.</returns>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.AssemblyObsoleteEventHandler">
+			<summary>An event that gets raised when an assembly has become obsolete. This delegate cannot be inherited.</summary>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.AssemblyRefreshedEventArgs">
+			<summary>An event that gets raised when an assembly has become obsolete.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.AssemblyRefreshedEventArgs.#ctor(System.Reflection.Assembly)">
+			<summary>Initializes a new instance of the class.</summary>
+			<param name="assembly">The assembly that has become obsolete.</param>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.AssemblyRefreshedEventHandler">
+			<summary>A delegate that passes along the event that an assembly has become obsolete.</summary>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.AttributeScope">
+			<summary>Specifies the scope of an attribute.</summary>
+		</member>
+		<member name="F:Microsoft.VisualStudio.Shell.Design.AttributeScope.File">
+			<summary>File scope.</summary>
+		</member>
+		<member name="F:Microsoft.VisualStudio.Shell.Design.AttributeScope.Global">
+			<summary>Global scope.</summary>
+		</member>
+		<member name="F:Microsoft.VisualStudio.Shell.Design.AttributeScope.Language">
+			<summary>Language scope.</summary>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.DesignerWindowPane">
+			<summary>This class inherits from <see cref="T:Microsoft.VisualStudio.Shell.WindowPane"></see> and extends it to provide designer features.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DesignerWindowPane.#ctor(System.ComponentModel.Design.DesignSurface)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.VisualStudio.Shell.Design.DesignerWindowPane"></see> class.</summary>
+			<param name="surface">The design surface to create the window pane for.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DesignerWindowPane.AddDefaultServices">
+			<summary>Adds the default services the window pane provides.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DesignerWindowPane.Dispose(System.Boolean)">
+			<summary>Disposes the design surface.</summary>
+			<param name="Disposing">true if <see cref="T:Microsoft.VisualStudio.Shell.Design.DesignerWindowPane"></see> is being disposed.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DesignerWindowPane.GetAutomationObject(System.String)">
+			<summary>Returns the automation object for this window pane.</summary>
+			<returns>An <see cref="T:System.Object"></see> for the given name, or null.</returns>
+			<param name="propName">The name of the automation object. This can be null or an empty string.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DesignerWindowPane.GetService(System.Type)">
+			<summary>Gets the service object of the specified type.</summary>
+			<returns>A service object of type serviceType.-or-A null reference if there is no service object of type serviceType.</returns>
+			<param name="serviceType">An <see cref="T:System.Type"></see> that specifies the type of service object to get.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DesignerWindowPane.GetToolboxItemSupported(Microsoft.VisualStudio.OLE.Interop.IDataObject)">
+			<summary>Returns true if the given data object is supported by the designer.</summary>
+			<returns>true if the data object represents a supported toolbox item.</returns>
+			<param name="toolboxItem">A COM data object representing the data object.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DesignerWindowPane.Microsoft.VisualStudio.Shell.Interop.IVsBatchUpdate.FlushPendingUpdates(System.UInt32)">
+			<summary>This method is called when Visual Studio wants the window pane to flush its state to the underlying buffer.</summary>
+			<returns><see cref="F:Microsoft.VisualStudio.VSConstants.S_OK"></see> if successful.</returns>
+			<param name="reserved">Reserved for the future use.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DesignerWindowPane.Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject.GetAutomationObject(System.String,System.Object@)">
+			<summary>Returns the automation object for this window pane.</summary>
+			<returns><see cref="F:Microsoft.VisualStudio.VSConstants.S_OK"></see> if successful.</returns>
+			<param name="propName">The name of the automation object. This can be null or an empty string.</param>
+			<param name="extObj">An <see cref="T:System.Object"></see> for the given name.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DesignerWindowPane.Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser.IsSupported(Microsoft.VisualStudio.OLE.Interop.IDataObject)">
+			<summary>Determines whether the <see cref="F:System.ComponentModel.Design.StandardToolWindows.Toolbox"></see> user supports the referenced data object.</summary>
+			<returns>If the method succeeds, it returns <see cref="F:Microsoft.VisualStudio.VSConstants.S_OK"></see>. If it fails, it returns an error code.</returns>
+			<param name="dataObject">Data object to be supported.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DesignerWindowPane.Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser.ItemPicked(Microsoft.VisualStudio.OLE.Interop.IDataObject)">
+			<summary>Sends notification that an item in the <see cref="F:System.ComponentModel.Design.StandardToolWindows.Toolbox"></see> is selected through a click, or by pressing ENTER.</summary>
+			<returns>If the method succeeds, it returns <see cref="F:Microsoft.VisualStudio.VSConstants.S_OK"></see>. If it fails, it returns an error code.</returns>
+			<param name="dataObject">Data object that is selected.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DesignerWindowPane.Microsoft.VisualStudio.Shell.Interop.IVsWindowFrameNotify.OnDockableChange(System.Int32)">
+			<summary>Notifies the <see cref="T:Microsoft.VisualStudio.Shell.Package"></see> that a window's docked state is being altered.</summary>
+			<returns>If the method succeeds, it returns <see cref="F:Microsoft.VisualStudio.VSConstants.S_OK"></see>. If it fails, it returns an error code.</returns>
+			<param name="fDockable">Value indicating if the window frame is being docked.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DesignerWindowPane.Microsoft.VisualStudio.Shell.Interop.IVsWindowFrameNotify.OnMove">
+			<summary>Notifies the <see cref="T:Microsoft.VisualStudio.Shell.Package"></see> that a window is being moved.</summary>
+			<returns>If the method succeeds, it returns <see cref="F:Microsoft.VisualStudio.VSConstants.S_OK"></see>. If it fails, it returns an error code.</returns>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DesignerWindowPane.Microsoft.VisualStudio.Shell.Interop.IVsWindowFrameNotify.OnShow(System.Int32)">
+			<summary>Notifies the <see cref="T:Microsoft.VisualStudio.Shell.Package"></see> of a change in the window's display state.</summary>
+			<returns>If the method succeeds, it returns <see cref="F:Microsoft.VisualStudio.VSConstants.S_OK"></see>. If it fails, it returns an error code.</returns>
+			<param name="fShow">Specifies the reason for the display state change.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DesignerWindowPane.Microsoft.VisualStudio.Shell.Interop.IVsWindowFrameNotify.OnSize">
+			<summary>Notifies the <see cref="T:Microsoft.VisualStudio.Shell.Package"></see> that a window is being resized.</summary>
+			<returns>If the method succeeds, it returns <see cref="F:Microsoft.VisualStudio.VSConstants.S_OK"></see>. If it fails, it returns an error code.</returns>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DesignerWindowPane.OnClose">
+			<summary>Is called in response to the <see cref="M:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane.ClosePane"></see> method on the <see cref="T:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane"></see> interface.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DesignerWindowPane.OnFlush">
+			<summary>This method is called when Visual Studio wants the window pane to flush its state to the underlying buffer.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DesignerWindowPane.OnToolboxItemPicked(Microsoft.VisualStudio.OLE.Interop.IDataObject)">
+			<summary>Is called when the user double clicks or presses enter on a toolbox item on the Visual Studio toolbox.</summary>
+			<returns>true if the toolbox item was used by a designer.</returns>
+			<param name="toolboxItem">A COM data object representing the data object.</param>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.DesignerWindowPane.CommandGuid">
+			<summary>Gets the command UI <see cref="T:System.Guid"></see> associated with this window pane.</summary>
+			<returns>A <see cref="T:System.Guid"></see> associated with this window pane.</returns>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.DesignerWindowPane.EditorView">
+			<summary>Gets the editor view for this window pane.</summary>
+			<returns>An <see cref="T:System.Object"></see> associated with this window pane editor view.</returns>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.DesignerWindowPane.Surface">
+			<summary>Gets the design surface.</summary>
+			<returns>A <see cref="T:System.ComponentModel.Design.DesignSurface"></see> that was passed into the <see cref="M:Microsoft.VisualStudio.Shell.Design.DesignerWindowPane.#ctor(System.ComponentModel.Design.DesignSurface)"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension">
+			<summary>The base class for any object provided by a VSPackage to be called by the Visual Studio environment upon designer creation to customize or extend services and metadata provided by any implementation of <see cref="T:System.ComponentModel.Design.DesignSurface"></see>.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.#ctor">
+			<summary>Create a new instance of the <see cref="T:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.Initialize(System.ComponentModel.Design.DesignSurface)">
+			<summary>Initializes the design surface extension.</summary>
+			<param name="surface">The design surface that is being created.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnComponentCreated(System.ComponentModel.IComponent)">
+			<summary>This method is called when a new component is created but before that component is added to the designer.</summary>
+			<param name="component">The component that has been created.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnDesignerCreated(System.ComponentModel.Design.IDesigner)">
+			<summary>This method is called when a new designer is created.</summary>
+			<param name="designer">The designer that has been created.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnDesignerCreated(System.ComponentModel.IComponent,System.ComponentModel.Design.IDesigner,System.Boolean)">
+			<summary>This method is called when a new designer is created.</summary>
+			<param name="rootDesigner">The root designer.</param>
+			<param name="designer">The designer that has been created.</param>
+			<param name="component">The component that has been created.</param>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.Surface">
+			<summary>Gets the design surface this extension was initialized with.</summary>
+			<returns>The <see cref="T:System.ComponentModel.Design.DesignSurface"></see> this extension was initialized with, or null of the extension has been disposed.</returns>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute">
+			<summary>Notifies the Visual Studio environment that a VSPackage provides a <see cref="T:System.Type"></see> implementing a service to customize or extend services provided by any implementation of <see cref="T:System.ComponentModel.Design.DesignSurface"></see> at designer load time.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute.#ctor(System.Type)">
+			<summary>Creates a new instance of the <see cref="T:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute"></see> class specifying a given object as providing a VSPackage's implementation of <see cref="T:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension"></see>.</summary>
+			<param name="extensionType">The <see cref="T:System.Type"></see> of the object providing an implementation of <see cref="T:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension"></see> to customize design surfaces.</param>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute.ExtensionType">
+			<summary>The <see cref="T:System.Type"></see> of the object registered as providing a VSPackage with an implementation of <see cref="T:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension"></see> to customize design surfaces.</summary>
+			<returns>The <see cref="T:System.Type"></see> of the <see cref="T:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension"></see> implementation provided by the <see cref="T:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute.LoadAtIdle">
+			<summary>Controls when, relative to the loading of a designer used by a VSPackage, the extensions provided by the implementation of the <see cref="T:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute"></see> registered by <see cref="T:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute"></see> are installed.</summary>
+			<returns>A Boolean value is returned:trueThe object providing design surface modifications by implementing <see cref="T:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension"></see> will be instantiated and initialized only during the idle period after the designer used by the VSPackage has finished loading.falseThe object providing design surface modifications by implementing <see cref="T:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension"></see> will be instantiated and initialized when a designer starts up.</returns>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DynamicTypeService.CreateDynamicAssembly(System.String)">
+			<param name="fileName"> </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DynamicTypeService.GetContextTypeResolver(Microsoft.VisualStudio.Shell.Interop.IVsHierarchy)">
+			<param name="hierarchy"> </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DynamicTypeService.GetContextTypeResolver(Microsoft.VisualStudio.Shell.Interop.IVsHierarchy,System.UInt32)">
+			<param name="itemid"> </param>
+			<param name="hierarchy"> </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DynamicTypeService.GetTypeDiscoveryService(Microsoft.VisualStudio.Shell.Interop.IVsHierarchy)">
+			<param name="hierarchy"> </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DynamicTypeService.GetTypeDiscoveryService(Microsoft.VisualStudio.Shell.Interop.IVsHierarchy,System.UInt32)">
+			<param name="itemid"> </param>
+			<param name="hierarchy"> </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DynamicTypeService.GetTypeResolutionService(Microsoft.VisualStudio.Shell.Interop.IVsHierarchy)">
+			<param name="hierarchy"> </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DynamicTypeService.GetTypeResolutionService(Microsoft.VisualStudio.Shell.Interop.IVsHierarchy,System.UInt32)">
+			<param name="itemid"> </param>
+			<param name="hierarchy"> </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DynamicTypeService.IsDynamicAssembly(System.Reflection.AssemblyName)">
+			<param name="name"> </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DynamicTypeService.OnAssemblyDeleted(Microsoft.VisualStudio.Shell.Design.AssemblyDeletedEventArgs)">
+			<param name="e"> </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DynamicTypeService.OnAssemblyObsolete(Microsoft.VisualStudio.Shell.Design.AssemblyObsoleteEventArgs)">
+			<param name="e"> </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DynamicTypeService.OnAssemblyRefreshed(Microsoft.VisualStudio.Shell.Design.AssemblyRefreshedEventArgs)">
+			<param name="e"> </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DynamicTypeService.OnTypeObsolete(Microsoft.VisualStudio.Shell.Design.TypeObsoleteEventArgs)">
+			<param name="e"> </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.DynamicTypeService.ContextTypeResolver.#ctor(System.ComponentModel.Design.ITypeResolutionService)">
+			<param name="resolver"> </param>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.GlobalObject">
+			<summary>Provides the base class for types whose instances are accessible for each project.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObject.#ctor(System.Type,System.String)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.VisualStudio.Shell.Design.GlobalObject"></see> class.</summary>
+			<param name="objectType">The <see cref="T:System.Type"></see> of the global object.</param>
+			<param name="objectName">A <see cref="T:System.String"></see> containing the name of the global object.</param>
+		</member>
+		<member name="E:Microsoft.VisualStudio.Shell.Design.GlobalObject.Created">
+			<summary>Occurs when an instance of the global object is created.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObject.ClearInstance">
+			<summary>Clears the <see cref="P:Microsoft.VisualStudio.Shell.Design.GlobalObject.Instance"></see> property.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObject.CreateInstance">
+			<summary>Creates a cached instance of the global object.</summary>
+			<returns>An <see cref="T:System.Object"></see> that represents an instance of the global object class.</returns>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObject.Equals(System.Object)">
+			<summary>Checks if the specified object is equal to the current global object.</summary>
+			<returns>true if the two objects are equal; otherwise, false.</returns>
+			<param name="o">The object to compare with this <see cref="T:Microsoft.VisualStudio.Shell.Design.GlobalObject"></see>.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObject.GetHashCode">
+			<summary>Returns the hash code for the current global object.</summary>
+			<returns>An <see cref="T:System.Int32"></see> that specifies a hash value for the current global object.</returns>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObject.GetSerializer(System.Type)">
+			<summary>Returns the checked serializer of the specified type for the global object.</summary>
+			<returns>A serializer of the specified type if supported; otherwise, null.</returns>
+			<param name="serializerType">The type of serializer to retrieve.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObject.GetSerializerCore(System.Type)">
+			<summary>Returns a serializer of the specified type for the global object.</summary>
+			<returns>A serializer of the specified type if supported; otherwise, null.</returns>
+			<param name="serializerType">The type of serializer to retrieve.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObject.OnCreated(System.EventArgs)">
+			<summary>Raises the <see cref="E:Microsoft.VisualStudio.Shell.Design.GlobalObject.Created"></see> event. </summary>
+			<param name="e">An <see cref="T:System.EventArgs"></see> that contains the event data.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObject.PerformChange">
+			<summary>Reinitializes the global object and notifies users to changes to its state or shape.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObject.PerformRemove">
+			<summary>Clears the global object and notifies users of its removal.</summary>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.GlobalObject.Instance">
+			<summary>Gets an on-demand created instance of the global object.</summary>
+			<returns>An <see cref="T:System.Object"></see> that represents an instance of the global object class.</returns>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.GlobalObject.Name">
+			<summary>Gets the recommended name of the global object.</summary>
+			<returns>A <see cref="T:System.String"></see> that contains the recommended name of the global object.</returns>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection">
+			<summary>A strongly typed collection of global objects. The collection can be read-write or read-only. A read-write collection can be cheaply passed to the constructor of GlobalObjectCollection to make a read only version without copying the collection.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection.#ctor">
+			<summary>Creates a strongly-typed collection of global objects.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection.#ctor(Microsoft.VisualStudio.Shell.Design.GlobalObject[])">
+			<summary>Creates a strongly-typed collection of global objects initially populated by the array items.</summary>
+			<param name="items">An array of objects to initially populate the collection.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection.#ctor(Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection)">
+			<summary>Creates a strongly-typed collection of global objects initially populated by the array items.</summary>
+			<param name="items">A collection of objects to initially populate the collection.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection.#ctor(Microsoft.VisualStudio.Shell.Design.GlobalObject[],System.Boolean)">
+			<summary>Creates a strongly-typed collection of global objects initially populated by the array items.</summary>
+			<param name="items">An array of objects to initially populate the collection.</param>
+			<param name="readOnly">If readOnly is passed as true, the collection cannot be modified. The default value for readOnly if not passed is false.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection.#ctor(Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection,System.Boolean)">
+			<param name="items">A collection of objects to initially populate the collection.</param>
+			<param name="readOnly">If readOnly is passed as true, the collection cannot be modified. The default value for readOnly if not passed is false.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection.Add(Microsoft.VisualStudio.Shell.Design.GlobalObject)">
+			<summary>Adds a new item to the collection.</summary>
+			<param name="item">An object to be appended to the end of the collection.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection.AddRange(Microsoft.VisualStudio.Shell.Design.GlobalObject[])">
+			<summary>Append each object contained in an array to the end of the collection.</summary>
+			<param name="items">An array of objects to be appended to the collection.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection.AddRange(Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection)">
+			<summary>Append each object contained in a collection to the end of the collection.</summary>
+			<param name="items">A collection of objects to be appended to the collection.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection.Clear">
+			<summary>Clears the contents of this collection.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection.Contains(Microsoft.VisualStudio.Shell.Design.GlobalObject)">
+			<summary>Returns true if this collection contains the given item.</summary>
+			<param name="item">An object that will have its collection membership verified.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection.CopyTo(Microsoft.VisualStudio.Shell.Design.GlobalObject[],System.Int32)">
+			<summary>Copies the contents of this collection to the given array starting at the given index.</summary>
+			<param name="array">A destination for copied objects.</param>
+			<param name="index">An offset in the collection to begin copying from.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection.IndexOf(Microsoft.VisualStudio.Shell.Design.GlobalObject)">
+			<summary>Return the offset of an object in the collection.</summary>
+			<param name="item">An item that should have its offset retrieved.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection.Insert(System.Int32,Microsoft.VisualStudio.Shell.Design.GlobalObject)">
+			<summary>Inserts a new item into the collection at the given index.</summary>
+			<param name="item">The item to be inserted.</param>
+			<param name="index">The offset in the collection where the item should be inserted.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection.Remove(Microsoft.VisualStudio.Shell.Design.GlobalObject)">
+			<summary>Removes an object from the collection.</summary>
+			<param name="item">The object to be removed from the collection.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection.RemoveAt(System.Int32)">
+			<summary>Removes an object from the collection that is at a specific offset.</summary>
+			<param name="index">The offset of the item in the collection.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection.System.Collections.ICollection.CopyTo(System.Array,System.Int32)">
+			<summary>Copies the contents of this collection to the given array starting at the given index.</summary>
+			<param name="array">The destination for the copied items.</param>
+			<param name="index">The offset in the collection to begin copying from.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection.System.Collections.IList.Add(System.Object)">
+			<summary>Adds an object to the collection.</summary>
+			<param name="item">The object to be added.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection.System.Collections.IList.Contains(System.Object)">
+			<summary>Returns true if an object is contained in the collection.</summary>
+			<param name="item">An item to verify the collection membership of.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection.System.Collections.IList.IndexOf(System.Object)">
+			<summary>Returns the collection offset of an object.</summary>
+			<param name="item">The item to determine the collection offset of.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection.System.Collections.IList.Insert(System.Int32,System.Object)">
+			<summary>Puts an item in a collection at an offset.</summary>
+			<param name="item">The object to be placed in the collection.</param>
+			<param name="index">The collection offset where the item should be placed.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection.System.Collections.IList.Remove(System.Object)">
+			<summary>Removes an object from the collection.</summary>
+			<param name="item">The object to be removed.</param>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection.Item(System.Int32)">
+			<summary>Returns the value at the given index.</summary>
+			<param name="index">The offset of the requested item in the collection.</param>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.GlobalObjectDescriptionAttribute">
+			<summary>This attribute allows global object providers to tag the global object instances they provide with any additional metadata. </summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectDescriptionAttribute.#ctor(Microsoft.VisualStudio.Shell.Design.GlobalObject)">
+			<summary>Creates a new instance of GlobalObjectDescriptionAttribute initializing the value of globalObject.</summary>
+			<param name="globalObject">A backpointer to the owning global object.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectDescriptionAttribute.#ctor(Microsoft.VisualStudio.Shell.Design.GlobalObject,System.Collections.IDictionary)">
+			<summary>Creates a new instance of GlobalObjectDescriptionAttribute initializing both the values globalObject and customData.</summary>
+			<param name="customData">A hash table to store an undefined amount of custom data.</param>
+			<param name="globalObject">A backpointer to the owning global object.</param>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.GlobalObjectProvider">
+			<summary>Provides a base class for accessing one or more global object types. </summary>
+		</member>
+		<member name="E:Microsoft.VisualStudio.Shell.Design.GlobalObjectProvider.CollectionChanged">
+			<summary>Occurs when there is a change to the collection of global object or global types.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectProvider.Dispose">
+			<summary>Disposes this global object provider.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectProvider.Dispose(System.Boolean)">
+			<param name="disposing"> </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectProvider.GetGlobalObjects(EnvDTE.Project)">
+			<summary>Returns a collection of global objects for the specified project. </summary>
+			<returns>A <see cref="T:Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection"></see> containing the global objects for the specified project.</returns>
+			<param name="project">The <see cref="T:EnvDTE.Project"></see> to obtain global objects from.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectProvider.GetGlobalObjects(EnvDTE.Project,System.Type)">
+			<summary>Returns a collection of global objects for the specified project that match the specified type.</summary>
+			<returns>A <see cref="T:Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection"></see> containing the global objects of the specified <see cref="T:System.Type"></see> for the specified project.</returns>
+			<param name="baseType">The <see cref="T:System.Type"></see> of the <see cref="T:Microsoft.VisualStudio.Shell.Design.GlobalObject"></see> to filter on. Can be null to indicate no filtering.</param>
+			<param name="project">The <see cref="T:EnvDTE.Project"></see> to obtain global objects from. </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectProvider.GetGlobalObjectsCore(EnvDTE.Project,System.Type)">
+			<summary>When overridden in a derived class, returns a collection of global objects for the specified project that match the specified type.</summary>
+			<returns>A <see cref="T:Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection"></see> containing the global objects of the specified <see cref="T:System.Type"></see> for the specified project.</returns>
+			<param name="baseType">The <see cref="T:System.Type"></see> of the <see cref="T:Microsoft.VisualStudio.Shell.Design.GlobalObject"></see> to filter on. Can be null to indicate no filtering.</param>
+			<param name="project">The <see cref="T:EnvDTE.Project"></see> to obtain global objects from. </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectProvider.GetGlobalTypes(EnvDTE.Project)">
+			<summary>Returns a collection of global types for the specified project that match the specified type.</summary>
+			<returns>A <see cref="T:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection"></see> containing the global types for the specified project.</returns>
+			<param name="project">The <see cref="T:EnvDTE.Project"></see>  to obtain global types from. </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectProvider.GetGlobalTypesCore(EnvDTE.Project)">
+			<summary>Returns a collection of global types for the specified project that match the specified type. </summary>
+			<returns>A <see cref="T:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection"></see> containing the global types for the specified project.</returns>
+			<param name="project">The <see cref="T:EnvDTE.Project"></see> to obtain global types from. </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectProvider.GetService(System.Type)">
+			<summary>Returns an instance of the requested service.</summary>
+			<returns>An <see cref="T:System.Object"></see> that represents an instance of the requested service; otherwise, null if no such service exists.</returns>
+			<param name="serviceType">The <see cref="T:System.Type"></see> of service to retrieve </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectProvider.Microsoft.VisualStudio.OLE.Interop.IObjectWithSite.GetSite(System.Guid@,System.IntPtr@)">
+			<summary>Queries the site for a pointer to the interface identified by the specified Component Object Model (COM) interface's globally unique identifier (GUID), which is called reference interface identifier (REFIID).</summary>
+			<param name="ppv">The retrieved <see cref="T:System.IntPtr"></see> to the request COM interface. </param>
+			<param name="riid">The <see cref="T:System.Guid"></see> of the requested COM interface.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectProvider.Microsoft.VisualStudio.OLE.Interop.IObjectWithSite.SetSite(System.Object)">
+			<summary>Sets the internal <see cref="T:System.IserviceProvider"></see>. </summary>
+			<param name="site">The <see cref="T:System.Object"></see> to be used as a site provider.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectProvider.OnCollectionChanged(System.EventArgs)">
+			<summary>Raises the <see cref="E:Microsoft.VisualStudio.Shell.Design.GlobalObjectProvider.CollectionChanged"></see> event. </summary>
+			<param name="e">An <see cref="T:System.EventArgs"></see> that contains the event data. </param>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.GlobalObjectProviderFactory">
+			<summary>Provides a base class for enumerating global object providers.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectProviderFactory.#ctor">
+			<summary>Initializes an instance of the <see cref="T:Microsoft.VisualStudio.Shell.Design.GlobalObjectProviderFactory"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectProviderFactory.GetProviders">
+			<summary>Returns an array of all the currently available global object providers.</summary>
+			<returns>An array containing instances of the currently available <see cref="T:Microsoft.VisualStudio.Shell.Design.GlobalObjectProvider"></see> instances.</returns>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.GlobalObjectService">
+			<summary>Maintains the current table of global object providers. This class cannot be inherited.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectService.#ctor(System.IServiceProvider,EnvDTE.Project,System.Type)">
+			<summary>Initializes an new instance of the <see cref="T:Microsoft.VisualStudio.Shell.Design.GlobalObjectService"></see> class</summary>
+			<param name="project">The <see cref="T:EnvDTE.Project"></see> associated with this global object service.</param>
+			<param name="provider">The <see cref="T:System.IServiceProvider"></see> that will be used to obtain other services.</param>
+			<param name="serializerType">The serializer <see cref="T:System.Type"></see> supported by the current designer loader.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectService.GetGlobalObjects">
+			<summary>Returns a collection of all the currently available global objects.</summary>
+			<returns>A <see cref="T:Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection"></see> containing the currently available global objects.</returns>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectService.GetGlobalObjects(System.Type)">
+			<summary>Returns a collection of currently available global objects that are of the specified type.</summary>
+			<returns>A <see cref="T:Microsoft.VisualStudio.Shell.Design.GlobalObjectCollection"></see> containing the currently available global objects.</returns>
+			<param name="baseType">The <see cref="T:System.Type"></see> of the <see cref="T:Microsoft.VisualStudio.Shell.Design.GlobalObject"></see> to filter on.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectService.GetGlobalTypes">
+			<summary>Returns a collection of currently available global types.</summary>
+			<returns>A <see cref="T:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection"></see> containing the currently available global types.</returns>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalObjectService.System.IDisposable.Dispose">
+			<summary>Disposes <see cref="T:Microsoft.VisualStudio.Shell.Design.GlobalObjectService"></see>.</summary>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.GlobalType">
+			<summary>Provides the base class for types that are defined in the project or generated from code.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalType.#ctor(System.Type)">
+			<summary>Initializes an instance of <see cref="T:Microsoft.VisualStudio.Shell.Design.GlobalType"></see>.</summary>
+			<param name="objectType">The <see cref="T:System.Type"></see> of the global type.</param>
+		</member>
+		<member name="E:Microsoft.VisualStudio.Shell.Design.GlobalType.Changed">
+			<summary>Occurs after the current global type is modified.</summary>
+		</member>
+		<member name="E:Microsoft.VisualStudio.Shell.Design.GlobalType.Changing">
+			<summary>Occurs before the current global type is modified.</summary>
+		</member>
+		<member name="E:Microsoft.VisualStudio.Shell.Design.GlobalType.Removed">
+			<summary>Occurs after the current global type is removed from use.</summary>
+		</member>
+		<member name="E:Microsoft.VisualStudio.Shell.Design.GlobalType.Removing">
+			<summary>Occurs before the current global type is removed from use.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalType.ClearObjectType">
+			<summary>Clears the <see cref="P:Microsoft.VisualStudio.Shell.Design.GlobalType.ObjectType"></see> property. </summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalType.Equals(System.Object)">
+			<summary>Checks if the specified object is equal to the current global type.</summary>
+			<returns>true if the two objects are equal; otherwise, false.</returns>
+			<param name="o">The object to compare with this <see cref="T:Microsoft.VisualStudio.Shell.Design.GlobalType"></see>.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalType.GetHashCode">
+			<summary>Returns the hash code for the current global type.</summary>
+			<returns>An <see cref="T:System.Int32"></see> that specifies a hash value for the current global type.</returns>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalType.GetObjectType">
+			<summary>Returns the type of this global type.</summary>
+			<returns>The <see cref="T:System.Type"></see> of the <see cref="T:Microsoft.VisualStudio.Shell.Design.GlobalType"></see> instance.</returns>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalType.OnChanged(System.EventArgs)">
+			<summary>Raises the <see cref="E:Microsoft.VisualStudio.Shell.Design.GlobalType.Changed"></see> event.</summary>
+			<param name="e">An <see cref="T:System.EventArgs"></see> that contains the event data. </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalType.OnChanging(System.EventArgs)">
+			<summary>Raises the <see cref="E:Microsoft.VisualStudio.Shell.Design.GlobalType.Changing"></see> event.</summary>
+			<param name="e">An <see cref="T:System.EventArgs"></see> that contains the event data. </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalType.OnRemoved(System.EventArgs)">
+			<summary>Raises the <see cref="E:Microsoft.VisualStudio.Shell.Design.GlobalType.Removed"></see> event.</summary>
+			<param name="e">An <see cref="T:System.EventArgs"></see> that contains the event data.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalType.OnRemoving(System.EventArgs)">
+			<summary>Raises the <see cref="E:Microsoft.VisualStudio.Shell.Design.GlobalType.Removing"></see> event.</summary>
+			<param name="e">An <see cref="T:System.EventArgs"></see> that contains the event data.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalType.PerformChange">
+			<summary>Reinitializes the global type and notifies users to changes to its shape.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalType.PerformRemove">
+			<summary>Clears the global type and notifies users of its removal.</summary>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.GlobalType.ObjectType">
+			<summary>Gets the checked type of this global type.</summary>
+			<returns>The <see cref="T:System.Type"></see> of the <see cref="T:Microsoft.VisualStudio.Shell.Design.GlobalType"></see> instance.</returns>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection">
+			<summary>A strongly typed collection of global types.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection.#ctor">
+			<summary>Creates a strongly-typed collection of global objects.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection.#ctor(Microsoft.VisualStudio.Shell.Design.GlobalType[])">
+			<summary>Creates a strongly-typed collection of global objects.</summary>
+			<param name="items">The objects added to the collection in this overloaded constructor.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection.#ctor(Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection)">
+			<summary>Creates a strongly-typed collection of global objects.</summary>
+			<param name="items">The objects added to the collection in this overloaded constructor.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection.#ctor(Microsoft.VisualStudio.Shell.Design.GlobalType[],System.Boolean)">
+			<summary>Creates a strongly-typed collection of global objects.</summary>
+			<param name="items">The objects added to the collection in this overloaded constructor.</param>
+			<param name="readOnly">Indicates whether or not the collection may be subsequently modified.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection.#ctor(Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection,System.Boolean)">
+			<summary>Creates a strongly-typed collection of global objects.</summary>
+			<param name="items">The objects added to the collection in this overloaded constructor.</param>
+			<param name="readOnly">Indicates whether or not the collection may be subsequently modified.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection.Add(Microsoft.VisualStudio.Shell.Design.GlobalType)">
+			<summary>Adds a new item to the collection.</summary>
+			<param name="item">The object to be added to the collection.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection.AddRange(Microsoft.VisualStudio.Shell.Design.GlobalType[])">
+			<summary>Adds a range of items to the collection.</summary>
+			<param name="items">The objects to be added to the collection.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection.AddRange(Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection)">
+			<summary>Adds a range of items to the collection.</summary>
+			<param name="items">The objects to be added to the collection.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection.Clear">
+			<summary>Clears the contents of this collection.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection.Contains(Microsoft.VisualStudio.Shell.Design.GlobalType)">
+			<summary>Tests for membership of an item in a collection.</summary>
+			<returns>Returns true if this collection contains the given item, otherwise returns false.</returns>
+			<param name="item">The item that is having its membership in the collection tested.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection.CopyTo(Microsoft.VisualStudio.Shell.Design.GlobalType[],System.Int32)">
+			<summary>Copies the contents of this collection to the given array starting at the given index.</summary>
+			<param name="array">The destination array.</param>
+			<param name="index">The starting point to begin copying in this collection.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection.IndexOf(Microsoft.VisualStudio.Shell.Design.GlobalType)">
+			<summary>Transverses GlobalTypeCollection to find the offset of an item.</summary>
+			<returns>Returns the index of an item in GlobalTypeCollection.</returns>
+			<param name="item">The object in the collection that has its offset retrieved by this method.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection.Insert(System.Int32,Microsoft.VisualStudio.Shell.Design.GlobalType)">
+			<summary>Inserts an item into the underlying list at index.</summary>
+			<param name="item">The object to be inserted into the collection.</param>
+			<param name="index">The offset where the item should be placed.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection.Remove(Microsoft.VisualStudio.Shell.Design.GlobalType)">
+			<summary>Remove an item from the collection.</summary>
+			<param name="item">The object inside a collection that should be removed.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection.RemoveAt(System.Int32)">
+			<summary>Removes the item at the given index.</summary>
+			<param name="index">The offset within the collection of the item to be removed.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection.System.Collections.ICollection.CopyTo(System.Array,System.Int32)">
+			<summary>Copies objects to an array starting at offset index.</summary>
+			<param name="array">The destination that objects should be copied to.</param>
+			<param name="index">The location in the collection to start copying from.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection.System.Collections.IList.Add(System.Object)">
+			<summary>Add an object to the collection.</summary>
+			<param name="item">The object to be added to the collection.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection.System.Collections.IList.Contains(System.Object)">
+			<summary>Tests for object membership in the underlying collection.</summary>
+			<returns>Returns true if the object can be found in the collection, otherwise returns false.</returns>
+			<param name="item">The object that is being tested for membership in the underlying collection.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection.System.Collections.IList.IndexOf(System.Object)">
+			<summary>Returns the offset of an object in the collection.</summary>
+			<param name="item">The object to find the offset of in the collection.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection.System.Collections.IList.Insert(System.Int32,System.Object)">
+			<summary>Places an object in the underlying collection at an offset.</summary>
+			<param name="item">The object to be placed in the collection.</param>
+			<param name="index">The offset within the collection for the object to be placed.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection.System.Collections.IList.Remove(System.Object)">
+			<summary>Removes an object from the collection.</summary>
+			<param name="item">The object to be removed.</param>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection.IsFixedSize">
+			<summary>Returns whether or not this collection's size can be changed.</summary>
+			<returns>Returns true if this collection's size cannot be changed, otherwise returns false.</returns>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection.IsReadOnly">
+			<summary>Returns collection's read only state.</summary>
+			<returns>Returns true if this collection is read only, otherwise returns false.</returns>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection.IsSynchronized">
+			<summary>Returns true if this collection is synchronized for multi-threaded access.</summary>
+			<returns>Always returns false. Instances of GlobalTypeCollection are never synchronized.</returns>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.GlobalTypeCollection.Item(System.Int32)">
+			<summary>An accessor for an item at the offset index.</summary>
+			<returns>Returns the value at the given index.</returns>
+			<param name="index">The offset of the retrieved item within the collection.</param>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.OleUndoEngine">
+			<summary>Provides a default implementation of undo management for designers.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.#ctor(System.IServiceProvider)">
+			<summary>Creates a new instance of <see cref="T:Microsoft.VisualStudio.Shell.Design.OleUndoEngine"></see>.</summary>
+			<param name="provider">A instance of the <see cref="T:System.IServiceProvider"></see> interface to be used to obtain system resources by the instance of <see cref="T:Microsoft.VisualStudio.Shell.Design.OleUndoEngine"></see>.</param>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit">
+			<summary>Extends support for encapsulating a unit of work that a user can undo for the Environment SDK.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit.#ctor(System.ComponentModel.Design.UndoEngine,System.String)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit"></see> class.</summary>
+			<param name="name">The name for this undo unit.</param>
+			<param name="engine">The undo engine that owns this undo unit.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit.Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit.Add(Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit)">
+			<param name="pUU"> </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit.Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit.Close(Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit,System.Int32)">
+			<param name="parentUnit"> </param>
+			<param name="fCommit"> </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit.Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit.Do(Microsoft.VisualStudio.OLE.Interop.IOleUndoManager)">
+			<param name="pManager"> </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit.Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit.FindUnit(Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit)">
+			<param name="pUU"> </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit.Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit.GetDescription(System.String@)">
+			<param name="name"> </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit.Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit.GetParentState(System.UInt32@)">
+			<param name="state"> </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit.Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit.GetUnitType(System.Guid@,System.Int32@)">
+			<param name="clsid"> </param>
+			<param name="id"> </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit.Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit.Open(Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit)">
+			<param name="parentUnit"> </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit.Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit.Do(Microsoft.VisualStudio.OLE.Interop.IOleUndoManager)">
+			<param name="manager"> </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit.Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit.GetDescription(System.String@)">
+			<param name="name"> </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit.Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit.GetUnitType(System.Guid@,System.Int32@)">
+			<param name="clsid"> </param>
+			<param name="id"> </param>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.ProjectTypeResolutionService">
+			<summary>The Visual Studio implementation of the <see cref="T:System.ComponentModel.Design.ITypeResolutionService"></see> interface.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.ProjectTypeResolutionService.#ctor">
+			<summary>Initializes a new instance of the class.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.ProjectTypeResolutionService.GetType(System.String,System.Boolean,System.Boolean,Microsoft.VisualStudio.Shell.Design.ReferenceType)">
+			<summary>Attempts to retrieve a reference type based on search criteria like the name of the type and its case-sensitivity.</summary>
+			<param name="type">The retrieved type.</param>
+			<param name="ignoreCase">Indicates if the name search should be case-sensitive.</param>
+			<param name="name">The name of the reference to be retrieved.</param>
+			<param name="throwOnError">If true indicates that a type retrieval error should throw an exception of type <see cref="T:System.TypeLoadException"></see>.</param>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute">
+			<summary>Declares additional metadata for types or objects, allowing third parties to modify the set of metadata available on a class.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute.#ctor(System.Type,System.Type)">
+			<summary>Creates a new instance of <see cref="T:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute"></see>, associating a new metadata <see cref="T:System.Type"></see> with a current time <see cref="T:System.Type"></see>.</summary>
+			<param name="runtimeType">The <see cref="T:System.Type"></see> whose metadata will be updated.</param>
+			<param name="metadataType">The <see cref="T:System.Type"></see> containing the metadata to be added to an existing type.</param>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute.IsGlobal">
+			<summary>Set and returns the scope of the metadata modifications provided by an instance <see cref="T:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute"></see></summary>
+			<returns>A <see cref="T:System.Boolean"></see> value indicating if the scope of the attribute's metadata modifications are global or local.If the value is true, the scope is global: the modification is applied to all instances of the run time type specified in the <see cref="T:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute"></see> constructor.If the value is false, the scope is local: the modification is applied to all instances of the run time type specified in the <see cref="T:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute"></see> constructor created on the design surface provided by the current VSPackage.</returns>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute.MetadataType">
+			<returns>The <see cref="T:System.Type"></see> of the new metadata object assigned to an existing run time <see cref="T:System.Type"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute.RuntimeType">
+			<returns>The <see cref="T:System.Type"></see> of the existing runtime object modified by the current instance of <see cref="T:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.ProvideDesignerOptionsAttribute">
+			<summary>Associates one or more categories with each designer in the registry.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.ProvideDesignerOptionsAttribute.#ctor(System.String)">
+			<summary>Initializes a new instance of this class setting the attribute's categoryName.</summary>
+			<param name="categoryName">A category associated with the designer.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.ProvideDesignerOptionsAttribute.Register(Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext)">
+			<summary>Registers this attribute using the specified registry context.</summary>
+			<param name="context">The <see cref="T:Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext"></see> that contains registration data.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.ProvideDesignerOptionsAttribute.Unregister(Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext)">
+			<summary>Removes this attribute from the registry using the specified registry context.</summary>
+			<param name="context">The <see cref="T:Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext"></see> that contains registration data.</param>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.ProvideGlobalObjectProviderAttribute">
+			<summary>Signifies that one or more classes in a package are global object providers. This class cannot be inherited.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.ProvideGlobalObjectProviderAttribute.#ctor(System.Type)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.VisualStudio.Shell.Design.ProvideGlobalObjectProviderAttribute"></see> class.</summary>
+			<param name="providerType">The <see cref="T:System.Type"></see> of the provider. The provider must derive from the <see cref="T:Microsoft.VisualStudio.Shell.Design.GlobalObjectProvider"></see> class </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.ProvideGlobalObjectProviderAttribute.Register(Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext)">
+			<summary>Registers this attribute using the specified registry context.</summary>
+			<param name="context">The <see cref="T:Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext"></see> that contains registration data. </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.ProvideGlobalObjectProviderAttribute.Unregister(Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext)">
+			<summary>Removes this attribute from the registry using the specified registry context.</summary>
+			<param name="context">The <see cref="T:Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext"></see> that contains registration data. </param>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.ProvideGlobalObjectProviderAttribute.ProviderType">
+			<summary>Gets the type of declared global object provider.</summary>
+			<returns>The <see cref="T:System.Type"></see> of the associated provider class, which must be derived from <see cref="T:Microsoft.VisualStudio.Shell.Design.GlobalObjectProvider"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.ProvideGlobalObjectProviderAttribute.TypeId">
+			<summary>Gets a unique identifier associated with the attribute.</summary>
+			<returns>An object that is a unique identifier for the <see cref="T:Microsoft.VisualStudio.Shell.Design.ProvideGlobalObjectProviderAttribute"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.ReferenceType">
+			<summary>An enumeration of reference types used by the <see cref="T:Microsoft.VisualStudio.Shell.Design.ProjectTypeResolutionService"></see>.</summary>
+		</member>
+		<member name="F:Microsoft.VisualStudio.Shell.Design.ReferenceType.Generated">
+			<summary>Generated</summary>
+		</member>
+		<member name="F:Microsoft.VisualStudio.Shell.Design.ReferenceType.None">
+			<summary>None</summary>
+		</member>
+		<member name="F:Microsoft.VisualStudio.Shell.Design.ReferenceType.Normal">
+			<summary>Normal</summary>
+		</member>
+		<member name="F:Microsoft.VisualStudio.Shell.Design.ReferenceType.Project">
+			<summary>Project</summary>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.TypeObsoleteEventArgs">
+			<summary>An event that gets raised when a type has become obsolete.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.TypeObsoleteEventArgs.#ctor(System.String)">
+			<summary>This overloaded constructor sets the argument class for the kind of obsolete event.</summary>
+			<param name="typeName">The argument class for the kind of obsolete event.</param>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.TypeObsoleteEventHandler">
+			<summary>An event that gets raised when a type has become obsolete.</summary>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder">
+			<summary>Creates a new virtual type. This class cannot be inherited.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.CreateType">
+			<summary>Creates a virtual type based on the configuration of this virtual type builder.</summary>
+			<returns>A created virtual type.</returns>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.InitializeFromType(System.ComponentModel.Design.ITypeResolutionService,System.CodeDom.CodeNamespace)">
+			<summary>Initializes this virtual type builder with data obtained from the given type.</summary>
+			<param name="typeResolutionService">The type resolution service to use when resolving types in the Code Document Object Model (CodeDOM) tree.</param>
+			<param name="ns">The namespace that contains a type to create. This namespace must contain exactly one type.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.InitializeFromType(System.ComponentModel.Design.ITypeResolutionService,System.CodeDom.CodeTypeDeclaration)">
+			<summary>Initializes this virtual type builder with data obtained from the given type.</summary>
+			<param name="typeDecl">Used to initialize a type based on a type declaration.</param>
+			<param name="typeResolutionService">The type resolution service to use when resolving types in the Code Document Object Model (CodeDOM) tree.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.InitializeFromType(System.ComponentModel.Design.ITypeResolutionService,System.CodeDom.CodeTypeDeclaration,System.String)">
+			<summary>Initializes this virtual type builder with data obtained from the given type.</summary>
+			<param name="typeDecl">Used to initialize a type based on a type declaration.</param>
+			<param name="typeResolutionService">The type resolution service to use when resolving types in the Code Document Object Model (CodeDOM) tree.</param>
+			<param name="namespaceName">The namespace that contains a type to create. This namespace must contain exactly one type.</param>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.AssemblyName">
+			<summary>Gets or sets the name of the assembly that the resulting virtual type should belong to.</summary>
+			<returns>An <see cref="T:System.Reflection.AssemblyName"></see> that represents an assembly name that the resulting virtual type should belong to.</returns>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.Attributes">
+			<summary>Gets the collection of <see cref="P:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.Attributes"></see> for the resulting virtual type.</summary>
+			<returns>An <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.AttributeCollection"></see> that represents the collection of attributes.</returns>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.BaseType">
+			<summary>Gets or sets the base type the resulting virtual type derives from.</summary>
+			<returns>A <see cref="T:System.Type"></see> that represents a base type the resulting virtual type derives from.</returns>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.DeclaringType">
+			<summary>Gets or sets the declaring type for the resulting virtual type.</summary>
+			<returns>A <see cref="T:System.Type"></see> that represents a <see cref="P:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.DeclaringType"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.Events">
+			<summary>Gets the collection of <see cref="P:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.Events"></see> for the resulting virtual type.</summary>
+			<returns>A <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.EventInfoCollection"></see> that represents a collection of <see cref="P:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.Events"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.Fields">
+			<summary>Gets the collection of <see cref="P:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.Fields"></see> for the resulting virtual type.</summary>
+			<returns>A <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.FieldInfoCollection"></see> that represents a collection of <see cref="P:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.Fields"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.Implementor">
+			<summary>Gets or sets the implementer that will be used for the resulting virtual type.</summary>
+			<returns>A <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeImplementor"></see> that will be used for the resulting virtual type.</returns>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.IsPublic">
+			<summary>Gets or sets a value indicating whether the resulting virtual type has the public access modifier.</summary>
+			<returns>true if the access modifier for the resulting virtual type is public; otherwise, false.</returns>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.IsSerializable">
+			<summary>Gets or sets a value indicating whether the resulting virtual type is serializable.</summary>
+			<returns>true if the resulting virtual type is serializable; otherwise, false.</returns>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.Methods">
+			<summary>Gets the collection of <see cref="P:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.Methods"></see> for the resulting virtual type.</summary>
+			<returns>A <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.MethodInfoCollection"></see> that represents the collection of <see cref="P:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.Methods"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.Properties">
+			<summary>Gets the collection of <see cref="P:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.Properties"></see> for the resulting virtual type.</summary>
+			<returns>A <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.PropertyInfoCollection"></see> that represents the collection of <see cref="P:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.Properties"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.TypeName">
+			<summary>Gets or sets the type name for the resulting virtual type.</summary>
+			<returns>The type name.</returns>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.AttributeCollection">
+			<summary>Represents the collection of attributes. This class cannot be inherited.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.AttributeCollection.Add(System.Attribute)">
+			<summary>Adds an <see cref="T:System.Attribute"></see> to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.AttributeCollection"></see>.</summary>
+			<returns>The <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.AttributeCollection"></see> index at which the value has been added.</returns>
+			<param name="value">The <see cref="T:System.Attribute"></see> to be added to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.AttributeCollection"></see>.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.AttributeCollection.Remove(System.Attribute)">
+			<summary>Removes the first occurrence of a specific <see cref="T:System.Attribute"></see> from the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.AttributeCollection"></see>.</summary>
+			<param name="value">The <see cref="T:System.Attribute"></see> to remove from the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.AttributeCollection"></see>.</param>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.AttributeCollection.Item(System.Int32)">
+			<summary>Gets or sets the attribute at the specified index.</summary>
+			<returns>An <see cref="T:System.Attribute"></see> at the specified index.</returns>
+			<param name="index">The zero-based index of the element to get or set.</param>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.ConstructorInfoCollection">
+			<summary>Represents the collection of constructors. This class cannot be inherited.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.ConstructorInfoCollection.Add(System.Reflection.ConstructorInfo)">
+			<summary>Adds a <see cref="T:System.Reflection.ConstructorInfo"></see> to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.ConstructorInfoCollection"></see>.</summary>
+			<returns>The <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.ConstructorInfoCollection"></see> index at which the value has been added.</returns>
+			<param name="value">The <see cref="T:System.Reflection.ConstructorInfo"></see> to be added to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.ConstructorInfoCollection"></see>.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.ConstructorInfoCollection.Add(System.Type[])">
+			<summary>Adds a <see cref="T:System.Reflection.ConstructorInfo"></see> to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.ConstructorInfoCollection"></see>.</summary>
+			<returns>The <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.ConstructorInfoCollection"></see> index at which the value has been added.</returns>
+			<param name="argumentTypes">The types of arguments to be passed to the constructor. This can be null or an empty array to declare an empty constructor.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.ConstructorInfoCollection.Add(System.Type[],System.Attribute[])">
+			<summary>Adds a <see cref="T:System.Reflection.ConstructorInfo"></see> to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.ConstructorInfoCollection"></see>.</summary>
+			<returns>The <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.ConstructorInfoCollection"></see> index at which the value has been added.</returns>
+			<param name="argumentTypes">The types of arguments to be passed to the constructor. This can be null or an empty array to declare an empty constructor.</param>
+			<param name="attributes">An array of attributes to be attached to this constructor. This may be null or empty.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.ConstructorInfoCollection.Remove(System.Reflection.ConstructorInfo)">
+			<summary>Removes the first occurrence of a specific <see cref="T:System.Reflection.ConstructorInfo"></see> from the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.ConstructorInfoCollection"></see>.</summary>
+			<param name="value">The <see cref="T:System.Reflection.ConstructorInfo"></see> to remove from the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.ConstructorInfoCollection"></see>.</param>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.ConstructorInfoCollection.Item(System.Int32)">
+			<summary>Gets or sets the constructor at the specified index.</summary>
+			<returns>A <see cref="T:System.Reflection.ConstructorInfo"></see> at the specified index.</returns>
+			<param name="index">The zero-based index of the element to get or set.</param>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.EventInfoCollection">
+			<summary>Represents the collection of events. This class cannot be inherited.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.EventInfoCollection.Add(System.Reflection.EventInfo)">
+			<summary>Adds an <see cref="T:System.Reflection.EventInfo"></see> to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.EventInfoCollection"></see>.</summary>
+			<returns>The <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.EventInfoCollection"></see> index at which the value has been added.</returns>
+			<param name="value">The <see cref="T:System.Reflection.EventInfo"></see> to be added to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.EventInfoCollection"></see>.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.EventInfoCollection.Add(System.String,System.Type)">
+			<summary>Adds an <see cref="T:System.Reflection.EventInfo"></see> to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.EventInfoCollection"></see>.</summary>
+			<returns>The <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.EventInfoCollection"></see> index at which the value has been added.</returns>
+			<param name="name">The name of the event to add.</param>
+			<param name="handlerType">The type of delegate this event represents.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.EventInfoCollection.Add(System.String,System.Type,System.Attribute[])">
+			<summary>Adds an <see cref="T:System.Reflection.EventInfo"></see> to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.EventInfoCollection"></see>.</summary>
+			<returns>The <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.EventInfoCollection"></see> index at which the value has been added.</returns>
+			<param name="name">The name of the event to add.</param>
+			<param name="attributes">This parameter is used to configure the class member appropriately. <see cref="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.EventInfoCollection.Add(System.String,System.Type,System.Attribute[])"></see> only accepts the values of <see cref="T:System.CodeDom.MemberAttributes"></see> that fit into the <see cref="F:System.CodeDom.MemberAttributes.AccessMask"></see> or <see cref="F:System.CodeDom.MemberAttributes.ScopeMask"></see> categories.</param>
+			<param name="handlerType">The type of delegate this event represents.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.EventInfoCollection.Add(System.String,System.Type,System.Attribute[],System.Reflection.MethodAttributes)">
+			<summary>Adds an <see cref="T:System.Reflection.EventInfo"></see> to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.EventInfoCollection"></see>.</summary>
+			<returns>The <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.EventInfoCollection"></see> index at which the value has been added.</returns>
+			<param name="name">The name of the event to add.</param>
+			<param name="attributes">This parameter is used to configure the class member appropriately. <see cref="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.EventInfoCollection.Add(System.String,System.Type,System.Attribute[],System.Reflection.MethodAttributes)"></see> only accepts the values of <see cref="T:System.CodeDom.MemberAttributes"></see> that fit into the <see cref="F:System.CodeDom.MemberAttributes.AccessMask"></see> or <see cref="F:System.CodeDom.MemberAttributes.ScopeMask"></see> categories.</param>
+			<param name="methodAttributes">Specifies additional event attributes for this member. The default method attribute is <see cref="F:System.Reflection.MethodAttributes.Public"></see>. The only method attributes currently supported are <see cref="F:System.Reflection.MethodAttributes.Public"></see> and <see cref="F:System.Reflection.MethodAttributes.Static"></see> .</param>
+			<param name="handlerType">The type of delegate this event represents.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.EventInfoCollection.Remove(System.Reflection.EventInfo)">
+			<summary>Removes the first occurrence of a specific <see cref="T:System.Reflection.EventInfo"></see> from the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.EventInfoCollection"></see>.</summary>
+			<param name="value">The <see cref="T:System.Reflection.EventInfo"></see> to remove from the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.EventInfoCollection"></see></param>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.EventInfoCollection.Item(System.Int32)">
+			<summary>Gets or sets the event at the specified index.</summary>
+			<returns>An <see cref="T:System.Reflection.EventInfo"></see> at the specified index.</returns>
+			<param name="index">The zero-based index of the element to get or set.</param>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.FieldInfoCollection">
+			<summary>Represents the collection of fields. This class cannot be inherited.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.FieldInfoCollection.Add(System.Reflection.FieldInfo)">
+			<summary>Adds a <see cref="T:System.Reflection.FieldInfo"></see> to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.FieldInfoCollection"></see>.</summary>
+			<returns>The <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.FieldInfoCollection"></see> index at which the value has been added.</returns>
+			<param name="value">The <see cref="T:System.Reflection.FieldInfo"></see> to be added to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.FieldInfoCollection"></see>.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.FieldInfoCollection.Add(System.String,System.Type)">
+			<summary>Adds a <see cref="T:System.Reflection.FieldInfo"></see> to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.FieldInfoCollection"></see>.</summary>
+			<returns>The <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.FieldInfoCollection"></see> index at which the value has been added.</returns>
+			<param name="name">The name of the field to add.</param>
+			<param name="fieldType">The type of field.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.FieldInfoCollection.Add(System.String,System.Type,System.Attribute[])">
+			<summary>Adds a <see cref="T:System.Reflection.FieldInfo"></see> to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.FieldInfoCollection"></see>.</summary>
+			<returns>The <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.FieldInfoCollection"></see> index at which the value has been added.</returns>
+			<param name="name">The name of the field to add.</param>
+			<param name="attributes">This parameter is used to configure the class member appropriately. <see cref="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.FieldInfoCollection.Add(System.String,System.Type,System.Attribute[])"></see> only accepts the values of <see cref="T:System.CodeDom.MemberAttributes"></see> that fit into the <see cref="F:System.CodeDom.MemberAttributes.AccessMask"></see> or <see cref="F:System.CodeDom.MemberAttributes.ScopeMask"></see> categories.</param>
+			<param name="fieldType">The type of field.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.FieldInfoCollection.Add(System.String,System.Type,System.Attribute[],System.Reflection.FieldAttributes)">
+			<summary>Adds a <see cref="T:System.Reflection.FieldInfo"></see> to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.FieldInfoCollection"></see>.</summary>
+			<returns>The <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.FieldInfoCollection"></see> index at which the value has been added.</returns>
+			<param name="name">The name of the field to add.</param>
+			<param name="fieldAttributes">This parameter specifies additional field attributes for this member. The default field attribute is <see cref="F:System.Reflection.FieldAttributes.Public"></see>. The only field attributes currently supported are <see cref="F:System.Reflection.FieldAttributes.Public"></see> and <see cref="F:System.Reflection.FieldAttributes.Static"></see>.</param>
+			<param name="attributes">This parameter is used to configure the class member appropriately. <see cref="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.FieldInfoCollection.Add(System.String,System.Type,System.Attribute[],System.Reflection.FieldAttributes)"></see> only accepts the values of <see cref="T:System.CodeDom.MemberAttributes"></see> that fit into the <see cref="F:System.CodeDom.MemberAttributes.AccessMask"></see> or <see cref="F:System.CodeDom.MemberAttributes.ScopeMask"></see> categories.</param>
+			<param name="fieldType">The type of field.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.FieldInfoCollection.Remove(System.Reflection.FieldInfo)">
+			<summary>Removes the first occurrence of a specific <see cref="T:System.Reflection.FieldInfo"></see> from the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.FieldInfoCollection"></see>.</summary>
+			<param name="value">The <see cref="T:System.Reflection.FieldInfo"></see> to remove from the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.FieldInfoCollection"></see>.</param>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.FieldInfoCollection.Item(System.Int32)">
+			<summary>Gets or sets the field at the specified index.</summary>
+			<returns>A <see cref="T:System.Reflection.FieldInfo"></see> at the specified index.</returns>
+			<param name="index">The zero-based index of the element to get or set.</param>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.MethodInfoCollection">
+			<summary>Represents the collection of methods. This class cannot be inherited.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.MethodInfoCollection.Add(System.Reflection.MethodInfo)">
+			<summary>Adds a <see cref="T:System.Reflection.MethodInfo"></see> to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.MethodInfoCollection"></see>.</summary>
+			<returns>The <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.MethodInfoCollection"></see> index at which the value has been added.</returns>
+			<param name="value">The <see cref="T:System.Reflection.MethodInfo"></see> to be added to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.MethodInfoCollection"></see>.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.MethodInfoCollection.Add(System.String,System.Type,System.Type[])">
+			<summary>Adds a <see cref="T:System.Reflection.MethodInfo"></see> to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.MethodInfoCollection"></see>.</summary>
+			<returns>The <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.MethodInfoCollection"></see> index at which the value has been added.</returns>
+			<param name="name">The name of the method to add.</param>
+			<param name="returnType">The return type of the method. This should be typeof(void) for void return types.</param>
+			<param name="paramTypes">The types of the parameters to this method. This can be null or an empty array to declare no parameters.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.MethodInfoCollection.Add(System.String,System.Type,System.Type[],System.Attribute[])">
+			<summary>Adds a <see cref="T:System.Reflection.MethodInfo"></see> to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.MethodInfoCollection"></see>.</summary>
+			<returns>The <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.MethodInfoCollection"></see> index at which the value has been added.</returns>
+			<param name="name">The name of the method to add.</param>
+			<param name="returnType">The return type of the method. This should be typeof(void) for void return types.</param>
+			<param name="attributes">This parameter is used to configure the class member appropriately. The <see cref="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.MethodInfoCollection.Add(System.String,System.Type,System.Type[],System.Attribute[])"></see> method only accepts the values of <see cref="T:System.CodeDom.MemberAttributes"></see> that fit into the <see cref="F:System.CodeDom.MemberAttributes.AccessMask"></see> or <see cref="F:System.CodeDom.MemberAttributes.ScopeMask"></see> categories.</param>
+			<param name="paramTypes">The types of the parameters to this method. This can be null or an empty array to declare no parameters.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.MethodInfoCollection.Add(System.String,System.Type,System.Type[],System.Attribute[],System.Reflection.MethodAttributes)">
+			<summary>Adds a <see cref="T:System.Reflection.MethodInfo"></see> to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.MethodInfoCollection"></see>.</summary>
+			<returns>The <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.MethodInfoCollection"></see> index at which the value has been added.</returns>
+			<param name="name">The name of the method to add.</param>
+			<param name="returnType">The return type of the method. This should be typeof(void) for void return types.</param>
+			<param name="methodAttributes">This parameter specifies additional event attributes for this member. The default method attribute is <see cref="F:System.Reflection.MethodAttributes.Public"></see>. The only method attributes supported today are <see cref="F:System.Reflection.MethodAttributes.Public"></see> and <see cref="F:System.Reflection.MethodAttributes.Static"></see> .</param>
+			<param name="attributes">This parameter is used to configure the class member appropriately. The <see cref="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.MethodInfoCollection.Add(System.String,System.Type,System.Type[],System.Attribute[],System.Reflection.MethodAttributes)"></see> method only accepts the values of <see cref="T:System.CodeDom.MemberAttributes"></see> that fit into the <see cref="F:System.CodeDom.MemberAttributes.AccessMask"></see> or <see cref="F:System.CodeDom.MemberAttributes.ScopeMask"></see> categories.</param>
+			<param name="paramTypes">The types of the parameters to this method. This can be null or an empty array to declare no parameters.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.MethodInfoCollection.Remove(System.Reflection.MethodInfo)">
+			<summary>Removes the first occurrence of a specific <see cref="T:System.Reflection.MethodInfo"></see> from the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.MethodInfoCollection"></see>.</summary>
+			<param name="value">The <see cref="T:System.Reflection.MethodInfo"></see> to remove from the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.MethodInfoCollection"></see>.</param>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.MethodInfoCollection.Item(System.Int32)">
+			<summary>Gets or sets the method at the specified index.</summary>
+			<returns>A <see cref="T:System.Reflection.MethodInfo"></see> at the specified index.</returns>
+			<param name="index">The zero-based index of the method to get or set.</param>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.PropertyInfoCollection">
+			<summary>Represents the collection of properties. This class cannot be inherited.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.PropertyInfoCollection.Add(System.Reflection.PropertyInfo)">
+			<summary>Adds a <see cref="T:System.Reflection.PropertyInfo"></see> to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.PropertyInfoCollection"></see>.</summary>
+			<returns>The <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.PropertyInfoCollection"></see> index at which the value has been added.</returns>
+			<param name="value">The <see cref="T:System.Reflection.PropertyInfo"></see> to be added to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.PropertyInfoCollection"></see>.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.PropertyInfoCollection.Add(System.String,System.Type,System.Boolean)">
+			<summary>Adds a <see cref="T:System.Reflection.PropertyInfo"></see> to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.PropertyInfoCollection"></see>.</summary>
+			<returns>The <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.PropertyInfoCollection"></see> index at which the value has been added.</returns>
+			<param name="propertyType">The type of the property.</param>
+			<param name="name">The name of the property to add.</param>
+			<param name="readOnly">Determines if this property is read only or read write.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.PropertyInfoCollection.Add(System.String,System.Type,System.Boolean,System.Attribute[])">
+			<summary>Adds a <see cref="T:System.Reflection.PropertyInfo"></see> to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.PropertyInfoCollection"></see>.</summary>
+			<returns>The <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.PropertyInfoCollection"></see> index at which the value has been added.</returns>
+			<param name="propertyType">The type of the property.</param>
+			<param name="name">The name of the property to add.</param>
+			<param name="attributes">This parameter is used to configure the class member appropriately. Add only accepts the values of <see cref="T:System.CodeDom.MemberAttributes"></see> that fit into the <see cref="F:System.CodeDom.MemberAttributes.AccessMask"></see> or <see cref="F:System.CodeDom.MemberAttributes.ScopeMask"></see> categories.</param>
+			<param name="readOnly">Determines if this property is read only or read write.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.PropertyInfoCollection.Add(System.String,System.Type,System.Boolean,System.Type[])">
+			<summary>Adds a <see cref="T:System.Reflection.PropertyInfo"></see> to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.PropertyInfoCollection"></see>.</summary>
+			<returns>The <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.PropertyInfoCollection"></see> index at which the value has been added.</returns>
+			<param name="propertyType">The type of the property.</param>
+			<param name="name">The name of the property to add.</param>
+			<param name="readOnly">Determines if this property is read only or read write.</param>
+			<param name="paramTypes">The types of parameters in a parameterized property.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.PropertyInfoCollection.Add(System.String,System.Type,System.Boolean,System.Attribute[],System.Reflection.MethodAttributes)">
+			<summary>Adds a <see cref="T:System.Reflection.PropertyInfo"></see> to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.PropertyInfoCollection"></see>.</summary>
+			<returns>The <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.PropertyInfoCollection"></see> index at which the value has been added.</returns>
+			<param name="propertyType">The type of the property.</param>
+			<param name="name">The name of the property to add.</param>
+			<param name="attributes">This parameter is used to configure the class member appropriately. Add only accepts the values of <see cref="T:System.CodeDom.MemberAttributes"></see> that fit into the <see cref="F:System.CodeDom.MemberAttributes.AccessMask"></see> or <see cref="F:System.CodeDom.MemberAttributes.ScopeMask"></see> categories.</param>
+			<param name="methodAttributes">Specifies additional event attributes for this member. The default method attribute is <see cref="F:System.Reflection.MethodAttributes.Public"></see>. The only method attributes supported today are <see cref="F:System.Reflection.MethodAttributes.Public"></see> and <see cref="F:System.Reflection.MethodAttributes.Static"></see> .</param>
+			<param name="readOnly">Determines if this property is read only or read write.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.PropertyInfoCollection.Add(System.String,System.Type,System.Boolean,System.Type[],System.Attribute[])">
+			<summary>Adds a <see cref="T:System.Reflection.PropertyInfo"></see> to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.PropertyInfoCollection"></see>.</summary>
+			<returns>The <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.PropertyInfoCollection"></see> index at which the value has been added.</returns>
+			<param name="propertyType">The type of the property.</param>
+			<param name="name">The name of the property to add.</param>
+			<param name="attributes">This parameter is used to configure the class member appropriately. Add only accepts the values of <see cref="T:System.CodeDom.MemberAttributes"></see> that fit into the <see cref="F:System.CodeDom.MemberAttributes.AccessMask"></see> or <see cref="F:System.CodeDom.MemberAttributes.ScopeMask"></see> categories.</param>
+			<param name="readOnly">Determines if this property is read only or read write.</param>
+			<param name="paramTypes">The types of parameters in a parameterized property.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.PropertyInfoCollection.Add(System.String,System.Type,System.Boolean,System.Type[],System.Attribute[],System.Reflection.MethodAttributes)">
+			<summary>Adds a <see cref="T:System.Reflection.PropertyInfo"></see> to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.PropertyInfoCollection"></see>.</summary>
+			<returns>The <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.PropertyInfoCollection"></see> index at which the value has been added.</returns>
+			<param name="propertyType">The type of the property.</param>
+			<param name="name">The name of the property to add.</param>
+			<param name="attributes">This parameter is used to configure the class member appropriately. Add only accepts the values of <see cref="T:System.CodeDom.MemberAttributes"></see> that fit into the <see cref="F:System.CodeDom.MemberAttributes.AccessMask"></see> or <see cref="F:System.CodeDom.MemberAttributes.ScopeMask"></see> categories.</param>
+			<param name="methodAttributes">Specifies additional event attributes for this member. The default method attribute is <see cref="F:System.Reflection.MethodAttributes.Public"></see>. The only method attributes supported today are <see cref="F:System.Reflection.MethodAttributes.Public"></see> and <see cref="F:System.Reflection.MethodAttributes.Static"></see>.</param>
+			<param name="readOnly">Determines if this property is read only or read write.</param>
+			<param name="paramTypes">The types of parameters in a parameterized property.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.PropertyInfoCollection.Remove(System.Reflection.PropertyInfo)">
+			<summary>Removes the first occurrence of a specific <see cref="T:System.Reflection.PropertyInfo"></see> from the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.PropertyInfoCollection"></see>.</summary>
+			<param name="value">The <see cref="T:System.Reflection.PropertyInfo"></see> to remove from the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.PropertyInfoCollection"></see>.</param>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.VirtualTypeBuilder.PropertyInfoCollection.Item(System.Int32)">
+			<summary>Gets or sets the property at the specified index.</summary>
+			<returns>A <see cref="T:System.Reflection.PropertyInfo"></see> at the specified index.</returns>
+			<param name="index">The zero-based index of the element to get or set.</param>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeImplementor">
+			<summary>The base class you must derive from to provide an implementation of your virtual type.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeImplementor.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.VisualStudio.Shell.Design.VirtualTypeImplementor"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeImplementor.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+			<summary>Adds the given delegate to the given event.</summary>
+			<param name="eventInfo">The event to add the handler to.</param>
+			<param name="instance">The instance on which to add the event handler. This may be null if the event is static.</param>
+			<param name="handler">The event handler to add.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeImplementor.GetField(System.Reflection.FieldInfo,System.Object)">
+			<summary>Retrieves the value of the requested field.</summary>
+			<returns>An <see cref="T:System.Object"></see> that represents the requested field.</returns>
+			<param name="instance">The instance on which to retrieve the field. This may be null if the field is static.</param>
+			<param name="field">The field to get the value of.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeImplementor.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object[])">
+			<summary>Retrieves the value of the requested property.</summary>
+			<returns>An <see cref="T:System.Object"></see> that represents the requested property.</returns>
+			<param name="args">An optional array of arguments used for parameterized properties.  This will never be null, but may be an empty array.</param>
+			<param name="property">The property to get the value of.</param>
+			<param name="instance">The instance on which to retrieve the property. This may be null if the property is static.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeImplementor.InvokeConstructor(System.Reflection.ConstructorInfo,System.Object[])">
+			<summary>Create an instance of a type.</summary>
+			<returns>An <see cref="T:System.Object"></see> that represents a created instance of a type.</returns>
+			<param name="ctor">The constructor to invoke.</param>
+			<param name="args">The parameters to pass to the constructor.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeImplementor.InvokeMethod(System.Reflection.MethodInfo,System.Object,System.Object[])">
+			<summary>Invokes a method on the object.</summary>
+			<returns>An <see cref="T:System.Object"></see> that represents a return value of an invoked method.</returns>
+			<param name="args">The arguments to the method.</param>
+			<param name="method">The method to invoke.</param>
+			<param name="instance">The instance on which to invoke the method. This may be null if the method is static.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeImplementor.RemoveEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+			<summary>Removes the given delegate from the given event.</summary>
+			<param name="eventInfo">The event to remove the handler from.</param>
+			<param name="instance">The instance on which to remove the event handler.  This may be null if the event is static.</param>
+			<param name="handler">The event handler to remove.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeImplementor.SetField(System.Reflection.FieldInfo,System.Object,System.Object)">
+			<summary>Sets the value of the requested field.</summary>
+			<param name="instance">The instance on which to set the field. This may be null if the field is static.</param>
+			<param name="value">The new value of the field.</param>
+			<param name="field">The field to set the value of.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.VirtualTypeImplementor.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Object[])">
+			<summary>Gets the value of the requested property.</summary>
+			<param name="args">An optional array of arguments used for parameterized properties.  This will never be null, but may be an empty array.</param>
+			<param name="property">The property to set the value of.</param>
+			<param name="instance">The instance on which to set the property. This may be null if the property is static.</param>
+			<param name="value">The new value of the property.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.WindowPaneProviderService.#ctor(System.IServiceProvider)">
+			<summary>Creates a new WindowPaneProviderService.</summary>
+			<param name="provider">The value <see cref="T:System.IServiceProvider"></see> to be used as the service provider.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.WindowPaneProviderService.#ctor(System.IServiceProvider,System.String)">
+			<summary>Creates a new WindowPaneProviderService.</summary>
+			<param name="extension">The value of the file extension.</param>
+			<param name="provider">The value <see cref="T:System.IServiceProvider"></see> to be used as the service provider.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.WindowPaneProviderService.CreateWindowPane(System.ComponentModel.Design.DesignSurface)">
+			<summary>Creates a window pane for the design surface.</summary>
+			<param name="surface">The surface from which the Window Pane is created.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.WindowPaneProviderService.CreateWindowPane(System.Type,System.ComponentModel.Design.DesignSurface)">
+			<summary>Creates a designer window pane for the given data type windowPaneType.</summary>
+			<param name="windowPaneType">A specifiable kind of window.</param>
+			<param name="surface">The surface from which the Window Pane is created.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.WindowPaneProviderService.GetRegisteredPanes(System.String)">
+			<summary>Gets the registered set of window panes.</summary>
+			<param name="extension">The file extension for the retrieved panes.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.WindowPaneProviderService.GetService(System.Type)">
+			<summary>Returns an instance of the requested service.</summary>
+			<param name="serviceType">The type of the requested service.</param>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.WindowPaneProviderService.RegisteredWindowPane">
+			<summary>A structure that encapsulates a view technology and its associated window pane type.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.WindowPaneProviderService.RegisteredWindowPane.#ctor(System.Type,System.String)">
+			<summary>Creates a new RegisteredWindowPane instance.</summary>
+			<param name="baseType">The kind of the window pane that is being registered.</param>
+			<param name="windowPaneTypeName">The name of the window pane.</param>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.Serialization.ConfigurationHelperService">
+			<summary>A service used by the settings UI in Visual Studio to read and write client settings into app.config.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.ConfigurationHelperService.#ctor">
+			<summary>Initializes an instance of class ConfigurationHelperService which stores user customizable settings in XML format.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.ConfigurationHelperService.GetSerializeAs(System.Type)">
+			<summary>For a given type, determines the default serialization mechanism to use.</summary>
+			<returns>If this type has a <see cref="T:System.ComponentModel.TypeConverter"></see> that can convert to and from a string then return T:System.Configuration.SettingsSerializeAs.String as the preferred choice, otherwise return T:System.Configuration.SettingsSerializeAs.Xml.   </returns>
+			<param name="type">The kind of class that is requesting a serializer.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.ConfigurationHelperService.ReadConnectionStrings(System.String,Microsoft.VisualStudio.Shell.Design.Serialization.DocData,System.String)">
+			<summary>Returns all the connection strings in appConfig that start with prefix.</summary>
+			<param name="configFileName">The target configuration file.</param>
+			<param name="configDocData">The working <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocData"></see>.</param>
+			<param name="prefix">The wildcard search criteria for connection strings.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.ConfigurationHelperService.WriteConnectionStrings(System.String,Microsoft.VisualStudio.Shell.Design.Serialization.DocData,System.String,System.Configuration.ConnectionStringSettingsCollection)">
+			<summary>Writes the connection strings to the specified config file. Deletes any existing connection strings with groupPrefix first.</summary>
+			<param name="connectionStrings">-</param>
+			<param name="configFileName">The target configuration file.</param>
+			<param name="configDocData">The working <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocData"></see>.</param>
+			<param name="groupPrefix">A string that represents the section of the file where the connectionStrings should be written.</param>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.Serialization.DesignerDocDataService">
+			<summary>Provides a way to create and retrieve buffers for various files in the project.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DesignerDocDataService.#ctor(System.IServiceProvider,Microsoft.VisualStudio.Shell.Interop.IVsHierarchy,System.UInt32,Microsoft.VisualStudio.Shell.Design.Serialization.DocData)">
+			<summary>Creates a new designer doc data service.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DesignerDocDataService.CheckoutFiles">
+			<summary>Ensures that all relevant buffers are checked out.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DesignerDocDataService.Dispose">
+			<summary>Provides automatic cleanup via its implementation of the <see cref="T:System.IDisposable"></see> interface.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DesignerDocDataService.Flush">
+			<summary>Performs a forced flush of all pending changes to the designer.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DesignerDocDataService.GetChildDocData(System.String,System.IO.FileAccess,System.String)">
+			<summary>Retrieves a <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocData"></see> with the given name.</summary>
+			<returns>Returns null if the file does not exist and createTemplate is null.</returns>
+			<param name="name">The name of the requested child document.</param>
+			<param name="access">Describes if the file read only or writable; also describes how the file should be treated in case it is under source code control.</param>
+			<param name="createTemplate">The path of a template file to be used in case the named document cannot be retrieved.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DesignerDocDataService.GetChildFileName(System.String)">
+			<summary>Fabricates a full child file name from a short name.</summary>
+			<param name="name">The short name of the child.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DesignerDocDataService.GetFileDocData(System.String,System.IO.FileAccess,System.String)">
+			<summary>Retrieves a <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocData"></see> with the given name.</summary>
+			<returns>Returns null if the file does not exist and createTemplate is null.</returns>
+			<param name="fileName">The name of the requested child document.</param>
+			<param name="access">Describes if the file read only or writable; also describes how the file should be treated in case it is under source code control.</param>
+			<param name="createTemplate">The path of a template file to be used in case the named document cannot be retrieved.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DesignerDocDataService.GetSiblingDocData(System.String,System.IO.FileAccess,System.String)">
+			<summary>Retrieves a <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocData"></see> with the given name.</summary>
+			<returns>Returns null if the file does not exist and createTemplate is null.</returns>
+			<param name="name">The name of the requested child document.</param>
+			<param name="access">Describes if the file read only or writable; also describes how the file should be treated in case it is under source code control.</param>
+			<param name="createTemplate">The path of a template file to be used in case the named document cannot be retrieved.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DesignerDocDataService.GetSiblingFileName(System.String)">
+			<summary>Fabricates a full sibling file name from a short name.</summary>
+			<param name="name">The short name of the sibling.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DesignerDocDataService.HasChild(System.String)">
+			<summary>Test for the existence of a child <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocData"></see> with a given name.</summary>
+			<returns>Returns true if the given child exists in the project, otherwise returns false.</returns>
+			<param name="name">The name of the searched for child.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DesignerDocDataService.HasFile(System.String)">
+			<summary>Tests for the existence of a <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocData"></see> with a given fileName.</summary>
+			<returns>Returns true if the given file exists in the project, otherwise returns false.</returns>
+			<param name="fileName">The filename of the requested <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocData"></see>.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DesignerDocDataService.HasSibling(System.String)">
+			<summary>Tests for the existence of a sibling <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocData"></see> with a given name.</summary>
+			<returns>Returns true if the given file exists in the project, otherwise returns false.</returns>
+			<param name="name">The filename of the requested sibling <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocData"></see>.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DesignerDocDataService.SaveDocData(Microsoft.VisualStudio.Shell.Design.Serialization.DocData)">
+			<summary>Performs a save on the given doc data.</summary>
+			<param name="docData">The <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocData"></see> to be saved.</param>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.Serialization.DesignerDocDataService.PrimaryDocData">
+			<summary>Retrieves the DocData object for the primaryDocData that was passed into either of this service's overloaded constructors <see cref="M:Microsoft.VisualStudio.Shell.Design.Serialization.DesignerDocDataService.#ctor(System.IServiceProvider,Microsoft.VisualStudio.Shell.Interop.IVsHierarchy,System.UInt32,Microsoft.VisualStudio.Shell.Design.Serialization.DocData)"></see> or <see cref="M:Microsoft.VisualStudio.Shell.Design.Serialization.DesignerDocDataService.#ctor(System.IServiceProvider,Microsoft.VisualStudio.Shell.Interop.IVsHierarchy,System.UInt32,System.Object)"></see>.</summary>
+			<returns>This <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocData"></see> has its save, checkout and running document table lifetimes linked to all other DocData objects that this service returns. This DocData automatically checks itself when <see cref="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocData.Modify"></see> is called.</returns>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocData">
+			<summary>A wrapper around a <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocData"></see> object that provides some useful features.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocData.#ctor(System.Object)">
+			<summary>Creates a new <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocData"></see> object for the given buffer.</summary>
+			<param name="docData">The <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocData"></see> object this class wraps.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocData.#ctor(System.IServiceProvider,System.String)">
+			<summary>Creates a new DocData from the given file and sets the site from the provided site.</summary>
+			<param name="fileName">The source file for the <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocData"></see>.</param>
+			<param name="provider">The IServiceProvider that points back to the Visual Studio shell for siting.</param>
+		</member>
+		<member name="E:Microsoft.VisualStudio.Shell.Design.Serialization.DocData.DataChanged">
+			<summary>An event that is raised when the data contained within this doc data has changed.</summary>
+		</member>
+		<member name="E:Microsoft.VisualStudio.Shell.Design.Serialization.DocData.Modifying">
+			<summary>An event that is raised when this <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocData"></see> object is being marked as modified.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocData.CheckoutFile(System.IServiceProvider)">
+			<summary>This method checks out the doc data file from source code control, if necessary.</summary>
+			<param name="provider">The IServiceProvider interface used for the checkout operation.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocData.Dispose">
+			<summary>Disposes the DocData.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocData.Dispose(System.Boolean)">
+			<summary>Disposes the <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocData"></see>.</summary>
+			<param name="disposing">TRUE to release both managed and unmanaged resources; FALSE to release only unmanaged resources.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocData.Finalize">
+			<summary>Called automatically when this object is destroyed.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocData.Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder.CloseDocumentHolder(System.UInt32)">
+			<summary>Close the document based on a user request.</summary>
+			<param name="saveOptions">Persistence options.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocData.Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamEvents.OnChangeStreamAttributes(System.Int32,System.Int32)">
+			<summary>A notification from Visual Studio that something in the text has changed.</summary>
+			<param name="iPos">Starting position of the changed text in the underlying buffer.</param>
+			<param name="iLength">Length of the changed text in the underlying buffer.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocData.Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamEvents.OnChangeStreamText(System.Int32,System.Int32,System.Int32,System.Int32)">
+			<summary>Provides a notification from Visual Studio that something in the text has changed.</summary>
+			<param name="iNewLen">The new length of text in the underlying buffer.</param>
+			<param name="fLast"> </param>
+			<param name="iOldLen">The old length of text in the underlying buffer.</param>
+			<param name="iPos">The position of the change in the underlying text buffer.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocData.Modify">
+			<summary>Marks this DocData as modified.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocData.OnDataChanged(System.EventArgs)">
+			<summary>Called when an external change has been made to the doc data.</summary>
+			<param name="e">The arguments of the event change.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocData.OnModifying(System.EventArgs)">
+			<summary>Called by <see cref="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocData.Modify"></see> to raise the MarkedDirty event.</summary>
+			<param name="e"> </param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocData.RaiseModifying">
+			<summary>Raises the Modifying event.</summary>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.Serialization.DocData.Buffer">
+			<summary>The text buffer contained within the doc data.</summary>
+			<returns>Depending on the way the initialization scheme this property might return null.</returns>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.Serialization.DocData.Modified">
+			<summary>Tests the state of the underlying buffer.</summary>
+			<returns>Returns TRUE if the buffer has been modified.</returns>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.Serialization.DocData.Name">
+			<summary>Returns the file name of the <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocData"></see>.</summary>
+			<returns>This is typically retrieved by accessing the user data with an ID if IID_IVsUserData.</returns>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocDataTextReader">
+			<summary>Derives from TextReader and provides a standard <see cref="N:System.IO"></see> mechanism for reading from a Visual Studio text buffer</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocDataTextReader.#ctor(Microsoft.VisualStudio.Shell.Design.Serialization.DocData)">
+			<summary>Creates a new DocDataTextReader on the given docData.</summary>
+			<param name="docData">The <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocData"></see> that the DocDataTextReader reads.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocDataTextReader.#ctor(Microsoft.VisualStudio.Shell.Design.Serialization.DocData,System.Boolean)">
+			<summary>Creates a new DocDataTextReader on the given docData and sets a parameter that declares that <see cref="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocData.Dispose"></see> will be called on the docData when the DocDataTextReader is disposed.</summary>
+			<param name="docData">The <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocData"></see> that the DocDataTextReader reads.</param>
+			<param name="disposeDocData">Determines whether or not <see cref="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocData.Dispose"></see> will be called on the underlying docData.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocDataTextReader.Dispose(System.Boolean)">
+			<summary>Overrides the base class implementation to call <see cref="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocData.Dispose"></see> on the underlying docData if disposeDocData was true in the overloaded constructor <see cref="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocDataTextReader.#ctor(Microsoft.VisualStudio.Shell.Design.Serialization.DocData,System.Boolean)"></see>.</summary>
+			<param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocDataTextReader.Peek">
+			<summary>Overrides the base class implementation.</summary>
+			<returns>Returns -1 if the internal variable that describes the stream position is not less than the length of the stream.</returns>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocDataTextReader.Read(System.Char[],System.Int32,System.Int32)">
+			<summary>Overrides the base class implementation.</summary>
+			<param name="count">The number of items in the underlying text to be copied.</param>
+			<param name="buffer">An array to be populated.</param>
+			<param name="index">Starting point in the underlying text.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocDataTextReader.System.IServiceProvider.GetService(System.Type)">
+			<summary>The implementation of the <see cref="T:Microsoft.VisualStudio.OLE.Interop.IServiceProvider"></see> interface.</summary>
+			<param name="serviceType">The GUID of the service to be retrieved.</param>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.Serialization.DocDataTextReader.DocData">
+			<summary>Returns the instance of <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocData"></see> that was set by one of the overloaded constructors.</summary>
+			<returns>This will be NULL if the DocDataTextReader has been disposed.</returns>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocDataTextWriter">
+			<summary>Provides a standard <see cref="N:System.IO"></see> mechanism for writing to a Visual Studio text buffer.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocDataTextWriter.#ctor(Microsoft.VisualStudio.Shell.Design.Serialization.DocData)">
+			<summary>Creates a new DocDataTextWriter on the given docData.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocDataTextWriter.#ctor(Microsoft.VisualStudio.Shell.Design.Serialization.DocData,System.Boolean)">
+			<param name="disposeDocData">Specifies an automatic call Dispose on the underlying DocData.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocDataTextWriter.Dispose(System.Boolean)">
+			<summary>Overrides the base class implementation to call Dispose on the underlying DocData if so indicated by the disposeDocData parameter of the <see cref="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocDataTextWriter.#ctor(Microsoft.VisualStudio.Shell.Design.Serialization.DocData,System.Boolean)"></see> constructor.</summary>
+			<param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocDataTextWriter.Flush">
+			<summary>Replaces the contents of the text stream with the contents of the string builder.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocDataTextWriter.System.IServiceProvider.GetService(System.Type)">
+			<param name="serviceType">The returned service.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocDataTextWriter.Write(System.Char)">
+			<summary>Appends a char to the underlying <see cref="T:System.Text.StringBuilder"></see>.</summary>
+			<param name="ch">The char that is appended to the underlying <see cref="T:System.Text.StringBuilder"></see>.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.DocDataTextWriter.Write(System.String)">
+			<summary>Appends a string to the underlying <see cref="T:System.Text.StringBuilder"></see>.</summary>
+			<param name="s">The string that is appended to the underlying <see cref="T:System.Text.StringBuilder"></see>.</param>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.Serialization.DocDataTextWriter.Encoding">
+			<summary>Overrides the base class implementation.</summary>
+			<returns>Returns <see cref="T:System.Text.UnicodeEncoding"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.Serialization.LocalizationProviderService">
+			<summary>A designer serialization provider that adds extended properties to support localization.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.LocalizationProviderService.#ctor">
+			<summary>Creates a new instance of a LocalizationProviderService.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.LocalizationProviderService.CreateProvider(System.ComponentModel.Design.Serialization.IDesignerSerializationManager)">
+			<summary>Creates a provider for the given serialization manager.</summary>
+			<param name="manager">A serialization manager.</param>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.Serialization.ProvideDesignerLoaderAttribute">
+			<summary>Place this attribute on a class that is derived from <see cref="T:System.ComponentModel.Design.Serialization.DesignerLoader"></see> to associate the class with a particular language service or file extension.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.ProvideDesignerLoaderAttribute.#ctor(Microsoft.VisualStudio.Shell.Design.AttributeScope,System.Object)">
+			<summary>Provides a new instance of ProvideDesignerLoaderAttribute.</summary>
+			<param name="scope">The values of the enumerations <see cref="T:Microsoft.VisualStudio.Shell.Design.AttributeScope"></see> are Language and File.</param>
+			<param name="scopeData">The value of the scope. Logic internal to the method treats this as a string.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.ProvideDesignerLoaderAttribute.Register(Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext)">
+			<summary>Called to register this attribute with the given context.</summary>
+			<param name="context">A registration context provided by an external registration tool. The context can be used to create registry keys, log registration activity, and obtain information about the component being registered.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.ProvideDesignerLoaderAttribute.Unregister(Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext)">
+			<summary>Removes the registration information about a VSPackage when called by an external registration tool such as regpkg.exe.</summary>
+			<param name="context">A registration context provided by an external registration tool. The context can be used to create registry keys, log registration activity, and obtain information about the component being registered.</param>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.Serialization.ProvideGeneratorAttribute">
+			<summary>Putting this attribute on your <see cref="T:Microsoft.VisualStudio.Shell.Package"></see>-derived class or class that implements <see cref="T:Microsoft.VisualStudio.Shell.Interop.IVsPackage"></see> registers the given CodeGenerator for Visual Basic and Visual C# projects.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.ProvideGeneratorAttribute.#ctor(System.Type,System.String,System.String,System.String,System.Boolean)">
+			<summary>This overloaded constructor sets all the values of this ProvideGeneratorAttribute.</summary>
+			<param name="description">The description of the associated code generator.</param>
+			<param name="generateDesignTimeSource">Set to true if the associated code generator generates source code for use at design time, otherwise set to false.</param>
+			<param name="name">The name of the associated code generator.</param>
+			<param name="packageGuid">The GUID of the package containing a project that supports invoking a code generator of generatorType.</param>
+			<param name="generatorType">The type of the associated code generator.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.ProvideGeneratorAttribute.Register(Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext)">
+			<summary>Called to register this attribute with the given context.</summary>
+			<param name="context">A registration context provided by an external registration tool. The context can be used to create registry keys, log registration activity, and obtain information about the component being registered.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.ProvideGeneratorAttribute.Unregister(Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext)">
+			<summary>Removes the registration information about a VSPackage when called by an external registration tool like regpkg.exe. For more information, see How to: Register Managed VSPackages.</summary>
+			<param name="context">A registration context provided by an external registration tool. The context can be used to create registry keys, log registration activity, and obtain information about the component being registered.</param>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.Serialization.RelatedDocDataCollection">
+			<summary>A strongly-typed collection that stores document data objects.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.RelatedDocDataCollection.#ctor">
+			<summary>Initializes a new instance of <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.RelatedDocDataCollection"></see>.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.RelatedDocDataCollection.#ctor(Microsoft.VisualStudio.Shell.Design.Serialization.DocData[])">
+			<summary>Initializes a new instance of <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.RelatedDocDataCollection"></see> containing any array of document data objects.</summary>
+			<param name="value">An array of <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocData"></see></param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.RelatedDocDataCollection.#ctor(Microsoft.VisualStudio.Shell.Design.Serialization.RelatedDocDataCollection)">
+			<summary>Initializes a new instance of <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.RelatedDocDataCollection"></see> based on another <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.RelatedDocDataCollection"></see> object.</summary>
+			<param name="value">An initialization collection.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.RelatedDocDataCollection.Add(Microsoft.VisualStudio.Shell.Design.Serialization.DocData)">
+			<summary>Adds the specified value to the <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.RelatedDocDataCollection"></see>. </summary>
+			<param name="value">The value to be appended to the underlying collection.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.RelatedDocDataCollection.AddRange(Microsoft.VisualStudio.Shell.Design.Serialization.DocData[])">
+			<summary>Copies the elements of an array to the end of the <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.RelatedDocDataCollection"></see>.</summary>
+			<param name="value">An array of values to be appended to the underlying collection.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.RelatedDocDataCollection.AddRange(Microsoft.VisualStudio.Shell.Design.Serialization.RelatedDocDataCollection)">
+			<summary>Adds the contents of another <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.RelatedDocDataCollection"></see> to the end of the collection.</summary>
+			<param name="value">The added value.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.RelatedDocDataCollection.Contains(Microsoft.VisualStudio.Shell.Design.Serialization.DocData)">
+			<summary>Gets a value indicating whether the <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.RelatedDocDataCollection"></see> contains the specified document data object.</summary>
+			<param name="value">The value <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocData"></see> that the collection is checked for the existence of.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.RelatedDocDataCollection.CopyTo(Microsoft.VisualStudio.Shell.Design.Serialization.DocData[],System.Int32)">
+			<summary>Copies the document data values in this <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.RelatedDocDataCollection"></see> object to a one-dimensional <see cref="T:System.Array"></see> instance at the specified index.</summary>
+			<param name="array">The destination <see cref="T:System.Array"></see>.</param>
+			<param name="index">The index of the item to be copied.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.RelatedDocDataCollection.IndexOf(Microsoft.VisualStudio.Shell.Design.Serialization.DocData)">
+			<summary>Returns the index of a specified document data object in the <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.RelatedDocDataCollection"></see>. </summary>
+			<param name="value">The index offset.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.RelatedDocDataCollection.Insert(System.Int32,Microsoft.VisualStudio.Shell.Design.Serialization.DocData)">
+			<summary>Inserts a document data object into the <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.RelatedDocDataCollection"></see> object at the specified index.</summary>
+			<param name="value">The <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocData"></see> to be inserted.</param>
+			<param name="index">The target index.</param>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.RelatedDocDataCollection.Remove(Microsoft.VisualStudio.Shell.Design.Serialization.DocData)">
+			<summary>Removes a specific value from the <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.RelatedDocDataCollection"></see> object.</summary>
+			<param name="value">The <see cref="T:Microsoft.VisualStudio.Shell.Design.Serialization.DocData"></see> to be removed.</param>
+		</member>
+		<member name="P:Microsoft.VisualStudio.Shell.Design.Serialization.RelatedDocDataCollection.Item(System.Int32)">
+			<summary>Access the value at an index offset of this collection.</summary>
+			<param name="index">Index offset of this collection.</param>
+		</member>
+		<member name="T:Microsoft.VisualStudio.Shell.Design.Serialization.CodeDom.ChangeNotificationService">
+			<summary>Used to rename project scope symbols.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.CodeDom.ChangeNotificationService.#ctor">
+			<summary>Returns a new instance of the service.</summary>
+		</member>
+		<member name="M:Microsoft.VisualStudio.Shell.Design.Serialization.CodeDom.ChangeNotificationService.RenameElement(EnvDTE.CodeElement,System.String)">
+			<summary>This service's implementation of rename.</summary>
+			<returns>Returns false.</returns>
+			<param name="newName">The new proposed name.</param>
+			<param name="element">An instance of a <see cref="T:EnvDTE.CodeElement"></see>.</param>
+		</member>
+	</members>
+</doc>

@@ -1,0 +1,2196 @@
+<!ELEMENT ASP.NET (ASPXPage)*>
+<!ATTLIST ASP.NET
+Title CDATA #REQUIRED
+		    Package CDATA #REQUIRED
+		    URI CDATA #REQUIRED
+		    Port CDATA "80"
+		    Language CDATA #FIXED "ASP.NET"
+		    Translator CDATA #FIXED "ASPNETCSharpASPX"
+		    Platform CDATA #FIXED "Windows 2003 IIS 6.0"
+                    TextNote CDATA #IMPLIED
+                    Build (Debug|Release|Optimized) "Debug">
+<!ELEMENT ASPXPage (
+AdRotator|
+Label|
+Button|
+Calendar|
+CheckBox|
+CheckBoxList|
+CompareValidator|
+CustomValidator|
+DataGrid|
+LinkButton|
+Table|
+DataList|
+DropDownList|
+HyperLink|
+Image|
+ImageButton|
+ListBox|
+Literal|
+Panel|
+PlaceHolder|
+RadioButton|
+RadioButtonList|
+RangeValidator|
+RegularExpressionValidator|
+Repeater|
+RequiredFieldValidator|
+TextBox|
+ValidationSummary|
+Xml)*>
+<!ATTLIST ASPXPage
+              Name CDATA "ASPXPage"
+                  Codebehind CDATA "ASPXPage.aspx.cs"
+                  URI CDATA "/ProjectName"
+                  Extends CDATA "ProjectName.ASPXPage">
+<!ELEMENT AdRotator (#PCDATA)*>
+<!ATTLIST AdRotator
+
+ KeywordFilter CDATA #IMPLIED
+
+ AdvertisementFile CDATA #IMPLIED
+
+ Target CDATA #IMPLIED
+
+ OnAdCreated CDATA #IMPLIED
+
+ Enabled CDATA #IMPLIED
+
+ BorderWidth CDATA #IMPLIED
+
+ BorderColor CDATA #IMPLIED
+
+ BorderStyle CDATA #IMPLIED
+
+ Width CDATA #IMPLIED
+
+ Height CDATA #IMPLIED
+
+ AccessKey CDATA #IMPLIED
+
+ ForeColor CDATA #IMPLIED
+
+ ToolTip CDATA #IMPLIED
+
+ TabIndex CDATA #IMPLIED
+
+ BackColor CDATA #IMPLIED
+
+ CssClass CDATA #IMPLIED
+
+ Font-Size CDATA #IMPLIED
+
+ Font-Overline CDATA #IMPLIED
+
+ Font-Underline CDATA #IMPLIED
+
+ Font-Names CDATA #IMPLIED
+
+ Font-Italic CDATA #IMPLIED
+
+ Font-Name CDATA #IMPLIED
+
+ Font-Bold CDATA #IMPLIED
+
+ Font-Strikeout CDATA #IMPLIED
+
+ Style CDATA #IMPLIED
+
+ Runat CDATA #IMPLIED  Name CDATA #IMPLIED
+
+>
+
+<!ELEMENT Label (RadioButton | ImageButton | ValidationSummary | Literal | Label | RegularExpressionValidator | LinkButton | Table | Repeater | Xml | AdRotator | RequiredFieldValidator | DataGrid | CheckBoxList | CheckBox | PlaceHolder | ListBox | Calendar | DropDownList | TextBox | Panel | CustomValidator | CompareValidator | Button | RangeValidator | DataList | Image | HyperLink | RadioButtonList)*>
+<!ATTLIST Label
+
+ Text CDATA #IMPLIED
+
+ Enabled CDATA #IMPLIED
+
+ BorderWidth CDATA #IMPLIED
+
+ BorderColor CDATA #IMPLIED
+
+ BorderStyle CDATA #IMPLIED
+
+ Width CDATA #IMPLIED
+
+ Height CDATA #IMPLIED
+
+ AccessKey CDATA #IMPLIED
+
+ ForeColor CDATA #IMPLIED
+
+ ToolTip CDATA #IMPLIED
+
+ TabIndex CDATA #IMPLIED
+
+ BackColor CDATA #IMPLIED
+
+ CssClass CDATA #IMPLIED
+
+ Font-Size CDATA #IMPLIED
+
+ Font-Overline CDATA #IMPLIED
+
+ Font-Underline CDATA #IMPLIED
+
+ Font-Names CDATA #IMPLIED
+
+ Font-Italic CDATA #IMPLIED
+
+ Font-Name CDATA #REQUIRED
+
+ Font-Bold CDATA #IMPLIED
+
+ Font-Strikeout CDATA #IMPLIED
+
+ Style CDATA #IMPLIED
+
+ Runat CDATA #IMPLIED  Name CDATA #REQUIRED
+
+>
+
+<!ELEMENT Button (#PCDATA)*>
+<!ATTLIST Button
+
+ CommandArgument CDATA #IMPLIED
+
+ CausesValidation CDATA #IMPLIED
+
+ Text CDATA #IMPLIED
+
+ CommandName CDATA #REQUIRED
+
+ OnBlur CDATA #IMPLIED
+
+ OnCommand CDATA #IMPLIED
+
+ OnClick CDATA #IMPLIED
+
+ OnFocus CDATA #IMPLIED
+
+ Enabled CDATA #IMPLIED
+
+ BorderWidth CDATA #IMPLIED
+
+ BorderColor CDATA #IMPLIED
+
+ BorderStyle CDATA #IMPLIED
+
+ Width CDATA #IMPLIED
+
+ Height CDATA #IMPLIED
+
+ AccessKey CDATA #IMPLIED
+
+ ForeColor CDATA #IMPLIED
+
+ ToolTip CDATA #IMPLIED
+
+ TabIndex CDATA #IMPLIED
+
+ BackColor CDATA #IMPLIED
+
+ CssClass CDATA #IMPLIED
+
+ Font-Size CDATA #IMPLIED
+
+ Font-Overline CDATA #IMPLIED
+
+ Font-Underline CDATA #IMPLIED
+
+ Font-Names CDATA #IMPLIED
+
+ Font-Italic CDATA #IMPLIED
+
+ Font-Name CDATA #REQUIRED
+
+ Font-Bold CDATA #IMPLIED
+
+ Font-Strikeout CDATA #IMPLIED
+
+ Style CDATA #IMPLIED
+
+ Runat CDATA #IMPLIED  Name CDATA #REQUIRED
+
+>
+
+<!ELEMENT Calendar (SelectorStyle | DayStyle | OtherMonthDayStyle | WeekendDayStyle | NextPrevStyle | TodayDayStyle | DayHeaderStyle | TitleStyle | SelectedDayStyle)*>
+<!ATTLIST Calendar
+
+ ShowGridLines CDATA #IMPLIED
+
+ SelectorStyle-Font-Size CDATA #IMPLIED
+
+ SelectorStyle-Font-Overline CDATA #IMPLIED
+
+ SelectorStyle-Font-Underline CDATA #IMPLIED
+
+ SelectorStyle-Font-Names CDATA #IMPLIED
+
+ SelectorStyle-Font-Italic CDATA #IMPLIED
+
+ SelectorStyle-Font-Name CDATA #REQUIRED
+
+ SelectorStyle-Font-Bold CDATA #IMPLIED
+
+ SelectorStyle-Font-Strikeout CDATA #IMPLIED
+
+ SelectorStyle-Wrap CDATA #IMPLIED
+
+ SelectorStyle-HorizontalAlign CDATA #IMPLIED
+
+ SelectorStyle-Height CDATA #IMPLIED
+
+ SelectorStyle-BorderWidth CDATA #IMPLIED
+
+ SelectorStyle-ForeColor CDATA #IMPLIED
+
+ SelectorStyle-BorderStyle CDATA #IMPLIED
+
+ SelectorStyle-BorderColor CDATA #IMPLIED
+
+ SelectorStyle-Width CDATA #IMPLIED
+
+ SelectorStyle-CssClass CDATA #IMPLIED
+
+ SelectorStyle-VerticalAlign CDATA #IMPLIED
+
+ SelectorStyle-BackColor CDATA #IMPLIED
+
+ DayNameFormat CDATA #IMPLIED
+
+ SelectWeekText CDATA #IMPLIED
+
+ DayStyle-Font-Size CDATA #IMPLIED
+
+ DayStyle-Font-Overline CDATA #IMPLIED
+
+ DayStyle-Font-Underline CDATA #IMPLIED
+
+ DayStyle-Font-Names CDATA #IMPLIED
+
+ DayStyle-Font-Italic CDATA #IMPLIED
+
+ DayStyle-Font-Name CDATA #REQUIRED
+
+ DayStyle-Font-Bold CDATA #IMPLIED
+
+ DayStyle-Font-Strikeout CDATA #IMPLIED
+
+ DayStyle-Wrap CDATA #IMPLIED
+
+ DayStyle-HorizontalAlign CDATA #IMPLIED
+
+ DayStyle-Height CDATA #IMPLIED
+
+ DayStyle-BorderWidth CDATA #IMPLIED
+
+ DayStyle-ForeColor CDATA #IMPLIED
+
+ DayStyle-BorderStyle CDATA #IMPLIED
+
+ DayStyle-BorderColor CDATA #IMPLIED
+
+ DayStyle-Width CDATA #IMPLIED
+
+ DayStyle-CssClass CDATA #IMPLIED
+
+ DayStyle-VerticalAlign CDATA #IMPLIED
+
+ DayStyle-BackColor CDATA #IMPLIED
+
+ TitleFormat CDATA #IMPLIED
+
+ OtherMonthDayStyle-Font-Size CDATA #IMPLIED
+
+ OtherMonthDayStyle-Font-Overline CDATA #IMPLIED
+
+ OtherMonthDayStyle-Font-Underline CDATA #IMPLIED
+
+ OtherMonthDayStyle-Font-Names CDATA #IMPLIED
+
+ OtherMonthDayStyle-Font-Italic CDATA #IMPLIED
+
+ OtherMonthDayStyle-Font-Name CDATA #REQUIRED
+
+ OtherMonthDayStyle-Font-Bold CDATA #IMPLIED
+
+ OtherMonthDayStyle-Font-Strikeout CDATA #IMPLIED
+
+ OtherMonthDayStyle-Wrap CDATA #IMPLIED
+
+ OtherMonthDayStyle-HorizontalAlign CDATA #IMPLIED
+
+ OtherMonthDayStyle-Height CDATA #IMPLIED
+
+ OtherMonthDayStyle-BorderWidth CDATA #IMPLIED
+
+ OtherMonthDayStyle-ForeColor CDATA #IMPLIED
+
+ OtherMonthDayStyle-BorderStyle CDATA #IMPLIED
+
+ OtherMonthDayStyle-BorderColor CDATA #IMPLIED
+
+ OtherMonthDayStyle-Width CDATA #IMPLIED
+
+ OtherMonthDayStyle-CssClass CDATA #IMPLIED
+
+ OtherMonthDayStyle-VerticalAlign CDATA #IMPLIED
+
+ OtherMonthDayStyle-BackColor CDATA #IMPLIED
+
+ FirstDayOfWeek CDATA #IMPLIED
+
+ NextMonthText CDATA #IMPLIED
+
+ SelectionMode CDATA #IMPLIED
+
+ TodaysDate CDATA #IMPLIED
+
+ WeekendDayStyle-Font-Size CDATA #IMPLIED
+
+ WeekendDayStyle-Font-Overline CDATA #IMPLIED
+
+ WeekendDayStyle-Font-Underline CDATA #IMPLIED
+
+ WeekendDayStyle-Font-Names CDATA #IMPLIED
+
+ WeekendDayStyle-Font-Italic CDATA #IMPLIED
+
+ WeekendDayStyle-Font-Name CDATA #REQUIRED
+
+ WeekendDayStyle-Font-Bold CDATA #IMPLIED
+
+ WeekendDayStyle-Font-Strikeout CDATA #IMPLIED
+
+ WeekendDayStyle-Wrap CDATA #IMPLIED
+
+ WeekendDayStyle-HorizontalAlign CDATA #IMPLIED
+
+ WeekendDayStyle-Height CDATA #IMPLIED
+
+ WeekendDayStyle-BorderWidth CDATA #IMPLIED
+
+ WeekendDayStyle-ForeColor CDATA #IMPLIED
+
+ WeekendDayStyle-BorderStyle CDATA #IMPLIED
+
+ WeekendDayStyle-BorderColor CDATA #IMPLIED
+
+ WeekendDayStyle-Width CDATA #IMPLIED
+
+ WeekendDayStyle-CssClass CDATA #IMPLIED
+
+ WeekendDayStyle-VerticalAlign CDATA #IMPLIED
+
+ WeekendDayStyle-BackColor CDATA #IMPLIED
+
+ NextPrevStyle-Font-Size CDATA #IMPLIED
+
+ NextPrevStyle-Font-Overline CDATA #IMPLIED
+
+ NextPrevStyle-Font-Underline CDATA #IMPLIED
+
+ NextPrevStyle-Font-Names CDATA #IMPLIED
+
+ NextPrevStyle-Font-Italic CDATA #IMPLIED
+
+ NextPrevStyle-Font-Name CDATA #REQUIRED
+
+ NextPrevStyle-Font-Bold CDATA #IMPLIED
+
+ NextPrevStyle-Font-Strikeout CDATA #IMPLIED
+
+ NextPrevStyle-Wrap CDATA #IMPLIED
+
+ NextPrevStyle-HorizontalAlign CDATA #IMPLIED
+
+ NextPrevStyle-Height CDATA #IMPLIED
+
+ NextPrevStyle-BorderWidth CDATA #IMPLIED
+
+ NextPrevStyle-ForeColor CDATA #IMPLIED
+
+ NextPrevStyle-BorderStyle CDATA #IMPLIED
+
+ NextPrevStyle-BorderColor CDATA #IMPLIED
+
+ NextPrevStyle-Width CDATA #IMPLIED
+
+ NextPrevStyle-CssClass CDATA #IMPLIED
+
+ NextPrevStyle-VerticalAlign CDATA #IMPLIED
+
+ NextPrevStyle-BackColor CDATA #IMPLIED
+
+ TodayDayStyle-Font-Size CDATA #IMPLIED
+
+ TodayDayStyle-Font-Overline CDATA #IMPLIED
+
+ TodayDayStyle-Font-Underline CDATA #IMPLIED
+
+ TodayDayStyle-Font-Names CDATA #IMPLIED
+
+ TodayDayStyle-Font-Italic CDATA #IMPLIED
+
+ TodayDayStyle-Font-Name CDATA #REQUIRED
+
+ TodayDayStyle-Font-Bold CDATA #IMPLIED
+
+ TodayDayStyle-Font-Strikeout CDATA #IMPLIED
+
+ TodayDayStyle-Wrap CDATA #IMPLIED
+
+ TodayDayStyle-HorizontalAlign CDATA #IMPLIED
+
+ TodayDayStyle-Height CDATA #IMPLIED
+
+ TodayDayStyle-BorderWidth CDATA #IMPLIED
+
+ TodayDayStyle-ForeColor CDATA #IMPLIED
+
+ TodayDayStyle-BorderStyle CDATA #IMPLIED
+
+ TodayDayStyle-BorderColor CDATA #IMPLIED
+
+ TodayDayStyle-Width CDATA #IMPLIED
+
+ TodayDayStyle-CssClass CDATA #IMPLIED
+
+ TodayDayStyle-VerticalAlign CDATA #IMPLIED
+
+ TodayDayStyle-BackColor CDATA #IMPLIED
+
+ DayHeaderStyle-Font-Size CDATA #IMPLIED
+
+ DayHeaderStyle-Font-Overline CDATA #IMPLIED
+
+ DayHeaderStyle-Font-Underline CDATA #IMPLIED
+
+ DayHeaderStyle-Font-Names CDATA #IMPLIED
+
+ DayHeaderStyle-Font-Italic CDATA #IMPLIED
+
+ DayHeaderStyle-Font-Name CDATA #REQUIRED
+
+ DayHeaderStyle-Font-Bold CDATA #IMPLIED
+
+ DayHeaderStyle-Font-Strikeout CDATA #IMPLIED
+
+ DayHeaderStyle-Wrap CDATA #IMPLIED
+
+ DayHeaderStyle-HorizontalAlign CDATA #IMPLIED
+
+ DayHeaderStyle-Height CDATA #IMPLIED
+
+ DayHeaderStyle-BorderWidth CDATA #IMPLIED
+
+ DayHeaderStyle-ForeColor CDATA #IMPLIED
+
+ DayHeaderStyle-BorderStyle CDATA #IMPLIED
+
+ DayHeaderStyle-BorderColor CDATA #IMPLIED
+
+ DayHeaderStyle-Width CDATA #IMPLIED
+
+ DayHeaderStyle-CssClass CDATA #IMPLIED
+
+ DayHeaderStyle-VerticalAlign CDATA #IMPLIED
+
+ DayHeaderStyle-BackColor CDATA #IMPLIED
+
+ ShowTitle CDATA #IMPLIED
+
+ VisibleDate CDATA #IMPLIED
+
+ TitleStyle-Font-Size CDATA #IMPLIED
+
+ TitleStyle-Font-Overline CDATA #IMPLIED
+
+ TitleStyle-Font-Underline CDATA #IMPLIED
+
+ TitleStyle-Font-Names CDATA #IMPLIED
+
+ TitleStyle-Font-Italic CDATA #IMPLIED
+
+ TitleStyle-Font-Name CDATA #REQUIRED
+
+ TitleStyle-Font-Bold CDATA #IMPLIED
+
+ TitleStyle-Font-Strikeout CDATA #IMPLIED
+
+ TitleStyle-Wrap CDATA #IMPLIED
+
+ TitleStyle-HorizontalAlign CDATA #IMPLIED
+
+ TitleStyle-Height CDATA #IMPLIED
+
+ TitleStyle-BorderWidth CDATA #IMPLIED
+
+ TitleStyle-ForeColor CDATA #IMPLIED
+
+ TitleStyle-BorderStyle CDATA #IMPLIED
+
+ TitleStyle-BorderColor CDATA #IMPLIED
+
+ TitleStyle-Width CDATA #IMPLIED
+
+ TitleStyle-CssClass CDATA #IMPLIED
+
+ TitleStyle-VerticalAlign CDATA #IMPLIED
+
+ TitleStyle-BackColor CDATA #IMPLIED
+
+ SelectMonthText CDATA #IMPLIED
+
+ NextPrevFormat CDATA #IMPLIED
+
+ ShowDayHeader CDATA #IMPLIED
+
+ PrevMonthText CDATA #IMPLIED
+
+ SelectedDate CDATA #IMPLIED
+
+ ShowNextPrevMonth CDATA #IMPLIED
+
+ CellSpacing CDATA #IMPLIED
+
+ SelectedDayStyle-Font-Size CDATA #IMPLIED
+
+ SelectedDayStyle-Font-Overline CDATA #IMPLIED
+
+ SelectedDayStyle-Font-Underline CDATA #IMPLIED
+
+ SelectedDayStyle-Font-Names CDATA #IMPLIED
+
+ SelectedDayStyle-Font-Italic CDATA #IMPLIED
+
+ SelectedDayStyle-Font-Name CDATA #REQUIRED
+
+ SelectedDayStyle-Font-Bold CDATA #IMPLIED
+
+ SelectedDayStyle-Font-Strikeout CDATA #IMPLIED
+
+ SelectedDayStyle-Wrap CDATA #IMPLIED
+
+ SelectedDayStyle-HorizontalAlign CDATA #IMPLIED
+
+ SelectedDayStyle-Height CDATA #IMPLIED
+
+ SelectedDayStyle-BorderWidth CDATA #IMPLIED
+
+ SelectedDayStyle-ForeColor CDATA #IMPLIED
+
+ SelectedDayStyle-BorderStyle CDATA #IMPLIED
+
+ SelectedDayStyle-BorderColor CDATA #IMPLIED
+
+ SelectedDayStyle-Width CDATA #IMPLIED
+
+ SelectedDayStyle-CssClass CDATA #IMPLIED
+
+ SelectedDayStyle-VerticalAlign CDATA #IMPLIED
+
+ SelectedDayStyle-BackColor CDATA #IMPLIED
+
+ CellPadding CDATA #IMPLIED
+
+ OnVisibleMonthChanged CDATA #IMPLIED
+
+ OnDayRender CDATA #IMPLIED
+
+ OnSelectionChanged CDATA #IMPLIED
+
+ Enabled CDATA #IMPLIED
+
+ BorderWidth CDATA #IMPLIED
+
+ BorderColor CDATA #IMPLIED
+
+ BorderStyle CDATA #IMPLIED
+
+ Width CDATA #IMPLIED
+
+ Height CDATA #IMPLIED
+
+ AccessKey CDATA #IMPLIED
+
+ ForeColor CDATA #IMPLIED
+
+ ToolTip CDATA #IMPLIED
+
+ TabIndex CDATA #IMPLIED
+
+ BackColor CDATA #IMPLIED
+
+ CssClass CDATA #IMPLIED
+
+ Font-Size CDATA #IMPLIED
+
+ Font-Overline CDATA #IMPLIED
+
+ Font-Underline CDATA #IMPLIED
+
+ Font-Names CDATA #IMPLIED
+
+ Font-Italic CDATA #IMPLIED
+
+ Font-Name CDATA #REQUIRED
+
+ Font-Bold CDATA #IMPLIED
+
+ Font-Strikeout CDATA #IMPLIED
+
+ Style CDATA #IMPLIED
+
+ Runat CDATA #IMPLIED  Name CDATA #REQUIRED
+
+>
+
+<!ELEMENT CheckBox (#PCDATA)*>
+<!ATTLIST CheckBox
+
+ AutoPostBack CDATA #IMPLIED
+
+ Checked CDATA #IMPLIED
+
+ Text CDATA #IMPLIED
+
+ TextAlign CDATA #IMPLIED
+
+ OnCheckedChanged CDATA #IMPLIED
+
+ Enabled CDATA #IMPLIED
+
+ BorderWidth CDATA #IMPLIED
+
+ BorderColor CDATA #IMPLIED
+
+ BorderStyle CDATA #IMPLIED
+
+ Width CDATA #IMPLIED
+
+ Height CDATA #IMPLIED
+
+ AccessKey CDATA #IMPLIED
+
+ ForeColor CDATA #IMPLIED
+
+ ToolTip CDATA #IMPLIED
+
+ TabIndex CDATA #IMPLIED
+
+ BackColor CDATA #IMPLIED
+
+ CssClass CDATA #IMPLIED
+
+ Font-Size CDATA #IMPLIED
+
+ Font-Overline CDATA #IMPLIED
+
+ Font-Underline CDATA #IMPLIED
+
+ Font-Names CDATA #IMPLIED
+
+ Font-Italic CDATA #IMPLIED
+
+ Font-Name CDATA #REQUIRED
+
+ Font-Bold CDATA #IMPLIED
+
+ Font-Strikeout CDATA #IMPLIED
+
+ Style CDATA #IMPLIED
+
+ Runat CDATA #IMPLIED  Name CDATA #REQUIRED
+
+>
+
+<!ELEMENT CheckBoxList (ListItem)*>
+<!ATTLIST CheckBoxList
+
+ TextAlign CDATA #IMPLIED
+
+ RepeatColumns CDATA #IMPLIED
+
+ CellSpacing CDATA #IMPLIED
+
+ RepeatLayout CDATA #IMPLIED
+
+ RepeatDirection CDATA #IMPLIED
+
+ CellPadding CDATA #IMPLIED
+
+ BorderWidth CDATA #IMPLIED
+
+ BorderColor CDATA #IMPLIED
+
+ BorderStyle CDATA #IMPLIED
+
+ DataTextFormatString CDATA #IMPLIED
+
+ DataTextField CDATA #IMPLIED
+
+ DataMember CDATA #IMPLIED
+
+ SelectedIndex CDATA #IMPLIED
+
+ AutoPostBack CDATA #IMPLIED
+
+ DataValueField CDATA #IMPLIED
+
+ DataSource CDATA #IMPLIED
+
+ OnSelectedIndexChanged CDATA #IMPLIED
+
+ Enabled CDATA #IMPLIED
+
+>
+
+<!ELEMENT CompareValidator (#PCDATA)*>
+<!ATTLIST CompareValidator
+
+ ControlToCompare CDATA #IMPLIED
+
+ ValueToCompare CDATA #IMPLIED
+
+ Operator CDATA #IMPLIED
+
+ Type CDATA #IMPLIED
+
+>
+
+<!ELEMENT CustomValidator (#PCDATA)*>
+<!ATTLIST CustomValidator
+
+ ClientValidationFunction CDATA #IMPLIED
+
+ OnServerValidate CDATA #IMPLIED
+
+ Display CDATA #IMPLIED
+
+ EnableClientScript CDATA #IMPLIED
+
+ ControlToValidate CDATA #IMPLIED
+
+ ErrorMessage CDATA #IMPLIED
+
+>
+
+<!ELEMENT DataGrid (PagerStyle | AlternatingItemStyle | EditItemStyle | FooterStyle | Columns | BoundColumn | ButtonColumn | HyperLinkColumn | EditCommandColumn | TemplateColumn | SelectedItemStyle | ItemStyle | HeaderStyle | BoundColumn | ButtonColumn | HyperLinkColumn | EditCommandColumn | TemplateColumn)*>
+<!ATTLIST DataGrid
+
+ PagerStyle-Width CDATA #IMPLIED
+
+ PagerStyle-VerticalAlign CDATA #IMPLIED
+
+ PagerStyle-Visible CDATA #IMPLIED
+
+ PagerStyle-NextPageText CDATA #IMPLIED
+
+ PagerStyle-Height CDATA #IMPLIED
+
+ PagerStyle-BorderWidth CDATA #IMPLIED
+
+ PagerStyle-Font-Size CDATA #IMPLIED
+
+ PagerStyle-Font-Overline CDATA #IMPLIED
+
+ PagerStyle-Font-Underline CDATA #IMPLIED
+
+ PagerStyle-Font-Names CDATA #IMPLIED
+
+ PagerStyle-Font-Italic CDATA #IMPLIED
+
+ PagerStyle-Font-Name CDATA #REQUIRED
+
+ PagerStyle-Font-Bold CDATA #IMPLIED
+
+ PagerStyle-Font-Strikeout CDATA #IMPLIED
+
+ PagerStyle-BorderColor CDATA #IMPLIED
+
+ PagerStyle-PrevPageText CDATA #IMPLIED
+
+ PagerStyle-BorderStyle CDATA #IMPLIED
+
+ PagerStyle-HorizontalAlign CDATA #IMPLIED
+
+ PagerStyle-ForeColor CDATA #IMPLIED
+
+ PagerStyle-Position CDATA #IMPLIED
+
+ PagerStyle-BackColor CDATA #IMPLIED
+
+ PagerStyle-PageButtonCount CDATA #IMPLIED
+
+ PagerStyle-CssClass CDATA #IMPLIED
+
+ PagerStyle-Wrap CDATA #IMPLIED
+
+ PagerStyle-Mode CDATA #IMPLIED
+
+ BackImageUrl CDATA #IMPLIED
+
+ AlternatingItemStyle-Font-Size CDATA #IMPLIED
+
+ AlternatingItemStyle-Font-Overline CDATA #IMPLIED
+
+ AlternatingItemStyle-Font-Underline CDATA #IMPLIED
+
+ AlternatingItemStyle-Font-Names CDATA #IMPLIED
+
+ AlternatingItemStyle-Font-Italic CDATA #IMPLIED
+
+ AlternatingItemStyle-Font-Name CDATA #REQUIRED
+
+ AlternatingItemStyle-Font-Bold CDATA #IMPLIED
+
+ AlternatingItemStyle-Font-Strikeout CDATA #IMPLIED
+
+ AlternatingItemStyle-Wrap CDATA #IMPLIED
+
+ AlternatingItemStyle-HorizontalAlign CDATA #IMPLIED
+
+ AlternatingItemStyle-Height CDATA #IMPLIED
+
+ AlternatingItemStyle-BorderWidth CDATA #IMPLIED
+
+ AlternatingItemStyle-ForeColor CDATA #IMPLIED
+
+ AlternatingItemStyle-BorderStyle CDATA #IMPLIED
+
+ AlternatingItemStyle-BorderColor CDATA #IMPLIED
+
+ AlternatingItemStyle-Width CDATA #IMPLIED
+
+ AlternatingItemStyle-CssClass CDATA #IMPLIED
+
+ AlternatingItemStyle-VerticalAlign CDATA #IMPLIED
+
+ AlternatingItemStyle-BackColor CDATA #IMPLIED
+
+ EditItemStyle-Font-Size CDATA #IMPLIED
+
+ EditItemStyle-Font-Overline CDATA #IMPLIED
+
+ EditItemStyle-Font-Underline CDATA #IMPLIED
+
+ EditItemStyle-Font-Names CDATA #IMPLIED
+
+ EditItemStyle-Font-Italic CDATA #IMPLIED
+
+ EditItemStyle-Font-Name CDATA #REQUIRED
+
+ EditItemStyle-Font-Bold CDATA #IMPLIED
+
+ EditItemStyle-Font-Strikeout CDATA #IMPLIED
+
+ EditItemStyle-Wrap CDATA #IMPLIED
+
+ EditItemStyle-HorizontalAlign CDATA #IMPLIED
+
+ EditItemStyle-Height CDATA #IMPLIED
+
+ EditItemStyle-BorderWidth CDATA #IMPLIED
+
+ EditItemStyle-ForeColor CDATA #IMPLIED
+
+ EditItemStyle-BorderStyle CDATA #IMPLIED
+
+ EditItemStyle-BorderColor CDATA #IMPLIED
+
+ EditItemStyle-Width CDATA #IMPLIED
+
+ EditItemStyle-CssClass CDATA #IMPLIED
+
+ EditItemStyle-VerticalAlign CDATA #IMPLIED
+
+ EditItemStyle-BackColor CDATA #IMPLIED
+
+ FooterStyle-Font-Size CDATA #IMPLIED
+
+ FooterStyle-Font-Overline CDATA #IMPLIED
+
+ FooterStyle-Font-Underline CDATA #IMPLIED
+
+ FooterStyle-Font-Names CDATA #IMPLIED
+
+ FooterStyle-Font-Italic CDATA #IMPLIED
+
+ FooterStyle-Font-Name CDATA #REQUIRED
+
+ FooterStyle-Font-Bold CDATA #IMPLIED
+
+ FooterStyle-Font-Strikeout CDATA #IMPLIED
+
+ FooterStyle-Wrap CDATA #IMPLIED
+
+ FooterStyle-HorizontalAlign CDATA #IMPLIED
+
+ FooterStyle-Height CDATA #IMPLIED
+
+ FooterStyle-BorderWidth CDATA #IMPLIED
+
+ FooterStyle-ForeColor CDATA #IMPLIED
+
+ FooterStyle-BorderStyle CDATA #IMPLIED
+
+ FooterStyle-BorderColor CDATA #IMPLIED
+
+ FooterStyle-Width CDATA #IMPLIED
+
+ FooterStyle-CssClass CDATA #IMPLIED
+
+ FooterStyle-VerticalAlign CDATA #IMPLIED
+
+ FooterStyle-BackColor CDATA #IMPLIED
+
+ PageSize CDATA #IMPLIED
+
+ CurrentPageIndex CDATA #IMPLIED
+
+ AutoGenerateColumns CDATA #IMPLIED
+
+ SelectedIndex CDATA #IMPLIED
+
+ SelectedItemStyle-Font-Size CDATA #IMPLIED
+
+ SelectedItemStyle-Font-Overline CDATA #IMPLIED
+
+ SelectedItemStyle-Font-Underline CDATA #IMPLIED
+
+ SelectedItemStyle-Font-Names CDATA #IMPLIED
+
+ SelectedItemStyle-Font-Italic CDATA #IMPLIED
+
+ SelectedItemStyle-Font-Name CDATA #REQUIRED
+
+ SelectedItemStyle-Font-Bold CDATA #IMPLIED
+
+ SelectedItemStyle-Font-Strikeout CDATA #IMPLIED
+
+ SelectedItemStyle-Wrap CDATA #IMPLIED
+
+ SelectedItemStyle-HorizontalAlign CDATA #IMPLIED
+
+ SelectedItemStyle-Height CDATA #IMPLIED
+
+ SelectedItemStyle-BorderWidth CDATA #IMPLIED
+
+ SelectedItemStyle-ForeColor CDATA #IMPLIED
+
+ SelectedItemStyle-BorderStyle CDATA #IMPLIED
+
+ SelectedItemStyle-BorderColor CDATA #IMPLIED
+
+ SelectedItemStyle-Width CDATA #IMPLIED
+
+ SelectedItemStyle-CssClass CDATA #IMPLIED
+
+ SelectedItemStyle-VerticalAlign CDATA #IMPLIED
+
+ SelectedItemStyle-BackColor CDATA #IMPLIED
+
+ ItemStyle-Font-Size CDATA #IMPLIED
+
+ ItemStyle-Font-Overline CDATA #IMPLIED
+
+ ItemStyle-Font-Underline CDATA #IMPLIED
+
+ ItemStyle-Font-Names CDATA #IMPLIED
+
+ ItemStyle-Font-Italic CDATA #IMPLIED
+
+ ItemStyle-Font-Name CDATA #REQUIRED
+
+ ItemStyle-Font-Bold CDATA #IMPLIED
+
+ ItemStyle-Font-Strikeout CDATA #IMPLIED
+
+ ItemStyle-Wrap CDATA #IMPLIED
+
+ ItemStyle-HorizontalAlign CDATA #IMPLIED
+
+ ItemStyle-Height CDATA #IMPLIED
+
+ ItemStyle-BorderWidth CDATA #IMPLIED
+
+ ItemStyle-ForeColor CDATA #IMPLIED
+
+ ItemStyle-BorderStyle CDATA #IMPLIED
+
+ ItemStyle-BorderColor CDATA #IMPLIED
+
+ ItemStyle-Width CDATA #IMPLIED
+
+ ItemStyle-CssClass CDATA #IMPLIED
+
+ ItemStyle-VerticalAlign CDATA #IMPLIED
+
+ ItemStyle-BackColor CDATA #IMPLIED
+
+ AllowPaging CDATA #IMPLIED
+
+ ShowHeader CDATA #IMPLIED
+
+ HeaderStyle-Font-Size CDATA #IMPLIED
+
+ HeaderStyle-Font-Overline CDATA #IMPLIED
+
+ HeaderStyle-Font-Underline CDATA #IMPLIED
+
+ HeaderStyle-Font-Names CDATA #IMPLIED
+
+ HeaderStyle-Font-Italic CDATA #IMPLIED
+
+ HeaderStyle-Font-Name CDATA #REQUIRED
+
+ HeaderStyle-Font-Bold CDATA #IMPLIED
+
+ HeaderStyle-Font-Strikeout CDATA #IMPLIED
+
+ HeaderStyle-Wrap CDATA #IMPLIED
+
+ HeaderStyle-HorizontalAlign CDATA #IMPLIED
+
+ HeaderStyle-Height CDATA #IMPLIED
+
+ HeaderStyle-BorderWidth CDATA #IMPLIED
+
+ HeaderStyle-ForeColor CDATA #IMPLIED
+
+ HeaderStyle-BorderStyle CDATA #IMPLIED
+
+ HeaderStyle-BorderColor CDATA #IMPLIED
+
+ HeaderStyle-Width CDATA #IMPLIED
+
+ HeaderStyle-CssClass CDATA #IMPLIED
+
+ HeaderStyle-VerticalAlign CDATA #IMPLIED
+
+ HeaderStyle-BackColor CDATA #IMPLIED
+
+ AllowSorting CDATA #IMPLIED
+
+ EditItemIndex CDATA #IMPLIED
+
+ AllowCustomPaging CDATA #IMPLIED
+
+ ShowFooter CDATA #IMPLIED
+
+ OnUpdateCommand CDATA #IMPLIED
+
+ OnItemCreated CDATA #IMPLIED
+
+ OnItemCommand CDATA #IMPLIED
+
+ OnEditCommand CDATA #IMPLIED
+
+ OnSortCommand CDATA #IMPLIED
+
+ OnPageIndexChanged CDATA #IMPLIED
+
+ OnCancelCommand CDATA #IMPLIED
+
+ OnDeleteCommand CDATA #IMPLIED
+
+ OnItemDataBound CDATA #IMPLIED
+
+ DataKeyField CDATA #IMPLIED
+
+ GridLines CDATA #IMPLIED
+
+ DataMember CDATA #IMPLIED
+
+ HorizontalAlign CDATA #IMPLIED
+
+ DataSource CDATA #IMPLIED
+
+ CellSpacing CDATA #IMPLIED
+
+ CellPadding CDATA #IMPLIED
+
+ OnSelectedIndexChanged CDATA #IMPLIED
+
+ Enabled CDATA #IMPLIED
+
+ BorderWidth CDATA #IMPLIED
+
+ BorderColor CDATA #IMPLIED
+
+ BorderStyle CDATA #IMPLIED
+
+>
+
+<!ELEMENT LinkButton (RadioButton | ImageButton | ValidationSummary | Literal | Label | RegularExpressionValidator | LinkButton | Table | Repeater | Xml | AdRotator | RequiredFieldValidator | DataGrid | CheckBoxList | CheckBox | PlaceHolder | ListBox | Calendar | DropDownList | TextBox | Panel | CustomValidator | CompareValidator | Button | RangeValidator | DataList | Image | HyperLink | RadioButtonList)*>
+<!ATTLIST LinkButton
+
+ CommandArgument CDATA #IMPLIED
+
+ CausesValidation CDATA #IMPLIED
+
+ Text CDATA #IMPLIED
+
+ CommandName CDATA #REQUIRED
+
+ OnBlur CDATA #IMPLIED
+
+ OnCommand CDATA #IMPLIED
+
+ OnClick CDATA #IMPLIED
+
+ OnFocus CDATA #IMPLIED
+
+ Enabled CDATA #IMPLIED
+
+ BorderWidth CDATA #IMPLIED
+
+ BorderColor CDATA #IMPLIED
+
+ BorderStyle CDATA #IMPLIED
+
+ Width CDATA #IMPLIED
+
+ Height CDATA #IMPLIED
+
+ AccessKey CDATA #IMPLIED
+
+ ForeColor CDATA #IMPLIED
+
+ ToolTip CDATA #IMPLIED
+
+ TabIndex CDATA #IMPLIED
+
+ BackColor CDATA #IMPLIED
+
+ CssClass CDATA #IMPLIED
+
+ Font-Size CDATA #IMPLIED
+
+ Font-Overline CDATA #IMPLIED
+
+ Font-Underline CDATA #IMPLIED
+
+ Font-Names CDATA #IMPLIED
+
+ Font-Italic CDATA #IMPLIED
+
+ Font-Name CDATA #REQUIRED
+
+ Font-Bold CDATA #IMPLIED
+
+ Font-Strikeout CDATA #IMPLIED
+
+ Style CDATA #IMPLIED
+
+ Runat CDATA #IMPLIED  Name CDATA #REQUIRED
+
+>
+
+<!ELEMENT Table (TableRow)*>
+<!ATTLIST Table
+
+ CellPadding CDATA #IMPLIED
+
+ GridLines CDATA #IMPLIED
+
+ HorizontalAlign CDATA #IMPLIED
+
+ CellSpacing CDATA #IMPLIED
+
+ BackImageUrl CDATA #IMPLIED
+
+ Enabled CDATA #IMPLIED
+
+ BorderWidth CDATA #IMPLIED
+
+ BorderColor CDATA #IMPLIED
+
+ BorderStyle CDATA #IMPLIED
+
+ Width CDATA #IMPLIED
+
+ Height CDATA #IMPLIED
+
+ AccessKey CDATA #IMPLIED
+
+ ForeColor CDATA #IMPLIED
+
+ ToolTip CDATA #IMPLIED
+
+ TabIndex CDATA #IMPLIED
+
+ BackColor CDATA #IMPLIED
+
+ CssClass CDATA #IMPLIED
+
+ Font-Size CDATA #IMPLIED
+
+ Font-Overline CDATA #IMPLIED
+
+ Font-Underline CDATA #IMPLIED
+
+ Font-Names CDATA #IMPLIED
+
+ Font-Italic CDATA #IMPLIED
+
+ Font-Name CDATA #REQUIRED
+
+ Font-Bold CDATA #IMPLIED
+
+ Font-Strikeout CDATA #IMPLIED
+
+ Style CDATA #IMPLIED
+
+ Runat CDATA #IMPLIED  Name CDATA #REQUIRED
+
+>
+
+<!ELEMENT DataList (AlternatingItemStyle | EditItemStyle | FooterStyle | SeparatorTemplate | SeparatorStyle | ItemTemplate | SelectedItemStyle | HeaderTemplate | ItemStyle | EditItemTemplate | HeaderStyle | AlternatingItemTemplate | FooterTemplate | SelectedItemTemplate)*>
+<!ATTLIST DataList
+
+ AlternatingItemStyle-Font-Size CDATA #IMPLIED
+
+ AlternatingItemStyle-Font-Overline CDATA #IMPLIED
+
+ AlternatingItemStyle-Font-Underline CDATA #IMPLIED
+
+ AlternatingItemStyle-Font-Names CDATA #IMPLIED
+
+ AlternatingItemStyle-Font-Italic CDATA #IMPLIED
+
+ AlternatingItemStyle-Font-Name CDATA #REQUIRED
+
+ AlternatingItemStyle-Font-Bold CDATA #IMPLIED
+
+ AlternatingItemStyle-Font-Strikeout CDATA #IMPLIED
+
+ AlternatingItemStyle-Wrap CDATA #IMPLIED
+
+ AlternatingItemStyle-HorizontalAlign CDATA #IMPLIED
+
+ AlternatingItemStyle-Height CDATA #IMPLIED
+
+ AlternatingItemStyle-BorderWidth CDATA #IMPLIED
+
+ AlternatingItemStyle-ForeColor CDATA #IMPLIED
+
+ AlternatingItemStyle-BorderStyle CDATA #IMPLIED
+
+ AlternatingItemStyle-BorderColor CDATA #IMPLIED
+
+ AlternatingItemStyle-Width CDATA #IMPLIED
+
+ AlternatingItemStyle-CssClass CDATA #IMPLIED
+
+ AlternatingItemStyle-VerticalAlign CDATA #IMPLIED
+
+ AlternatingItemStyle-BackColor CDATA #IMPLIED
+
+ EditItemStyle-Font-Size CDATA #IMPLIED
+
+ EditItemStyle-Font-Overline CDATA #IMPLIED
+
+ EditItemStyle-Font-Underline CDATA #IMPLIED
+
+ EditItemStyle-Font-Names CDATA #IMPLIED
+
+ EditItemStyle-Font-Italic CDATA #IMPLIED
+
+ EditItemStyle-Font-Name CDATA #REQUIRED
+
+ EditItemStyle-Font-Bold CDATA #IMPLIED
+
+ EditItemStyle-Font-Strikeout CDATA #IMPLIED
+
+ EditItemStyle-Wrap CDATA #IMPLIED
+
+ EditItemStyle-HorizontalAlign CDATA #IMPLIED
+
+ EditItemStyle-Height CDATA #IMPLIED
+
+ EditItemStyle-BorderWidth CDATA #IMPLIED
+
+ EditItemStyle-ForeColor CDATA #IMPLIED
+
+ EditItemStyle-BorderStyle CDATA #IMPLIED
+
+ EditItemStyle-BorderColor CDATA #IMPLIED
+
+ EditItemStyle-Width CDATA #IMPLIED
+
+ EditItemStyle-CssClass CDATA #IMPLIED
+
+ EditItemStyle-VerticalAlign CDATA #IMPLIED
+
+ EditItemStyle-BackColor CDATA #IMPLIED
+
+ FooterStyle-Font-Size CDATA #IMPLIED
+
+ FooterStyle-Font-Overline CDATA #IMPLIED
+
+ FooterStyle-Font-Underline CDATA #IMPLIED
+
+ FooterStyle-Font-Names CDATA #IMPLIED
+
+ FooterStyle-Font-Italic CDATA #IMPLIED
+
+ FooterStyle-Font-Name CDATA #REQUIRED
+
+ FooterStyle-Font-Bold CDATA #IMPLIED
+
+ FooterStyle-Font-Strikeout CDATA #IMPLIED
+
+ FooterStyle-Wrap CDATA #IMPLIED
+
+ FooterStyle-HorizontalAlign CDATA #IMPLIED
+
+ FooterStyle-Height CDATA #IMPLIED
+
+ FooterStyle-BorderWidth CDATA #IMPLIED
+
+ FooterStyle-ForeColor CDATA #IMPLIED
+
+ FooterStyle-BorderStyle CDATA #IMPLIED
+
+ FooterStyle-BorderColor CDATA #IMPLIED
+
+ FooterStyle-Width CDATA #IMPLIED
+
+ FooterStyle-CssClass CDATA #IMPLIED
+
+ FooterStyle-VerticalAlign CDATA #IMPLIED
+
+ FooterStyle-BackColor CDATA #IMPLIED
+
+ ExtractTemplateRows CDATA #IMPLIED
+
+ EditItemIndex CDATA #IMPLIED
+
+ SelectedIndex CDATA #IMPLIED
+
+ SeparatorStyle-Font-Size CDATA #IMPLIED
+
+ SeparatorStyle-Font-Overline CDATA #IMPLIED
+
+ SeparatorStyle-Font-Underline CDATA #IMPLIED
+
+ SeparatorStyle-Font-Names CDATA #IMPLIED
+
+ SeparatorStyle-Font-Italic CDATA #IMPLIED
+
+ SeparatorStyle-Font-Name CDATA #REQUIRED
+
+ SeparatorStyle-Font-Bold CDATA #IMPLIED
+
+ SeparatorStyle-Font-Strikeout CDATA #IMPLIED
+
+ SeparatorStyle-Wrap CDATA #IMPLIED
+
+ SeparatorStyle-HorizontalAlign CDATA #IMPLIED
+
+ SeparatorStyle-Height CDATA #IMPLIED
+
+ SeparatorStyle-BorderWidth CDATA #IMPLIED
+
+ SeparatorStyle-ForeColor CDATA #IMPLIED
+
+ SeparatorStyle-BorderStyle CDATA #IMPLIED
+
+ SeparatorStyle-BorderColor CDATA #IMPLIED
+
+ SeparatorStyle-Width CDATA #IMPLIED
+
+ SeparatorStyle-CssClass CDATA #IMPLIED
+
+ SeparatorStyle-VerticalAlign CDATA #IMPLIED
+
+ SeparatorStyle-BackColor CDATA #IMPLIED
+
+ SelectedItemStyle-Font-Size CDATA #IMPLIED
+
+ SelectedItemStyle-Font-Overline CDATA #IMPLIED
+
+ SelectedItemStyle-Font-Underline CDATA #IMPLIED
+
+ SelectedItemStyle-Font-Names CDATA #IMPLIED
+
+ SelectedItemStyle-Font-Italic CDATA #IMPLIED
+
+ SelectedItemStyle-Font-Name CDATA #REQUIRED
+
+ SelectedItemStyle-Font-Bold CDATA #IMPLIED
+
+ SelectedItemStyle-Font-Strikeout CDATA #IMPLIED
+
+ SelectedItemStyle-Wrap CDATA #IMPLIED
+
+ SelectedItemStyle-HorizontalAlign CDATA #IMPLIED
+
+ SelectedItemStyle-Height CDATA #IMPLIED
+
+ SelectedItemStyle-BorderWidth CDATA #IMPLIED
+
+ SelectedItemStyle-ForeColor CDATA #IMPLIED
+
+ SelectedItemStyle-BorderStyle CDATA #IMPLIED
+
+ SelectedItemStyle-BorderColor CDATA #IMPLIED
+
+ SelectedItemStyle-Width CDATA #IMPLIED
+
+ SelectedItemStyle-CssClass CDATA #IMPLIED
+
+ SelectedItemStyle-VerticalAlign CDATA #IMPLIED
+
+ SelectedItemStyle-BackColor CDATA #IMPLIED
+
+ ItemStyle-Font-Size CDATA #IMPLIED
+
+ ItemStyle-Font-Overline CDATA #IMPLIED
+
+ ItemStyle-Font-Underline CDATA #IMPLIED
+
+ ItemStyle-Font-Names CDATA #IMPLIED
+
+ ItemStyle-Font-Italic CDATA #IMPLIED
+
+ ItemStyle-Font-Name CDATA #REQUIRED
+
+ ItemStyle-Font-Bold CDATA #IMPLIED
+
+ ItemStyle-Font-Strikeout CDATA #IMPLIED
+
+ ItemStyle-Wrap CDATA #IMPLIED
+
+ ItemStyle-HorizontalAlign CDATA #IMPLIED
+
+ ItemStyle-Height CDATA #IMPLIED
+
+ ItemStyle-BorderWidth CDATA #IMPLIED
+
+ ItemStyle-ForeColor CDATA #IMPLIED
+
+ ItemStyle-BorderStyle CDATA #IMPLIED
+
+ ItemStyle-BorderColor CDATA #IMPLIED
+
+ ItemStyle-Width CDATA #IMPLIED
+
+ ItemStyle-CssClass CDATA #IMPLIED
+
+ ItemStyle-VerticalAlign CDATA #IMPLIED
+
+ ItemStyle-BackColor CDATA #IMPLIED
+
+ ShowHeader CDATA #IMPLIED
+
+ HeaderStyle-Font-Size CDATA #IMPLIED
+
+ HeaderStyle-Font-Overline CDATA #IMPLIED
+
+ HeaderStyle-Font-Underline CDATA #IMPLIED
+
+ HeaderStyle-Font-Names CDATA #IMPLIED
+
+ HeaderStyle-Font-Italic CDATA #IMPLIED
+
+ HeaderStyle-Font-Name CDATA #REQUIRED
+
+ HeaderStyle-Font-Bold CDATA #IMPLIED
+
+ HeaderStyle-Font-Strikeout CDATA #IMPLIED
+
+ HeaderStyle-Wrap CDATA #IMPLIED
+
+ HeaderStyle-HorizontalAlign CDATA #IMPLIED
+
+ HeaderStyle-Height CDATA #IMPLIED
+
+ HeaderStyle-BorderWidth CDATA #IMPLIED
+
+ HeaderStyle-ForeColor CDATA #IMPLIED
+
+ HeaderStyle-BorderStyle CDATA #IMPLIED
+
+ HeaderStyle-BorderColor CDATA #IMPLIED
+
+ HeaderStyle-Width CDATA #IMPLIED
+
+ HeaderStyle-CssClass CDATA #IMPLIED
+
+ HeaderStyle-VerticalAlign CDATA #IMPLIED
+
+ HeaderStyle-BackColor CDATA #IMPLIED
+
+ RepeatColumns CDATA #IMPLIED
+
+ RepeatLayout CDATA #IMPLIED
+
+ RepeatDirection CDATA #IMPLIED
+
+ ShowFooter CDATA #IMPLIED
+
+ OnUpdateCommand CDATA #IMPLIED
+
+ OnItemCreated CDATA #IMPLIED
+
+ OnItemCommand CDATA #IMPLIED
+
+ OnEditCommand CDATA #IMPLIED
+
+ OnCancelCommand CDATA #IMPLIED
+
+ OnDeleteCommand CDATA #IMPLIED
+
+ OnItemDataBound CDATA #IMPLIED
+
+ DataKeyField CDATA #IMPLIED
+
+ GridLines CDATA #IMPLIED
+
+ DataMember CDATA #IMPLIED
+
+ HorizontalAlign CDATA #IMPLIED
+
+ DataSource CDATA #IMPLIED
+
+ CellSpacing CDATA #IMPLIED
+
+ CellPadding CDATA #IMPLIED
+
+ OnSelectedIndexChanged CDATA #IMPLIED
+
+ Enabled CDATA #IMPLIED
+
+ BorderWidth CDATA #IMPLIED
+
+ BorderColor CDATA #IMPLIED
+
+ BorderStyle CDATA #IMPLIED
+
+>
+
+<!ELEMENT DropDownList (ListItem)*>
+<!ATTLIST DropDownList
+
+ BorderStyle CDATA #IMPLIED
+
+ BorderWidth CDATA #IMPLIED
+
+ BorderColor CDATA #IMPLIED
+
+ OnBlur CDATA #IMPLIED
+
+ OnFocus CDATA #IMPLIED
+
+ DataTextFormatString CDATA #IMPLIED
+
+ DataTextField CDATA #IMPLIED
+
+ DataMember CDATA #IMPLIED
+
+ SelectedIndex CDATA #IMPLIED
+
+ AutoPostBack CDATA #IMPLIED
+
+ DataValueField CDATA #IMPLIED
+
+ DataSource CDATA #IMPLIED
+
+ OnSelectedIndexChanged CDATA #IMPLIED
+
+ Enabled CDATA #IMPLIED
+
+>
+
+<!ELEMENT HyperLink (RadioButton | ImageButton | ValidationSummary | Literal | Label | RegularExpressionValidator | LinkButton | Table | Repeater | Xml | AdRotator | RequiredFieldValidator | DataGrid | CheckBoxList | CheckBox | PlaceHolder | ListBox | Calendar | DropDownList | TextBox | Panel | CustomValidator | CompareValidator | Button | RangeValidator | DataList | Image | HyperLink | RadioButtonList)*>
+<!ATTLIST HyperLink
+
+ Text CDATA #IMPLIED
+
+ NavigateUrl CDATA #IMPLIED
+
+ ImageUrl CDATA #IMPLIED
+
+ Target CDATA #IMPLIED
+
+ Enabled CDATA #IMPLIED
+
+ BorderWidth CDATA #IMPLIED
+
+ BorderColor CDATA #IMPLIED
+
+ BorderStyle CDATA #IMPLIED
+
+ OnBlur CDATA #IMPLIED
+
+ OnFocus CDATA #IMPLIED
+
+ Width CDATA #IMPLIED
+
+ Height CDATA #IMPLIED
+
+ AccessKey CDATA #IMPLIED
+
+ ForeColor CDATA #IMPLIED
+
+ ToolTip CDATA #IMPLIED
+
+ TabIndex CDATA #IMPLIED
+
+ BackColor CDATA #IMPLIED
+
+ CssClass CDATA #IMPLIED
+
+ Font-Size CDATA #IMPLIED
+
+ Font-Overline CDATA #IMPLIED
+
+ Font-Underline CDATA #IMPLIED
+
+ Font-Names CDATA #IMPLIED
+
+ Font-Italic CDATA #IMPLIED
+
+ Font-Name CDATA #REQUIRED
+
+ Font-Bold CDATA #IMPLIED
+
+ Font-Strikeout CDATA #IMPLIED
+
+ Style CDATA #IMPLIED
+
+ Runat CDATA #IMPLIED  Name CDATA #REQUIRED
+
+>
+
+<!ELEMENT Image (#PCDATA)*>
+<!ATTLIST Image
+
+ AlternateText CDATA #IMPLIED
+
+ Enabled CDATA #IMPLIED
+
+ ImageAlign CDATA #IMPLIED
+
+ ImageUrl CDATA #IMPLIED
+
+ BorderWidth CDATA #IMPLIED
+
+ BorderColor CDATA #IMPLIED
+
+ BorderStyle CDATA #IMPLIED
+
+ Width CDATA #IMPLIED
+
+ Height CDATA #IMPLIED
+
+ AccessKey CDATA #IMPLIED
+
+ ForeColor CDATA #IMPLIED
+
+ ToolTip CDATA #IMPLIED
+
+ TabIndex CDATA #IMPLIED
+
+ BackColor CDATA #IMPLIED
+
+ CssClass CDATA #IMPLIED
+
+ Font-Size CDATA #IMPLIED
+
+ Font-Overline CDATA #IMPLIED
+
+ Font-Underline CDATA #IMPLIED
+
+ Font-Names CDATA #IMPLIED
+
+ Font-Italic CDATA #IMPLIED
+
+ Font-Name CDATA #REQUIRED
+
+ Font-Bold CDATA #IMPLIED
+
+ Font-Strikeout CDATA #IMPLIED
+
+ Style CDATA #IMPLIED
+
+ Runat CDATA #IMPLIED  Name CDATA #REQUIRED
+
+>
+
+<!ELEMENT ImageButton (#PCDATA)*>
+<!ATTLIST ImageButton
+
+ CommandArgument CDATA #IMPLIED
+
+ CommandName CDATA #REQUIRED
+
+ CausesValidation CDATA #IMPLIED
+
+ OnBlur CDATA #IMPLIED
+
+ OnCommand CDATA #IMPLIED
+
+ OnClick CDATA #IMPLIED
+
+ OnFocus CDATA #IMPLIED
+
+ AlternateText CDATA #IMPLIED
+
+ Enabled CDATA #IMPLIED
+
+ ImageAlign CDATA #IMPLIED
+
+ ImageUrl CDATA #IMPLIED
+
+ BorderWidth CDATA #IMPLIED
+
+ BorderColor CDATA #IMPLIED
+
+ BorderStyle CDATA #IMPLIED
+
+>
+
+<!ELEMENT ListBox (ListItem)*>
+<!ATTLIST ListBox
+
+ BorderStyle CDATA #IMPLIED
+
+ Rows CDATA #IMPLIED
+
+ SelectionMode CDATA #IMPLIED
+
+ BorderWidth CDATA #IMPLIED
+
+ BorderColor CDATA #IMPLIED
+
+ OnBlur CDATA #IMPLIED
+
+ OnFocus CDATA #IMPLIED
+
+ DataTextFormatString CDATA #IMPLIED
+
+ DataTextField CDATA #IMPLIED
+
+ DataMember CDATA #IMPLIED
+
+ SelectedIndex CDATA #IMPLIED
+
+ AutoPostBack CDATA #IMPLIED
+
+ DataValueField CDATA #IMPLIED
+
+ DataSource CDATA #IMPLIED
+
+ OnSelectedIndexChanged CDATA #IMPLIED
+
+ Enabled CDATA #IMPLIED
+
+>
+
+<!ELEMENT Literal (#PCDATA)*>
+<!ATTLIST Literal
+
+ Text CDATA #IMPLIED
+
+ Runat CDATA #IMPLIED  Name CDATA #REQUIRED
+
+ Visible CDATA #IMPLIED
+
+ EnableViewState CDATA #IMPLIED
+
+ OnLoad CDATA #IMPLIED
+
+ OnDataBinding CDATA #IMPLIED
+
+ OnPreRender CDATA #IMPLIED
+
+ OnInit CDATA #IMPLIED
+
+ OnUnload CDATA #IMPLIED
+
+ OnDisposed CDATA #IMPLIED
+
+>
+
+<!ELEMENT Panel (RadioButton | ImageButton | ValidationSummary | Literal | Label | RegularExpressionValidator | LinkButton | Table | Repeater | Xml | AdRotator | RequiredFieldValidator | DataGrid | CheckBoxList | CheckBox | PlaceHolder | ListBox | Calendar | DropDownList | TextBox | Panel | CustomValidator | CompareValidator | Button | RangeValidator | DataList | Image | HyperLink | RadioButtonList)*>
+<!ATTLIST Panel
+
+ BackImageUrl CDATA #IMPLIED
+
+ HorizontalAlign CDATA #IMPLIED
+
+ Wrap CDATA #IMPLIED
+
+ Enabled CDATA #IMPLIED
+
+ BorderWidth CDATA #IMPLIED
+
+ BorderColor CDATA #IMPLIED
+
+ BorderStyle CDATA #IMPLIED
+
+ Width CDATA #IMPLIED
+
+ Height CDATA #IMPLIED
+
+ AccessKey CDATA #IMPLIED
+
+ ForeColor CDATA #IMPLIED
+
+ ToolTip CDATA #IMPLIED
+
+ TabIndex CDATA #IMPLIED
+
+ BackColor CDATA #IMPLIED
+
+ CssClass CDATA #IMPLIED
+
+ Font-Size CDATA #IMPLIED
+
+ Font-Overline CDATA #IMPLIED
+
+ Font-Underline CDATA #IMPLIED
+
+ Font-Names CDATA #IMPLIED
+
+ Font-Italic CDATA #IMPLIED
+
+ Font-Name CDATA #REQUIRED
+
+ Font-Bold CDATA #IMPLIED
+
+ Font-Strikeout CDATA #IMPLIED
+
+ Style CDATA #IMPLIED
+
+ Runat CDATA #IMPLIED  Name CDATA #REQUIRED
+
+>
+
+<!ELEMENT PlaceHolder (#PCDATA)*>
+<!ATTLIST PlaceHolder
+
+ Runat CDATA #IMPLIED  Name CDATA #REQUIRED
+
+ Visible CDATA #IMPLIED
+
+ EnableViewState CDATA #IMPLIED
+
+ OnLoad CDATA #IMPLIED
+
+ OnDataBinding CDATA #IMPLIED
+
+ OnPreRender CDATA #IMPLIED
+
+ OnInit CDATA #IMPLIED
+
+ OnUnload CDATA #IMPLIED
+
+ OnDisposed CDATA #IMPLIED
+
+>
+
+<!ELEMENT RadioButton (#PCDATA)*>
+<!ATTLIST RadioButton
+
+ GroupName CDATA #REQUIRED
+
+ AutoPostBack CDATA #IMPLIED
+
+ Checked CDATA #IMPLIED
+
+ Text CDATA #IMPLIED
+
+ TextAlign CDATA #IMPLIED
+
+ OnCheckedChanged CDATA #IMPLIED
+
+ Enabled CDATA #IMPLIED
+
+ BorderWidth CDATA #IMPLIED
+
+ BorderColor CDATA #IMPLIED
+
+ BorderStyle CDATA #IMPLIED
+
+>
+
+<!ELEMENT RadioButtonList (ListItem)*>
+<!ATTLIST RadioButtonList
+
+ TextAlign CDATA #IMPLIED
+
+ RepeatColumns CDATA #IMPLIED
+
+ CellSpacing CDATA #IMPLIED
+
+ RepeatLayout CDATA #IMPLIED
+
+ RepeatDirection CDATA #IMPLIED
+
+ CellPadding CDATA #IMPLIED
+
+ BorderWidth CDATA #IMPLIED
+
+ BorderColor CDATA #IMPLIED
+
+ BorderStyle CDATA #IMPLIED
+
+ DataTextFormatString CDATA #IMPLIED
+
+ DataTextField CDATA #IMPLIED
+
+ DataMember CDATA #IMPLIED
+
+ SelectedIndex CDATA #IMPLIED
+
+ AutoPostBack CDATA #IMPLIED
+
+ DataValueField CDATA #IMPLIED
+
+ DataSource CDATA #IMPLIED
+
+ OnSelectedIndexChanged CDATA #IMPLIED
+
+ Enabled CDATA #IMPLIED
+
+>
+
+<!ELEMENT RangeValidator (#PCDATA)*>
+<!ATTLIST RangeValidator
+
+ MaximumValue CDATA #IMPLIED
+
+ MinimumValue CDATA #IMPLIED
+
+ Type CDATA #IMPLIED
+
+>
+
+<!ELEMENT RegularExpressionValidator (#PCDATA)*>
+<!ATTLIST RegularExpressionValidator
+
+ ValidationExpression CDATA #IMPLIED
+
+ Display CDATA #IMPLIED
+
+ EnableClientScript CDATA #IMPLIED
+
+ ControlToValidate CDATA #IMPLIED
+
+ ErrorMessage CDATA #IMPLIED
+
+>
+
+<!ELEMENT Repeater (FooterTemplate | AlternatingItemTemplate | HeaderTemplate | SeparatorTemplate | ItemTemplate)*>
+<!ATTLIST Repeater
+
+ DataMember CDATA #IMPLIED
+
+ DataSource CDATA #IMPLIED
+
+ OnItemDataBound CDATA #IMPLIED
+
+ OnItemCommand CDATA #IMPLIED
+
+ OnItemCreated CDATA #IMPLIED
+
+ Runat CDATA #IMPLIED  Name CDATA #REQUIRED
+
+ Visible CDATA #IMPLIED
+
+ EnableViewState CDATA #IMPLIED
+
+ OnLoad CDATA #IMPLIED
+
+ OnDataBinding CDATA #IMPLIED
+
+ OnPreRender CDATA #IMPLIED
+
+ OnInit CDATA #IMPLIED
+
+ OnUnload CDATA #IMPLIED
+
+ OnDisposed CDATA #IMPLIED
+
+>
+
+<!ELEMENT RequiredFieldValidator (#PCDATA)*>
+<!ATTLIST RequiredFieldValidator
+
+ InitialValue CDATA #IMPLIED
+
+ Display CDATA #IMPLIED
+
+ EnableClientScript CDATA #IMPLIED
+
+ ControlToValidate CDATA #IMPLIED
+
+ ErrorMessage CDATA #IMPLIED
+
+>
+
+<!ELEMENT TextBox (#PCDATA)*>
+<!ATTLIST TextBox
+
+ Rows CDATA #IMPLIED
+
+ AutoPostBack CDATA #IMPLIED
+
+ TextMode CDATA #IMPLIED
+
+ ReadOnly CDATA #IMPLIED
+
+ Wrap CDATA #IMPLIED
+
+ Columns CDATA #IMPLIED
+
+ Text CDATA #IMPLIED
+
+ MaxLength CDATA #IMPLIED
+
+ OnBlur CDATA #IMPLIED
+
+ OnFocus CDATA #IMPLIED
+
+ OnTextChanged CDATA #IMPLIED
+
+ Enabled CDATA #IMPLIED
+
+ BorderWidth CDATA #IMPLIED
+
+ BorderColor CDATA #IMPLIED
+
+ BorderStyle CDATA #IMPLIED
+
+ Width CDATA #IMPLIED
+
+ Height CDATA #IMPLIED
+
+ AccessKey CDATA #IMPLIED
+
+ ForeColor CDATA #IMPLIED
+
+ ToolTip CDATA #IMPLIED
+
+ TabIndex CDATA #IMPLIED
+
+ BackColor CDATA #IMPLIED
+
+ CssClass CDATA #IMPLIED
+
+ Font-Size CDATA #IMPLIED
+
+ Font-Overline CDATA #IMPLIED
+
+ Font-Underline CDATA #IMPLIED
+
+ Font-Names CDATA #IMPLIED
+
+ Font-Italic CDATA #IMPLIED
+
+ Font-Name CDATA #REQUIRED
+
+ Font-Bold CDATA #IMPLIED
+
+ Font-Strikeout CDATA #IMPLIED
+
+ Style CDATA #IMPLIED
+
+ Runat CDATA #IMPLIED  Name CDATA #REQUIRED
+
+>
+
+<!ELEMENT ValidationSummary (#PCDATA)*>
+<!ATTLIST ValidationSummary
+
+ EnableClientScript CDATA #IMPLIED
+
+ DisplayMode CDATA #IMPLIED
+
+ HeaderText CDATA #IMPLIED
+
+ ShowSummary CDATA #IMPLIED
+
+ ShowMessageBox CDATA #IMPLIED
+
+ Enabled CDATA #IMPLIED
+
+ BorderWidth CDATA #IMPLIED
+
+ BorderColor CDATA #IMPLIED
+
+ BorderStyle CDATA #IMPLIED
+
+ Width CDATA #IMPLIED
+
+ Height CDATA #IMPLIED
+
+ AccessKey CDATA #IMPLIED
+
+ ForeColor CDATA #IMPLIED
+
+ ToolTip CDATA #IMPLIED
+
+ TabIndex CDATA #IMPLIED
+
+ BackColor CDATA #IMPLIED
+
+ CssClass CDATA #IMPLIED
+
+ Font-Size CDATA #IMPLIED
+
+ Font-Overline CDATA #IMPLIED
+
+ Font-Underline CDATA #IMPLIED
+
+ Font-Names CDATA #IMPLIED
+
+ Font-Italic CDATA #IMPLIED
+
+ Font-Name CDATA #REQUIRED
+
+ Font-Bold CDATA #IMPLIED
+
+ Font-Strikeout CDATA #IMPLIED
+
+ Style CDATA #IMPLIED
+
+ Runat CDATA #IMPLIED  Name CDATA #REQUIRED
+
+>
+
+<!ELEMENT Xml (#PCDATA)*>
+<!ATTLIST Xml
+
+ TransformSource CDATA #IMPLIED
+
+ DocumentSource CDATA #IMPLIED?Font-
+
+ Runat CDATA #IMPLIED  Name CDATA #REQUIRED
+
+ Visible CDATA #IMPLIED
+
+ EnableViewState CDATA #IMPLIED
+
+ OnLoad CDATA #IMPLIED
+
+ OnDataBinding CDATA #IMPLIED
+
+ OnPreRender CDATA #IMPLIED
+
+ OnInit CDATA #IMPLIED
+
+ OnUnload CDATA #IMPLIED
+
+ OnDisposed CDATA #IMPLIED
+
+>

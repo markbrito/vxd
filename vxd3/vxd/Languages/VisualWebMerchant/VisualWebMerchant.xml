@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Language xmlns="http://tempuri.org/VisualWebMerchant.xsd"  Name="VisualWebMerchant" StructureDTD="VisualWebMerchant.dtd">
+ <Icons>
+
+
+	 <Icon Name="Store"  Image="Languages/VisualSalesManagement/Images/Company.jpg"/>
+	 <Icon Name="Page"  Image="Languages/VisualSalesManagement/Images/Dashboard.jpg"/>
+
+
+	 <Icon Name="ProductList"  Image="Languages/VisualSalesManagement/Images/ProductLine.jpg"/>
+
+	 <Icon Name="Catalog"  Image="Languages/VisualSalesManagement/Images/ProductFamily.jpg"/>
+
+	 <Icon Name="Product"  Image="Languages/VisualSalesManagement/Images/Product.jpg"/>
+
+	 <Icon Name="Customer"  Image="Languages/VisualSalesManagement/Images/Run-Rate.jpg"/>
+
+	 <Icon Name="Order"  Image="Languages/VisualSalesManagement/Images/Commit.jpg"/>
+
+
+	
+	 <Icon Name="Shipping"  Image="Languages/VisualSalesManagement/Images/Theater.jpg"/>
+
+
+	 <Icon Name="Payment"  Image="Languages/VisualSalesManagement/Images/DealValue.jpg"/>
+
+	 <Icon Name="Chart"  Image="Languages/VisualSalesManagement/Images/Chart.jpg"/>
+
+	 <Icon Name="Report"  Image="Languages/VisualSalesManagement/Images/Report.jpg"/>
+
+	
+
+ </Icons>
+ <Connectors>
+   <Connector Name="SingleConnection" Image="Languages/VisualWeb/Images/connection.gif" Type="CONNECTION"/>
+   <Connector Name="MultipleConnection" Image="Languages/VisualWeb/Images/connection.gif" Type="CONNECTION"/>
+ </Connectors>
+ <Editors>
+
+	 <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="Store" AttributeName="Variable" Type="PANEL"/>
+
+	 <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="Page" AttributeName="Variable" Type="PANEL"/>
+
+	 <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="ProductList" AttributeName="Variable" Type="PANEL"/>
+
+	 <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="Product" AttributeName="Variable" Type="PANEL"/>
+
+	 <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="Catalog" AttributeName="Variable" Type="PANEL"/>
+
+	 <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="Customer" AttributeName="Variable" Type="PANEL"/>
+
+	 <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="Order" AttributeName="Variable" Type="PANEL"/>
+
+	 <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="Shipping" AttributeName="Variable" Type="PANEL"/>
+
+	 <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="Payment" AttributeName="Variable" Type="PANEL"/>
+
+	 <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="Chart" AttributeName="Variable" Type="PANEL"/>
+
+	 <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="Report" AttributeName="Variable" Type="PANEL"/>
+
+ </Editors>
+</Language>

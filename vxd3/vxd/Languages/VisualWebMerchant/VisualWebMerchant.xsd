@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/VisualWebMerchant.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Language">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Icons">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element maxOccurs="unbounded" name="Icon">
+								<xs:complexType>
+									<xs:attribute name="Name" type="xs:string" use="required" />
+									<xs:attribute name="Image" type="xs:string" use="required" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Connectors">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element maxOccurs="unbounded" name="Connector">
+								<xs:complexType>
+									<xs:attribute name="Name" type="xs:string" use="required" />
+									<xs:attribute name="Image" type="xs:string" use="required" />
+									<xs:attribute name="Type" type="xs:string" use="required" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Editors">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element maxOccurs="unbounded" name="Editor">
+								<xs:complexType>
+									<xs:attribute name="Name" type="xs:string" use="required" />
+									<xs:attribute name="Class" type="xs:string" use="required" />
+									<xs:attribute name="ElementName" type="xs:string" use="required" />
+									<xs:attribute name="AttributeName" type="xs:string" use="required" />
+									<xs:attribute name="Type" type="xs:string" use="required" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="Name" type="xs:string" use="required" />
+			<xs:attribute name="StructureDTD" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

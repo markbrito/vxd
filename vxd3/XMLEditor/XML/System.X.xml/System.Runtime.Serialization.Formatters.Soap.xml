@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>System.Runtime.Serialization.Formatters.Soap</name>
+	</assembly>
+	<members>
+		<member name="N:System.Runtime.Serialization.Formatters.Soap">
+			<summary>The <see cref="N:System.Runtime.Serialization.Formatters.Soap"></see> namespace contains the <see cref="T:System.Runtime.Serialization.Formatters.Soap.SoapFormatter"></see> class, which can be used to serialize and deserialize objects in the SOAP format. When building applications that uses the types in this namespace, you must reference the System.Runtime.Serialization.Formatters.Soap.dll assembly.</summary>
+		</member>
+		<member name="T:System.Runtime.Serialization.Formatters.Soap.SoapFormatter">
+			<summary>Serializes and deserializes an object, or an entire graph of connected objects, in SOAP format.</summary>
+		</member>
+		<member name="M:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Formatters.Soap.SoapFormatter"></see> class with default property values.</summary>
+		</member>
+		<member name="M:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.#ctor(System.Runtime.Serialization.ISurrogateSelector,System.Runtime.Serialization.StreamingContext)">
+			<summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Formatters.Soap.SoapFormatter"></see> class with the specified <see cref="T:System.Runtime.Serialization.ISurrogateSelector"></see> and <see cref="T:System.Runtime.Serialization.StreamingContext"></see>.</summary>
+			<param name="selector">The <see cref="T:System.Runtime.Serialization.ISurrogateSelector"></see> to use with the new instance of <see cref="T:System.Runtime.Serialization.Formatters.Soap.SoapFormatter"></see>. Can be null. </param>
+			<param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext"></see> that holds the source and destination of the serialization. If the context parameter is null, then the <see cref="P:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.Context"></see> defaults to <see cref="F:System.Runtime.Serialization.StreamingContextStates.CrossMachine"></see>. </param>
+		</member>
+		<member name="M:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.Deserialize(System.IO.Stream)">
+			<summary>Deserializes the data on the provided stream and reconstitutes the graph of objects.</summary>
+			<returns>The top object of the deserialized graph (root).</returns>
+			<param name="serializationStream">The stream that contains the data to deserialize. </param>
+			<exception cref="T:System.ArgumentNullException">serializationStream is null. </exception>
+		</member>
+		<member name="M:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.Deserialize(System.IO.Stream,System.Runtime.Remoting.Messaging.HeaderHandler)">
+			<summary>Deserializes the stream into an object graph with any headers in that stream being handled by the given <see cref="T:System.Runtime.Remoting.Messaging.HeaderHandler"></see>.</summary>
+			<returns>The top object of the deserialized graph (root).</returns>
+			<param name="serializationStream">The stream that contains the data to deserialize. </param>
+			<param name="handler">Delegate to handle any headers found on the stream. Can be null. </param>
+			<exception cref="T:System.Runtime.Serialization.SerializationException">serializationStream supports seeking, and its length is 0. </exception>
+			<exception cref="T:System.ArgumentNullException">serializationStream is null. </exception>
+		</member>
+		<member name="M:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.Serialize(System.IO.Stream,System.Object)">
+			<summary>Serializes an object or graph of objects with the specified root to the given <see cref="T:System.IO.Stream"></see>.</summary>
+			<param name="serializationStream">The stream onto which the formatter puts the data to serialize. </param>
+			<param name="graph">The object, or root of the object graph, to serialize. All child objects of this root object are automatically serialized. </param>
+			<exception cref="T:System.ArgumentNullException">serializationStream is null. </exception>
+		</member>
+		<member name="M:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.Serialize(System.IO.Stream,System.Object,System.Runtime.Remoting.Messaging.Header[])">
+			<summary>Serializes an object or graph of objects with the specified root to the given <see cref="T:System.IO.Stream"></see> in the SOAP Remote Procedure Call (RPC) format.</summary>
+			<param name="serializationStream">The stream onto which the formatter puts the data to serialize. </param>
+			<param name="headers">Remoting headers to include in the serialization. Can be null. </param>
+			<param name="graph">The object or root of the object graph to serialize. All child objects of this root object are automatically serialized. </param>
+			<exception cref="T:System.ArgumentNullException">serializationStream is null. </exception>
+		</member>
+		<member name="P:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.AssemblyFormat">
+			<summary>Gets or sets the format in which assembly names are serialized.</summary>
+			<returns>The format in which assembly names are serialized.</returns>
+		</member>
+		<member name="P:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.Binder">
+			<summary>Gets or sets the <see cref="T:System.Runtime.Serialization.SerializationBinder"></see> that controls the binding of a serialized object to a type.</summary>
+			<returns>The <see cref="T:System.Runtime.Serialization.SerializationBinder"></see> used with this <see cref="T:System.Runtime.Serialization.Formatters.Soap.SoapFormatter"></see>.</returns>
+		</member>
+		<member name="P:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.Context">
+			<summary>Gets or sets the <see cref="T:System.Runtime.Serialization.StreamingContext"></see> used with this <see cref="T:System.Runtime.Serialization.Formatters.Soap.SoapFormatter"></see>.</summary>
+			<returns>The <see cref="T:System.Runtime.Serialization.StreamingContext"></see> used with this <see cref="T:System.Runtime.Serialization.Formatters.Soap.SoapFormatter"></see>.</returns>
+		</member>
+		<member name="P:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.FilterLevel">
+			<summary>Gets or sets the <see cref="T:System.Runtime.Serialization.Formatters.TypeFilterLevel"></see> of automatic deserialization for .NET Framework remoting.</summary>
+			<returns>The <see cref="T:System.Runtime.Serialization.Formatters.TypeFilterLevel"></see> that represents the current automatic deserialization level.</returns>
+		</member>
+		<member name="P:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.SurrogateSelector">
+			<summary>Gets or sets the <see cref="T:System.Runtime.Serialization.SurrogateSelector"></see> that controls type substitution during serialization and deserialization.</summary>
+			<returns>The <see cref="T:System.Runtime.Serialization.SurrogateSelector"></see> used with this <see cref="T:System.Runtime.Serialization.Formatters.Soap.SoapFormatter"></see>.</returns>
+		</member>
+		<member name="P:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.TopObject">
+			<summary>Gets or sets the <see cref="T:System.Runtime.Serialization.Formatters.ISoapMessage"></see> into which the SOAP top object is deserialized.</summary>
+			<returns>The <see cref="T:System.Runtime.Serialization.Formatters.ISoapMessage"></see> into which the SOAP top object is deserialized.</returns>
+		</member>
+		<member name="P:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.TypeFormat">
+			<summary>Gets or sets the format in which type descriptions are laid out in the serialized stream.</summary>
+			<returns>The format in which type descriptions are laid out in the serialized stream.</returns>
+		</member>
+	</members>
+</doc>

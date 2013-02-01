@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE Language SYSTEM "../Language.dtd">
+<Language Name="DTD" StructureDTD="DTD.dtd">
+ <Icons>
+   <Icon Name="ELEMNTGROUP" Image="Languages/DTD/Images/ELEMNTGROUP.gif"/>
+   <Icon Name="ELEMNT" Image="Languages/DTD/Images/ELEMNT.gif"/>
+   <Icon Name="ATTLST" Image="Languages/DTD/Images/ATTLST.gif"/>
+   <Icon Name="ATT" Image="Languages/DTD/Images/ATT.gif"/>
+   <Icon Name="ATTITEM" Image="Languages/DTD/Images/ATTITEM.gif"/>
+ </Icons>
+ <Connectors>
+   <Connector Name="Connection" Image="Languages/DTD/Images/connection.gif" Type="CONNECTION"/>
+<!--   <Connector Name="MapAttribute" Image="Languages/DTD/Images/connection.gif" Type="CONNECTION"/>
+   <Connector Name="MapAttributeList" Image="Languages/DTD/Images/connections.gif" Type="CONNECTION"/>
+   <Connector Name="MapElement" Image="Languages/DTD/Images/connection.gif" Type="CONNECTION"/>
+ -->
+ </Connectors>
+ <Editors>
+   <Editor Name="VariableSelector" 
+           Class="vxd.Languages.VisualWeb.Editors.VariableSelector" 
+	   ElementName="ELEMNTGROUP" AttributeName="Variable" Type="PANEL"/>
+   <Editor Name="VariableSelector" 
+           Class="vxd.Languages.VisualWeb.Editors.VariableSelector" 
+	   ElementName="ELEMNT" AttributeName="Variable" Type="PANEL"/>
+   <Editor Name="VariableSelector" 
+           Class="vxd.Languages.VisualWeb.Editors.VariableSelector" 
+	   ElementName="ATTLST" AttributeName="Variable" Type="PANEL"/>
+   <Editor Name="VariableSelector" 
+           Class="vxd.Languages.VisualWeb.Editors.VariableSelector" 
+	   ElementName="ATT" AttributeName="Variable" Type="PANEL"/>
+   <Editor Name="VariableSelector" 
+           Class="vxd.Languages.VisualWeb.Editors.VariableSelector" 
+	   ElementName="ATTITEM" AttributeName="Variable" Type="PANEL"/>
+ </Editors>
+</Language>

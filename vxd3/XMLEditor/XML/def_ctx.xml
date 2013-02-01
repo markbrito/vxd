@@ -1,0 +1,6 @@
+﻿<?xml version='1.0' encoding="utf-8" ?>
+<DynamicHelp xmlns="http://microsoft.com/vstudio/tbd/vsdh.xsd">
+  <LINKGROUP ID="misc" Title="Default Help" Priority="500">
+    <GLYPH Expanded="vs:/ctxhelp_show.gif" Collapsed="vs:/ctxhelp_hide.gif"/>
+  </LINKGROUP>
+</DynamicHelp>

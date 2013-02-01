@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!DOCTYPE Language SYSTEM "../Language.dtd">
+<Language Name="VisualXSL" StructureDTD="VisualXSL.dtd">
+  <Icons>
+    <Icon Name="apply-imports" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="apply-templates" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="char-instructions" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="instructions" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="top-level" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="top-level-attrs" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="attribute" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="attribute-set" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="call-template" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="choose" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="comment" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="copy" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="copy-of" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="decimal-format" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="element" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="fallback" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="for-each" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="if" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="import" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="include" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="key" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="message" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="namespace-alias" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="number" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="otherwise" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="output" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="param" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="preserve-space" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="processing-instruction" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="sort" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="strip-space" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="stylesheet" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="template" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="text" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="transform" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="value-of" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="variable" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="when" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="with-param" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="encoding" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="exclude-result-prefixes" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="extension-element-prefixes" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="use-attribute-sets" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+    <Icon Name="version" Image="Languages/VisualXSL/Images/ELEMNT.gif" />
+  </Icons>
+  <Connectors>
+    <Connector Name="Connection" Image="Languages/VisualXSL/Images/connection.gif" Type="CONNECTION" />
+  </Connectors>
+  <Editors>
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="apply-imports" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="apply-templates" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="char-instructions" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="instructions" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="top-level" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="top-level-attrs" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="attribute" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="attribute-set" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="call-template" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="choose" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="comment" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="copy" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="copy-of" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="decimal-format" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="element" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="fallback" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="for-each" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="if" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="import" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="include" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="key" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="message" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="namespace-alias" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="number" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="otherwise" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="output" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="param" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="preserve-space" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="processing-instruction" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="sort" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="strip-space" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="stylesheet" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="template" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="text" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="transform" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="value-of" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="variable" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="when" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="with-param" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="encoding" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="exclude-result-prefixes" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="extension-element-prefixes" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="use-attribute-sets" Type="PANEL" AttributeName="Variable" />
+    <Editor Name="VariableSelector" Class="vxd.Languages.VisualWeb.Editors.VariableSelector" ElementName="version" Type="PANEL" AttributeName="Variable" />
+  </Editors>
+</Language>

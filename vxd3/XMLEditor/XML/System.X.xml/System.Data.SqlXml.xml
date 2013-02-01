@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>System.Data.SqlXml</name>
+	</assembly>
+	<members>
+		<member name="N:System.Xml.Xsl.Runtime">
+			<summary>The System.Xml.Xsl.Runtime namespace supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
+		</member>
+	</members>
+</doc>

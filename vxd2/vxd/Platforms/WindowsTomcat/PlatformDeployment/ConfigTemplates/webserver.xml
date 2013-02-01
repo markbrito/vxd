@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!--
+
+This file is the default configuration file for the
+JSWDK server. Following is a brief overview of the
+JSWDK server configuration options.
+
+========================================================
+
+webserver dtd and xml:
+
+Element
+    Attribute(s)
+    Element(s)
+========================================================
+
+WebServer - A collection of web services managed by a
+            single HTTP Web Server instance.
+
+    id - A Unique Web Server id.
+    adminPort - The Web Server administration port
+                number which is used as an external
+                Web Server hook to invoke administrative
+                tasks such as gracefully shutting down
+                the web server (note: these services
+                are presently not specified and as such
+                are subject to change).
+
+    Service - A managed web service.
+
+Service - A distinct web resource which is associated
+          with a fully qualified URI.
+
+    id - A unique Service id.
+    port - The port number with which the Service is
+           registered.
+    hostName - The system host name in which the Service
+               is hosted.
+    inet - The system ip address in which the Service is
+           hosted.
+    docBase - The Service document base.
+    workDir - The Service work directory.
+    workDirIsPersistent - Indicator as to whether or not
+                          the Web Server should return
+                          the associated work directory
+                          to the host system upon shut
+                          down.
+
+    WebApplication - A managed association of web resources.
+
+WebApplication - A collection of associated web resources
+                 which correspond to a distinct fully
+                 qualified URI.
+
+    id - A unique Web Application id.
+    mapping - The URI prefix with which this Web Application
+              is associated with relative to the hosted
+              Service.
+    docBase - The Web Application document base.
+    maxInactiveInterval - The maximum session timeout
+                          period.
+
+========================================================
+
+command line options:
+
+	-help                     This Message
+	-config [file|url]        Read config from URL
+	-noconfig                 Do not read config
+	-adminport [int]          Administration Port
+	-serviceid [str]          Service Id
+	-port[:id|:*] [int]       Listen on int [for Service id]
+	-inet[:id|:*] [inetaddr]  Bind server to inet [for Service id]
+	-hostname[:id|:*] [name]  Use name as hostname [for Service id]
+	-docbase[:id|:*] [name]   Use URL as the content base [for Service id]
+	-workdir[:id|:*] [name]   Use scratch file [for Service id]
+
+========================================================
+
+configuration attribute details:
+
+    All "id" values must be unique with a collection
+    of like elements.
+
+    Most configuration values can be declared in one
+    of following three means respectively:
+
+        command line
+        xml declaration
+        default as specified by the dtd and/or
+            application
+
+    Many fields have default falues which are either
+    specified in the associated dtd or within JSWDK.
+    These default values can be changed by modifying
+    the included webserver.xml and fully qualifying
+    the appropriate element attributes.
+
+    A JSWDK server can be started on any platform
+    with no changes to the provided default
+    webserver.xml configuration.
+
+    The JSWDK server will create a default
+    configuration file upon initialization if it does
+    not find one either by looking in the JSWDK
+    install directory for the file "webserver.xml or
+    the "-config [file | url]" command line option.
+
+    If an explicit WebServer.adminPort value is not
+    specified then a series of 5 attempts will be
+    made to bind to an available port number randomly
+    chosen between the range of 2048 and 8192. Upon
+    success, the chosen administration port is logged
+    in the "webserverlog.txt" file. If an administration
+    port cannot be determined, the web server will
+    not be started.
+
+    The WebServer.id field is likely to be removed
+    in a future release.
+
+    The Service.id field is required as the key for
+    the command line arguments. Duplicate Server.port
+    entries will cause the subsequent duplicate Services
+    to be disregarded.
+
+    The Server.hostName is opional and a value of
+    "localhost" will be used if it remains
+    unspecified.
+
+    A Server.port field must be unique within a
+    collection WebServer configuration. Subsequent
+    Service instances specified with duplicate port
+    numbers will fail initialization.
+
+    The Server.docBase is the file system location
+    which is accessed by the Web Server to route
+    inbound http requests to a specific Service instance
+    and not picked up by an associated Web Application.
+    A document base can be specified as relative or
+    absolute and need not reside within the JSWDK install
+    directory. It should be possible to specify URI
+    addresses as well effectively turning this WebServer
+    Service instance into a proxy server although this is
+    experimental with this release.
+
+    The Server.workDir specfies the local file system
+    directory available to the Web Server as needed to
+    use as a cache, archive object persistence among
+    other tasks. The work directory can be specified
+    as relative or absolute and need not reside within
+    the JSWDK install directory.
+
+    The Server.workDirIsPersistent is an indicator to
+    the WebServer to either save or return to the host
+    system the associated work directory. This field is
+    likely to be renamed to "isWorkDirPersistent" in a
+    future release.
+
+    The WebApplication.id field is likely to be
+    removed in a future release.
+
+    The WebApplication.mapping is used to specify the
+    URI prefix with which this Web Application
+    instance is to be associated with. The specified
+    value of this field must be unique amongst a
+    collection managed by a single Service instance.
+    This field is likely to be renamed to "path" in a
+    future release.
+
+    The WebApplication.docBase is the file system
+    location which is accessed by the Web Server to
+    service inbound http requests routed to this
+    specific Web Application instance. This field
+    shares many of the attributes specified in the
+    Server.docBase description above.
+
+    The WebApplication.maxInactiveInterval is not
+    utilized at this time and will likely specify
+    the "session time out in minutes" threshold in
+    a future release.
+
+========================================================
+
+Miscellany:
+
+    Any number of Service and/or Web Application
+    instances can be readily added to an existing Web
+    Server configuration by adding the appropriate and
+    valid (as specified by the dtd and associated rules)
+    xml details.
+
+========================================================
+
+-->
+
+<!DOCTYPE WebServer [
+
+<!ELEMENT WebServer (Service+)>
+<!ATTLIST WebServer
+    id ID #REQUIRED
+    adminPort NMTOKEN "">
+
+<!ELEMENT Service (WebApplication*)>
+<!ATTLIST Service
+    id ID #REQUIRED
+    port NMTOKEN "8080"
+    hostName NMTOKEN ""
+    inet NMTOKEN ""
+    docBase CDATA "webpages"
+    workDir CDATA "work"
+    workDirIsPersistent (false | true) "false">
+
+<!ELEMENT WebApplication EMPTY>
+<!ATTLIST WebApplication
+    id ID #REQUIRED
+    mapping CDATA #REQUIRED
+    docBase CDATA #REQUIRED
+    maxInactiveInterval NMTOKEN "30">
+]>
+
+<WebServer id="webServer">
+    <Service id="service0">
+        <WebApplication id="examples" mapping="/examples" docBase="examples"/>
+    </Service>
+    <Service id="service1">
+	<WebApplication id="titlebanner" mapping="/titlebanner" docBase="titlebanner"/>
+    </Service>
+</WebServer>

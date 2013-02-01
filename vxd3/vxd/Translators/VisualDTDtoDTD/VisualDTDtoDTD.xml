@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE Translator SYSTEM "../Translator.dtd">
+<Translator name="VisualDTDtoDTD" 
+            TranslatorXSL="VisualDTDtoDTD.xsl">
+<toolbar>
+   <toolbarbutton image="Translators/VisualDTDtoDTD/Images/savecode.gif" text="Save Generated Code" command="SAVECODE"/>
+   <toolbarbutton image="Translators/VisualDTDtoDTD/Images/savexsl.gif" text="Save XSL" command="SAVEXSL"/>
+</toolbar>
+<menu name="XSL" letter="S">
+   <menuitem image="Translators/VisualDTDtoDTD/Images/savecode.gif" text="Save Generated Code" command="SAVECODE"/>
+   <menuitem image="Translators/VisualDTDtoDTD/Images/savexsl.gif" text="Save XSL" command="SAVEXSL"/>
+</menu>
+<eventhandler class="vxd.Translators.VisualDTDtoDTD.ExternalTranslators.TranslationActionEventHandler"/>
+</Translator>

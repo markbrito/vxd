@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>Microsoft.Vsa.Vb.CodeDOMProcessor</name>
+	</assembly>
+	<members>
+		<member name="M:Microsoft.Vsa.Vb.CodeDOM._CodeDOMProcessor.CodeDOMFromXML(System.String)">
+			<param name="xmlStream"> </param>
+		</member>
+		<member name="M:Microsoft.Vsa.Vb.CodeDOM.CodeDOMProcessor.CodeDOMFromXML(System.String)">
+			<param name="xmlStream"> </param>
+		</member>
+	</members>
+</doc>

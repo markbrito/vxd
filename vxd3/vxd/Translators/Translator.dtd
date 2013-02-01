@@ -1,0 +1,17 @@
+<!ELEMENT Translator (toolbar?,menu?,eventhandler)>
+<!ATTLIST Translator Name CDATA #IMPLIED
+                     TranslatorXSL CDATA #IMPLIED>
+<!ELEMENT toolbar (toolbarbutton+)>
+<!ELEMENT toolbarbutton (#PCDATA)>
+<!ATTLIST toolbarbutton image CDATA #IMPLIED
+                        text CDATA #IMPLIED 
+			command CDATA #IMPLIED>
+<!ELEMENT menu (menuitem+)>
+<!ATTLIST menu name CDATA #IMPLIED
+               letter CDATA #IMPLIED>
+<!ELEMENT menuitem (#PCDATA)>
+<!ATTLIST menuitem image CDATA #IMPLIED
+                   text CDATA #IMPLIED
+		   command CDATA #IMPLIED>
+<!ELEMENT eventhandler (#PCDATA)>
+<!ATTLIST eventhandler class CDATA #IMPLIED>

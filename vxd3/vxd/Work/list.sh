@@ -1,0 +1,1 @@
+for i in `ls |grep -v ico `; do echo $i|sed -e 's|[^a-zA-Z]\([a-zA-Z]*\..*\)|\1|g' |sed -e 's/\([^\.]*\)\.[^\.]*$/\1|/g';done |sort|uniq |tee uniq.txt | tail -1 > tail.txt; cat tail.txt |tr '|' ' ' >> uniq.txt; cat uniq.txt tail.txt |sort |uniq -u 

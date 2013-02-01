@@ -1,0 +1,1893 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AssistantContent Version="1.0" xmlns="urn:schemas-microsoft-com:xml-msdata:exception-assistant-content">
+	<ContentInfo>
+		<ContentName>Default Content</ContentName>
+		<ContentID>urn:exception-content-microsoft-com:visual-studio-7-default-content</ContentID>
+		<ContentFileVersion>1.0</ContentFileVersion>
+		<ContentAuthor>Microsoft</ContentAuthor>
+		<ContentComment>Default Exception Assistant Content for Visual Studio 8.0.</ContentComment>
+	</ContentInfo>
+
+	<Exception HelpID="java.awt.AWTError">
+		<Type>java.awt.AWTError</Type>
+	</Exception>
+	<Exception HelpID="java.awt.AWTException">
+		<Type>java.awt.AWTException</Type>
+	</Exception>
+	<Exception HelpID="java.awt.IllegalComponentStateException">
+		<Type>java.awt.IllegalComponentStateException</Type>
+	</Exception>
+	<Exception HelpID="java.awt.datatransfer.UnsupportedFlavorException">
+		<Type>java.awt.datatransfer.UnsupportedFlavorException</Type>
+	</Exception>
+	<Exception HelpID="java.beans.IntrospectionException">
+		<Type>java.beans.IntrospectionException</Type>
+	</Exception>
+	<Exception HelpID="java.beans.PropertyVetoException">
+		<Type>java.beans.PropertyVetoException</Type>
+	</Exception>
+	<Exception HelpID="java.io.CharConversionException">
+		<Type>java.io.CharConversionException</Type>
+	</Exception>
+	<Exception HelpID="java.io.EOFException">
+		<Type>java.io.EOFException</Type>
+	</Exception>
+	<Exception HelpID="java.io.FileNotFoundException">
+		<Type>java.io.FileNotFoundException</Type>
+	</Exception>
+	<Exception HelpID="java.io.InterruptedIOException">
+		<Type>java.io.InterruptedIOException</Type>
+	</Exception>
+	<Exception HelpID="java.io.InvalidClassException">
+		<Type>java.io.InvalidClassException</Type>
+	</Exception>
+	<Exception HelpID="java.io.InvalidObjectException">
+		<Type>java.io.InvalidObjectException</Type>
+	</Exception>
+	<Exception HelpID="java.io.IOException">
+		<Type>java.io.IOException</Type>
+	</Exception>
+	<Exception HelpID="java.io.NotActiveException">
+		<Type>java.io.NotActiveException</Type>
+	</Exception>
+	<Exception HelpID="java.io.NotSerializableException">
+		<Type>java.io.NotSerializableException</Type>
+	</Exception>
+	<Exception HelpID="java.io.ObjectStreamException">
+		<Type>java.io.ObjectStreamException</Type>
+	</Exception>
+	<Exception HelpID="java.io.OptionalDataException">
+		<Type>java.io.OptionalDataException</Type>
+	</Exception>
+	<Exception HelpID="java.io.StreamCorruptedException">
+		<Type>java.io.StreamCorruptedException</Type>
+	</Exception>
+	<Exception HelpID="java.io.SyncFailedException">
+		<Type>java.io.SyncFailedException</Type>
+	</Exception>
+	<Exception HelpID="java.io.UnsupportedEncodingException">
+		<Type>java.io.UnsupportedEncodingException</Type>
+	</Exception>
+	<Exception HelpID="java.io.UTFDataFormatException">
+		<Type>java.io.UTFDataFormatException</Type>
+	</Exception>
+	<Exception HelpID="java.io.WriteAbortedException">
+		<Type>java.io.WriteAbortedException</Type>
+	</Exception>
+	<Exception HelpID="java.lang.AbstractMethodError">
+		<Type>java.lang.AbstractMethodError</Type>
+	</Exception>
+	<Exception HelpID="java.lang.ArithmeticException">
+		<Type>java.lang.ArithmeticException</Type>
+	</Exception>
+	<Exception HelpID="java.lang.ArrayIndexOutOfBoundsException">
+		<Type>java.lang.ArrayIndexOutOfBoundsException</Type>
+	</Exception>
+	<Exception HelpID="java.lang.ArrayStoreException">
+		<Type>java.lang.ArrayStoreException</Type>
+	</Exception>
+	<Exception HelpID="java.lang.ClassCastException">
+		<Type>java.lang.ClassCastException</Type>
+	</Exception>
+	<Exception HelpID="java.lang.ClassCircularityError">
+		<Type>java.lang.ClassCircularityError</Type>
+	</Exception>
+	<Exception HelpID="java.lang.ClassFormatError">
+		<Type>java.lang.ClassFormatError</Type>
+	</Exception>
+	<Exception HelpID="java.lang.ClassNotFoundException">
+		<Type>java.lang.ClassNotFoundException</Type>
+	</Exception>
+	<Exception HelpID="java.lang.CloneNotSupportedException">
+		<Type>java.lang.CloneNotSupportedException</Type>
+	</Exception>
+	<Exception HelpID="java.lang.Error">
+		<Type>java.lang.Error</Type>
+	</Exception>
+	<Exception HelpID="java.lang.Exception">
+		<Type>java.lang.Exception</Type>
+	</Exception>
+	<Exception HelpID="java.lang.ExceptionInInitializerError">
+		<Type>java.lang.ExceptionInInitializerError</Type>
+	</Exception>
+	<Exception HelpID="java.lang.IllegalAccessError">
+		<Type>java.lang.IllegalAccessError</Type>
+	</Exception>
+	<Exception HelpID="java.lang.IllegalAccessException">
+		<Type>java.lang.IllegalAccessException</Type>
+	</Exception>
+	<Exception HelpID="java.lang.IllegalArgumentException">
+		<Type>java.lang.IllegalArgumentException</Type>
+	</Exception>
+	<Exception HelpID="java.lang.IllegalMonitorStateException">
+		<Type>java.lang.IllegalMonitorStateException</Type>
+	</Exception>
+	<Exception HelpID="java.lang.IllegalStateException">
+		<Type>java.lang.IllegalStateException</Type>
+	</Exception>
+	<Exception HelpID="java.lang.IllegalThreadStateException">
+		<Type>java.lang.IllegalThreadStateException</Type>
+	</Exception>
+	<Exception HelpID="java.lang.IncompatibleClassChangeError">
+		<Type>java.lang.IncompatibleClassChangeError</Type>
+	</Exception>
+	<Exception HelpID="java.lang.IndexOutOfBoundsException">
+		<Type>java.lang.IndexOutOfBoundsException</Type>
+	</Exception>
+	<Exception HelpID="java.lang.InstantiationError">
+		<Type>java.lang.InstantiationError</Type>
+	</Exception>
+	<Exception HelpID="java.lang.InstantiationException">
+		<Type>java.lang.InstantiationException</Type>
+	</Exception>
+	<Exception HelpID="java.lang.InternalError">
+		<Type>java.lang.InternalError</Type>
+	</Exception>
+	<Exception HelpID="java.lang.InterruptedException">
+		<Type>java.lang.InterruptedException</Type>
+	</Exception>
+	<Exception HelpID="java.lang.LinkageError">
+		<Type>java.lang.LinkageError</Type>
+	</Exception>
+	<Exception HelpID="java.lang.NegativeArraySizeException">
+		<Type>java.lang.NegativeArraySizeException</Type>
+	</Exception>
+	<Exception HelpID="java.lang.NoClassDefFoundError">
+		<Type>java.lang.NoClassDefFoundError</Type>
+	</Exception>
+	<Exception HelpID="java.lang.NoSuchFieldError">
+		<Type>java.lang.NoSuchFieldError</Type>
+	</Exception>
+	<Exception HelpID="java.lang.NoSuchFieldException">
+		<Type>java.lang.NoSuchFieldException</Type>
+	</Exception>
+	<Exception HelpID="java.lang.NoSuchMethodError">
+		<Type>java.lang.NoSuchMethodError</Type>
+	</Exception>
+	<Exception HelpID="java.lang.NoSuchMethodException">
+		<Type>java.lang.NoSuchMethodException</Type>
+	</Exception>
+	<Exception HelpID="java.lang.NullPointerException">
+		<Type>java.lang.NullPointerException</Type>
+	</Exception>
+	<Exception HelpID="java.lang.NumberFormatException">
+		<Type>java.lang.NumberFormatException</Type>
+	</Exception>
+	<Exception HelpID="java.lang.OutOfMemoryError">
+		<Type>java.lang.OutOfMemoryError</Type>
+	</Exception>
+	<Exception HelpID="java.lang.RuntimeException">
+		<Type>java.lang.RuntimeException</Type>
+	</Exception>
+	<Exception HelpID="java.lang.SecurityException">
+		<Type>java.lang.SecurityException</Type>
+	</Exception>
+	<Exception HelpID="java.lang.StackOverflowError">
+		<Type>java.lang.StackOverflowError</Type>
+	</Exception>
+	<Exception HelpID="java.lang.StringIndexOutOfBoundsException">
+		<Type>java.lang.StringIndexOutOfBoundsException</Type>
+	</Exception>
+	<Exception HelpID="java.lang.ThreadDeath">
+		<Type>java.lang.ThreadDeath</Type>
+	</Exception>
+	<Exception HelpID="java.lang.Throwable">
+		<Type>java.lang.Throwable</Type>
+	</Exception>
+	<Exception HelpID="java.lang.UnknownError">
+		<Type>java.lang.UnknownError</Type>
+	</Exception>
+	<Exception HelpID="java.lang.UnsatisfiedLinkError">
+		<Type>java.lang.UnsatisfiedLinkError</Type>
+	</Exception>
+	<Exception HelpID="java.lang.UnsupportedOperationException">
+		<Type>java.lang.UnsupportedOperationException</Type>
+	</Exception>
+	<Exception HelpID="java.lang.VerifyError">
+		<Type>java.lang.VerifyError</Type>
+	</Exception>
+	<Exception HelpID="java.lang.VirtualMachineError">
+		<Type>java.lang.VirtualMachineError</Type>
+	</Exception>
+	<Exception HelpID="java.lang.reflect.InvocationTargetException">
+		<Type>java.lang.reflect.InvocationTargetException</Type>
+	</Exception>
+	<Exception HelpID="java.net.BindException">
+		<Type>java.net.BindException</Type>
+	</Exception>
+	<Exception HelpID="java.net.ConnectException">
+		<Type>java.net.ConnectException</Type>
+	</Exception>
+	<Exception HelpID="java.net.MalformedURLException">
+		<Type>java.net.MalformedURLException</Type>
+	</Exception>
+	<Exception HelpID="java.net.NoRouteToHostException">
+		<Type>java.net.NoRouteToHostException</Type>
+	</Exception>
+	<Exception HelpID="java.net.ProtocolException">
+		<Type>java.net.ProtocolException</Type>
+	</Exception>
+	<Exception HelpID="java.net.SocketException">
+		<Type>java.net.SocketException</Type>
+	</Exception>
+	<Exception HelpID="java.net.UnknownHostException">
+		<Type>java.net.UnknownHostException</Type>
+	</Exception>
+	<Exception HelpID="java.net.UnknownServiceException">
+		<Type>java.net.UnknownServiceException</Type>
+	</Exception>
+	<Exception HelpID="java.security.DigestException">
+		<Type>java.security.DigestException</Type>
+	</Exception>
+	<Exception HelpID="java.security.InvalidKeyException">
+		<Type>java.security.InvalidKeyException</Type>
+	</Exception>
+	<Exception HelpID="java.security.InvalidParameterException">
+		<Type>java.security.InvalidParameterException</Type>
+	</Exception>
+	<Exception HelpID="java.security.KeyException">
+		<Type>java.security.KeyException</Type>
+	</Exception>
+	<Exception HelpID="java.security.KeyManagementException">
+		<Type>java.security.KeyManagementException</Type>
+	</Exception>
+	<Exception HelpID="java.security.NoSuchAlgorithmException">
+		<Type>java.security.NoSuchAlgorithmException</Type>
+	</Exception>
+	<Exception HelpID="java.security.NoSuchProviderException">
+		<Type>java.security.NoSuchProviderException</Type>
+	</Exception>
+	<Exception HelpID="java.security.ProviderException">
+		<Type>java.security.ProviderException</Type>
+	</Exception>
+	<Exception HelpID="java.security.SignatureException">
+		<Type>java.security.SignatureException</Type>
+	</Exception>
+	<Exception HelpID="java.security.acl.AclNotFoundException">
+		<Type>java.security.acl.AclNotFoundException</Type>
+	</Exception>
+	<Exception HelpID="java.security.acl.LastOwnerException">
+		<Type>java.security.acl.LastOwnerException</Type>
+	</Exception>
+	<Exception HelpID="java.security.acl.NotOwnerException">
+		<Type>java.security.acl.NotOwnerException</Type>
+	</Exception>
+	<Exception HelpID="java.sql.DataTruncation">
+		<Type>java.sql.DataTruncation</Type>
+	</Exception>
+	<Exception HelpID="java.sql.SQLException">
+		<Type>java.sql.SQLException</Type>
+	</Exception>
+	<Exception HelpID="java.sql.SQLWarning">
+		<Type>java.sql.SQLWarning</Type>
+	</Exception>
+	<Exception HelpID="java.text.ParseException">
+		<Type>java.text.ParseException</Type>
+	</Exception>
+	<Exception HelpID="java.util.ConcurrentModificationException">
+		<Type>java.util.ConcurrentModificationException</Type>
+	</Exception>
+	<Exception HelpID="java.util.EmptyStackException">
+		<Type>java.util.EmptyStackException</Type>
+	</Exception>
+	<Exception HelpID="java.util.MissingResourceException">
+		<Type>java.util.MissingResourceException</Type>
+	</Exception>
+	<Exception HelpID="java.util.NoSuchElementException">
+		<Type>java.util.NoSuchElementException</Type>
+	</Exception>
+	<Exception HelpID="java.util.TooManyListenersException">
+		<Type>java.util.TooManyListenersException</Type>
+	</Exception>
+	<Exception HelpID="java.util.zip.DataFormatException">
+		<Type>java.util.zip.DataFormatException</Type>
+	</Exception>
+	<Exception HelpID="java.util.zip.ZipException">
+		<Type>java.util.zip.ZipException</Type>
+	</Exception>
+	<Exception HelpID="EHInvalidProject">
+		<Type>Microsoft.Build.BuildEngine.InvalidProjectFileException</Type>
+	</Exception>
+	<Exception HelpID="EHLogger">
+		<Type>Microsoft.Build.BuildFramework.LoggerException</Type>
+	</Exception>
+	<Exception HelpID="EHOTCannotRemoveControl">
+		<Type>Microsoft.Office.Tools.CannotRemoveControlException</Type>
+	</Exception>
+	<Exception HelpID="EHOTControlNameAlreadyExists">
+		<Type>Microsoft.Office.Tools.ControlNameAlreadyExistsException</Type>
+	</Exception>
+	<Exception HelpID="EHOTInvalidRange">
+		<Type>Microsoft.Office.Tools.InvalidRangeException</Type>
+	</Exception>
+	<Exception HelpID="EHOTRangeNotOnWorksheet">
+		<Type>Microsoft.Office.Tools.RangeNotOnWorksheetException</Type>
+	</Exception>
+	<Exception HelpID="EHOTSetDataBindingFailed">
+		<Type>Microsoft.Office.Tools.Excel.SetDataBindingFailedException</Type>
+	</Exception>
+	<Exception HelpID="EHDSqlInvalidUdt">
+		<Type>Microsoft.SqlServer.Server.InvalidUdtException</Type>
+	</Exception>
+	<Exception HelpID="EHVBCantStartSingInstance">
+		<Type>Microsoft.VisualBasic.ApplicationServices.CantStartSingleInstanceException</Type>
+	</Exception>
+	<Exception HelpID="EHVBNoStartupForm">
+		<Type>Microsoft.VisualBasic.ApplicationServices.NoStartupFormException</Type>
+	</Exception>
+	<Exception HelpID="EHVBWCContainingClassNotOptional">
+		<Type>Microsoft.VisualBasic.Compatibility.VB6.WebClassContainingClassNotOptional</Type>
+	</Exception>
+	<Exception HelpID="EHVBWCCouldNotFindEvent">
+		<Type>Microsoft.VisualBasic.Compatibility.VB6.WebClassCouldNotFindEvent</Type>
+	</Exception>
+	<Exception HelpID="EHVBWCNextItemCannotBeCurrentWebItem">
+		<Type>Microsoft.VisualBasic.Compatibility.VB6.WebClassNextItemCannotBeCurrentWebItem</Type>
+	</Exception>
+	<Exception HelpID="EHVBWCResponseNotFound">
+		<Type>Microsoft.VisualBasic.Compatibility.VB6.WebClassNextItemRespondNotFound</Type>
+	</Exception>
+	<Exception HelpID="EHVBWCWebClassNameNotOptional">
+		<Type>Microsoft.VisualBasic.Compatibility.VB6.WebClassUserWebClassNameNotOptional</Type>
+	</Exception>
+	<Exception HelpID="EHVBWCWebClassFileNameNotOptional">
+		<Type>Microsoft.VisualBasic.Compatibility.VB6.WebClassWebClassFileNameNotOptional</Type>
+	</Exception>
+	<Exception HelpID="EHVBWCWebItemNotValid">
+		<Type>Microsoft.VisualBasic.Compatibility.VB6.WebClassWebItemNotValid</Type>
+	</Exception>
+	<Exception HelpID="EHVBWIAssociatedWebClassNotOptional">
+		<Type>Microsoft.VisualBasic.Compatibility.VB6.WebItemAssociatedWebClassNotOptional</Type>
+	</Exception>
+	<Exception HelpID="EHVBWIClosingTagNotFoung">
+		<Type>Microsoft.VisualBasic.Compatibility.VB6.WebItemClosingTagNotFound</Type>
+	</Exception>
+	<Exception HelpID="EHVBWICouldNotLoadEmbeddedResource">
+		<Type>Microsoft.VisualBasic.Compatibility.VB6.WebItemCouldNotLoadEmbeddedResource</Type>
+	</Exception>
+	<Exception HelpID="EHVBWICouldNotLoadTemplateFile">
+		<Type>Microsoft.VisualBasic.Compatibility.VB6.WebItemCouldNotLoadTemplateFile</Type>
+	</Exception>
+	<Exception HelpID="EHVBWINameNotOptional">
+		<Type>Microsoft.VisualBasic.Compatibility.VB6.WebItemNameNotOptional</Type>
+	</Exception>
+	<Exception HelpID="EHVBWINoTemplateSpecified">
+		<Type>Microsoft.VisualBasic.Compatibility.VB6.WebItemNoTemplateSpecified</Type>
+	</Exception>
+	<Exception HelpID="EHVBWITooManyNestedTags">
+		<Type>Microsoft.VisualBasic.Compatibility.VB6.WebItemTooManyNestedTags</Type>
+	</Exception>
+	<Exception HelpID="EHVBWIUnexpectedErrorReadingTemplateFile">
+		<Type>Microsoft.VisualBasic.Compatibility.VB6.WebItemUnexpectedErrorReadingTemplateFile</Type>
+	</Exception>
+	<Exception HelpID="EHMalformedLine">
+		<Type>Microsoft.VisualBasic.FileIO.MalformedLineException</Type>
+	</Exception>
+	<Exception HelpID="EHVsa">
+		<Type>Microsoft.Vsa.VsaException</Type>
+	</Exception>
+	<Exception HelpID="EHVSTCacheAlreadyLoaded">
+		<Type>Microsoft.VisualStudio.Tools.Applications.Runtime.CacheAlreadyLoadedException</Type>
+	</Exception>
+	<Exception HelpID="EHVSTCachedDataTypeMismatch">
+		<Type>Microsoft.VisualStudio.Tools.Applications.Runtime.CachedDataTypeMismatchException</Type>
+	</Exception>
+	<Exception HelpID="EHVSTCannotCreateCustomizationDomain">
+		<Type>Microsoft.VisualStudio.Tools.Applications.Runtime.CannotCreateCustomizationDomainException</Type>
+	</Exception>
+	<Exception HelpID="EHVSTCannotCreateStartUpObject">
+		<Type>Microsoft.VisualStudio.Tools.Applications.Runtime.CannotCreateStartupObjectException</Type>
+	</Exception>
+	<Exception HelpID="EHVSTCannotFindStartupObjectAssembly">
+		<Type>Microsoft.VisualStudio.Tools.Applications.Runtime.CannotFindStartupObjectAssemblyException</Type>
+	</Exception>
+	<Exception HelpID="EHVSTCannotGetCachedDataManifest">
+		<Type>Microsoft.VisualStudio.Tools.Applications.Runtime.CannotGetCachedDataManifestException</Type>
+	</Exception>
+	<Exception HelpID="EHVSTCannotLoadManifest">
+		<Type>Microsoft.VisualStudio.Tools.Applications.Runtime.CannotLoadManifestException</Type>
+	</Exception>
+	<Exception HelpID="EHVSTCannotRetrieveCachedData">
+		<Type>Microsoft.VisualStudio.Tools.Applications.Runtime.CannotRetrieveCachedDataException</Type>
+	</Exception>
+	<Exception HelpID="EHVSTControlCouldNotBeInitialized">
+		<Type>Microsoft.VisualStudio.Tools.Applications.Runtime.ControlCouldNotBeInitializedException</Type>
+	</Exception>
+	<Exception HelpID="EHControlNotFound">
+		<Type>Microsoft.VisualStudio.Tools.Applications.Runtime.ControlNotFoundException</Type>
+	</Exception>
+	<Exception HelpID="EHVSTInvalidDeployManifest">
+		<Type>Microsoft.VisualStudio.Tools.Applications.Runtime.InvalidDeployManifestException</Type>
+	</Exception>
+	<Exception HelpID="EHVSTInvalidManifest">
+		<Type>Microsoft.VisualStudio.Tools.Applications.Runtime.InvalidManifestException</Type>
+	</Exception>
+	<Exception HelpID="EHVSTInvalidNewApplicationManifest">
+		<Type>Microsoft.VisualStudio.Tools.Applications.Runtime.InvalidNewApplicationManifestException</Type>
+	</Exception>
+	<Exception HelpID="EHVSTItemAlreadyInCache">
+		<Type>Microsoft.VisualStudio.Tools.Applications.Runtime.ItemAlreadyInCacheException</Type>
+	</Exception>
+	<Exception HelpID="EHVSTItemNotInCache">
+		<Type>Microsoft.VisualStudio.Tools.Applications.Runtime.ItemNotInCacheException</Type>
+	</Exception>
+	<Exception HelpID="EHVSTNonCacheableType">
+		<Type>Microsoft.VisualStudio.Tools.Applications.Runtime.NonCacheableTypeException</Type>
+	</Exception>
+	<Exception HelpID="EHVSTNoStartupObjects">
+		<Type>Microsoft.VisualStudio.Tools.Applications.Runtime.NoStartupObjectsException</Type>
+	</Exception>
+	<Exception HelpID="EHVSTNotAvailableOffline">
+		<Type>Microsoft.VisualStudio.Tools.Applications.Runtime.NotAvailableOfflineException</Type>
+	</Exception>
+	<Exception HelpID="EHVSTNotAvailableOnline">
+		<Type>Microsoft.VisualStudio.Tools.Applications.Runtime.NotAvailableOnlineException</Type>
+	</Exception>
+	<Exception HelpID="EHVSTRuntime">
+		<Type>Microsoft.VisualStudio.Tools.Applications.Runtime.RuntimeException</Type>
+	</Exception>
+	<Exception HelpID="EHVSTUpdateFailed">
+		<Type>Microsoft.VisualStudio.Tools.Applications.Runtime.UpdateFailedException</Type>
+	</Exception>
+	<Exception HelpID="EHAccessViolation">
+		<Type>System.AccessViolationException</Type>
+	</Exception>
+	<Exception HelpID="EHAppDomainUnloaded">
+		<Type>System.AppDomainUnloadedException</Type>
+	</Exception>
+	<Exception HelpID="EHApplication">
+		<Type>System.ApplicationException</Type>
+	</Exception>
+	<Exception HelpID="EHArgument">
+		<Type>System.ArgumentException</Type>
+	</Exception>
+	<Exception HelpID="EHArgumentNull">
+		<Type>System.ArgumentNullException</Type>
+	</Exception>
+	<Exception HelpID="EHArgumentOutOfRange">
+		<Type>System.ArgumentOutOfRangeException</Type>
+	</Exception>
+	<Exception HelpID="EHArithmetic">
+		<Type>System.ArithmeticException</Type>
+	</Exception>
+	<Exception HelpID="EHArrayTypeMismatch">
+		<Type>System.ArrayTypeMismatchException</Type>
+	</Exception>
+	<Exception HelpID="EHBadImageFormat">
+		<Type>System.BadImageFormatException</Type>
+	</Exception>
+	<Exception HelpID="EHCannotUnloadAppDomain">
+		<Type>System.CannotUnloadAppDomainException</Type>
+	</Exception>
+	<Exception HelpID="EHContextMarshal">
+		<Type>System.ContextMarshalException</Type>
+	</Exception>
+	<Exception HelpID="EHDataMisaligned">
+		<Type>System.DataMisalignedException</Type>
+	</Exception>
+	<Exception HelpID="EHDividebyZero">
+		<Type>System.DivideByZeroException</Type>
+	</Exception>
+	<Exception HelpID="EHDllNotFound">
+		<Type>System.DllNotFoundException</Type>
+	</Exception>
+	<Exception HelpID="EHDuplicateWaitObject">
+		<Type>System.DuplicateWaitObjectException</Type>
+	</Exception>
+	<Exception HelpID="EHEntryPointNotFound">
+		<Type>System.EntryPointNotFoundException</Type>
+	</Exception>
+	<Exception HelpID="EHException">
+		<Type>System.Exception</Type>
+	</Exception>
+	<Exception HelpID="EHExecutionEngine">
+		<Type>System.ExecutionEngineException</Type>
+	</Exception>
+	<Exception HelpID="EHFieldAccess">
+		<Type>System.FieldAccessException</Type>
+	</Exception>
+	<Exception HelpID="EHFormat">
+		<Type>System.FormatException</Type>
+	</Exception>
+	<Exception HelpID="EHIndexOutOfRange">
+		<Type>System.IndexOutOfRangeException</Type>
+	</Exception>
+	<Exception HelpID="EHInsufficientMemory">
+		<Type>System.InsufficientMemoryException</Type>
+	</Exception>
+	<Exception HelpID="EHInvalidCast">
+		<Type>System.InvalidCastException</Type>
+	</Exception>
+	<Exception HelpID="EHInvalidOperation">
+		<Type>System.InvalidOperationException</Type>
+	</Exception>
+	<Exception HelpID="EHInvalidProgram">
+		<Type>System.InvalidProgramException</Type>
+	</Exception>
+	<Exception HelpID="EHMemberAccess">
+		<Type>System.MemberAccessException</Type>
+	</Exception>
+	<Exception HelpID="EHMethodAccess">
+		<Type>System.MethodAccessException</Type>
+	</Exception>
+	<Exception HelpID="EHMissingField">
+		<Type>System.MissingFieldException</Type>
+	</Exception>
+	<Exception HelpID="EHMissingMember">
+		<Type>System.MissingMemberException</Type>
+	</Exception>
+	<Exception HelpID="EHMissingMethod">
+		<Type>System.MissingMethodException</Type>
+	</Exception>
+	<Exception HelpID="EHMulticastNotSupported">
+		<Type>System.MulticastNotSupportedException</Type>
+	</Exception>
+	<Exception HelpID="EHNotFiniteNumber">
+		<Type>System.NotFiniteNumberException</Type>
+	</Exception>
+	<Exception HelpID="EHNotImplemented">
+		<Type>System.NotImplementedException</Type>
+	</Exception>
+	<Exception HelpID="EHNotSupported">
+		<Type>System.NotSupportedException</Type>
+	</Exception>
+	<Exception HelpID="EHNullReference">
+		<Type>System.NullReferenceException</Type>
+	</Exception>
+	<Exception HelpID="EHObjectDisposed">
+		<Type>System.ObjectDisposedException</Type>
+	</Exception>
+	<Exception HelpID="EHOperationCanceled">
+		<Type>System.OperationCanceledException</Type>
+	</Exception>
+	<Exception HelpID="EHOutOfMemory">
+		<Type>System.OutOfMemoryException</Type>
+	</Exception>
+	<Exception HelpID="EHOverflow">
+		<Type>System.OverflowException</Type>
+	</Exception>
+	<Exception HelpID="EHPlatformNotSupported">
+		<Type>System.PlatformNotSupportedException</Type>
+	</Exception>
+	<Exception HelpID="EHRank">
+		<Type>System.RankException</Type>
+	</Exception>
+	<Exception HelpID="EHStackOverflow">
+		<Type>System.StackOverflowException</Type>
+	</Exception>
+	<Exception HelpID="EHSystem">
+		<Type>System.SystemException</Type>
+	</Exception>
+	<Exception HelpID="EHTimeout">
+		<Type>System.TimeoutException</Type>
+	</Exception>
+	<Exception HelpID="EHTypeInitialization">
+		<Type>System.TypeInitializationException</Type>
+	</Exception>
+	<Exception HelpID="EHTypeLoad">
+		<Type>System.TypeLoadException</Type>
+	</Exception>
+	<Exception HelpID="EHTypeUnloaded">
+		<Type>System.TypeUnloadedException</Type>
+	</Exception>
+	<Exception HelpID="EHUnauthorizedAccess">
+		<Type>System.UnauthorizedAccessException</Type>
+	</Exception>
+	<Exception HelpID="EHUriFormat">
+		<Type>System.UriFormatException</Type>
+	</Exception>
+	<Exception HelpID="EHCKeyNotFound">
+		<Type>System.Collections.Generic.KeyNotFoundException</Type>
+	</Exception>
+	<Exception HelpID="EHCMInvalidAsynchronousState">
+		<Type>System.ComponentModel.InvalidAsynchronousStateException</Type>
+	</Exception>
+	<Exception HelpID="EHCMInvalidEnumArgument">
+		<Type>System.ComponentModel.InvalidEnumArgumentException</Type>
+	</Exception>
+	<Exception HelpID="EHCMLicense">
+		<Type>System.ComponentModel.LicenseException</Type>
+	</Exception>
+	<Exception HelpID="EHCWarning">
+		<Type>System.ComponentModel.WarningException</Type>
+	</Exception>
+	<Exception HelpID="EHCWin32">
+		<Type>System.ComponentModel.Win32Exception</Type>
+	</Exception>
+	<Exception HelpID="EHCMCheckout">
+		<Type>System.ComponentModel.Design.CheckoutException</Type>
+	</Exception>
+	<Exception HelpID="System.ComponentModel.Design.ExceptionCollection">
+		<Type>System.ComponentModel.Design.ExceptionCollection</Type>
+	</Exception>
+	<Exception HelpID="EHCMCodeDomSerializer">
+		<Type>System.ComponentModel.Design.Serialization.CodeDomSerializerException</Type>
+	</Exception>
+	<Exception HelpID="EHCConfigurationErrors">
+		<Type>System.Configuration.ConfigurationErrorsException</Type>
+	</Exception>
+	<Exception HelpID="EHCConfiguration">
+		<Type>System.Configuration.ConfigurationException</Type>
+	</Exception>
+	<Exception HelpID="EHCSettingsPropertyIsReadOnly">
+		<Type>System.Configuration.SettingsPropertyIsReadOnlyException</Type>
+	</Exception>
+	<Exception HelpID="EHCSettingsPropertyNotFound">
+		<Type>System.Configuration.SettingsPropertyNotFoundException</Type>
+	</Exception>
+	<Exception HelpID="EHCSettingsPropertyWrongType">
+		<Type>System.Configuration.SettingsPropertyWrongTypeException</Type>
+	</Exception>
+	<Exception HelpID="EHCInstall">
+		<Type>System.Configuration.Install.InstallException</Type>
+	</Exception>
+	<Exception HelpID="EHCProvider">
+		<Type>System.Configuration.Provider.ProviderException</Type>
+	</Exception>
+	<Exception HelpID="EHConstraint">
+		<Type>System.Data.ConstraintException</Type>
+	</Exception>
+	<Exception HelpID="EHDData">
+		<Type>System.Data.DataException</Type>
+	</Exception>
+	<Exception HelpID="EHDDBConcurrency">
+		<Type>System.Data.DBConcurrencyException</Type>
+	</Exception>
+	<Exception HelpID="EHDDeletedRowInaccessible">
+		<Type>System.Data.DeletedRowInaccessibleException</Type>
+	</Exception>
+	<Exception HelpID="EHDDuplicateName">
+		<Type>System.Data.DuplicateNameException</Type>
+	</Exception>
+	<Exception HelpID="EHDEvaluate">
+		<Type>System.Data.EvaluateException</Type>
+	</Exception>
+	<Exception HelpID="EHDInRowChangingEvent">
+		<Type>System.Data.InRowChangingEventException</Type>
+	</Exception>
+	<Exception HelpID="EHDInvalidConstraint">
+		<Type>System.Data.InvalidConstraintException</Type>
+	</Exception>
+	<Exception HelpID="EHInvalidExpression">
+		<Type>System.Data.InvalidExpressionException</Type>
+	</Exception>
+	<Exception HelpID="EHDMissingPrimaryKey">
+		<Type>System.Data.MissingPrimaryKeyException</Type>
+	</Exception>
+	<Exception HelpID="EHNoNullAllowed">
+		<Type>System.Data.NoNullAllowedException</Type>
+	</Exception>
+	<Exception HelpID="EHDOperationAborted">
+		<Type>System.Data.OperationAbortedException</Type>
+	</Exception>
+	<Exception HelpID="EHReadOnly">
+		<Type>System.Data.ReadOnlyException</Type>
+	</Exception>
+	<Exception HelpID="EHDRowNotInTable">
+		<Type>System.Data.RowNotInTableException</Type>
+	</Exception>
+	<Exception HelpID="EHDStrongTyping">
+		<Type>System.Data.StrongTypingException</Type>
+	</Exception>
+	<Exception HelpID="EHDSyntaxError">
+		<Type>System.Data.SyntaxErrorException</Type>
+	</Exception>
+	<Exception HelpID="EHDTypedDataSetGenerator">
+		<Type>System.Data.TypedDataSetGeneratorException</Type>
+	</Exception>
+	<Exception HelpID="EHDVersionNotFound">
+		<Type>System.Data.VersionNotFoundException</Type>
+	</Exception>
+	<Exception HelpID="EHDCommonDb">
+		<Type>System.Data.Common.DbException</Type>
+	</Exception>
+	<Exception HelpID="EHDDTypedDataSetGenerator">
+		<Type>System.Data.Design.TypedDataSetGeneratorException</Type>
+	</Exception>
+	<Exception HelpID="EHOdbc">
+		<Type>System.Data.Odbc.OdbcException</Type>
+	</Exception>
+	<Exception HelpID="EHOleDb">
+		<Type>System.Data.OleDb.OleDbException</Type>
+	</Exception>
+	<Exception HelpID="EHOracle">
+		<Type>System.Data.OracleClient.OracleException</Type>
+	</Exception>
+	<Exception HelpID="EHSql">
+		<Type>System.Data.SqlClient.SqlException</Type>
+	</Exception>
+	<Exception HelpID="EHDSqlAlreadyFilled">
+		<Type>System.Data.SqlTypes.SqlAlreadyFilledException</Type>
+	</Exception>
+	<Exception HelpID="EHDSqlNotFilled">
+		<Type>System.Data.SqlTypes.SqlNotFilledException</Type>
+	</Exception>
+	<Exception HelpID="EHDSqlNullValue">
+		<Type>System.Data.SqlTypes.SqlNullValueException</Type>
+	</Exception>
+	<Exception HelpID="EHDSqlTruncate">
+		<Type>System.Data.SqlTypes.SqlTruncateException</Type>
+	</Exception>
+	<Exception HelpID="EHDSqlType">
+		<Type>System.Data.SqlTypes.SqlTypeException</Type>
+	</Exception>
+	<Exception HelpID="EHDependentPlatformMissing">
+		<Type>System.Deployment.Application.DependentPlatformMissingException</Type>
+	</Exception>
+	<Exception HelpID="EHDeDeploymentDownload">
+		<Type>System.Deployment.Application.DeploymentDownloadException</Type>
+	</Exception>
+	<Exception HelpID="EHDeDeployment">
+		<Type>System.Deployment.Application.DeploymentException</Type>
+	</Exception>
+	<Exception HelpID="EHInvalidDeployment">
+		<Type>System.Deployment.Application.InvalidDeploymentException</Type>
+	</Exception>
+	<Exception HelpID="EHDeTrustNotGranted">
+		<Type>System.Deployment.Application.TrustNotGrantedException</Type>
+	</Exception>
+	<Exception HelpID="EHDSDirectoryServicesCOM">
+		<Type>System.DirectoryServices.DirectoryServicesCOMException</Type>
+	</Exception>
+	<Exception HelpID="EHDSActiveDirectoryObjectExists">
+		<Type>System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectExistsException</Type>
+	</Exception>
+	<Exception HelpID="EHDSActiveDirectoryObjectNotFound">
+		<Type>System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException</Type>
+	</Exception>
+	<Exception HelpID="EHDSActiveDirectoryOperation">
+		<Type>System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException</Type>
+	</Exception>
+	<Exception HelpID="EHDSActiveDirectoryServerDown">
+		<Type>System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException</Type>
+	</Exception>
+	<Exception HelpID="EHDSForestTrustCollision">
+		<Type>System.DirectoryServices.ActiveDirectory.ForestTrustCollisionException</Type>
+	</Exception>
+	<Exception HelpID="EHDSSyncFromAllServersOperation">
+		<Type>System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException</Type>
+	</Exception>
+	<Exception HelpID="EHDSBerConversion">
+		<Type>System.DirectoryServices.Protocols.BerConversionException</Type>
+	</Exception>
+	<Exception HelpID="EHDSDirectory">
+		<Type>System.DirectoryServices.Protocols.DirectoryException</Type>
+	</Exception>
+	<Exception HelpID="EHDSDirectoryOperation">
+		<Type>System.DirectoryServices.Protocols.DirectoryOperationException</Type>
+	</Exception>
+	<Exception HelpID="EHDSDsmlInvalidDocument">
+		<Type>System.DirectoryServices.Protocols.DsmlInvalidDocumentException</Type>
+	</Exception>
+	<Exception HelpID="EHDSErrorResponse">
+		<Type>System.DirectoryServices.Protocols.ErrorResponseException</Type>
+	</Exception>
+	<Exception HelpID="EHDSLdap">
+		<Type>System.DirectoryServices.Protocols.LdapException</Type>
+	</Exception>
+	<Exception HelpID="EHDSTlsOperation">
+		<Type>System.DirectoryServices.Protocols.TlsOperationException</Type>
+	</Exception>
+	<Exception HelpID="EHInvalidPrinter">
+		<Type>System.Drawing.Printing.InvalidPrinterException</Type>
+	</Exception>
+	<Exception HelpID="EHESRegistration">
+		<Type>System.EnterpriseServices.RegistrationException</Type>
+	</Exception>
+	<Exception HelpID="EHESServicedComponent">
+		<Type>System.EnterpriseServices.ServicedComponentException</Type>
+	</Exception>
+	<Exception HelpID="EHDirectoryNotFound">
+		<Type>System.IO.DirectoryNotFoundException</Type>
+	</Exception>
+	<Exception HelpID="EHIODirectoryNotFound">
+		<Type>System.IO.DriveNotFoundException</Type>
+	</Exception>
+	<Exception HelpID="EHEndOfStream">
+		<Type>System.IO.EndOfStreamException</Type>
+	</Exception>
+	<Exception HelpID="EHFileLoad">
+		<Type>System.IO.FileLoadException</Type>
+	</Exception>
+	<Exception HelpID="EHFileNotFound">
+		<Type>System.IO.FileNotFoundException</Type>
+	</Exception>
+	<Exception HelpID="EHInternalBufferOverflow">
+		<Type>System.IO.InternalBufferOverflowException</Type>
+	</Exception>
+	<Exception HelpID="EHIOInvalidData">
+		<Type>System.IO.InvalidDataException</Type>
+	</Exception>
+	<Exception HelpID="EHIOException">
+		<Type>System.IO.IOException</Type>
+	</Exception>
+	<Exception HelpID="EHPathTooLong">
+		<Type>System.IO.PathTooLongException</Type>
+	</Exception>
+	<Exception HelpID="EHIOIsolatedStorage">
+		<Type>System.IO.IsolatedStorage.IsolatedStorageException</Type>
+	</Exception>
+	<Exception HelpID="EHMManagement">
+		<Type>System.Management.ManagementException</Type>
+	</Exception>
+	<Exception HelpID="EHMessageQueue">
+		<Type>System.Messaging.MessageQueueException</Type>
+	</Exception>
+	<Exception HelpID="EHCookie">
+		<Type>System.Net.CookieException</Type>
+	</Exception>
+	<Exception HelpID="EHNHttpListener">
+		<Type>System.Net.HttpListenerException</Type>
+	</Exception>
+	<Exception HelpID="EHNProtocolViolation">
+		<Type>System.Net.ProtocolViolationException</Type>
+	</Exception>
+	<Exception HelpID="EHWeb">
+		<Type>System.Net.WebException</Type>
+	</Exception>
+	<Exception HelpID="EHNSmtp">
+		<Type>System.Net.Mail.SmtpException</Type>
+	</Exception>
+	<Exception HelpID="EHNSmtpFailedRecipient">
+		<Type>System.Net.Mail.SmtpFailedRecipientException</Type>
+	</Exception>
+	<Exception HelpID="EHNSmtpFailedRecipients">
+		<Type>System.Net.Mail.SmtpFailedRecipientsException</Type>
+	</Exception>
+	<Exception HelpID="EHNNetworkInformation">
+		<Type>System.Net.NetworkInformation.NetworkInformationException</Type>
+	</Exception>
+	<Exception HelpID="EHNPing">
+		<Type>System.Net.NetworkInformation.PingException</Type>
+	</Exception>
+	<Exception HelpID="EHSocket">
+		<Type>System.Net.Sockets.SocketException</Type>
+	</Exception>
+	<Exception HelpID="EHRAmbiguousMatch">
+		<Type>System.Reflection.AmbiguousMatchException</Type>
+	</Exception>
+	<Exception HelpID="EHRCustomAttributeFormat">
+		<Type>System.Reflection.CustomAttributeFormatException</Type>
+	</Exception>
+	<Exception HelpID="EHRInvalidFilterCriteria">
+		<Type>System.Reflection.InvalidFilterCriteriaException</Type>
+	</Exception>
+	<Exception HelpID="EHRReflectionTypeLoad">
+		<Type>System.Reflection.ReflectionTypeLoadException</Type>
+	</Exception>
+	<Exception HelpID="EHRTarget">
+		<Type>System.Reflection.TargetException</Type>
+	</Exception>
+	<Exception HelpID="EHRTargetInvocation">
+		<Type>System.Reflection.TargetInvocationException</Type>
+	</Exception>
+	<Exception HelpID="EHRTargetParameterCount">
+		<Type>System.Reflection.TargetParameterCountException</Type>
+	</Exception>
+	<Exception HelpID="EHRSMissingManifestResource">
+		<Type>System.Resources.MissingManifestResourceException</Type>
+	</Exception>
+	<Exception HelpID="EHRSMissingSatelliteAssembly">
+		<Type>System.Resources.MissingSatelliteAssemblyException</Type>
+	</Exception>
+	<Exception HelpID="EHRuntimeWrapped">
+		<Type>System.Runtime.CompilerServices.RuntimeWrappedException</Type>
+	</Exception>
+	<Exception HelpID="EHCOM">
+		<Type>System.Runtime.InteropServices.COMException</Type>
+	</Exception>
+	<Exception HelpID="EHRTExternal">
+		<Type>System.Runtime.InteropServices.ExternalException</Type>
+	</Exception>
+	<Exception HelpID="EHRTInvalidComObject">
+		<Type>System.Runtime.InteropServices.InvalidComObjectException</Type>
+	</Exception>
+	<Exception HelpID="EHRTInvalidOleVariantType">
+		<Type>System.Runtime.InteropServices.InvalidOleVariantTypeException</Type>
+	</Exception>
+	<Exception HelpID="EHRTMarshalDirective">
+		<Type>System.Runtime.InteropServices.MarshalDirectiveException</Type>
+	</Exception>
+	<Exception HelpID="EHSafeArrayRankMismatch">
+		<Type>System.Runtime.InteropServices.SafeArrayRankMismatchException</Type>
+	</Exception>
+	<Exception HelpID="EHRTSafeArrayTypeMismatch">
+		<Type>System.Runtime.InteropServices.SafeArrayTypeMismatchException</Type>
+	</Exception>
+	<Exception HelpID="EHRTSEH">
+		<Type>System.Runtime.InteropServices.SEHException</Type>
+	</Exception>
+	<Exception HelpID="EHRTRemoting">
+		<Type>System.Runtime.Remoting.RemotingException</Type>
+	</Exception>
+	<Exception HelpID="EHRTRemotingTimedout">
+		<Type>System.Runtime.Remoting.RemotingTimeoutException</Type>
+	</Exception>
+	<Exception HelpID="EHRTServer">
+		<Type>System.Runtime.Remoting.ServerException</Type>
+	</Exception>
+	<Exception HelpID="EHRTSUDSGenerator">
+		<Type>System.Runtime.Remoting.MetadataServices.SUDSGeneratorException</Type>
+	</Exception>
+	<Exception HelpID="EHRTSUDSParser">
+		<Type>System.Runtime.Remoting.MetadataServices.SUDSParserException</Type>
+	</Exception>
+	<Exception HelpID="EHRTSerialization">
+		<Type>System.Runtime.Serialization.SerializationException</Type>
+	</Exception>
+	<Exception HelpID="EHSHostProtection">
+		<Type>System.Security.HostProtectionException</Type>
+	</Exception>
+	<Exception HelpID="EHSecurity">
+		<Type>System.Security.SecurityException</Type>
+	</Exception>
+	<Exception HelpID="EHVerification">
+		<Type>System.Security.VerificationException</Type>
+	</Exception>
+	<Exception HelpID="EHSXmlSyntax">
+		<Type>System.Security.XmlSyntaxException</Type>
+	</Exception>
+	<Exception HelpID="EHSPrivilegeNotHeld">
+		<Type>System.Security.AccessControl.PrivilegeNotHeldException</Type>
+	</Exception>
+	<Exception HelpID="EHSAuthentication">
+		<Type>System.Security.Authentication.AuthenticationException</Type>
+	</Exception>
+	<Exception HelpID="EHSInvalidCredential">
+		<Type>System.Security.Authentication.InvalidCredentialException</Type>
+	</Exception>
+	<Exception HelpID="EHSCryptographic">
+		<Type>System.Security.Cryptography.CryptographicException</Type>
+	</Exception>
+	<Exception HelpID="EHSCryptographicUnexpectedOperation">
+		<Type>System.Security.Cryptography.CryptographicUnexpectedOperationException</Type>
+	</Exception>
+	<Exception HelpID="EHSPolicy">
+		<Type>System.Security.Policy.PolicyException</Type>
+	</Exception>
+	<Exception HelpID="EHSIdentityNotMapped">
+		<Type>System.Security.Principal.IdentityNotMappedException</Type>
+	</Exception>
+	<Exception HelpID="EHSTimeout">
+		<Type>System.ServiceProcess.TimeoutException</Type>
+	</Exception>
+	<Exception HelpID="EHTDecoderFallback">
+		<Type>System.Text.DecoderFallbackException</Type>
+	</Exception>
+	<Exception HelpID="EHTEncoderFallback">
+		<Type>System.Text.EncoderFallbackException</Type>
+	</Exception>
+	<Exception HelpID="EHTAbandonedMutex">
+		<Type>System.Threading.AbandonedMutexException</Type>
+	</Exception>
+	<Exception HelpID="EHTSemaphoreFull">
+		<Type>System.Threading.SemaphoreFullException</Type>
+	</Exception>
+	<Exception HelpID="EHTSynchronizationLock">
+		<Type>System.Threading.SynchronizationLockException</Type>
+	</Exception>
+	<Exception HelpID="EHTThreadAbort">
+		<Type>System.Threading.ThreadAbortException</Type>
+	</Exception>
+	<Exception HelpID="EHTTHreadInterrupted">
+		<Type>System.Threading.ThreadInterruptedException</Type>
+	</Exception>
+	<Exception HelpID="EHTThreadStart">
+		<Type>System.Threading.ThreadStartException</Type>
+	</Exception>
+	<Exception HelpID="EHTThreadState">
+		<Type>System.Threading.ThreadStateException</Type>
+	</Exception>
+	<Exception HelpID="EHTWaitHandleCannotBeOpened">
+		<Type>System.Threading.WaitHandleCannotBeOpenedException</Type>
+	</Exception>
+	<Exception HelpID="EHTrTransactionAborted">
+		<Type>System.Transactions.TransactionAbortedException</Type>
+	</Exception>
+	<Exception HelpID="EHTrTransaction">
+		<Type>System.Transactions.TransactionException</Type>
+	</Exception>
+	<Exception HelpID="EHTrTransactionInDoubt">
+		<Type>System.Transactions.TransactionInDoubtException</Type>
+	</Exception>
+	<Exception HelpID="EHTrTransactionManagerCommunication">
+		<Type>System.Transactions.TransactionManagerCommunicationException</Type>
+	</Exception>
+	<Exception HelpID="EHTrTransactionPromotion">
+		<Type>System.Transactions.TransactionPromotionException</Type>
+	</Exception>
+	<Exception HelpID="EHWHttpCompile">
+		<Type>System.Web.HttpCompileException</Type>
+	</Exception>
+	<Exception HelpID="EHWHttp">
+		<Type>System.Web.HttpException</Type>
+	</Exception>
+	<Exception HelpID="EHWHttpParse">
+		<Type>System.Web.HttpParseException</Type>
+	</Exception>
+	<Exception HelpID="EHWHttpRequestValidation">
+		<Type>System.Web.HttpRequestValidationException</Type>
+	</Exception>
+	<Exception HelpID="EHWHttpUnhandled">
+		<Type>System.Web.HttpUnhandledException</Type>
+	</Exception>
+	<Exception HelpID="EHWDatabaseNotEnabledForNotification">
+		<Type>System.Web.Caching.DatabaseNotEnabledForNotificationException</Type>
+	</Exception>
+	<Exception HelpID="EHWTableNotEnabledForNotification">
+		<Type>System.Web.Caching.TableNotEnabledForNotificationException</Type>
+	</Exception>
+	<Exception HelpID="EHWSqlExecution">
+		<Type>System.Web.Management.SqlExecutionException</Type>
+	</Exception>
+	<Exception HelpID="EHWMembershipCreateUser">
+		<Type>System.Web.Security.MembershipCreateUserException</Type>
+	</Exception>
+	<Exception HelpID="EHWMembershipPassword">
+		<Type>System.Web.Security.MembershipPasswordException</Type>
+	</Exception>
+	<Exception HelpID="EHWSoap">
+		<Type>System.Web.Services.Protocols.SoapException</Type>
+	</Exception>
+	<Exception HelpID="EHWSoapHeader">
+		<Type>System.Web.Services.Protocols.SoapHeaderException</Type>
+	</Exception>
+	<Exception HelpID="EHWUIViewstate">
+		<Type>System.Web.UI.ViewStateException</Type>
+	</Exception>
+	<Exception HelpID="EHWFInvalidActiveXState">
+		<Type>System.Windows.Forms.AxHost.InvalidActiveXStateException</Type>
+	</Exception>
+	<Exception HelpID="EHXXml">
+		<Type>System.Xml.XmlException</Type>
+	</Exception>
+	<Exception HelpID="EHXXmlSchema">
+		<Type>System.Xml.Schema.XmlSchemaException</Type>
+	</Exception>
+	<Exception HelpID="EHXXmlSchemaInference">
+		<Type>System.Xml.Schema.XmlSchemaInferenceException</Type>
+	</Exception>
+	<Exception HelpID="EHXXmlSchemaValidation">
+		<Type>System.Xml.Schema.XmlSchemaValidationException</Type>
+	</Exception>
+	<Exception HelpID="EHXXPath">
+		<Type>System.Xml.XPath.XPathException</Type>
+	</Exception>
+	<Exception HelpID="EHXXsltCompile">
+		<Type>System.Xml.Xsl.XsltCompileException</Type>
+	</Exception>
+	<Exception HelpID="EHXXslt">
+		<Type>System.Xml.Xsl.XsltException</Type>
+	</Exception>
+	<Exception>
+		<Type>*</Type>
+		<Precondition>InnerException</Precondition>
+		<Tip HelpID="EHException">
+			<Description>Check the InnerException property for more information.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>Microsoft.VisualBasic.ApplicationServices.NoStartupFormException</Type>
+		<Tip HelpID="EHNoStartupForm">
+			<Description>Make sure there is a startup form.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>Microsoft.VisualBasic.FileIO.MalformedLineException</Type>
+		<Tip HelpID="EHMalformedLine">
+			<Description>Check to ensure TextFieldType and Delimiter are defined correctly.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.ArgumentNullException</Type>
+		<Tip HelpID="EHArgumentNull">
+			<Description>Use the "new" keyword to create an object instance.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.ArgumentNullException</Type>
+		<Tip HelpID="EHArgumentNull">
+			<Description>Check to determine if the object is null before calling the method.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.ArgumentOutOfRangeException</Type>
+		<Tip HelpID="EHArgumentOutOfRange">
+			<Description>Make sure the arguments to this method have valid values.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.ArgumentOutOfRangeException</Type>
+		<Tip HelpID="EHArgumentOutOfRange">
+			<Description>If you are working with a collection, make sure the index is less than the size of the collection.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.ArgumentOutOfRangeException</Type>
+		<Tip HelpID="EHArgumentOutOfRange">
+			<Description>When using the overloaded two-argument FindString or FindExactString methods with a ComboBox or ListBox, check the startIndex parameter.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.ArrayTypeMismatchException</Type>
+		<Tip HelpID="EHArrayTypeMismatch">
+			<Description>Make sure the object type is convertible to the array type.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.BadImageFormatException</Type>
+		<Tip HelpID="EHBadImageFormat">
+			<Description>Make sure the file image is a valid managed assembly.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.BadImageFormatException</Type>
+		<Tip HelpID="EHBadImageFormat">
+			<Description>Make sure you have supplied a correct file path for the assembly.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.CannotUnloadAppDomainException</Type>
+		<Tip HelpID="EHCannotUnloadAppDomain">
+			<Description>Make sure you are not trying to unload an application domain that is the default domain, has a running thread, or is already unloaded.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.DivideByZeroException</Type>
+		<Tip HelpID="EHDividebyZero">
+			<Description>Make sure the value of the denominator is not zero before performing a division operation.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.DuplicateWaitObjectException</Type>
+		<Tip HelpID="EHDuplicateWaitObject">
+			<Description>Make sure the WaitHandle objects passed to WaitAll or WaitAny method are unique.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.FieldAccessException</Type>
+		<Tip HelpID="EHFieldAccess">
+			<Description>If the access level of a field in a class library has changed, recompile any assemblies that reference that library.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.FormatException</Type>
+		<Tip HelpID="EHFormat">
+			<Description>Make sure your method arguments are in the right format.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.FormatException</Type>
+		<Tip HelpID="EHFormat">
+			<Description>When converting a string to DateTime, parse the string to take the date before putting each variable into the DateTime object.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IndexOutOfRangeException</Type>
+		<Tip HelpID="EHIndexOutOfRange">
+			<Description>Make sure that the maximum index on a list is less than the list size.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IndexOutOfRangeException</Type>
+		<Tip HelpID="EHIndexOutOfRange">
+			<Description>Make sure the index is not a negative number.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IndexOutOfRangeException</Type>
+		<Tip HelpID="EHIndexOutOfRange">
+			<Description>Make sure data column names are correct.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.InvalidCastException</Type>
+		<Tip HelpID="EHInvalidCast">
+			<Description>When casting from a number, the value must be a number less than infinity.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.InvalidCastException</Type>
+		<Tip HelpID="EHInvalidCast">
+			<Description>Make sure the source type is convertible to the destination type.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.InvalidOperationException</Type>
+		<Precondition>Source="System.Drawing"</Precondition>
+		<Tip HelpID="EHInvalidOperation">
+			<Description>If you are using the Graphics object after the GetHdc method, call the ReleaseHdc method.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.InvalidOperationException</Type>
+		<Context>System.Console.ReadKey</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.InvalidOperationException</Type>
+		<Context>System.Console.KeyAvailable.get</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.InvalidOperationException</Type>
+		<Precondition>$SourceFunction="System.Windows.Forms.Control.Handle.get"</Precondition>
+		<Tip HelpID="EHInvalidOperation.WinForms.IllegalCrossThreadCall">
+			<Description>How to make cross-thread calls to Windows Forms controls</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.MethodAccessException</Type>
+		<Tip HelpID="EHMethodAccess">
+			<Description>If the access level of a method in a class library has changed, recompile any assemblies that reference that library.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.MissingFieldException</Type>
+		<Tip HelpID="EHMissingField">
+			<Description>If a field in a class library has been removed, recompile any assemblies that reference that library.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.MissingMemberException</Type>
+		<Tip HelpID="EHMissingMember">
+			<Description>If a member in a class library has been removed, recompile any assemblies that reference that library.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.MissingMemberException</Type>
+		<Tip HelpID="EHMissingMember">
+			<Description>If you are attempting to access members on a late-bound object variable, make sure it is declared Public.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.MissingMethodException</Type>
+		<Tip HelpID="EHMissingMethod">
+			<Description>If a method in a class library has been removed, recompile any assemblies that reference that library.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.NotSupportedException</Type>
+		<Tip HelpID="EHNotSupported">
+			<Description>Check to determine if there is a class that supports this functionality.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.NullReferenceException</Type>
+		<Tip HelpID="EHNullReference">
+			<Description>Use the "new" keyword to create an object instance.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.NullReferenceException</Type>
+		<Tip HelpID="EHNullReference">
+			<Description>Check to determine if the object is null before calling the method.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.ObjectDisposedException</Type>
+		<Tip HelpID="EHObjectDisposed">
+			<Description>Make sure you have not released a resource before attempting to use it. </Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.OutOfMemoryException</Type>
+		<Tip HelpID="EHOutOfMemory">
+			<Description>If you are creating an array, make sure the size is correct.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.OutOfMemoryException</Type>
+		<Tip HelpID="EHOutOfMemory">
+			<Description>Be sure you have enough memory to allocate for internal purposes and new managed objects.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.OverflowException</Type>
+		<Tip HelpID="EHOverflow">
+			<Description>Make sure you are not dividing by zero.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.RankException</Type>
+		<Tip HelpID="EHRank">
+			<Description>Make sure your array has the required number of dimensions.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.StackOverflowException</Type>
+		<Tip HelpID="EHStackOverflow">
+			<Description>Make sure you do not have an infinite loop or infinite recursion.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.UnauthorizedAccessException</Type>
+		<Tip HelpID="EHUnauthorizedAccess">
+			<Description>Make sure you have sufficient privileges to access this resource.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.UnauthorizedAccessException</Type>
+		<Tip HelpID="EHUnauthorizedAccess">
+			<Description>If you are attempting to access a file, make sure it is not ReadOnly.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Data.ConstraintException</Type>
+		<Tip HelpID="EHConstraint">
+			<Description>Relax or turn off constraints in your DataSet.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Data.ConstraintException</Type>
+		<Tip HelpID="EHConstraint">
+			<Description>Be sure you are not trying to assign a value to a primary key field whose primary key already exists.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Data.ConstraintException</Type>
+		<Tip HelpID="EHConstraint">
+			<Description>Clear datasets before loading them from view state.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Data.DBConcurrencyException</Type>
+		<Tip HelpID="EHDBConcurrency">
+			<Description>Include logic in your application to handle concurrency violations.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Data.InvalidExpressionException</Type>
+		<Tip HelpID="EHInvalidExpression">
+			<Description>Check the syntax of your expression.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Data.NoNullAllowedException</Type>
+		<Tip HelpID="EHNoNullAllowed">
+			<Description>Check if the value is DBNull before adding it to the column.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Data.NoNullAllowedException</Type>
+		<Tip HelpID="EHNoNullAllowed">
+			<Description>Set AllowDBNull to True.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Data.ReadOnlyException</Type>
+		<Tip HelpID="EHReadOnly">
+			<Description>Change the column to read/write.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Data.Odbc.OdbcException</Type>
+		<Context>System.Data.IDbConnection.Open</Context>
+		<Tip HelpID="EHOdbc">
+			<Description>Verify that you are connecting with valid credentials.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Data.Odbc.OdbcException</Type>
+		<Context>System.Data.IDbConnection.Open</Context>
+		<Tip HelpID="EHOdbc">
+			<Description>Verify that the server name is correct and the server is running.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Data.OleDb.OleDbException</Type>
+		<Context>System.Data.IDbConnection.Open</Context>
+		<Tip HelpID="EHOleDb">
+			<Description>Verify that you are connecting with valid credentials.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Data.OleDb.OleDbException</Type>
+		<Context>System.Data.IDbConnection.Open</Context>
+		<Tip HelpID="EHOleDb">
+			<Description>Verify that the server name is correct and the server is running.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Data.OracleClient.OracleException</Type>
+		<Context>System.Data.IDbConnection.Open</Context>
+		<Tip HelpID="EHOracle">
+			<Description>Verify that you are connecting with valid credentials.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Data.OracleClient.OracleException</Type>
+		<Context>System.Data.IDbConnection.Open</Context>
+		<Tip HelpID="EHOracle">
+			<Description>Verify that the server name is correct and the server is running.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Data.SqlClient.SqlException</Type>
+		<Context>System.Data.IDbConnection.Open</Context>
+		<Tip HelpID="EHSql">
+			<Description>Verify that you are connecting with valid credentials.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Data.SqlClient.SqlException</Type>
+		<Context>System.Data.IDbConnection.Open</Context>
+		<Tip HelpID="EHSql">
+			<Description>Verify that the server name is correct and the server is running.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Deployment.Application.DependentPlatformMissingException</Type>
+		<Tip HelpID="EHDependentPlatformMissing">
+			<Description>Make sure that all assemblies required by the application are installed on the target computer.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Deployment.Application.InvalidDeploymentException</Type>
+		<Tip HelpID="EHInvalidDeployment">
+			<Description>Make sure the manifests for this application are valid.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Drawing.Printing.InvalidPrinterException</Type>
+		<Tip HelpID="EHInvalidPrinter">
+			<Description>Make sure that the printer exists.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.DirectoryNotFoundException</Type>
+		<Tip HelpID="EHDirectoryNotFound">
+			<Description>Verify that the directory exists in the specified location.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.DirectoryNotFoundException</Type>
+		<Tip HelpID="EHDirectoryNotFound">
+			<Description>When using relative paths, make sure the current directory is correct.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.EndOfStreamException</Type>
+		<Tip HelpID="EHEndOfStream">
+			<Description>Check whether the end of the file has been reached before reading.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.FileLoadException</Type>
+		<Tip HelpID="EHFileLoad">
+			<Description>Make sure that the file is a valid .NET Framework assembly.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.FileNotFoundException</Type>
+		<Tip HelpID="EHFileNotFound">
+			<Description>Verify that the file exists in the specified location.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.FileNotFoundException</Type>
+		<Tip HelpID="EHFileNotFound">
+			<Description>When using relative paths, make sure the current directory is correct.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.InternalBufferOverflowException</Type>
+		<Tip HelpID="EHInternalBufferOverflow">
+			<Description>When using FileSystemWatcher, filter out unwanted change notifications.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.IOException</Type>
+		<Context>System.Console.Clear</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.IOException</Type>
+		<Context>System.Console.MoveBufferArea</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.IOException</Type>
+		<Context>System.Console.SetBufferSize</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.IOException</Type>
+		<Context>System.Console.SetCursorPosition</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.IOException</Type>
+		<Context>System.Console.SetWindowPosition</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.IOException</Type>
+		<Context>System.Console.SetWindowSize</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.IOException</Type>
+		<Context>System.Console.BufferHeight.get</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.IOException</Type>
+		<Context>System.Console.BufferHeight.set</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.IOException</Type>
+		<Context>System.Console.BufferWidth.get</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.IOException</Type>
+		<Context>System.Console.BufferWidth.set</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.IOException</Type>
+		<Context>System.Console.CursorLeft.get</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.IOException</Type>
+		<Context>System.Console.CursorLeft.set</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.IOException</Type>
+		<Context>System.Console.CursorSize.get</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.IOException</Type>
+		<Context>System.Console.CursorSize.set</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.IOException</Type>
+		<Context>System.Console.CursorTop.get</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.IOException</Type>
+		<Context>System.Console.CursorTop.set</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.IOException</Type>
+		<Context>System.Console.CursorVisible.get</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.IOException</Type>
+		<Context>System.Console.CursorVisible.set</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.IOException</Type>
+		<Context>System.Console.TreatControlCAsInput.get</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.IOException</Type>
+		<Context>System.Console.TreatControlCAsInput.set</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.IOException</Type>
+		<Context>System.Console.WindowHeight.get</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.IOException</Type>
+		<Context>System.Console.WindowHeight.set</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.IOException</Type>
+		<Context>System.Console.WindowLeft.get</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.IOException</Type>
+		<Context>System.Console.WindowLeft.set</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.IOException</Type>
+		<Context>System.Console.WindowTop.get</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.IOException</Type>
+		<Context>System.Console.WindowTop.set</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.IOException</Type>
+		<Context>System.Console.WindowWidth.get</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.IOException</Type>
+		<Context>System.Console.WindowWidth.set</Context>
+		<Tip HelpID="EHIOException">
+			<Description>Turn off the Console Window.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.IO.PathTooLongException</Type>
+		<Tip HelpID="EHPathTooLong">
+			<Description>Make sure the path is not longer than the system-defined maximum.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Messaging.MessageQueueException</Type>
+		<Tip HelpID="EHMessageQueue">
+			<Description>Check the MessageQueueErrorCode property of the exception to determine why the Message Queue operation failed.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Net.CookieException</Type>
+		<Tip HelpID="EHCookie">
+			<Description>Make sure the cookie size does not exceed the maximum allowed by the cookie container.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Net.WebException</Type>
+		<Tip HelpID="EHWeb">
+			<Description>Check the Response property of the exception to determine why the request failed.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Net.WebException</Type>
+		<Tip HelpID="EHWeb">
+			<Description>Check the Status property of the exception to determine why the request failed.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Net.Sockets.SocketException</Type>
+		<Tip HelpID="EHSocket">
+			<Description>Check the ErrorCode property to determine why the socket error occurred.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Runtime.InteropServices.COMException</Type>
+		<Tip HelpID="EHCOM">
+			<Description>Check the ErrorCode property of the exception to determine the HRESULT returned by the COM object.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Runtime.InteropServices.COMException</Type>
+		<Precondition>ErrorCode=-2147417831</Precondition>
+		<Tip HelpID="EHCOM">
+			<Description>Disable the hosting process.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Runtime.InteropServices.SafeArrayRankMismatchException</Type>
+		<Tip HelpID="EHSafeArrayRankMismatch">
+			<Description>Make sure your array has the required number of dimensions.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Security.SecurityException</Type>
+		<Tip HelpID="EHSecurity">
+			<Description>Use a certificate to obtain the required permission(s).</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Security.SecurityException</Type>
+		<Precondition>$EngineType!="e04bde58-45ec-48db-9807-513f78865212"</Precondition>
+		<Tip HelpID="EHSecurity">
+			<Description>When deploying an Office solution, check to make sure you have fulfilled all necessary security requirements.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Security.SecurityException</Type>
+		<Tip HelpID="EHSecurity">
+			<Description>If an assembly implementing the custom security object references other assemblies, add the referenced assemblies to the full trust assembly list.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Security.SecurityException</Type>
+		<Demand>System.Security.Permissions.FileIOPermission</Demand>
+		<Tip HelpID="EHSecurity">
+			<Description>Store application data in isolated storage.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Security.SecurityException</Type>
+		<Demand>System.Security.Permissions.FileIOPermission</Demand>
+		<Context>System.Windows.Forms.FileDialog.FileName.get</Context>
+		<Tip HelpID="EHSecurity">
+			<Description>Use the OpenFile method to open or save a file. </Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Security.SecurityException</Type>
+		<Demand>System.Security.Permissions.FileIOPermission</Demand>
+		<Precondition>$EngineType="e04bde58-45ec-48db-9807-513f78865212"</Precondition>
+		<Tip HelpID="EHSecurity">
+			<Description>Adjust the permission level of the assembly via the property page.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Security.SecurityException</Type>
+		<Demand>System.Security.Permissions.EventLogPermission</Demand>
+		<Tip HelpID="EHSecurity">
+			<Description>Make sure the application is reading and writing to existing event logs on the local computer. </Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Security.SecurityException</Type>
+		<Demand>System.Security.Permissions.SecurityPermission</Demand>
+		<Tip HelpID="EHSecurity">
+			<Description>Use equivalent managed libraries.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Security.SecurityException</Type>
+		<Demand>System.Security.Permissions.UIPermission</Demand>
+		<Tip HelpID="EHSecurity">
+			<Description>Use safe windows.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Security.SecurityException</Type>
+		<Demand>System.Drawing.Printing.PrintingPermission</Demand>
+		<Tip HelpID="EHSecurity">
+			<Description>Allow users to print through the PrintDialog component.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Security.SecurityException</Type>
+		<Demand>System.Drawing.Printing.PrintingPermission</Demand>
+		<Tip HelpID="EHSecurity">
+			<Description>Print to the default printer.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Security.SecurityException</Type>
+		<Demand>System.Net.WebPermission</Demand>
+		<Tip HelpID="EHSecurity">
+			<Description>Retrieve data from the same Web server from which it was deployed.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Security.SecurityException</Type>
+		<Demand>System.Data.Odbc.OdbcPermission</Demand>
+		<Tip HelpID="EHSecurity">
+			<Description>Retrieve data from a webservice located on the same Web server from which it was deployed.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Security.SecurityException</Type>
+		<Demand>System.Data.OleDb.OleDbPermission</Demand>
+		<Tip HelpID="EHSecurity">
+			<Description>Retrieve data from a webservice located on the same Web server from which it was deployed.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Security.SecurityException</Type>
+		<Demand>System.Data.SqlClient.SqlClientPermission</Demand>
+		<Tip HelpID="EHSecurity">
+			<Description>Retrieve data from a webservice located on the same Web server from which it was deployed.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Security.SecurityException</Type>
+		<Demand>System.Data.OracleClient.OraclePermission</Demand>
+		<Tip HelpID="EHSecurity">
+			<Description>Retrieve data from a webservice located on the same Web server from which it was deployed.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Security.VerificationException</Type>
+		<Tip HelpID="EHVerification">
+			<Description>Make sure your application is not loading two conflicting versions of a class library.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>System.Security.Policy.PolicyException</Type>
+		<Tip HelpID="EHPolicy">
+			<Description>Check to determine if the code requests more permissions than the policy will grant or the policy is configured to prohibit running the code.</Description>
+		</Tip>
+	</Exception>
+	<Exception>
+		<Type>*</Type>
+		<Action ActionCommand="ViewDetail">
+			<Title>View Detail...</Title>
+			<ToolTip>Check the content of the exception object.</ToolTip>
+		</Action>
+	</Exception>
+	<Exception>
+		<Type>*</Type>
+		<Precondition>$InnerExceptionType="System.Security.SecurityException" || $Name="System.Security.SecurityException"</Precondition>
+		<Action ActionCommand="AddPermission">
+			<Title>Add Permission to the project</Title>
+			<ToolTip>Add Permission to the application manifest to ask those permisions before running.</ToolTip>
+		</Action>
+	</Exception>
+</AssistantContent>

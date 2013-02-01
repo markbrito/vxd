@@ -1,0 +1,1399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- _LocalBinding -->
+
+<!--
+ Web Accessibility Initiative (WAI)/Section 508 compliance strings.
+ Copyright 2001, Microsoft Corporation, All rights reserved.   
+ 
+ Version 11.4526
+-->
+
+<xp:ruleset version="1.0" xmlns:xp="http://schemas.microsoft.com/2001/xmlpatterns">
+
+	<!-- VARIABLE DECLARATION SECTION -->
+	
+	<xp:variable name="Checkpoint1_1">
+		<!--	_locID_text='idCheckpoint1_1'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 1.1
+	</xp:variable>
+	
+	<xp:variable name="str1_1_MissingAltAndLongDesc">
+		<!--	_locID_text='str1_1_MissingAltAndLongDesc'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Image is missing a text equivalent (either an alt="X" or longdesc="X").  Consider brief alternative text that describes the information that the image conveys.  You can use the picture properties dialog to add alternative text.
+	</xp:variable>
+	
+	<xp:variable name="str1_1_MissingAltAndLongDesc_Summary">
+		<!--	_locID_text='str1_1_MissingAltAndLongDesc_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Image is missing a text equivalent (either an alt="X" or longdesc="X").
+	</xp:variable>
+	
+	<xp:variable name="str1_1_AttributeTooLong">
+		<!--	_locID_text='str1_1_AttributeTooLong'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Consider alternative text containing fewer words.  A long description may be needed if essential information is not available elsewhere on the page.  If you don't have a Web page containing this information, you'll need to create one in this Web site and link to it.
+	</xp:variable>
+	
+	<xp:variable name="str1_1_AttributeTooLong_Summary">
+		<!--	_locID_text='str1_1_AttributeTooLong_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Consider alternative text containing fewer words or adding a long description.
+	</xp:variable>
+	
+	<xp:variable name="str1_1_AltHasBytesDesc">
+		<!--	_locID_all='str1_1_AltHasBytesDesc'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		This &lt;<xp:value-of select="parent::node()"/>&gt; tag's alternative text may not be valid.  Does it accurately describe the information that the image conveys?  Consider an informative alternative text and removing the word "bytes".
+	</xp:variable>
+	
+	<xp:variable name="str1_1_AltHasBytesDesc_Summary">
+		<!--	_locID_all='str1_1_AltHasBytesDesc_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		This &lt;<xp:value-of select="parent::node()"/>&gt; tag's alternative text may not be valid.
+	</xp:variable>
+	
+	<xp:variable name="str1_1_PossibleImageNameInAlt">
+		<!--	_locID_text='str1_1_PossibleImageNameInAlt'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		This alternative text may not be valid.  Does it accurately describe the information that the image conveys?  Consider an informative alternative text and removing the file extension.
+	</xp:variable>	
+	
+	<xp:variable name="str1_1_PossibleImageNameInAlt_Summary">
+		<!--	_locID_text='str1_1_PossibleImageNameInAlt_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->	
+		This alternative text may not be valid.
+	</xp:variable>	
+
+	<xp:variable name="str1_1_InvalidDesc">
+		<!--	_locID_text='str1_1_InvalidDesc'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		This alternative text may not be valid.  Does it accurately describe the information conveyed by the image?
+	</xp:variable>
+	
+	<xp:variable name="str1_1_InvalidDesc_Summary">
+		<!--	_locID_text='str1_1_InvalidDesc_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->	
+		This alternative text may not be valid.
+	</xp:variable>
+	
+	<xp:variable name="str1_1_MissingAlt">
+		<!--	_locID_text='str1_1_MissingAlt'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Image is missing a text equivalent (alt="X").  Consider brief alternative text that describes the information that the image conveys.  You can use the picture properties dialog to add alternative text.
+	</xp:variable>
+	
+	<xp:variable name="str1_1_MissingAlt_Summary">
+		<!--	_locID_text='str1_1_MissingAlt_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->	
+		Image is missing a text equivalent (alt="X").
+	</xp:variable>
+	
+	<xp:variable name="str1_1_MissingAlternativeText">
+		<!--	_locID_text='str1_1_MissingAlternativeText'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		The &lt;area&gt; tag is missing a text equivalent.
+	</xp:variable>
+	
+	<xp:variable name="str1_1_MissingAlternativeText_Summary">
+		<!--	_locID_text='str1_1_MissingAlternativeText_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->	
+		The &lt;area&gt; tag is missing a text equivalent.
+	</xp:variable>
+
+	<xp:variable name="str1_1_AppletMissingText">
+		<!--	_locID_text='str1_1_AppletMissingText'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		This APPLET element is missing a text equivalent.  Consider brief alternative text that describes the information that the APPLET element conveys as well as a text equivalent in the content of the APPLET element.  This enables accessibility for browsers which only handle one of the two forms.
+	</xp:variable>
+	
+	<xp:variable name="str1_1_AppletMissingText_Summary">
+		<!--	_locID_text='str1_1_AppletMissingText_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->	
+		This Applet is missing a text equivalent.
+	</xp:variable>
+
+	<xp:variable name="str1_1_AltEndsWithExeExt">
+		<!--	_locID_text='str1_1_AltEndsWithExeExt'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		This alternative text may not be valid.  Does it accurately describe the information that the image conveys?
+	</xp:variable>
+	
+	<xp:variable name="str1_1_AltEndsWithExeExt_Summary">
+		<!--	_locID_text='str1_1_AltEndsWithExeExt_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->	
+		This alternative text may not be valid.
+	</xp:variable>
+	
+	<xp:variable name="str1_1_ObjectTypeImageMissingTextEquivalent">
+		<!--	_locID_text='str1_1_ObjectTypeImageMissingTextEquivalent'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		The image contained in this object is missing descriptive text.
+	</xp:variable>
+	
+	<xp:variable name="str1_1_ObjectTypeImageMissingTextEquivalent_Summary">
+		<!--	_locID_text='str1_1_ObjectTypeImageMissingTextEquivalent_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->	
+		The image contained in this object is missing descriptive text.
+	</xp:variable>
+
+	<xp:variable name="str1_1_NoObjectText">
+		<!--	_locID_text='str1_1_NoObjectText'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		This alternative text may not be valid.  Does it accurately describe the information that the element conveys?
+	</xp:variable>
+	
+	<xp:variable name="str1_1_NoObjectText_Summary">
+		<!--	_locID_text='str1_1_NoObjectText_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->	
+		This alternative text may not be valid. 
+	</xp:variable>
+	
+	<xp:variable name="str1_1_GoesHereObjectText">
+		<!--	_locID_text='str1_1_GoesHereObjectText'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		This "goes here" text may not be valid.  Does it accurately describe the information that the element conveys?
+	</xp:variable>
+	
+	<xp:variable name="str1_1_GoesHereObjectText_Summary">
+		<!--	_locID_text='str1_1_GoesHereObjectText_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		This "goes here" text may not be valid.
+	</xp:variable>
+	
+	<xp:variable name="str1_1_NoNoScriptTag">
+		<!--	_locID_text='str1_1_NoNoScriptTag'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Consider using &lt;noscript&gt; to provide an alternative description of &lt;script&gt; content.
+	</xp:variable>
+	
+	<xp:variable name="str1_1_NoNoScriptTag_Summary">
+		<!--	_locID_text='str1_1_NoNoScriptTag_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		This script may be missing an alternative description.
+	</xp:variable>
+
+	<xp:variable name="str1_1_FrameIFrameNoLongdesc">
+		<!--	_locID_text='str1_1_FrameIFrameNoLongdesc'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Ensure that the FRAME and IFRAME elements contain alternative descriptive text.  Consider using the "longdesc=" attribute.
+	</xp:variable>
+	
+	<xp:variable name="str1_1_FrameIFrameNoLongdesc_Summary">
+		<!--	_locID_text='str1_1_FrameIFrameNoLongdesc_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Ensure that the FRAME and IFRAME elements contain alternative descriptive text.
+	</xp:variable>
+
+	<xp:variable name="str1_1_FRAMESETMissingNOFRAMES">
+		<!--	_locID_text='str1_1_FRAMESETMissingNOFRAMES'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Use &lt;noframes&gt; within your frameset.  This will provide alternative content when frames are not available to users of your web site.
+	</xp:variable>
+	
+	<xp:variable name="str1_1_FRAMESETMissingNOFRAMES_Summary">
+		<!--	_locID_text='str1_1_FRAMESETMissingNOFRAMES_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Use &lt;noframes&gt; within your frameset.
+	</xp:variable>
+
+	<xp:variable name="str1_1_PossibleAsciiArt">
+		<!--	_locID_text='str1_1_PossibleAsciiArt'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		If you use ASCII art, be sure to include alternate equivalent text, using &lt;abbr&gt; with the "title" attribute.  Also provide a link to skip over the ASCII figure.
+	</xp:variable>
+	
+	<xp:variable name="str1_1_PossibleAsciiArt_Summary">
+		<!--	_locID_text='str1_1_PossibleAsciiArt_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		If you use ASCII art, be sure to include alternate equivalent text.
+	</xp:variable>
+
+	<xp:variable name="str1_1_MapWithNoAltText">
+		<!--	_locID_text='str1_1_MapWithNoAltText'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		One or more image map links do not have corresponding text equivalents.
+	</xp:variable>
+
+	<xp:variable name="str1_1_MapWithNoAltText_Summary">
+		<!--	_locID_text='str1_1_MapWithNoAltText_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		One or more image map links do not have corresponding text equivalents.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint1_2">
+		<!--	_locID_text='Checkpoint1_2'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 1.2
+	</xp:variable>
+	
+	<xp:variable name="str1_2_ImageMapPossibleNoTextLinks">
+		<!--	_locID_text='str1_2_ImageMapPossibleNoTextLinks'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Ensure there are text links for each active region of this image map.  If &lt;img&gt; is used provide a redundant list of links following the image map.
+	</xp:variable>
+	
+	<xp:variable name="str1_2_ImageMapPossibleNoTextLinks_Summary">
+		<!--	_locID_text='str1_2_ImageMapPossibleNoTextLinks_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Ensure there are text links for each active region of this image map.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint1_3">
+		<!--	_locID_text='Checkpoint1_3'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 1.3
+	</xp:variable>
+	
+	<xp:variable name="str1_3_PossibleVideoWithNoAudioTrack">
+		<!--	_locID_text='str1_3_PossibleVideoWithNoAudioTrack'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		If this is a visual track, be sure there is an auditory track that provides relevant information conveyed by the visual track.
+	</xp:variable>
+	
+	<xp:variable name="str1_3_PossibleVideoWithNoAudioTrack_Summary">
+		<!--	_locID_text='str1_3_PossibleVideoWithNoAudioTrack_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		This track may need an alternative auditory track.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint1_4">
+		<!--	_locID_text='Checkpoint1_4'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 1.4
+	</xp:variable>
+	
+	<xp:variable name="str1_4_TimeBasedMultiMedia">
+		<!--	_locID_text='str1_4_TimeBasedMultiMedia'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Synchronize alternatives, captions, or auditory descriptions with time-based multimedia tracks.
+	</xp:variable>
+	
+	<xp:variable name="str1_4_TimeBasedMultiMedia_Summary">
+		<!--	_locID_text='str1_4_TimeBasedMultiMedia_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Synchronize descriptions with time-based multimedia tracks.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint2_1">
+		<!--	_locID_text='Checkpoint2_1'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 2.1
+	</xp:variable>
+	
+	<xp:variable name="str2_1_ColorCoding">
+		<!--	_locID_text='str2_1_ColorCoding'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Be sure not to convey information using color alone.  Use context or markup as well.
+	</xp:variable>
+	
+	<xp:variable name="str2_1_ColorCoding_Summary">
+		<!--	_locID_text='str2_1_ColorCoding_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Be sure not to convey information using color alone.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint2_2">
+		<!--	_locID_text='Checkpoint2_2'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 2.2
+	</xp:variable>
+	
+	<xp:variable name="str2_2_ColorContrast">
+		<!--	_locID_text='str2_2_ColorContrast'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Be sure that foreground and background colors for images provide sufficient contrast for low-vision users and for use with black and white screens.
+	</xp:variable>
+	
+	<xp:variable name="str2_2_ColorContrast_Summary">
+		<!--	_locID_text='str2_2_ColorContrast_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Provide sufficient contrast for low-vision users.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint3_1">
+		<!--	_locID_text='Checkpoint3_1'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 3.1
+	</xp:variable>
+	
+	<xp:variable name="str3_1_MarkupNotImages">
+		<!--	_locID_text='str3_1_MarkupNotImages'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Use markup rather than images to convey information where possible.  Examples:  use MathML to markup mathematical equations; use style sheets to format text and control layout.
+	</xp:variable>
+	
+	<xp:variable name="str3_1_MarkupNotImages_Summary">
+		<!--	_locID_text='str3_1_MarkupNotImages_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Use markup to convey information where possible.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint3_2">
+		<!--	_locID_text='Checkpoint3_2'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 3.2
+	</xp:variable>
+	
+	<xp:variable name="str3_2_MissingDOCTYPE">
+		<!--	_locID_text='str3_2_MissingDOCTYPE'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Be sure to include a document type declaration.  This will enable browsers and assistive devices to interpret your content correctly.
+	</xp:variable>
+	
+	<xp:variable name="str3_2_MissingDOCTYPE_Summary">
+		<!--	_locID_text='str3_2_MissingDOCTYPE_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Be sure to include a document type declaration.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint3_3">
+		<!--	_locID_text='Checkpoint3_3'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 3.3
+	</xp:variable>
+	
+	<xp:variable name="str3_3_StyleSheetsforLayout">
+		<!--	_locID_text='str3_3_StyleSheetsforLayout'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Be sure that you are using style sheets to control layout and presentation.
+	</xp:variable>
+	
+	<xp:variable name="str3_3_StyleSheetsforLayout_Summary">
+		<!--	_locID_text='str3_3_StyleSheetsforLayout_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Be sure that you are using style sheets to control layout and presentation.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint3_4">
+		<!--	_locID_text='Checkpoint3_4'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 3.4
+	</xp:variable>
+	
+	<xp:variable name="str3_4_AbsoluteValues">
+		<!--	_locID_text='str3_4_AbsoluteValues'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Consider using relative values rather than absolute values, for example use a percentage value rather than pixel value.
+	</xp:variable>
+	
+	<xp:variable name="str3_4_AbsoluteValues_Summary">
+		<!--	_locID_text='str3_4_AbsoluteValues_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Consider using relative values rather than absolute values.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint3_5">
+		<!--	_locID_text='Checkpoint3_5'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 3.5
+	</xp:variable>
+	
+	<xp:variable name="str3_5_HeadersForStructure">
+		<!--	_locID_text='str3_5_HeadersForStructure'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Use header elements to convey document structure, for example &lt;h2&gt; is a subsection of &lt;h1&gt;.  Do not use header elements for font effects.
+	</xp:variable>
+	
+	<xp:variable name="str3_5_HeadersForStructure_Summary">
+		<!--	_locID_text='str3_5_HeadersForStructure_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Use header elements to convey document structure.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint3_6">
+		<!--	_locID_text='Checkpoint3_6'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 3.6
+	</xp:variable>
+
+	<xp:variable name="str3_6_NoListItemsWithOLULDIR">
+		<!--	_locID_text='str3_6_NoListItemsWithOLULDIR'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		There are no list items associated with &lt;ol&gt;, &lt;ul&gt; or &lt;dl&gt;.  This tag should not be used for formatting.  Consider using cascading style sheets instead.
+	</xp:variable>
+	
+	<xp:variable name="str3_6_NoListItemsWithOLULDIR_Summary">
+		<!--	_locID_text='str3_6_NoListItemsWithOLULDIR_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		There are no list items associated with &lt;ol&gt;, &lt;ul&gt; or &lt;dl&gt;.
+	</xp:variable>
+	
+	<xp:variable name="str3_6_NoDefinedTermDefinitionWithDL">
+		<!--	_locID_text='str3_6_NoDefinedTermDefinitionWithDL'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		There are no defined terms or definitions associated with &lt;dl&gt;.  This tag should not be used for formatting.  Consider using cascading style sheets instead.
+	</xp:variable>
+	
+	<xp:variable name="str3_6_NoDefinedTermDefinitionWithDL_Summary">
+		<!--	_locID_text='str3_6_NoDefinedTermDefinitionWithDL_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		There are no defined terms or definitions associated with &lt;dl&gt;.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint3_7">
+		<!--	_locID_text='Checkpoint3_7'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 3.7
+	</xp:variable>
+	
+	<xp:variable name="str3_7_QuoteBlockquote">
+		<!--	_locID_text='str3_7_QuoteBlockquote'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Be sure you are using &lt;q&gt; or &lt;blockquote&gt; to identify a quotation, not for indentation.
+	</xp:variable>
+	
+	<xp:variable name="str3_7_QuoteBlockquote_Summary">
+		<!--	_locID_text='str3_7_QuoteBlockquote_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Be sure you are using &lt;q&gt; or &lt;blockquote&gt; to identify a quotation, not for indentation.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint4_1">
+		<!--	_locID_text='Checkpoint4_1'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 4.1
+	</xp:variable>
+
+	<xp:variable name="str4_1_LanguageChanges">
+		<!--	_locID_text='str4_1_LanguageChanges'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Identify language changes in the document.  For instance, use "lang" or "xml:lang" to identify a language change.
+	</xp:variable>
+	
+	<xp:variable name="str4_1_LanguageChanges_Summary">
+		<!--	_locID_text='str4_1_LanguageChanges_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Identify language changes in the document.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint5_1">
+		<!--	_locID_text='Checkpoint5_1'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 5.1
+	</xp:variable>
+	<xp:variable name="str5_1_TableNoTH">
+		<!--	_locID_text='str5_1_TableNoTH'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		If this is a data table, please add header rows and/or columns using &lt;th&gt;.
+	</xp:variable>
+	
+	<xp:variable name="str5_1_TableNoTH_Summary">
+		<!--	_locID_text='str5_1_TableNoTH_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		If this is a data table, please add header rows and/or columns using &lt;th&gt;.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint5_2">
+		<!--	_locID_text='Checkpoint5_2'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 5.2
+	</xp:variable>
+
+	<xp:variable name="str5_2_TableNoTHeadTFootTBodyColColgroupAxisScopeHeaders">
+		<!--	_locID_text='str5_2_TableNoTHeadTFootTBodyColColgroupAxisScopeHeaders'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		If this is a complex data table containing two or more levels of header rows or columns, identify structural rows.  Consider using &lt;thead&gt;, &lt;tfoot&gt; for repetitive headers and footers; &lt;tbody&gt; for grouping rows; &lt;col&gt; and &lt;colgroup&gt; for grouping columns; and label the TABLE elements with "scope", "axis", and "headers".
+	</xp:variable>
+	
+	<xp:variable name="str5_2_TableNoTHeadTFootTBodyColColgroupAxisScopeHeaders_Summary">
+		<!--	_locID_text='str5_2_TableNoTHeadTFootTBodyColColgroupAxisScopeHeaders_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		If this is a complex data table identify structure and groupings.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint5_3">
+		<!--	_locID_text='Checkpoint5_3'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 5.3
+	</xp:variable>
+	
+	<xp:variable name="str5_3_LinearizeLayoutTable">
+		<!--	_locID_text='str5_3_LinearizeLayoutTable'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		If this table is used for layout, make sure it makes sense when linearized.  Otherwise, provide a linearized version or use cascading style sheets for structure and positioning.
+	</xp:variable>
+	
+	<xp:variable name="str5_3_LinearizeLayoutTable_Summary">
+		<!--	_locID_text='str5_3_LinearizeLayoutTable_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		If this table is used for layout, make sure it makes sense when linearized.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint5_4">
+		<!--	_locID_text='Checkpoint5_4'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 5.4
+	</xp:variable>
+	
+	<xp:variable name="str5_4_FormatforLayoutTable">
+		<!--	_locID_text='str5_4_FormatforLayoutTable'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		If this table is used for layout, do not use a structural format for visual formatting.  For example, do not use &lt;th&gt; to display cell contents as centered and bold.
+	</xp:variable>
+	
+	<xp:variable name="str5_4_FormatforLayoutTable_Summary">
+		<!--	_locID_text='str5_4_FormatforLayoutTable_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		If this table is used for layout, do not use structural format for visual formatting.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint6_1">
+		<!--	_locID_text='Checkpoint6_1'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 6.1
+	</xp:variable>
+	
+	<xp:variable name="str6_1_PossibleStyleSheet">
+		<!--	_locID_text='str6_1_PossibleStyleSheet'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		If you are using style sheets, verify that this document can be read with style sheets turned off.
+	</xp:variable>
+	
+	<xp:variable name="str6_1_PossibleStyleSheet_Summary">
+		<!--	_locID_text='str6_1_PossibleStyleSheet_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Verify that this document can be read with style sheets turned off.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint6_2">
+		<!--	_locID_text='Checkpoint6_2'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 6.2
+	</xp:variable>
+	
+	<xp:variable name="str6_2_DynamicContentSynch">
+		<!--	_locID_text='str6_2_DynamicContentSynch'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Be sure that equivalents for dynamic content are updated whenever content is updated.
+	</xp:variable>
+	
+	<xp:variable name="str6_2_DynamicContentSynch_Summary">
+		<!--	_locID_text='str6_2_DynamicContentSynch_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Be sure that equivalents for dynamic content are current.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint6_3">
+		<!--	_locID_text='Checkpoint6_3'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 6.3
+	</xp:variable>
+	
+	<xp:variable name="str6_3_PossibleProgrammaticObjects">
+		<!--	_locID_text='str6_3_PossibleProgrammaticObjects'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Be sure this page is usable when programmatic objects are turned off or not supported.  If not, provide alternative text that describes the information that the element conveys.
+	</xp:variable>
+	
+	<xp:variable name="str6_3_PossibleProgrammaticObjects_Summary">
+		<!--	_locID_text='str6_3_PossibleProgrammaticObjects_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Be sure this page is usable when programmatic objects are not supported.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint6_4">
+		<!--	_locID_text='Checkpoint6_4'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 6.4
+	</xp:variable>
+	
+	<xp:variable name="str6_4_EventHandlers">
+		<!--	_locID_text='str6_4_EventHandlers'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Be sure any event handlers are device-independent.  If use of this event handler is required for the essential information or use of this page:  consider limiting event handlers to device indpendent handlers such as:  "onfocus", "onblur" and "onselect".  If you must use device-dependent attributes provide a keyboard alternate, for example for "onmousedown" also specify "onkeydown".
+	</xp:variable>
+	
+	<xp:variable name="str6_4_EventHandlers_Summary">
+		<!--	_locID_text='str6_4_EventHandlers_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Be sure any event handlers are device-independent.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint6_5">
+		<!--	_locID_text='Checkpoint6_5'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 6.5
+	</xp:variable>
+	
+	<xp:variable name="str6_5_DynamicContent">
+		<!--	_locID_text='str6_5_DynamicContent'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Be sure that dynamic content is accessible, or provide an alternative presentation.  For example, if you use &lt;frame&gt;, include a &lt;noframes&gt; option; note also that server-side scripts may be more accessible than client-side scripts.
+	</xp:variable>
+	
+	<xp:variable name="str6_5_DynamicContent_Summary">
+		<!--	_locID_text='str6_5_DynamicContent_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Be sure that dynamic content is accessible, or provide an alternative.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint7_1">
+		<!--	_locID_text='Checkpoint7_1'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 7.1
+	</xp:variable>
+	
+	<xp:variable name="str7_1_ScreenFlicker">
+		<!--	_locID_text='str7_1_ScreenFlicker'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Avoid causing screen flicker.  Where unavoidable, allow users to control flickering.  Four to 59 flashes per second should be avoided as should quick changes from light to dark.
+	</xp:variable>
+	
+	<xp:variable name="str7_1_ScreenFlicker_Summary">
+		<!--	_locID_text='str7_1_ScreenFlicker_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Avoid causing screen flicker.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint7_2">
+		<!--	_locID_text='Checkpoint7_2'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 7.2
+	</xp:variable>
+	
+	<xp:variable name="str7_2_Blink">
+		<!--	_locID_text='str7_2_Blink'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Do not use &lt;blink&gt;.  Consider alternative ways to add emphasis such as &lt;strong&gt; or &lt;em&gt;; or using cascading style sheet command 'text-decoration:  blink' so users can stop the effect by turning off style sheets. 
+	</xp:variable>
+	
+	<xp:variable name="str7_2_Blink_Summary">
+		<!--	_locID_text='str7_2_Blink_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Do not use &lt;blink&gt;.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint7_3">
+		<!--	_locID_text='Checkpoint7_3'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 7.3
+	</xp:variable>
+	
+	<xp:variable name="str7_3_MovingContent">
+		<!--	_locID_text='str7_3_MovingContent'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Avoid moving content or allow users to control the movement.
+	</xp:variable>	
+	
+	<xp:variable name="str7_3_MovingContent_Summary">
+		<!--	_locID_text='str7_3_MovingContent_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Avoid moving content or allow users to control the movement.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint7_4">
+		<!--	_locID_text='Checkpoint7_4'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 7.4
+	</xp:variable>
+	
+	<xp:variable name="str7_4_AutoRefresh">
+		<!--	_locID_text='str7_4_AutoRefresh'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Do not create automatically refreshing pages. 
+	</xp:variable>
+	
+	<xp:variable name="str7_4_AutoRefresh_Summary">
+		<!--	_locID_text='str7_4_AutoRefresh_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Do not create automatically refreshing pages. 
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint7_5">
+		<!--	_locID_text='Checkpoint7_5'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 7.5
+	</xp:variable>
+	
+	<xp:variable name="str7_5_ReDirects">
+		<!--	_locID_text='str7_5_ReDirects'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Provide the ability to stop this redirect or configure the server to perform redirects.
+	</xp:variable>
+	
+	<xp:variable name="str7_5_ReDirects_Summary">
+		<!--	_locID_text='str7_5_ReDirects_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Do not automatically redirect pages.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint8_1">
+		<!--	_locID_text='Checkpoint8_1'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 8.1
+	</xp:variable>
+	
+	<xp:variable name="str8_1_PossibleProgrammaticElements">
+		<!--	_locID_text='str8_1_PossibleProgrammaticElements'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Verify that programmatic elements are accessible using assistive technology.
+	</xp:variable>
+	
+	<xp:variable name="str8_1_PossibleProgrammaticElements_Summary">
+		<!--	_locID_text='str8_1_PossibleProgrammaticElements_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Verify that programmatic elements are accessible using assistive technology.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint9_1">
+		<!--	_locID_text='Checkpoint9_1'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 9.1
+	</xp:variable>
+	
+	<xp:variable name="str9_1_ServerSideImageMap">
+		<!--	_locID_text='str9_1_ServerSideImageMap'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Provide client-side image maps instead of server-side image maps unless the regions cannot be defined with an available shape.
+	</xp:variable>
+	
+	<xp:variable name="str9_1_ServerSideImageMap_Summary">
+		<!--	_locID_text='str9_1_ServerSideImageMap_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Provide client-side image maps instead of server-side image maps.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint9_2">
+		<!--	_locID_text='Checkpoint9_2'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 9.2
+	</xp:variable>
+	
+	<xp:variable name="str9_2_ElementWithUI">
+		<!--	_locID_text='str9_2_ElementWithUI'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Verify that any element with its own user interface is device-independent.
+	</xp:variable>
+	
+	<xp:variable name="str9_2_ElementWithUI_Summary">
+		<!--	_locID_text='str9_2_ElementWithUI_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Verify that any element with its own user interface is device-independent.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint9_3">
+		<!--	_locID_text='Checkpoint9_3'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 9.3
+	</xp:variable>
+	
+	<xp:variable name="str9_3_DeviceDependentEventHandler">
+		<!--	_locID_text='str9_3_DeviceDependentEventHandler'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Be sure this event handler is device-independent.  If use of this event handler is required for the essential information or use of this page:  consider limiting event handlers to device indpendent handlers such as:  "onfocus", "onblur" and "onselect".  If you must use device-dependent attributes provide a keyboard alternate, for example for "onmousedown" also specify "onkeydown".  Event handlers that rely on mouse coordinates prevent device indepedence and should not be used.
+	</xp:variable>
+	
+	<xp:variable name="str9_3_DeviceDependentEventHandler_Summary">
+		<!--	_locID_text='str9_3_DeviceDependentEventHandler_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Be sure this event handler is device-independent.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint10_1">
+		<!--	_locID_text='Checkpoint10_1'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 10.1
+	</xp:variable>
+	
+	<xp:variable name="str10_1_PopUps">
+		<!--	_locID_text='str10_1_PopUps'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Allow users to turn off spawned windows.  Do not cause pop-ups.  Do not change the current window without informing users.
+	</xp:variable>
+	
+	<xp:variable name="str10_1_PopUps_Summary">
+		<!--	_locID_text='str10_1_PopUps_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Do not cause pop-ups.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint10_2">
+		<!--	_locID_text='Checkpoint10_2Checkpoint10_1'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 10.2
+	</xp:variable>
+	
+	<xp:variable name="str10_2_LabelWithFormControl">
+		<!--	_locID_text='str10_2_LabelWithFormControl'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Ensure that implicitly associated labels for form controls are properly positioned.  The LABEL element must precede its control on the same line.  If using one line for the control and one for the LABEL element, &lt;label&gt; must be in the line preceding its control.
+	</xp:variable>
+	
+	<xp:variable name="str10_2_LabelWithFormControl_Summary">
+		<!--	_locID_text='str10_2_LabelWithFormControl_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Ensure that implicitly associated labels for form controls are properly positioned.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint11_1">
+		<!--	_locID_text='Checkpoint11_1'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 11.1
+	</xp:variable>
+	
+	<xp:variable name="str11_1_LatestW3CTechnologies">
+		<!--	_locID_text='str11_1_LatestW3CTechnologies'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Use the latest W3C technologies.  For example, MathML for mathematical equations; HTML, XHTML, XML for structured documents; CSS and XSL to define style sheets; XSLT to create style transformations.
+	</xp:variable>
+	
+	<xp:variable name="str11_1_LatestW3CTechnologies_Summary">
+		<!--	_locID_text='str11_1_LatestW3CTechnologies_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Use the latest W3C technologies.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint11_2">
+		<!--	_locID_text='Checkpoint11_2'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 11.2
+	</xp:variable>
+	
+	<xp:variable name="str11_2_DeprecatedElement">
+		<!--	_locID_text='str11_2_DeprecatedElement'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		This line contains an element that is deprecated, which means that it might eventually be removed from official HTML specifications.  It is recommended to avoid deprecated elements.  Some examples of good substitutions are:  Use &lt;object&gt; instead of &lt;applet&gt;; use &lt;div&gt; with the "align" attribute instead of &lt;center&gt;; use &lt;ul&gt; instead of &lt;dir&gt; or &lt;menu&gt;.
+	</xp:variable>
+	
+	<xp:variable name="str11_2_DeprecatedElement_Summary">
+		<!--	_locID_text='str11_2_DeprecatedElement_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		This line contains a deprecated element.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint11_4">
+		<!--	_locID_text='Checkpoint11_4'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 11.4
+	</xp:variable>
+	
+	<xp:variable name="str11_4_AlternativeAccessiblePage">
+		<!--	_locID_text='str11_4_AlternativeAccessiblePage'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		If you are unable to make an accessible page, create an alternative page that is accessible, provides the same utility and is updated as frequently as the inaccessible page.  Note:  this should be considered only as a "last resort".
+	</xp:variable>
+	
+	<xp:variable name="str11_4_AlternativeAccessiblePage_Summary">
+		<!--	_locID_text='str11_4_AlternativeAccessiblePage_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		If you are unable to make an accessible page, create an alternative page.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint12_1">
+		<!--	_locID_text='Checkpoint12_1'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 12.1
+	</xp:variable>
+	
+	<xp:variable name="str12_1_NoTitleAttrib">
+		<!--	_locID_text='str12_1_NoTitleAttrib'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Frame is missing descriptive title.  &lt;frameset&gt;, &lt;frame&gt;, or &lt;noframes&gt; does not contain descriptive title text.  Add a descriptive title (title="X").  You can also use the Frames Properties dialog to add a title.
+	</xp:variable>
+	
+	<xp:variable name="str12_1_NoTitleAttrib_Summary">
+		<!--	_locID_text='str12_1_NoTitleAttrib_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Frame is missing descriptive title.
+	</xp:variable>
+	
+	<xp:variable name="str12_1_EmptyTitleAttrib">
+		<!--	_locID_text='str12_1_EmptyTitleAttrib'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Frame title is empty.  &lt;frameset&gt;, &lt;frame&gt;, or &lt;noframes&gt; should contain descriptive title text.  Add a descriptive title (title="X").  You can also use the Frames Properties dialog to add a title.
+	</xp:variable>
+	
+	<xp:variable name="str12_1_EmptyTitleAttrib_Summary">
+		<!--	_locID_text='str12_1_EmptyTitleAttrib_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Frame title is empty.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint12_2">
+		<!--	_locID_text='Checkpoint12_2'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 12.2
+	</xp:variable>
+	
+	<xp:variable name="str12_2_NoframesWithoutHREF">
+		<!--	_locID_text='str12_2_NoframesWithoutHREF'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		&lt;noframes&gt; should include a link to an alternative page describing the FRAMESET content.
+	</xp:variable>
+	
+	<xp:variable name="str12_2_NoframesWithoutHREF_Summary">
+		<!--	_locID_text='str12_2_NoframesWithoutHREF_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		&lt;noframes&gt; should include a link to an alternative page describing the FRAMESET content.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint12_3">
+		<!--	_locID_text='Checkpoint12_3'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 12.3
+	</xp:variable>
+	
+	<xp:variable name="str12_3_FormNoFieldset">
+		<!--	_locID_text='str12_3_FormNoFieldset'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Large blocks of information should be grouped so they are more manageable.  If this form is large consider breaking it up using &lt;legend&gt; and &lt;fieldset&gt;.
+	</xp:variable>
+	
+	<xp:variable name="str12_3_FormNoFieldset_Summary">
+		<!--	_locID_text='str12_3_FormNoFieldset_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Large blocks of information should be grouped so they are more manageable.
+	</xp:variable>
+	
+	<xp:variable name="str12_3_FormAndFieldsetNoLegend">
+		<!--	_locID_text='str12_3_FormAndFieldsetNoLegend'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Large blocks of information should be grouped so they are more manageable.  If this form is large consider describing your &lt;fieldset&gt; groupings using &lt;legend&gt;.
+	</xp:variable>
+	
+	<xp:variable name="str12_3_FormAndFieldsetNoLegend_Summary">
+		<!--	_locID_text='str12_3_FormAndFieldsetNoLegend_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Large blocks of information should be grouped so they are more manageable.
+	</xp:variable>
+	
+	<xp:variable name="str12_3_SelectOptionandNoOptgroup">
+		<!--	_locID_text='str12_3_SelectOptionandNoOptgroup'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Large blocks of information should be grouped so they are more manageable.  If this section is large consider breaking it up using &lt;optgroup&gt;.
+	</xp:variable>
+	
+	<xp:variable name="str12_3_SelectOptionandNoOptgroup_Summary">
+		<!--	_locID_text='str12_3_SelectOptionandNoOptgroup_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Large blocks of information should be grouped so they are more manageable.
+	</xp:variable>
+	
+	<xp:variable name="str12_3_TableandNoCaption">
+		<!--	_locID_text='str12_3_TableandNoCaption'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Large blocks of information should be grouped so they are more manageable. If this is a large data table consider describing its content using &lt;caption&gt;.
+	</xp:variable>
+	
+	<xp:variable name="str12_3_TableandNoCaption_Summary">
+		<!--	_locID_text='str12_3_TableandNoCaption_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Large blocks of information should be grouped so they are more manageable.
+	</xp:variable>
+	
+	<xp:variable name="str12_3_ListNoULOLDL">
+		<!--	_locID_text='str12_3_ListNoULOLDL'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Large blocks of information should be grouped so they are more manageable.  If this list is large consider breaking it up using &lt;ul&gt;, &lt;ol&gt; or &lt;dl&gt;.
+	</xp:variable>
+	
+	<xp:variable name="str12_3_ListNoULOLDL_Summary">
+		<!--	_locID_text='str12_3_ListNoULOLDL_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Large blocks of information should be grouped so they are more manageable.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint12_4">
+		<!--	_locID_text='Checkpoint12_4'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 12.4
+	</xp:variable>
+	
+	<xp:variable name="str12_4_LabelNoFor">
+		<!--	_locID_text='str12_4_LabelNoFor'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Explicitly associate the LABEL element with the form controls.  Consider using the "for" attribute with &lt;label&gt; within your form.
+	</xp:variable>
+	
+	<xp:variable name="str12_4_LabelNoFor_Summary">
+		<!--	_locID_text='str12_4_LabelNoFor_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Explicitly associate labels with form controls.
+	</xp:variable>
+	
+	<xp:variable name="str12_4_FormNoLabelNoFor">
+		<!--	_locID_text='str12_4_FormNoLabelNoFor'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Explicitly associate labels with form controls.  Consider using &lt;label&gt; with the "for" attribute within your form.
+	</xp:variable>
+	
+	<xp:variable name="str12_4_FormNoLabelNoFor_Summary">
+		<!--	_locID_text='str12_4_FormNoLabelNoFor_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Explicitly associate labels with form controls.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint13_1">
+		<!--	_locID_text='Checkpoint13_1'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 13.1
+	</xp:variable>
+	
+	<xp:variable name="str13_1_ClickHereLinkTarget">
+		<!--	_locID_text='str13_1_ClickHereLinkTarget'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Clearly identify the target of links.  Do not use "Click Here".  Use something descriptive, like "Map of campus."
+	</xp:variable>
+	
+	<xp:variable name="str13_1_ClickHereLinkTarget_Summary">
+		<!--	_locID_text='str13_1_ClickHereLinkTarget_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Clearly identify the target of links.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint13_2">
+		<!--	_locID_text='Checkpoint13_2'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 13.2
+	</xp:variable>
+	
+	<xp:variable name="str13_2_SemanticInformationOrientation">
+		<!--	_locID_text='str13_2_SemanticInformationOrientation'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Web sites and pages should provide semantic information and orientation.  Using good meta data can provide orientation information about the site to the user.  Helpful tags:  &lt;title&gt;, &lt;address&gt;, &lt;meta&gt;, &lt;!doctype&gt;, &lt;link&gt;.  Use &lt;ol&gt;, &lt;ul&gt; and cascading style sheets to provide contextual clues in lists.  Provide navigation bars, site maps and search features to assist as well.
+	</xp:variable>
+	
+	<xp:variable name="str13_2_SemanticInformationOrientation_Summary">
+		<!--	_locID_text='str13_2_SemanticInformationOrientation_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Web sites and pages should provide semantic information and orientation.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint13_3">
+		<!--	_locID_text='Checkpoint13_3'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 13.3
+	</xp:variable>
+	
+	<xp:variable name="str13_3_ProvideLayoutInformation">
+		<!--	_locID_text='str13_3_ProvideLayoutInformation'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Web sites and pages should provide layout information.  Consider using site maps and tables of contents.
+	</xp:variable>
+	
+	<xp:variable name="str13_3_ProvideLayoutInformation_Summary">
+		<!--	_locID_text='str13_3_ProvideLayoutInformation_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Web sites and pages should provide layout information.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint13_4">
+		<!--	_locID_text='Checkpoint13_4'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 13.4
+	</xp:variable>
+	
+	<xp:variable name="str13_4_ConsistentNavigation">
+		<!--	_locID_text='str13_4_ConsistentNavigation'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Use of navigation should be consistent throughout your Web site.  For example, navigation should appear in the same location on all pages.
+	</xp:variable>
+	
+	<xp:variable name="str13_4_ConsistentNavigation_Summary">
+		<!--	_locID_text='str13_4_ConsistentNavigation_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Use of navigation should be consistent throughout your Web site.
+	</xp:variable>
+	
+	<xp:variable name="Checkpoint14_1">
+		<!--	_locID_text='Checkpoint14_1'
+				_locComment='Describes an accessibility checkpoint or guideline number. {StringCategory=TXT}' -->	
+		WCAG 14.1
+	</xp:variable>
+	
+	<xp:variable name="str14_1_ClearLanguage">
+		<!--	_locID_text='str14_1_ClearLanguage'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Use the clearest and simplest language appropriate for this content.
+	</xp:variable>
+
+	<xp:variable name="str14_1_ClearLanguage_Summary">
+		<!--	_locID_text='str14_1_ClearLanguage_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Use the clearest and simplest language appropriate for this content.
+	</xp:variable>
+	
+	<xp:variable name="Access_Board_Part_1194_22(l)">
+		<!--	_locID_text='Access_Board_Part_1194_22l'
+				_locComment='Describes a section 508 accessibility guideline number. {StringCategory=TXT}' -->	
+		508, 1194.22(l)
+	</xp:variable>
+	
+	<xp:variable name="str1194_22_(l)_AssistiveDeviceReadableScriptInfo">
+		<!--	_locID_text='str1194_22_l_AssistiveDeviceReadableScriptInfo'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		If you use ;&lt;script&gt;, ;&lt;object&gt;, ;&lt;embed&gt; or ;&lt;applet&gt;, ensure that the important information conveyed by these is readable using assistive devices.
+	</xp:variable>
+	
+	<xp:variable name="str1194_22_(l)_AssistiveDeviceReadableScriptInfo_Summary">
+		<!--	_locID_text='str1194_22_l_AssistiveDeviceReadableScriptInfo_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Ensure that important information conveyed by scripts is readable using assistive devices.
+	</xp:variable>
+	
+	<xp:variable name="Access_Board_Part_1194_22(m)">
+		<!--	_locID_text='Access_Board_Part_1194_22m'
+				_locComment='Describes a section 508 accessibility guideline number. {StringCategory=TXT}' -->	
+		508, 1194.22(m)
+	</xp:variable>
+	
+	<xp:variable name="str1194_22_(m)_ClientSideAppletPlugInOrAppRequired">
+		<!--	_locID_text='str1194_22_m_ClientSideAppletPlugInOrAppRequiredo'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		If this page requires an applet, plug-in or other application on the client in order to convey important information, be sure you provide a link to a fully accessible plug-in or applet.
+	</xp:variable>
+	
+	<xp:variable name="str1194_22_(m)_ClientSideAppletPlugInOrAppRequired_Summary">
+		<!--	_locID_text='str1194_22_m_ClientSideAppletPlugInOrAppRequired_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		If this page requires an applet or plug-in, provide a link to a fully accessible version.
+	</xp:variable>
+	
+	<xp:variable name="Access_Board_Part_1194_22(n)">
+		<!--	_locID_text='Access_Board_Part_1194_22n'
+				_locComment='Describes a section 508 accessibility guideline number. {StringCategory=TXT}' -->	
+		508, 1194.22(n)
+	</xp:variable>
+	
+	<xp:variable name="str1194_22_(n)_OnlineElectronicForms">
+		<!--	_locID_text='str1194_22_n_OnlineElectronicForms'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		If you use electronic forms that are designed to be used online, ensure that they can be completed using assistive devices.
+	</xp:variable>
+	
+	<xp:variable name="str1194_22_(n)_OnlineElectronicForms_Summary">
+		<!--	_locID_text='str1194_22_n_OnlineElectronicForms_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		If you use electronic forms, ensure that they can be completed using assistive devices.
+	</xp:variable>
+	
+	<xp:variable name="Access_Board_Part_1194_22(o)">
+		<!--	_locID_text='Access_Board_Part_1194_22o'
+				_locComment='Describes a section 508 accessibility guideline number. {StringCategory=TXT}' -->	
+		508, 1194.22(o)
+	</xp:variable>
+	
+	<xp:variable name="str1194_22_(o)_SkipRepetitiveLinks">
+		<!--	_locID_text='str1194_22_o_SkipRepetitiveLinks'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		Where navigation links are repeated, provide a method for the user to skip these repetitive links.
+	</xp:variable>
+	
+	<xp:variable name="str1194_22_(o)_SkipRepetitiveLinks_Summary">
+		<!--	_locID_text='str1194_22_o_SkipRepetitiveLinks_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		Provide a method for the user to skip these repetitive links.
+	</xp:variable>
+	
+	<xp:variable name="Access_Board_Part_1194_22(p)">
+		<!--	_locID_text='Access_Board_Part_1194_22p'
+				_locComment='Describes a section 508 accessibility guideline number. {StringCategory=TXT}' -->	
+		508, 1194.22(p)
+	</xp:variable>
+	
+	<xp:variable name="str1194_22_(p)_TimeBasedResponseRequired">
+		<!--	_locID_text='str1194_22_p_TimeBasedResponseRequired'
+				_locComment='Describes an accessibility violation and suggests how to fix it. {StringCategory=DES}' -->	
+		If a time-based response is required of the user, provide an alert allowing the user to request more time.
+	</xp:variable>
+	
+	<xp:variable name="str1194_22_(p)_TimeBasedResponseRequired_Summary">
+		<!--	_locID_text='str1194_22_p_TimeBasedResponseRequired_Summary'
+				_locComment='Summarizes an accessibility violation - this should be short {StringCategory=TXT}' -->		
+		If a time-based response is required, provide an alert allowing the user to request more time.
+	</xp:variable>
+
+	<xp:variable name="strLangID"><!--	_locID_text=' strLangId' _locComment='Lang ID for this rule set, used for hyperlink redirects {StringCategory=ADR}'-->en-us</xp:variable>
+
+	<xp:variable name="strRedir1_1">
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=11
+	</xp:variable>
+
+	<xp:variable name="strRedir1_2">
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=12
+	</xp:variable>
+
+	<xp:variable name="strRedir1_3">
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=13
+	</xp:variable>
+
+	<xp:variable name="strRedir1_4">
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=14
+	</xp:variable>
+
+	<xp:variable name="strRedir10_1">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=101
+	</xp:variable>
+
+	<xp:variable name="strRedir10_2">
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=102
+	</xp:variable>
+
+	<xp:variable name="strRedir10_3">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=103
+	</xp:variable>
+
+	<xp:variable name="strRedir11_1">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=111
+	</xp:variable>
+
+	<xp:variable name="strRedir11_2">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=112
+	</xp:variable>
+
+	<xp:variable name="strRedir11_4">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=114
+	</xp:variable>
+
+	<xp:variable name="strRedir12_1">
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=121
+	</xp:variable>
+
+	<xp:variable name="strRedir12_2">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=122
+	</xp:variable>
+
+	<xp:variable name="strRedir12_3">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=123
+	</xp:variable>
+
+	<xp:variable name="strRedir12_4">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=124
+	</xp:variable>
+
+	<xp:variable name="strRedir13_1">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=131
+	</xp:variable>
+
+	<xp:variable name="strRedir13_2">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=132
+	</xp:variable>
+
+	<xp:variable name="strRedir13_3">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=133
+	</xp:variable>
+
+	<xp:variable name="strRedir13_4">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=134
+	</xp:variable>
+
+	<xp:variable name="strRedir14_1">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=141
+	</xp:variable>
+
+	<xp:variable name="strRedir2_1">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=21
+	</xp:variable>
+
+	<xp:variable name="strRedir2_2">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=22
+	</xp:variable>
+
+	<xp:variable name="strRedir3_1">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=31
+	</xp:variable>
+
+	<xp:variable name="strRedir3_2">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=32
+	</xp:variable>
+
+	<xp:variable name="strRedir3_3">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=33
+	</xp:variable>
+
+	<xp:variable name="strRedir3_4">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=34
+	</xp:variable>
+
+	<xp:variable name="strRedir3_5">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=35
+	</xp:variable>
+
+	<xp:variable name="strRedir3_6">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=36
+	</xp:variable>
+
+	<xp:variable name="strRedir3_7">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=37
+	</xp:variable>
+
+	<xp:variable name="strRedir4_1">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=41
+	</xp:variable>
+
+	<xp:variable name="strRedir5_1">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=51
+	</xp:variable>
+
+	<xp:variable name="strRedir5_2">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=52
+	</xp:variable>
+
+	<xp:variable name="strRedir5_3">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=53
+	</xp:variable>
+
+	<xp:variable name="strRedir5_4">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=54
+	</xp:variable>
+
+	<xp:variable name="strRedir6_1">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=61
+	</xp:variable>
+
+	<xp:variable name="strRedir6_2">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=62
+	</xp:variable>
+
+	<xp:variable name="strRedir6_3">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=63
+	</xp:variable>
+
+	<xp:variable name="strRedir6_4">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=64
+	</xp:variable>
+
+	<xp:variable name="strRedir6_5">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=65
+	</xp:variable>
+
+	<xp:variable name="strRedir7_1">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=71
+	</xp:variable>
+
+	<xp:variable name="strRedir7_2">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=72
+	</xp:variable>
+
+	<xp:variable name="strRedir7_3">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=73
+	</xp:variable>
+
+	<xp:variable name="strRedir7_4">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=74
+	</xp:variable>
+
+	<xp:variable name="strRedir7_5">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=75
+	</xp:variable>
+
+	<xp:variable name="strRedir8_1">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=81
+	</xp:variable>
+
+	<xp:variable name="strRedir9_1">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=91
+	</xp:variable>
+
+	<xp:variable name="strRedir9_2">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=92
+	</xp:variable>
+
+	<xp:variable name="strRedir9_3">		 
+		http://r.office.microsoft.com/r/rlidWCAG?clid=<xp:value-of select="$strLangID" />&amp;p1=93
+	</xp:variable>
+		
+</xp:ruleset>

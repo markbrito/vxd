@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xsd:schema targetNamespace='http://schemas.microsoft.com/AspNet/AdRotator-Schedule-File' xmlns='http://schemas.microsoft.com/AspNet/AdRotator-Schedule-File' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:vs='http://schemas.microsoft.com/Visual-Studio-Intellisense' vs:ishtmlschema='false' vs:isserverschema='true'>
+	<xsd:annotation>
+		<xsd:documentation><!-- _locID_text="Description" -->Ad Rotator Advertisement File Schema (.NET Framework 1.0/1.1)</xsd:documentation>
+	</xsd:annotation>
+	<!-- <Advertisements>: exactly one per file -->
+	<xsd:element name='Advertisements'>
+		<xsd:complexType>
+			<!-- <Ad>: at least one per file -->
+			<xsd:choice minOccurs='1' maxOccurs="unbounded">
+				<xsd:element name='Ad' type='adType' />
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+	<!-- an <Ad> must contain at least one element, but no element may appear more than once per <Ad> -->
+	<xsd:complexType name='adType'>
+		<xsd:choice minOccurs='1' maxOccurs='unbounded'>
+			<xsd:element name='ImageUrl' type='xsd:anyURI' vs:builder='url' minOccurs='0' maxOccurs='1' vs:preferredextensions=".jpg;.jpeg;.gif;.bmp;.jpe;.png;.dib;.tif;.wmf;.ras;.eps;.pcx;.pcd;.tga;.ashx;.asix" />
+			<xsd:element name='NavigateUrl' type='xsd:anyURI' vs:builder='url' minOccurs='0' maxOccurs='1' vs:preferredextensions=".asp;.aspx;.asmx;.asax;.ashx;.asix;.ascx;.htm;.html;.xml;.xsd;.config;.asa;.css;.shtm;.shtml;.php;.jsp" />
+			<xsd:element name='Keyword' type='xsd:string' minOccurs='0' maxOccurs='1' />
+			<xsd:element name='Impressions' type='xsd:positiveInteger' minOccurs='0' maxOccurs='1' />
+			<xsd:element name='AlternateText' type='xsd:string' minOccurs='0' maxOccurs='1' />
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

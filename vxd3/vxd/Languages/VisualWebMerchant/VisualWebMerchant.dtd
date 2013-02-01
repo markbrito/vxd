@@ -1,0 +1,37 @@
+<!ELEMENT VisualWebMerchant (Store)*>
+<!ATTLIST VisualWebMerchant Title CDATA #REQUIRED
+
+		    Package CDATA #REQUIRED		    URI CDATA #REQUIRED		    Port CDATA "80"		    Language CDATA #FIXED "VisualSalesManagement"		    Translator CDATA #FIXED "VisualSalesManagementWeb"		    Platform CDATA #FIXED "Windows 2003 IIS 6.0"                    TextNote CDATA #IMPLIED                    Build (Debug|Release|Optimized) "Debug">
+<!ELEMENT Store (Page)*>
+<!ATTLIST Store Name CDATA "Store"	ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+<!ELEMENT Page (Catalog|Page|ProductList|Product|Customer|Order|Shipping|Payment|Chart|Report)*><!ATTLIST Page Name CDATA "Page"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+
+
+<!ELEMENT Catalog (Catalog|Page|ProductList|Product|Customer|Order|Shipping|Payment|Chart|Report)*><!ATTLIST Catalog Name CDATA "Catalog"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+
+
+
+
+<!ELEMENT ProductList (Catalog|ProductList|ProductList|Product|Customer|Order|Shipping|Payment|Chart|Report)*><!ATTLIST ProductList Name CDATA "ProductList"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+
+
+
+<!ELEMENT Product (Catalog|Product|ProductList|Product|Customer|Order|Shipping|Payment|Chart|Report)*><!ATTLIST Product Name CDATA "Product"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+
+
+<!ELEMENT Customer (Catalog|Customer|ProductList|Product|Customer|Order|Shipping|Payment|Chart|Report)*><!ATTLIST Customer Name CDATA "Customer"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+
+
+<!ELEMENT Order (Catalog|Order|ProductList|Product|Customer|Order|Shipping|Payment|Chart|Report)*><!ATTLIST Order Name CDATA "Order"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+
+
+ 
+
+<!ELEMENT Shipping (Catalog|Shipping|ProductList|Product|Customer|Order|Shipping|Payment|Chart|Report)*><!ATTLIST Shipping Name CDATA "Shipping"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+<!ELEMENT Payment (Catalog|Payment|ProductList|Product|Customer|Order|Shipping|Payment|Chart|Report)*><!ATTLIST Payment Name CDATA "Payment"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+
+
+<!ELEMENT Chart (Catalog|Chart|ProductList|Product|Customer|Order|Shipping|Payment|Chart|Report)*><!ATTLIST Chart Name CDATA "Chart"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >
+
+ 
+<!ELEMENT Report (Catalog|Report|ProductList|Product|Customer|Order|Shipping|Payment|Chart|Report)*><!ATTLIST Report Name CDATA "Report"              ID CDATA #IMPLIED               XPos CDATA #IMPLIED YPos CDATA #IMPLIED 	       Order CDATA "0" 	       Visible (TRUE|FALSE) "TRUE"                         Value CDATA #IMPLIED >

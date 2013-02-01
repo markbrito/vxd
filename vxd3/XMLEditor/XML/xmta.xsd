@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.microsoft.com/VisualStudio/2004/03/SmartDevices/XMTA.xsd" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/VisualStudio/2004/03/SmartDevices/XMTA.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Classes" type="tns:NetCFMetadata" />
+  <xs:complexType name="NetCFMetadata">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Class" type="tns:ClassType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ClassType">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Property" type="tns:PropertyType" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Event" type="tns:EventType" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Method" type="tns:MethodType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="DefaultEvent" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="DefaultProperty" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Description" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Supported" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="1" name="SuppressFiltering" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TypeConverter" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="InitializationEvent" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="DesignTimeVisible" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="1" name="DesignerSerializer" type="tns:typedeftype" />
+      <xs:element minOccurs="0" maxOccurs="1" name="RootDesignerSerializer" type="tns:typedeftype" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ImmutableObject" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="2" name="Designer" type="tns:typedeftype" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Editor" type="tns:typedeftype" />
+      <xs:element minOccurs="0" maxOccurs="1" name="DefaultBindingProperty" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ComplexBindingProperties" type="tns:complexdatabinding" />
+      <xs:element minOccurs="0" maxOccurs="1" name="LookupBindingProperties" type="tns:lookupdatabinding" />
+      <xs:element minOccurs="0" maxOccurs="1" name="DesktopCompatible" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ApplyDeviceDefaults" type="tns:ApplyDeviceDefaultsType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Docking" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ToolboxBitmap" type="xs:string" />
+    </xs:choice>
+  <xs:attribute name="Name" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="PropertyType">
+    <xs:all>
+      <xs:element minOccurs="0" maxOccurs="1" name="ReadOnly" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Browsable" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="1" name="DesignerSerializationVisibility" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="AmbientValue" type="tns:objecttype" />
+      <xs:element minOccurs="0" maxOccurs="1" name="DefaultValue" type="tns:objecttype" />
+      <xs:element minOccurs="0" maxOccurs="1" name="EditorBrowsable" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Supported" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="1" name="SuppressFiltering" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Bindable" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Category" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Description" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="DesignOnly" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Editor" type="tns:typedeftype" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ListBindable" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Localizable" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="1" name="MergableProperty" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="1" name="NotifyParentProperty" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ParenthesizeProperty" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="1" name="RefreshProperties" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="RelatedImageList" type="xs:string" /> 
+      <xs:element minOccurs="0" maxOccurs="1" name="TypeConverter" type="xs:string" />
+    </xs:all>
+    <xs:attribute name="Name" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="objecttype">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Type" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Value" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="typedeftype">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Type" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="BaseType" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="complexdatabinding">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="DataMember" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="DataSource" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="lookupdatabinding">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="DataSource" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="DisplayMember" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="LookupMember" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ValueMember" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ApplyDeviceDefaultsType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="ComponentName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PropertyName" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="ApplyDefaults" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EventType">
+    <xs:all>
+      <xs:element minOccurs="0" maxOccurs="1" name="Browsable" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="1" name="EditorBrowsable" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Supported" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Category" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Description" type="xs:string" />
+    </xs:all>
+    <xs:attribute name="Name" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="MethodType">
+    <xs:all>
+      <xs:element minOccurs="0" maxOccurs="1" name="EditorBrowsable" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Supported" type="xs:boolean" />
+    </xs:all>
+    <xs:attribute name="Name" type="xs:string" />
+    <xs:attribute name="Parameters" type="xs:string" />
+  </xs:complexType>
+</xs:schema>

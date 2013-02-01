@@ -1,0 +1,566 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>Microsoft.Build.Tasks</name>
+	</assembly>
+	<members>
+		<member name="N:Microsoft.Build.Tasks">
+			<summary>The <see cref="N:Microsoft.Build.Tasks"></see> namespace contains the implementation of all tasks shipping with MSBuild.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.AL">
+			<summary>Implements the AL task. Use the AL element in your project file to create and execute this task. For usage and parameter information, see AL (Assembly Linker) Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.AspNetCompiler">
+			<summary>Implements the AspNetCompiler task. Use the AspNetCompiler element in your project file to create and execute this task. For usage and parameter information, see AspNetCompiler Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.AssignCulture">
+			<summary>Implements the AssignCulture task. Use the AssignCulture element in your project file to create and execute this task. For usage and parameter information, see AssignCulture Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.Copy">
+			<summary>Implements the Copy task. Use the Copy element in your project file to create and execute this task. For usage and parameter information, see Copy Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.CreateItem">
+			<summary>Implements the CreateItem task. Use the CreateItem element in your project file to create and execute this task. For usage and parameter information, see CreateItem Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.CreateProperty">
+			<summary>Implements the CreateProperty task. Use the CreateProperty element in your project file to create and execute this task. For usage and parameter information, see CreateProperty Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.Csc">
+			<summary>Implements the Csc task. Use the Csc element in your project file to create and execute this task. For usage and parameter information, see Csc Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.Delete">
+			<summary>Implements the Delete task. Use the Delete element in your project file to create and execute this task. For usage and parameter information, see Delete Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.Exec">
+			<summary>Implements the Exec task. Use the Exec element in your project file to create and execute this task. For usage and parameter information, see Exec Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.FindUnderPath">
+			<summary>Implements the FindUnderPath task. Use the FindUnderPath element in your project file to create and execute this task. For usage and parameter information, see FindUnderPath Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.GenerateApplicationManifest">
+			<summary>Implements the GenerateApplicationManifest task. Use the GenerateApplicationManifest element in your project file to create and execute this task. For usage and parameter information, see GenerateApplicationManifest Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.GenerateBootstrapper">
+			<summary>Implements the GenerateBootstrapper task. Use the GenerateBootstrapper element in your project file to create and execute this task. For usage and parameter information, see GenerateBootstrapper Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.GenerateDeploymentManifest">
+			<summary>Implements the GenerateDeploymentManifest task. Use the GenerateDeploymentManifest element in your project file to create and execute this task. For usage and parameter information, see GenerateDeploymentManifest Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.GenerateResource">
+			<summary>Implements the GenerateResource task. Use the GenerateResource element in your project file to create and execute this task. For usage and parameter information, see GenerateResource Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.GetAssemblyIdentity">
+			<summary>Implements the GetAssemblyIdentity task. Use the GetAssemblyIdentity element in your project file to create and execute this task. For usage and parameter information, see GetAssemblyIdentity Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.GetFrameworkPath">
+			<summary>Implements the GetFrameworkPath task. Use the GetFrameworkPath element in your project file to create and execute this task. For usage and parameter information, see GetFrameworkPath Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.GetFrameworkSdkPath">
+			<summary>Implements the GetFrameworkSdkPath task. Use the GetFrameworkSdkPath element in your project file to create and execute this task. For usage and parameter information, see GetFrameworkSdkPath Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.LC">
+			<summary>Implements the LC task. Use the LC element in your project file to create and execute this task. For usage and parameter information, see LC Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.MakeDir">
+			<summary>Implements the MakeDir task. Use the MakeDir element in your project file to create and execute this task. For usage and parameter information, see MakeDir Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.MSBuild">
+			<summary>Implements the MSBuild task. Use the MSBuild element in your project file to create and execute this task. For usage and parameter information, see MSBuild Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.ReadLinesFromFile">
+			<summary>Implements the ReadLinesFromFile task. Use the ReadLinesFromFile element in your project file to create and execute this task. For usage and parameter information, see ReadLinesFromFile Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.RegisterAssembly">
+			<summary>Implements the RegisterAssembly task. Use the RegisterAssembly element in your project file to create and execute this task. For usage and parameter information, see RegisterAssembly Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.RemoveDir">
+			<summary>Implements the RemoveDir task. Use the RemoveDir element in your project file to create and execute this task. For usage and parameter information, see RemoveDir Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.RemoveDuplicates">
+			<summary>Implements the RemoveDuplicates task. Use the RemoveDuplicates element in your project file to create and execute this task. For usage and parameter information, see RemoveDuplicates Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.ResolveAssemblyReference">
+			<summary>Implements the ResolveAssemblyReference task. Use the ResolveAssemblyReference element in your project file to create and execute this task. For usage and parameter information, see ResolveAssemblyReference Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.ResolveComReference">
+			<summary>Implements the ResolveComReference task. Use the ResolveComReference element in your project file to create and execute this task. For usage and parameter information, see ResolveCOMReference Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.ResolveKeySource">
+			<summary>Implements the ResolveKeySource task. Use the ResolveKeySource element in your project file to create and execute this task. For usage and parameter information, see ResolveKeySource Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.ResolveNativeReference">
+			<summary>Implements the ResolveNativeReference task. Use the ResolveNativeReference element in your project file to create and execute this task. For usage and parameter information, see ResolveNativeReference Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.SGen">
+			<summary>Implements the SGen task. Use the SGen element in your project file to create and execute this task. For usage and parameter information, see SGen Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.SignFile">
+			<summary>Implements the SignFile task. Use the SignFile element in your project file to create and execute this task. For usage and parameter information, see SignFile Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.Touch">
+			<summary>Implements the Touch task. Use the Touch element in your project file to create and execute this task. For usage and parameter information, see Touch Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.UnregisterAssembly">
+			<summary>Implements the UnregisterAssembly task. Use the UnregisterAssembly element in your project file to create and execute this task. For usage and parameter information, see UnregisterAssembly Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.Vbc">
+			<summary>Implements the Vbc task. Use the Vbc element in your project file to create and execute this task. For usage and parameter information, see Vbc Task.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.VCBuild">
+			<summary>Implements the VCBuild task. Use the VCBuild element in your project file to create and execute this task. For usage and parameter information, see VCBuild Task.</summary>
+		</member>
+		<member name="N:Microsoft.Build.Tasks.Deployment.Bootstrapper">
+			<summary>The <see cref="N:Microsoft.Build.Tasks.Deployment.Bootstrapper"></see> namespace contains classes used internally by MSBuild.</summary>
+		</member>
+		<member name="N:Microsoft.Build.Tasks.Deployment.ManifestUtilities">
+			<summary>The <see cref="N:Microsoft.Build.Tasks.Deployment.ManifestUtilities"></see> namespace contains classes used internally by MSBuild.</summary>
+		</member>
+		<member name="N:Microsoft.Build.Tasks.Hosting">
+			<summary>The <see cref="N:Microsoft.Build.Tasks.Hosting"></see> namespace contains classes used internally by MSBuild.</summary>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.Hosting.ICscHostObject">
+			<summary>Defines an interface that allows the Csc task to communicate with the host integrated development environment (IDE).</summary>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.BeginInitialization">
+			<summary>Begins the initialization of the <see cref="T:Microsoft.Build.Tasks.Hosting.ICscHostObject"></see>.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.Compile">
+			<summary>Compiles the project.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.EndInitialization(System.String@,System.Int32@)">
+			<summary>Ends the initialization of the <see cref="T:Microsoft.Build.Tasks.Hosting.ICscHostObject"></see> with the specified error message and code.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="errorCode">The error code.</param>
+			<param name="errorMessage">The error message.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.IsDesignTime">
+			<summary>Returns a value indicating whether the integrated development environment (IDE) is currently in design time mode.</summary>
+			<returns>true if the IDE is currently in design time mode; otherwise, false.</returns>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.IsUpToDate">
+			<summary>Returns a value indicating whether the compiled project is up-to-date.</summary>
+			<returns>true if the compiled project is up-to-date; otherwise, false.</returns>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetAdditionalLibPaths(System.String[])">
+			<summary>Specifies additional directories to search for references.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="additionalLibPaths">An array of directories to search for references.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetAddModules(System.String[])">
+			<summary>Specifies one or more modules to be part of the assembly.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="addModules">An array of modules to be part of the assembly.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetAllowUnsafeBlocks(System.Boolean)">
+			<summary>Specifies a value indicating whether to allow code that uses the unsafe keyword to compile.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="allowUnsafeBlocks">true to allow code that uses the unsafe keyword to compile; otherwise, false.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetBaseAddress(System.String)">
+			<summary>Specifies the preferred base address at which to load a DLL.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="baseAddress">The preferred base address at which to load a DLL.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetCheckForOverflowUnderflow(System.Boolean)">
+			<summary>Specifies a value indicating whether integer arithmetic that overflows the bounds of the data type causes an exception at run time.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="checkForOverflowUnderflow">true to cause an exception when integer arithmetic overflows the bounds of the data type; otherwise, false.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetCodePage(System.Int32)">
+			<summary>Specifies the code page to use for all source code files in the compilation.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="codePage">The code page to use for all source code files in the compilation.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetDebugType(System.String)">
+			<summary>Specifies the debug type.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="debugType">The debug type, which can be full or pdbonly.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetDefineConstants(System.String)">
+			<summary>Specifies the preprocessor symbols to define.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="defineConstants">The preprocessor symbols to define.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetDelaySign(System.Boolean,System.Boolean)">
+			<summary>Specifies a value indicating whether to create a fully signed assembly.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="delaySignExplicitlySet">true if the DelaySign parameter is explicitly set; otherwise, false.</param>
+			<param name="delaySign">true if you want to create a fully signed assembly; false if you only want to place the public key in the assembly.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetDisabledWarnings(System.String)">
+			<summary>Specifies the list of warnings to disable.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="disabledWarnings">The list of warnings to disable. Multiple warnings are separated with a comma.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetDocumentationFile(System.String)">
+			<summary>Specifies the XML file in which to save processed documentation comments.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="documentationFile">A string that contains the name of the file in which to save processed documentation comments.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetEmitDebugInformation(System.Boolean)">
+			<summary>Specifies a value indicating whether to generate debugging information and place it in a program database (.pdb) file.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="emitDebugInformation">true to generate debugging information and place it in a .pdb file; otherwise, false.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetErrorReport(System.String)">
+			<summary>Specifies a value that indicates how internal compiler errors are reported to Microsoft.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="errorReport">A value specifying how internal compiler errors are reported to Microsoft. This value can be prompt, send, or none.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetFileAlignment(System.Int32)">
+			<summary>Specifies the size of sections in the output file.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="fileAlignment">The size of sections in the output file.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetGenerateFullPaths(System.Boolean)">
+			<summary>Specifies a value indicating whether to specify the absolute path to the file in the compiler output.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="generateFullPaths">true specify the absolute path to the file in the compiler output; false to specify only the name of the file in the compiler output.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetKeyContainer(System.String)">
+			<summary>Specifies the name of the cryptographic key container.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="keyContainer">The name of the cryptographic key container.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetKeyFile(System.String)">
+			<summary>Specifies the file name containing the cryptographic key.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="keyFile">The name of the file containing the cryptographic key.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetLangVersion(System.String)">
+			<summary>Specifies the version of the language to use.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="langVersion">The version of the language to use.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetLinkResources(Microsoft.Build.Framework.ITaskItem[])">
+			<summary>Creates links to the specified .NET Framework resources in the output file; the resource files are not placed in the output file.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="linkResources">The .NET Framework resources to link to the output file.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetMainEntryPoint(System.String,System.String)">
+			<summary>Specifies the location of the Main method.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="targetType">The file format of the output file. This value can be library, exe, module, or winexe.</param>
+			<param name="mainEntryPoint">The location of the Main method.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetModuleAssemblyName(System.String)">
+			<summary>Specifies an assembly whose non-public types a .netmodule can access.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="moduleAssemblyName">An assembly whose non-public types a .netmodule can access.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetNoConfig(System.Boolean)">
+			<summary>Specifies a value indicating whether to prevent the compiler from compiling with the csc.rsp file.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="noConfig">true to prevent the compiler from compiling with the csc.rsp file; otherwise, false.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetNoStandardLib(System.Boolean)">
+			<summary>Specifies a value indicating whether to prevent the import of mscorlib.dll.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="noStandardLib">true to prevent the import of mscorlib.dll; otherwise, false.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetOptimize(System.Boolean)">
+			<summary>Specifies a value indicating whether to enable optimizations.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="optimize">true to enable optimizations; otherwise, false.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetOutputAssembly(System.String)">
+			<summary>Specifies the name of the output file.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="outputAssembly">The name of the output file.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetPdbFile(System.String)">
+			<summary>Specifies the program database (.pdb) file in which to place generated debugging information.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="pdbFile">The .pdb file in which to place generated debugging information.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetPlatform(System.String)">
+			<summary>Specifies the processor platform to be targeted by the output file.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="platform">The processor platform to be targeted by the output file. This value can be x86, x64, or anycpu.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetReferences(Microsoft.Build.Framework.ITaskItem[])">
+			<summary>Specifies the items from which to import public type information into the current project.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="references">The items from which to import public type information into the current project.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetResources(Microsoft.Build.Framework.ITaskItem[])">
+			<summary>Specifies the .NET Framework resources to embed into the output file.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="resources">The .NET Framework resources to embed into the output file.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetResponseFiles(Microsoft.Build.Framework.ITaskItem[])">
+			<summary>Specifies the response files that contain commands for the compiler.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="responseFiles">The response files that contain commands for the compiler.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetSources(Microsoft.Build.Framework.ITaskItem[])">
+			<summary>Specifies one or more Visual C# source files.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="sources">One or more Visual C# source files.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetTargetType(System.String)">
+			<summary>Specifies the file format of the output file.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="targetType">The file format of the output file. This value can be library, exe, module, or winexe.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetTreatWarningsAsErrors(System.Boolean)">
+			<summary>Specifies a value indicating whether to treat all warnings as errors.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="treatWarningsAsErrors">true to treat all warnings as errors; otherwise, false.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetWarningLevel(System.Int32)">
+			<summary>Specifies the warning level, from 0-4.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="warningLevel">The warning level, from 0-4.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetWarningsAsErrors(System.String)">
+			<summary>Specifies a list of warnings to treat as errors.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="warningsAsErrors">A list of warnings to treat as errors.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetWarningsNotAsErrors(System.String)">
+			<summary>Specifies a list of warnings that are not treated as errors.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="warningsNotAsErrors">A list of warnings that are not treated as errors.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetWin32Icon(System.String)">
+			<summary>Specifies an .ico file to insert into the assembly.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="win32Icon">The .ico file to insert into the assembly.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetWin32Resource(System.String)">
+			<summary>Specifies a Win32 resource (.res) file to insert into the output file.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="win32Resource">A Win32 resource (.res) file to insert into the output file.</param>
+		</member>
+		<member name="T:Microsoft.Build.Tasks.Hosting.IVbcHostObject">
+			<summary>Defines an interface that allows the Vbc task to communicate with the host integrated development environment (IDE).</summary>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.BeginInitialization">
+			<summary>Begins the initialization of the <see cref="T:Microsoft.Build.Tasks.Hosting.IVbcHostObject"></see>.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.Compile">
+			<summary>Compiles the project.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.EndInitialization">
+			<summary>Ends the initialization of the <see cref="T:Microsoft.Build.Tasks.Hosting.IVbcHostObject"></see>.</summary>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.IsDesignTime">
+			<summary>Returns a value indicating whether the integrated development environment (IDE) is currently in design time mode.</summary>
+			<returns>true if the IDE is currently in design time mode; otherwise, false.</returns>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.IsUpToDate">
+			<summary>Returns a value indicating whether the compiled project is up-to-date.</summary>
+			<returns>true if the compiled project is up-to-date; otherwise, false.</returns>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetAdditionalLibPaths(System.String[])">
+			<summary>Specifies additional directories to search for references.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="additionalLibPaths">An array of directories to search for references.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetAddModules(System.String[])">
+			<summary>Specifies one or more modules to be part of the assembly.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="addModules">An array of modules to be part of the assembly.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetBaseAddress(System.String,System.String)">
+			<summary>Specifies the preferred base address at which to load a DLL.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="targetType">The file format of the output file. This value can be library, exe, module, or winexe.</param>
+			<param name="baseAddress">The preferred base address at which to load a DLL.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetCodePage(System.Int32)">
+			<summary>Specifies the code page to use for all source code files in the compilation.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="codePage">The code page to use for all source code files in the compilation.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetDebugType(System.Boolean,System.String)">
+			<summary>Specifies the debug type.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="debugType">The debug type, which can be full or pdbonly.</param>
+			<param name="emitDebugInformation">true to generate debugging information and place it in a program database (.pdb) file; otherwise, false.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetDefineConstants(System.String)">
+			<summary>Specifies the preprocessor symbols to define.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="defineConstants">The preprocessor symbols to define.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetDelaySign(System.Boolean)">
+			<summary>Specifies a value indicating whether to create a fully signed assembly.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="delaySign">true if you want to create a fully signed assembly; false if you only want to place the public key in the assembly.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetDisabledWarnings(System.String)">
+			<summary>Specifies the list of warnings to disable.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="disabledWarnings">The list of warnings to disable. Multiple warnings are separated with a comma.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetDocumentationFile(System.String)">
+			<summary>Specifies the XML file in which to save processed documentation comments.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="documentationFile">A string that contains the name of the file in which to save processed documentation comments.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetErrorReport(System.String)">
+			<summary>Specifies a value that indicates how internal compiler errors are reported to Microsoft.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="errorReport">A value specifying how internal compiler errors are reported to Microsoft. This value can be prompt, send, or none.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetFileAlignment(System.Int32)">
+			<summary>Specifies the size of sections in the output file.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="fileAlignment">The size of sections in the output file.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetGenerateDocumentation(System.Boolean)">
+			<summary>Specifies a value indicating whether to generate documentation and place it in an XML file with the name of the executable file or library that the compiler is creating.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="generateDocumentation">true to generate a documentation file; otherwise, false.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetImports(Microsoft.Build.Framework.ITaskItem[])">
+			<summary>Specifies the namespaces to import.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="importsList">The namespaces to import.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetKeyContainer(System.String)">
+			<summary>Specifies the name of the cryptographic key container.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="keyContainer">The name of the cryptographic key container.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetKeyFile(System.String)">
+			<summary>Specifies the file name containing the cryptographic key.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="keyFile">The name of the file containing the cryptographic key.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetLinkResources(Microsoft.Build.Framework.ITaskItem[])">
+			<summary>Creates links to the specified .NET Framework resources in the output file; the resource files are not placed in the output file.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="linkResources">The .NET Framework resources to link to the output file.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetMainEntryPoint(System.String)">
+			<summary>Specifies the class or module that contains the location of the Sub Main procedure.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="mainEntryPoint">The class or module that contains the location of the Sub Main procedure.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetNoConfig(System.Boolean)">
+			<summary>Specifies a value indicating whether to prevent the compiler from compiling with the vbc.rsp file.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="noConfig">true to prevent the compiler from compiling with the vbc.rsp file; otherwise, false.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetNoStandardLib(System.Boolean)">
+			<summary>Specifies a value indicating whether to prevent the import of mscorlib.dll.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="noStandardLib">true to prevent the import of mscorlib.dll; otherwise, false.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetNoWarnings(System.Boolean)">
+			<summary>Specifies a value indicating whether the compiler supresses all warnings.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="noWarnings">true to suppress all warnings; otherwise, false.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetOptimize(System.Boolean)">
+			<summary>Specifies a value indicating whether to enable optimizations.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="optimize">true to enable optimizations; otherwise, false.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetOptionCompare(System.String)">
+			<summary>Specifies a value indicating how the compiler makes string comparisons.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="optionCompare">A value indicating how the compiler makes string comparisons. The value must be either binary or text.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetOptionExplicit(System.Boolean)">
+			<summary>Specifies a value indicating whether the explicit declaration of variables is required.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="optionExplicit">true to require the explicit declaration of variables; otherwise, false.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetOptionStrict(System.Boolean)">
+			<summary>Specifies a value indicating whether the compiler enforces strict type semantics to restrict implicit type conversions.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="optionStrict">true to enforce strict type semantics to restrict implicit type conversions; otherwise, false.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetOptionStrictType(System.String)">
+			<summary>Specifies that the compiler should warn when strict language semantics are not respected.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="optionStrictType">The string passed to the OptionStrictType parameter.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetOutputAssembly(System.String)">
+			<summary>Specifies the name of the output file.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="outputAssembly">The name of the output file.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetPlatform(System.String)">
+			<summary>Specifies the processor platform to be targeted by the output file.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="platform">The processor platform to be targeted by the output file. This value can be x86, x64, Itanium, or anycpu.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetReferences(Microsoft.Build.Framework.ITaskItem[])">
+			<summary>Specifies the items from which to import public type information into the current project.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="references">The items from which to import public type information into the current project.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetRemoveIntegerChecks(System.Boolean)">
+			<summary>Specifies a value indicating whether to disable integer overflow error checks.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="removeIntegerChecks">true to remove integer overflow error checks; otherwise, false.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetResources(Microsoft.Build.Framework.ITaskItem[])">
+			<summary>Specifies the .NET Framework resources to embed into the output file.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="resources">The .NET Framework resources to embed into the output file.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetResponseFiles(Microsoft.Build.Framework.ITaskItem[])">
+			<summary>Specifies the response files that contain commands for the compiler.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="responseFiles">The response files that contain commands for the compiler.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetRootNamespace(System.String)">
+			<summary>Specifies the root namespace for all type declarations.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="rootNamespace">The root namespace for all type declarations.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetSdkPath(System.String)">
+			<summary>Specifies the location of mscorlib.dll and microsoft.visualbasic.dll.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="sdkPath">The location of mscorlib.dll and microsoft.visualbasic.dll.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetSources(Microsoft.Build.Framework.ITaskItem[])">
+			<summary>Specifies one or more Visual Basic source files.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="sources">One or more Visual Basic source files.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetTargetCompactFramework(System.Boolean)">
+			<summary>Specifies a value indicating whether to target the .NET Compact Framework.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="targetCompactFramework">true to target the .NET Compact Framework; otherwise, false.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetTargetType(System.String)">
+			<summary>Specifies the file format of the output file.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="targetType">The file format of the output file. This value can be library, exe, module, or winexe.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetTreatWarningsAsErrors(System.Boolean)">
+			<summary>Specifies a value indicating whether to treat all warnings as errors.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="treatWarningsAsErrors">true to treat all warnings as errors; otherwise, false.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetWarningsAsErrors(System.String)">
+			<summary>Specifies a list of warnings to treat as errors.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="warningsAsErrors">A list of warnings to treat as errors.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetWarningsNotAsErrors(System.String)">
+			<summary>Specifies a list of warnings that are not treated as errors.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="warningsNotAsErrors">A list of warnings that are not treated as errors.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetWin32Icon(System.String)">
+			<summary>Specifies an .ico file to insert into the assembly.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="win32Icon">The .ico file to insert into the assembly.</param>
+		</member>
+		<member name="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject.SetWin32Resource(System.String)">
+			<summary>Specifies a Win32 resource (.res) file to insert into the output file.</summary>
+			<returns>true if the method was successful; otherwise, false.</returns>
+			<param name="win32Resource">A Win32 resource (.res) file to insert into the output file.</param>
+		</member>
+	</members>
+</doc>
